@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-11"
+lastupdated: "2018-05-14"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -10,14 +10,14 @@ lastupdated: "2018-01-11"
 
 1. Make sure that both hardware nodes are set up in PIM.
 2. Go to the infrastructure and hardware nodes that the container is on.
-3. Select the appropriate container and click **Back Up**.
+3. Select the appropriate container and click **Back up**.
 4. Add an appropriate comment that describes the reason for backing up this data.
 5. Select the backup type:
    * Use Hardware Node Settings
    * Full (for this example)
    * Incremental
    * Differential
-6. Select the Compression Level *(higher compression can save disk space, but uses more CPU resources)*:
+6. Select the Compression Level: **Note:** Higher compression can save disk space, but uses more CPU resources
    * Use Hardware Node Settings
    * None
    * Normal (choose normal minimize server load)

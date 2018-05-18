@@ -4,7 +4,7 @@
 
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2018-05-18"
 
 
 ---
@@ -29,7 +29,7 @@ You can find Hyper-V Manager under **Administrative Tools** in the Windows Contr
 
 ## Configuring Hyper-V
 
-The first configuration to check is the storage location for your virtual hard disks. From the Hyper-V Manager window, on the left side you see **Hyper-V Manger** and below is a line with your server name. Click your server name and you see the information that is available to the Hyper-V service on your server. Now, the middle of the screen is empty since there are no virtual machines installed. On the right side of the screen, you see a link for **Hyper-V Settings**. Clicking the link brings up the basic settings for Hyper-V.
+The first configuration to check is the storage location for your virtual hard disks. From the Hyper-V Manager window, on the left side you see **Hyper-V Manger** and the server name. Click your server name and you see the information that is available to the Hyper-V service on your server. Now, the middle of the screen is empty since there are no virtual machines installed. On the right side of the screen, you see a link for **Hyper-V Settings**. Clicking the link brings up the basic settings for Hyper-V.
 
 The primary setting that you need to look at is **Virtual Hard Disks**. On the right side, you see the default location stores your virtual hard disks. The default location is:
 
@@ -43,7 +43,7 @@ You can also manually browse through folders to select the location you want to 
 
 ## Configuring network devices
 
-Before you configure virtual network devices, figure out which network adapters are connected to the private and public networks. From the start menu, click **Network Connections**. You see two network devices here. Make sure that you note that your devices are named **PrivateNetwork** and **PublicNetwork**. Right click **PrivateNetwork** and select **Properties**. At the top, you see **Connect using:**, which shows the device name for the private network adapter. Write down this name as you need it when you create your virtual private network device.
+Before you configure virtual network devices, figure out which network adapters are connected to the private and public networks. From the start menu, click **Network Connections**. You see two network devices here. Make sure that you note that your devices are named **PrivateNetwork** and **PublicNetwork**. Right click **PrivateNetwork** and select **Properties**. You see **Connect using:**, which shows the device name for the private network adapter. Write down this name as you need it when you create your virtual private network device.
 
 ### Configuring a private network device
 
@@ -95,7 +95,7 @@ Lastly, you need to create the virtual network adapters. The new virtual machine
 
 ### Configuring Virtual Network Adapter for Windows Operating System
 
-A list of hardware is now available for the virtual machine. In the list you see **Network Adapter** and **Private**. If you see **Not Connected**, click on Network Adapter, select **Private**, and click **Apply**. 
+A list of hardware is now available for the virtual machine. In the list you see **Network Adapter** and **Private**. If you see **Not Connected**, click the Network Adapter, select **Private**, and click **Apply**. 
 
 Next, click **Add Hardware > Network Adapter > Add**. <!--this is different from the Legacy Network Adapter which will not be used by a windows operating system;--> to add the Network Adapter to the hardware. <!--This will be automatically selected when it is added.--> 
 

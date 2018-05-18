@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2017-11-29"
+lastupdated: "2018-05-18"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -12,7 +12,7 @@ Before you begin, log in to the server with the root user.
 
 ## Preparing to install VMware
 
-1. Download the [VMware installer ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://vmware.com/download/server/){: new_window}. Click on the download link, accept the EULA, and download the LinuxTarball (VMware-server-1.0.3-44356.tar.gz in this example):
+1. Download the [VMware installer ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://vmware.com/download/server/){: new_window}. Click the download link, accept the EULA, and download the LinuxTarball (VMware-server-1.0.3-44356.tar.gz in this example):
 
 * `# wget –O vmware-server.tar.gz http://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
 
@@ -58,7 +58,7 @@ You will be prompted with the following questions:
 
 ## Bridging the private network 
 You will then be prompted with the following question, which can be answered as **yes** or **no**:
-*“Do you wish to configure another bridged network?”
+*“Do you want to configure another bridged network?”
 
 If you plan on running services or other applications off of your private network, then proceed with “yes” to this question (unless you know you will not be using the private network), and a network bridge is create to your private network. After you press enter, it will automatically use eth0 as the interface, as that is the only one left available (since you only have two network cards in the server).
 
@@ -74,7 +74,7 @@ You will be presented with a few other questions regarding the network setup of 
 
 - Proceed with “yes”
 
-- Once this completes, make sure you do not configure another NAT network.
+- After this completes, make sure you do not configure another NAT network.
 
 * *“Do you want to be able to use host-only networking in your virtual machines?”*
 
@@ -106,7 +106,7 @@ VMware is now set up on your server. You now need to download the VMware Server 
 
 ## Downloading VMware Server Console
 
-The VMware Server Console is the client application for VMware Server. It allows you to manage the VMware Server in which you can create, configure, and install virtual machines. To install this application, download the VMware Server Windows client package from [VMware downloads ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://vmware.com/download/server/){: new_window}. This package is the .zip file. Once it has downloaded to the system, extract the package and install the VMware-console-1.0.3-x file. When this has completed installing, you are done installing the VMware Server Console and you are ready to configure your VMware Server.
+The VMware Server Console is the client application for VMware Server. It allows you to manage the VMware Server in which you can create, configure, and install virtual machines. To install this application, download the VMware Server Windows client package from [VMware downloads ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://vmware.com/download/server/){: new_window}. This package is the .zip file. After it downloads, extract the package and install the VMware-console-1.0.3-x file. When this has completed installing, you are done installing the VMware Server Console and you are ready to configure your VMware Server.
 
 ## Logging into the VMware Console
 

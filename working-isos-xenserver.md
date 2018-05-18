@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-09"
+lastupdated: "2018-05-18"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -17,7 +17,7 @@ XenServer expects you to do little with your base operating system as possible. 
 
 1. Open XenCenter on your local computer and connect to your XenServer.
 
-2. In the upper menu bar, click **Storage > New SR...**
+2. In the menu bar, click **Storage > New SR...**
 
 3. For the LockBox example, select **CIFS** and click **Next**.
 
@@ -72,7 +72,7 @@ Saving to: `debian-40r4a-i386-netinst.iso'
 
 Now that you downloaded the ISO that you want to use to create a new VM, use that ISO to get start the installation.
 
-1. From the upper menu bar, click **New VM...**
+1. From the menu bar, click **New VM...**
 
 2. Select **Other install media** <!-- should be "Other installation media. UI needs updated.--> and click **Next**.
 

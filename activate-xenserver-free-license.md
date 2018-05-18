@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-09"
+lastupdated: "2018-05-18"
 ---
 
 {:shortdesc: .shortdesc}
@@ -27,10 +27,10 @@ To register your system, complete the following steps:
 
 5. After the system connects, a dialog box appears. This dialog box alerts you that your license expires in 30 days. If the dialog box does not appear, from the drop-down menu, go to **Tools > License Manager...**.
 
-6. Check your server and click **Activate...**. A browser opens and navigates to the Citrix registration site. Complete the form and submit it. Check your inbox for an email from Citrix. This email contains your license key as an attachment.
+6. Check your server and click **Activate...**. A browser opens and goes to the Citrix registration site. Complete the form and submit it. Check your inbox for an email from Citrix. This email contains your license key as an attachment.
 
-7. After you receive the email, save the attachment locally.
+7. After you receive the email, save the attached license key file locally.
 
-8. In the XenCenter left pane, highlight your server and in the top menu, go to **Server > Install License Key...**. A dialog box appears that asks for the location of the license key. Point it to the location you saved it in Step 7.
+8. In the XenCenter left pane, highlight your server. In the menu bar, go to **Server > Install License Key...**. A dialog box appears that asks for the location of the license key. Point it to the saved location from Step 7.
 
 

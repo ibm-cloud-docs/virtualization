@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-12"
+lastupdated: "2018-05-14"
 ---
 {:shortdesc: .shortdesc}
 {:tip: .tip}
@@ -28,34 +28,33 @@ You can back up your VMware vSphere environment by using a hybrid solution that 
 
 <!--One of the basic rules of backup and recovery is to maintain multiple backups in multiple locations and diverse mediums for maximum safety and redundancy. This could be achieved by storing redundant copies of backups on different on-premises devices, which, given SoftLayer's global presence, would theoretically be a simple task. Yet doing so would require large amounts of expensive high-performance storage and network bandwidth. In addition, it would be difficult to synchronize and reconcile multiple backup copies residing on multiple on-premises devices, especially if those devices spanned a wide geographical area.-->
 
-## Introducing a Hybrid Solution
 
-Veeam Backup & Replication enables a hybrid solution that includes NetApp AltaVault cloud-integrated storage appliance and {{site.data.keyword.cos_full}}. It is software that creates, maintains, and restores virtual environments from backups. When used along with a NetApp AltaVault cloud-integrated storage appliance, you create backups that are stored locally (on-premises). The backup is also simultaneously replicated to {{site.data.keyword.cos_full_notm}}. With this hybrid solution, two copies of a backup are made, but only one of them exists locally. 
+Veeam Backup & Replication enables a hybrid solution that includes NetApp AltaVault cloud-integrated storage appliance and {{site.data.keyword.cos_full}}. It is software that creates, maintains, and restores virtual environments from backups. When used along with a NetApp AltaVault cloud-integrated storage appliance, you create backups that are stored locally (on-premises). The backup is also simultaneously replicated to {{site.data.keyword.cos_full_notm}}. With this hybrid solution, two copies of a backup are made, but only one of them exists locally.
 
-### AltaVault Cloud-Integrated Storage Gateway
+## AltaVault Cloud-Integrated Storage Gateway
 
 You can use AltaVault Cloud Storage Gateway to integrate your on-premises environment with the cloud without having to write scripts or applications by using REST APIs for {{site.data.keyword.cos_full_notm}}.<!--AltaVault Cloud Storage Gateway exposes a Server Message Block (SMB)/Common Internet File System (CIFS) or Network File System (NFS) mount point on the front end and securely connects to IBM Cloud Object Storage interface on the back end.--> You can mount or point to the mount points and begin copying data into the cloud securely.
 
-#### Deploying AltaVault On-Premises
+### Deploying AltaVault On-Premises
 
-Follow these steps to deploy AltaVault as an on-premises backup solution to {{site.data.keyword.cos_full_notm}}. 
+Follow these steps to deploy AltaVault as an on-premises backup solution to {{site.data.keyword.cos_full_notm}}.
 
 AltaVault can be purchased as either a physical or a virtual appliance. The deployment of the trial-version VMware vSphere ESXi-based AltaVault virtual appliance is covered in this procedure.
 {:tip}
 
 <a name="prerequisites"></a>
-##### Prerequisites
+#### Prerequisites
 
 Verify that the following prerequisites are met:
 
 * Obtain a copy of AltaVault Virtual Appliance. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance, or download a 90-day trial version from the [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}.
 * Have an existing on-premises vSphere ESXi 5.5 environment with the minimum CPU, memory, and disk space requirements available for the AltaVault appliance. If you use the trial version, these requirements are four virtual CPUs (vCPUs), 24 GB of memory, and up to 8 TB of disk space.
 * Have two 10 Gbps network interface controllers (NICs) available within the vSphere environment. One NIC is used for data ingest and the other is used for data replication to {{site.data.keyword.cos_full_notm}}.
-* Have two networks that correspond to the two aforementioned NICs (VLANs) that are defined within the vSphere environment. The replication network cannot be assigned to the same network as the data ingest network, as this may create a routing loop.
+* Have two networks that correspond to the two previously mentioned NICs (VLANs) that are defined within the vSphere environment. The replication network cannot be assigned to the same network as the data ingest network, doing so can create a routing loop.
 * Have a set of {{site.data.keyword.cos_full_notm}} credentials. These credentials include an {{site.data.keyword.cloud_notm}} username, {{site.data.keyword.cos_full_notm}} username, and the API key that is associated with the {{site.data.keyword.cloud_notm}} username.
 * Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources that include networking and storage.
 
-#### Deploying AltaVault OVA
+### Deploying AltaVault OVA
 
 You can deploy the AltaVault OVA to the vSphere environment after all of the prerequisites are met. Instructions for OVA deployment can be found in the [NetApp AltaVault Installation and Service Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){: new_window}.
 
@@ -74,7 +73,7 @@ In this example configuration, the AltaVault appliance uses the **e0a** interfac
 
 For more information on the deployment of the AltaVault appliance and configuration of the VM settings for the appliance see [NetApp AltaVault Installation and Service Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){: new_window}.
 
-#### Initial Configuration of the AltaVault Appliance <!--initial configuration?-->
+### Initial Configuration of the AltaVault Appliance <!--initial configuration?-->
 
 You can power on the AltaVault VM after it is configured with the appropriate hardware. **Note:** It takes some time for the AltaVault VM to initially start as the AltaVault appliance is formatting the secondary metadata cache disk.
 
@@ -95,7 +94,7 @@ Use the information in Table 1 after the wizard opens.
 |Step 8: Domain name?|Enter the domian name of your environment (testenv.org)|
 {: caption="Table 1. AltaVault initial configuration values" caption-side="top"}
 
-#### Configuring AltaVault for Object Storage
+### Configuring AltaVault for Object Storage
 
 Use the following steps to configure the appliance to connect to {{site.data.keyword.cos_full_notm}} service.
 
@@ -116,7 +115,7 @@ Use the following steps to configure the appliance to connect to {{site.data.key
 
 The AltaVault appliance is configured to communicate with the {{site.data.keyword.cos_full_notm}} service.
 
-#### Configuring the CIFS/SMB Mount Point in AltaVault
+### Configuring the CIFS/SMB Mount Point in AltaVault
 
 The **e0b** interface needs to be configured to create a CIFS/SMB mount point. Use the following steps to configure **e0b**.
 
@@ -129,7 +128,7 @@ The **e0b** interface needs to be configured to create a CIFS/SMB mount point. U
 7. Clear **Allow Everyone Access** if security is not an issue. It is preferable to whitelist the clients that use the CIFS/SMB share. Otherwise, leave **Allow Everyone Access** selected if security is an issue and click **Add Share**.
 8. Click **Add CIFS User** to create accounts for authorized users and complete the **Username** and **Password** fields.
 9. Expand the new CIFS share and click **Add a user or group** to add the authorized user accounts.
-10. Go to **Global CIFS Settings** at the bottom of the page and click the **Listening Interface** drop-down menu and select **e0b** and click **Apply**.
+10. Go to **Global CIFS Settings** and click the **Listening Interface** drop-down menu and select **e0b** and click **Apply**.
 
 The AltaVault appliance is configured to allow communications between itself, {{site.data.keyword.cos_full_notm}}, and the computer that is running Veeam Backup & Replication. It is recommended that you export the configuration of the AltaVault appliance to expedite future deployments, if necessary.
 
@@ -139,15 +138,33 @@ To export your AltaVault appliance configuration, follow these steps.
 2. Click **Export Configuration** and click **Export Configuration**.
 3. Save the configuration file (a tarball/.tar) in a safe location.
 
-### Veeam Backup & Replication
+## Veeam Backup & Replication
 
 Veeam Backup & Replication software provides complete backup, replication, and recovery capabilities for VMs and their data. The backup can fully integrate with an AltaVault Cloud Gateway Appliance.
 
-#### Deploying Veeam Backup & Replication
+### Provisioning Veeam on a new server
+
+You can order Veeam when you provision a new VSI or bare metal server. Use the following information when provisioning.
+* Veeam is only available with monthly billing
+* Veeam is only available with a Windows Operating System
+
+To add Veeam:
+1. In the System Addons section, under OS-Specific Addons, click the Veeam tab and select one of the the Veeam options.
+2. In the System Addons section, under CDP Addon, select any additional Veeam options to add. <br><br>**Note**: If you select *Veeam Backup and Replication 9.5 Update 3*, you are required to select at least one option in the CDP Addon list.
+
+### Ordering Veeam on an existing server
+
+You can add Veeam to an existing server with the [OS reload](../software/vsi_reload_os.html) procedure. The server must be running a Windows OS and it must be set up for monthly billing.
+
+To add Veeam:
+1. In the System Addons section, under OS-Specific Addons, click the Veeam tab and select one of the the Veeam options.
+2. In the System Addons section, under CDP Addon, select any additional Veeam options to add. <br><br>**Note**: If you select *Veeam Backup and Replication 9.5 Update 3*, you are required to select at least one option in the CDP Addon list.
+
+### Deploying Veeam Backup & Replication
 
 A trial version of Veeam Backup & Replication Version 8 is used in the example.
 
-##### *Prerequisites*
+#### *Prerequisites*
 
 Before you proceed with deployment, verify that the following prerequisites are satisfied:
 
@@ -165,7 +182,7 @@ Before you proceed with deployment, verify that the following prerequisites are 
 |**Network**|1 Gbps LAN for onsite backup and replication; 1 Mbps WAN for off-site backup and replication.|1 Gbps LAN for onsite backup and replication; 1 Mbps WAN for off-site backups and replication.|
 {: caption="Table 2. System requirements for Veeam Backup & Replication backup server" caption-side="top"}
 
-##### Installing Veeam Backup & Replication
+#### Installing Veeam Backup & Replication
 
 Use the following steps to install Veeam Backup & Replication to the backup server after all of the prerequisites are met.
 
@@ -181,9 +198,9 @@ Use the following steps to install Veeam Backup & Replication to the backup serv
 10. Select the directories where the guest file system catalog (persistent data) and vPower NFS write cache (non-persistent data) are stored. Click **Next**.
 11. Verify that all settings and values are correct and click **Install** to start the installation. After installation is complete, click **Finish**.
 
-#### Configuring Veeam Backup & Replication for Backups
+### Configuring Veeam Backup & Replication for Backups
 
-After you install Veeam Backup & Replication, you are ready to connect it to the vSphere ESXi host that contains the AltaVault virtual appliance. 
+After you install Veeam Backup & Replication, you are ready to connect it to the vSphere ESXi host that contains the AltaVault virtual appliance.
 
 1. Start Veeam Backup & Replication.
 2. On the lower-left side of the screen, click **Backup Infrastructure > Managed Servers**.
@@ -193,9 +210,9 @@ After you install Veeam Backup & Replication, you are ready to connect it to the
 6. Click **Next**. Veeam Backup & Replication connects to the VMware vSphere server. If the connection attempt fails, check that the account exists and has administrator privileges on the VMware vSphere server before you try to connect again.
 7. Click **Finish** on the **Summary** window and verify that the vSphere server was added successfully by clicking **Managed Servers > VMware vSphere**.
 
-#### Adding a Backup Repository to Veeam Backup & Replication
+### Adding a Backup Repository to Veeam Backup & Replication
 
-By default, Veeam Backup & Replication creates a local backup repository on the C:\ drive of the Veeam Backup & Replication backup server during program installation. 
+By default, Veeam Backup & Replication creates a local backup repository on the C:\ drive of the Veeam Backup & Replication backup server during program installation.
 
 Use the following steps to create a backup repository to store all backups on the AltaVault appliance. If you want to use the default backup repository, skip these step.
 
@@ -210,11 +227,11 @@ Use the following steps to create a backup repository to store all backups on th
 9. On the **Review** screen, confirm that all your settings are correct and click **Next**.
 10. Click **Finish** to exit the wizard. You can now begin backing up your data.
 
-#### Backing up the Environment
+### Backing up the Environment
 
 Follow these steps to create a backup of a complete virtual environment.
 
-1. In the lower-left corner of the **Backup Infrastructure** screen, click **Backup & Replication**.
+1. From the **Backup Infrastructure** screen, click **Backup & Replication**.
 2. In the **Backup & Replication** window, click **Jobs > Backup Job**.
 3. Enter a unique name in the **Name** field. Optionally, you can enter a **Description**. Click **Next**.
 4. Select which VMs that you want to back up by clicking **Add Objects** and click through the tree structure to select the VMs. Click **Add** after you select the appropriate VMs.<br/>If only specific parts of the VMs are to be backed up (the boot/system disk), click **Exclusions** and specify the parts. Otherwise, click **Next**.
@@ -222,13 +239,13 @@ Follow these steps to create a backup of a complete virtual environment.
 
 **Note:**For optimal performance, make sure that you change the data deduplication and compression settings. Use the following steps to optimize performance.
 
-1. Click the **Advanced** button, select the **Storage** tab, and clear **Enable inline data duplication**. Performance is improved because the AltaVault appliance performs block-level deduplication of the Veeam Backup & Replication backups that pass through it.
-2. Select **None** under the **Compression level** drop-down menu and select **LAN target** under the **Storage optimization** drop-down menu.<br/>**Note:** If the network location of the CIFS/SMB share is congested, leaving **Enable inline data deduplication** checked might alleviate network performance issues, but at the cost of lower data deduplication ratios experienced on the AltaVault appliance.
+1. Click **Advanced**, select the **Storage** tab, and clear **Enable inline data duplication**. Performance is improved because the AltaVault appliance performs block-level deduplication of the Veeam Backup & Replication backups that pass through it.
+2. Select **None** under the **Compression level** drop-down menu and select **LAN target** under the **Storage optimization** drop-down menu.<br/>**Note:** If the network location of the CIFS/SMB share is congested, leaving **Enable inline data deduplication** checked might alleviate network performance issues, but at the cost of smaller data deduplication ratios experienced on the AltaVault appliance.
 3. Click **Next**.
 4. If you want application-aware processing and or guest file system indexing, select the appropriate check box. Set the **Guest OS credentials** [the username/password of the guest OS of the VMs that is being backed up], if necessary. Click **Next**.
 5. Select the **Run the job automatically** check box if backups run regularly and set the desired intervals. Otherwise, click **Create** and **Finish**.
 
-##### *Starting a manual back up*
+#### *Starting a manual back up*
 
 To manually start a backup, right-click on the backup job and select **Start**. Alternatively, select **Active Full** if you want a new backup.
 

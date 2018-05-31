@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-05"
+lastupdated: "2018-05-18"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -68,7 +68,7 @@ Use the following steps to back up a container on a Virtuozzo server.
 
         Backup operation for node 'virtuozzo01.softlayer.local' was finished successfully.
 
-There are two things to note about the preceding command: 
+Two things to note about the preceding command: 
 1. You must log in and run the backup command on the “destination” server (the server that you want the backup to be on). After you run the command, a request for the container ID from the original hardware node is made. 
 2. The option `-e` is used to designate a single container. Without this option, the command backs up all containers on the host server to the new location.
 
@@ -91,7 +91,7 @@ You can view the backups that are made and stored on the server by using the fol
 
     BackupID: ab8743f4-d436-3a44-b35d-090f2bd2ea35/20081023173802
 
-    Description: This is our initial full backup of migrateme on virtuozzo00.
+    Description: This is the initial full backup of migrateme on virtuozzo00.
 
     Parent environment: virtuozzo00.softlayer.local
 

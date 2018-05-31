@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-11"
+lastupdated: "2018-05-18"
 ---
 {:shortdesc: .shortdesc}
 {:tip: .tip}
@@ -21,7 +21,7 @@ Before you begin, review the following prerequisites.
 There are two common reasons that you might need to relocate your Hyper-V Virtual Machine:
 * The VM is on hardware that is not functioning properly, 
 * The current host server is running low on resources. 
-In either event, the Hyper-V migration can be completed quickly if you have the requirements listed above and follow the steps below.
+In either event, the Hyper-V migration can be completed quickly if you have the previously mentioned requirements, complete the following steps.
 
 ## Migrating a Hyper-V virtual machine
 Follow these steps to migrate your Hyper-V virtual machine.
@@ -33,6 +33,6 @@ You are transferring the file via a resource mount by using RDP. You can choose 
 {:tip}
 
 4. With the file being exported to the destination server, make sure that it is in the default location for Hyper-V virtual hard disks (VHD) and import it. The default location is `C:\Users\Public\Documents\Hyper-V\Virtual hard disks`. If you changed this default location and are not sure of what it was, you can select **Hyper-V Settings > Import Virtual Machine** to view the location.
-5. After you locate the exported file and click **Import**, the virtual machine populates into your Hyper-V Manager with all configurations and files it had previously. The server is now online and working. If your server did not match the requirements above and the destination server resides in a different VLAN, you need to Re-IP the virtual machine with a portable subnet (routed as Secondary on VLAN).
+5. After you locate the exported file and click **Import**, the virtual machine populates into your Hyper-V Manager with all configurations and files it had previously. The server is now online and working. If your server did not match the requirements and the destination server resides in a different VLAN, you need to Re-IP the virtual machine with a portable subnet (routed as Secondary on VLAN).
 
 

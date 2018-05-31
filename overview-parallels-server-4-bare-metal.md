@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-16"
+lastupdated: "2018-05-18"
 ---
 
 {:shortdesc: .shortdesc}
@@ -30,7 +30,7 @@ You can run raw commands from the physical server directly within the Virtuozzo 
 
 **Process Accounting**
 
-You use Parallels Server Bare Metal to raise and lower the priority of resources that are allocated (CPU, Disk I/O Priority) to a VM on the fly.
+You use Parallels Server Bare Metal to increase and reduce the priority of resources that are allocated (CPU, Disk I/O Priority) to a VM quickly.
 
 **Backup**
 

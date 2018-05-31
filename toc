@@ -35,9 +35,9 @@ Virtualization
 
     {: .navgroup id="howto"}
     set-up-a-hypervisor.md
-    migrate-container-different-hardware-node.md
     tcp-window-recommendations-virtual-instances.md
     installing-windows-server-virtualization-windows-2008.md
+    enabling-drive-security-using-avago-safestore-encryption-services.md
     virtual-machine-network-setup.md
 
     {: .topicgroup}
@@ -52,6 +52,7 @@ Virtualization
         how-can-i-give-my-containers-access-private-network-pim.md
         remove-host-node-being-slave-another-pim.md
         how-do-i-add-host-node-slave-another-pim.md
+        migrate-container-different-hardware-node.md
 
     {: .topicgroup}
     Citrix XenServer
@@ -82,6 +83,7 @@ Virtualization
         use-hybrid-solution-backup-and-restore-vsphere.md
         backup-your-vmware-vsphere-environment-veeam.md
         recover-your-vmware-vsphere-environment-when-disaster-strikes.md
+        updating-veeam-backup-and-replication-application.md
     {: .navgroup-end}
 
     {: .navgroup id="help"}
@@ -90,6 +92,7 @@ Virtualization
         faqs-general.md
         faqs-virtuozzo.md
         hyper-v-faq.md
+        veeam-faq.md
 
     vmware-reference.md
     {: .navgroup-end}

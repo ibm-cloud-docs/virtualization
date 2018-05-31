@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-05"
+lastupdated: "2018-05-18"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -22,7 +22,7 @@ Complete the following steps to create a new container on a Virtuozzo server.
 
            100          9 running   67.228.128.93   vztest01.softlayer.local
 
-2. Create a container with an open ID#. The number must be above 100 and not already in use. In this example, use 122.
+2. Create a container with an open ID#. The number must be higher than 100 and not already in use. In this example, use 122.
 
        [root@vztrain01 ~]# vzctl create 122 --pkgset redhat-as3-minimal-x86_64  --config basic
 

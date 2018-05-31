@@ -1,41 +1,41 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-11"
+lastupdated: "2018-05-18"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Adding a hard drive to Citrix XenServer
+# Adding a hard disk drive to Citrix XenServer
 
-Adding new hard drive in XenServer is different from the traditional Linux process. For XenServer, you need to create a container that is called a "storage repository" to define a particular storage target (such as a hard disk), in which Virtual Disk Images (VDIs) of VMs are stored. A VDI is an abstracted storage space that acts as the hard disk for VMs.
+Adding new hard disk drive in XenServer is different from the traditional Linux process. For XenServer, you need to create a container that is called a "storage repository" to define a particular storage target (such as a hard disk). This container is where Virtual Disk Images (VDIs) of VMs are stored. A VDI is an abstracted storage space that acts as the hard disk for VMs.
 
-Xen storage repository supports IDE, SATA, SCSI and SAS drives  when locally connected, apart from iSCSI, NFS, SAS and fiber channel in case of a remote storage.
+Xen storage repository supports IDE, SATA, SCSI, and SAS drives when locally connected, apart from iSCSI, NFS, SAS, and Fibre Channel for remote storage.
 
-## Creating an SR in a XenServer
+## Creating a storage repository in a XenServer
 
 1. SSH to the XenServer as root.
 
-2. Find the disk ID of the new device using the following commands:
+2. Find the disk ID of the new device by using the following command:
 
        # cat /proc/partitions
 
-  You will see a list of all the HDDs and partitions. Find which device is your new local disk. This is probably “sdx” (most probably sdb) or “/cciss/c0d1p0”. The following command lists the disk IDs for all the partitions/HDDs present in the server.
+  The command lists of all the HDDs and partitions. Find your new local disk, which is probably “sdx” (most probably sdb) or '/cciss/c0d1p0'. Use the following command to list the disk IDs for all the partitions/HDDs present in the server.
 
        # ll /dev/disk/by-id
 
-  Find the disk ID of the “sdx” or “cciss/c0d1”disk. The “scsi-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” or “cciss-xxxxxxxxxxxxxxxxxxxxxxxxxx” format is what you need.
+  Find the disk ID of the “sdx” or 'cciss/c0d1'disk. The “scsi-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” or “cciss-xxxxxxxxxxxxxxxxxxxxxxxxxx” format is what you need.
 
-3. Find out the 'host-uuid' in the XenServer using the following command.
+3. Find the 'host-uuid' in a XenServer by using the following command:
 
         #xe host-list
 
-  The uuid (RO) is the 'host-uuid' you need.
+  The uuid (RO) is the 'host-uuid' that you need.
 
 4. Create a Storage Repository (SR):
 
-  > **Note:** The [sr-create ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.citrix.com/article/CTX121313){: new_window} command is for adding a **new** hard drive. This is a destructive process that will partition and format the drive, and any data on the drive will be lost. If you wish to re-introduce a drive that contains existing data, you should use [sr-introduce ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.citrix.com/article/CTX121896){: new_window} instead.
+  > **Note:** The [sr-create ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.citrix.com/article/CTX121313){: new_window} command is for adding a **new** hard disk drive. This is a destructive process that partitions and formats the drive, and any data on the drive is lost. If you want to reintroduce a drive that contains existing data, use [sr-introduce ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.citrix.com/article/CTX121896){: new_window}.
 
   `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
   \- Or -<br/>
@@ -45,8 +45,8 @@ Xen storage repository supports IDE, SATA, SCSI and SAS drives  when locally con
 
 ## Verifying the Storage Repository in XenCenter
 
-You can verify the Storage Repository from XenCenter by using the following steps:
+You can verify the Storage Repository from XenCenter by following these steps:
 
 1. Connect to XenCenter.
 
-2. Go to the **Storage** tab. You will find the details of all storage repositories here. You can see the storage 'Local Storage2' in the list. This signifies that the disk has been added successfully. Now you can start creating VDIs on it.
+2. Go to **Storage** to find the details of all storage repositories. You can see the storage 'Local Storage2' in the list that shows that the disk is added. Now you can start creating VDIs on it.

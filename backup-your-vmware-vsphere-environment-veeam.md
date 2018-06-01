@@ -147,12 +147,12 @@ Veeam Backup & Replication software provides complete backup, replication, and r
 ### Provisioning Veeam on a new server
 
 You can order Veeam when you provision a new VSI or bare metal server. Use the following information when provisioning.
-* Veeam is only available with monthly billing
-* Veeam is only available with a Windows Operating System
+  * Veeam is only available with monthly billing
+  * Veeam is only available with a Windows Operating System
 
 To add Veeam:
-1. In the System Addons section, under OS-Specific Addons, click the Veeam tab and select one of the the Veeam options.
-2. In the System Addons section, under CDP Addon, select any additional Veeam options to add. <br><br>**Note**: If you select *Veeam Backup and Replication 9.5 Update 3*, you are required to select at least one option in the CDP Addon list.
+  * In the System Addons section, under OS-Specific Addons, click the Veeam tab and select one of the the Veeam options.
+  * In the System Addons section, under CDP Addon, select any additional Veeam options to add. <br><br>**Note**: If you select *Veeam Backup and Replication 9.5 Update 3*, you are required to select at least one option in the CDP Addon list.
 
 ### Ordering Veeam on an existing server
 

@@ -310,7 +310,7 @@ Now that DNS is configured, you can deploy and configure the vCenter Server Appl
 2. Connect to a management host and select **File, Deploy OVF Template**.
 3. Follow the wizard to complete the deployment.
 
-For more information about OVF Template deployment, see [VMware documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://pubs.vmware.com/vsphere-55/index.jsp?topic=%2Fcom.vmware.vsphere.hostclient.doc%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html&resultof=%22thick%22%20%22thin%22%20){: new_window}.
+<!-- For more information about OVF Template deployment, see [VMware documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://pubs.vmware.com/vsphere-55/index.jsp?topic=%2Fcom.vmware.vsphere.hostclient.doc%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html&resultof=%22thick%22%20%22thin%22%20){: new_window}. -->
 
 Because there is no Dynamic Host Configuration Protocol (DHCP) server available to assign the vCenter virtual appliance an IP address upon power-on, you must use the root console to configure the appliance. **Note:** A `NO NETWORKING DETECTED` message is displayed on the vCenter Virtual Appliance Console.
 

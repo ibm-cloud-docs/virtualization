@@ -12,9 +12,9 @@ lastupdated: "2018-01-18"
   <CAPTION>Table 1. Supported operating systems</CAPTION>
   <tbody>
     <tr>
-      <td style="text-align: center;font-weight: bold;">Operating System</td>
-      <td style="text-align: center;font-weight: bold;">Virtual Machine</td>
-      <td style="text-align: center;font-weight: bold;">Virtuozzo Container*</td>
+      <th style="text-align: center;font-weight: bold;">Operating System</th>
+      <th style="text-align: center;font-weight: bold;">Virtual Machine</th>
+      <th style="text-align: center;font-weight: bold;">Virtuozzo Container*</th>
     </tr>
     <tr>
       <td colspan="3" style="font-weight: bold;">Windows</td>

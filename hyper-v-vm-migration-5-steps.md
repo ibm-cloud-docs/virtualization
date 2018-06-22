@@ -20,11 +20,9 @@ Before you begin, review the following prerequisites.
 ## Why you might need to relocate your Hyper-V virtual machine
 There are two common reasons that you might need to relocate your Hyper-V Virtual Machine:
 * The VM is on hardware that is not functioning properly, 
-* The current host server is running low on resources. 
+* The current host server is running low on resources.
 In either event, the Hyper-V migration can be completed quickly if you have the previously mentioned requirements, complete the following steps.
 
-## Migrating a Hyper-V virtual machine
-Follow these steps to migrate your Hyper-V virtual machine.
 1. Log in to the source server and open the Hyper-V Manager. Select the virtual machine that you want to migrate to the destination server. 
 2. Shut down the virtual machine that you want to migrate. Then select **Export** under the Server actions list enter the location of the export file.
 3. Now, using RDP on the source server, you can log in to the destination server with the C: drive mounted to bring the file over.

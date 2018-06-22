@@ -86,7 +86,7 @@ You can use AltaVault to integrate your on-premises environment with the cloud w
 
 Follow these steps to deploy AltaVault as a disaster recovery solution with {{site.data.keyword.cos_full_notm}}.
 
-#### *Prerequisites*
+#### *Before you get started*
 
 Verify that the following prerequisites are met before you proceed:
 

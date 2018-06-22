@@ -9,6 +9,7 @@ lastupdated: "2018-01-18"
 # Which Operating Systems are supported in Parallels Server 4 Bare Metal?
 
 <table border="1" cellpadding="0" cellspacing="0" width="684">
+  <CAPTION>Table 1. Supported operating systems</CAPTION>
   <tbody>
     <tr>
       <td style="text-align: center;font-weight: bold;">Operating System</td>

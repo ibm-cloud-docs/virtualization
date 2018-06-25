@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-06-25"
 ---
 
 {:shortdesc: .shortdesc}
@@ -11,7 +11,6 @@ lastupdated: "2018-05-18"
 
 Use SLM Mode if UBC is not understood. SLM is easier and provides the same type of control.
 
-<caption>SLM parameter descriptions</caption>
 |Name|Type|Description|
 |---|---|---|
 |*Main parameters*|||
@@ -44,7 +43,7 @@ Use SLM Mode if UBC is not understood. SLM is easier and provides the same type 
 |`diskinodes`|*disk*|Disk inode (filesystem object) quota|
 |`quotatime`|*disk*|Disk quota grace period|
 |`quotaugidlimit`|*disk*|Limit on the number of uid and gid accounting entries|
- 
+<caption>SLM parameter descriptions</caption> 
 
 You can access VzLinuxUBCMgmt.pdf or view it in HTML, within PIM on your server by going to:
 **Management > Support > Downloads > Management of UBC Resources Administrator's Guide**

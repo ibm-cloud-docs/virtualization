@@ -17,7 +17,7 @@ lastupdated: "2018-06-25"
       <th style="text-align: center;font-weight: bold;">Virtuozzo Container*</th>
     </tr>
     <tr>
-      <td colspan="3" style="font-weight: bold;">Windows</td>
+      <!--<td colspan="3" style="font-weight: bold;">Windows</td>-->
       </tr>
       <tr>
         <td>Windows 7 (x32, x64)</td>
@@ -50,7 +50,7 @@ lastupdated: "2018-06-25"
         <td style="text-align: center;">x</td>
       </tr>
       <tr>
-        <td colspan="3" style="font-weight: bold;">Linux</td>
+        <!--<td colspan="3" style="font-weight: bold;">Linux</td>-->
       </tr>
       <tr>
         <td>Red Hat Enterprise Linux 5.3 (x32, x64)</td>
@@ -108,7 +108,7 @@ lastupdated: "2018-06-25"
         <td style="text-align: center;">√</td>
       </tr>
       <tr>
-        <td colspan="3" style="font-weight: bold;">BSD</td>
+        <!--<td colspan="3" style="font-weight: bold;">BSD</td>-->
       </tr>
       <tr>
         <td>FreeBSD 7 (x32, x64)</td>

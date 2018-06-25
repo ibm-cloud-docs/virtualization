@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-06-22"
+lastupdated: "2018-06-25"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -9,7 +9,7 @@ lastupdated: "2018-06-22"
 # Which Operating Systems are supported in Parallels Server 4 Bare Metal?
 
 <table border="1" cellpadding="0" cellspacing="0" width="684">
-  <CAPTION>Table 1. Supported operating systems</CAPTION>
+  
   <tbody>
     <tr>
       <th style="text-align: center;font-weight: bold;">Operating System</th>
@@ -121,6 +121,7 @@ lastupdated: "2018-06-22"
         <td style="text-align: center;">x</td>
       </tr>
     </tbody>
+    <CAPTION>Table 1. Supported operating systems</CAPTION>
   </table>
 
 \* Virtuozzo Containers are not licensed, nor supported, with Parallels Server 4 Bare Metal when using {{site.data.keyword.BluSoftlayer_full}}.

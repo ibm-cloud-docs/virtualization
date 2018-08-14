@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-08-14"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,15 +9,15 @@ lastupdated: "2018-05-18"
 
 # Activating XenServer
 
-The Citrix XenServer free license is licensed for 30 days from the initial install or reload. During this time, you need to register with Citrix and request a fully functional 1-year license. To create this license, Citrix requires personal information that {{site.data.keyword.BluSoftlayer}} does not have access to. The license is an agreement between you and Citrix to use XenServer. 
+The Citrix XenServer free license is licensed for 30 days from the initial install or reload. During this time, you need to register with Citrix and request a fully functional 1-year license. To create this license, Citrix requires personal information that {{site.data.keyword.BluSoftlayer}} doesn't have access to. The license is an agreement between you and Citrix to use XenServer. 
 {:shortdesc}
 
-If you do not register your system within 30 days, you cannot power on any virtual machines. 
+If you don't register your system within 30 days, you can't power on any virtual machines. 
 {:tip}
 
 To register your system, complete the following steps:
 
-1. Download and install the latest XenCenter Client. <!-- either from the [private network download page ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://downloads.service.softlayer.com/){: new_window} or--> You can access it from the [Citrix XenCenter ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://community.citrix.com/display/xs/XenCenter){: new_window} page.
+1. Download and install the latest XenCenter client. <!-- either from the [private network download page ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://downloads.service.softlayer.com/){: new_window} or--> You can access it from the [Citrix XenCenter ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://community.citrix.com/display/xs/XenCenter){: new_window} page.
 
 2. Connect to your private network through VPN.
 
@@ -27,7 +27,7 @@ To register your system, complete the following steps:
 
 5. After the system connects, a dialog box appears. This dialog box alerts you that your license expires in 30 days. If the dialog box does not appear, from the drop-down menu, go to **Tools > License Manager...**.
 
-6. Check your server and click **Activate...**. A browser opens and goes to the Citrix registration site. Complete the form and submit it. Check your inbox for an email from Citrix. This email contains your license key as an attachment.
+6. Check your server and click **Activate...**. A browser opens and goes to the Citrix registration site. Complete the form and submit it. Check your inbox for an email from Citrix. This email has your license key as an attachment.
 
 7. After you receive the email, save the attached license key file locally.
 

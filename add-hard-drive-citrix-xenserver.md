@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-08-14"
 ---
 
 {:shortdesc: .shortdesc}
@@ -9,7 +9,7 @@ lastupdated: "2018-05-18"
 
 # Adding a hard disk drive to Citrix XenServer
 
-Adding new hard disk drive in XenServer is different from the traditional Linux process. For XenServer, you need to create a container that is called a "storage repository" to define a particular storage target (such as a hard disk). This container is where Virtual Disk Images (VDIs) of VMs are stored. A VDI is an abstracted storage space that acts as the hard disk for VMs.
+Adding new hard disk drive in XenServer is different from the traditional Linux process. For XenServer, you need to create a container that is called a "storage repository" to define a particular storage target (such as a hard disk). This container is where virtual disk images (VDIs) of VMs are stored. A VDI is an abstracted storage space that acts as the hard disk for VMs.
 
 Xen storage repository supports IDE, SATA, SCSI, and SAS drives when locally connected, apart from iSCSI, NFS, SAS, and Fibre Channel for remote storage.
 
@@ -35,7 +35,7 @@ Xen storage repository supports IDE, SATA, SCSI, and SAS drives when locally con
 
 4. Create a Storage Repository (SR):
 
-  > **Note:** The [sr-create ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.citrix.com/article/CTX121313){: new_window} command is for adding a **new** hard disk drive. This is a destructive process that partitions and formats the drive, and any data on the drive is lost. If you want to reintroduce a drive that contains existing data, use [sr-introduce ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.citrix.com/article/CTX121896){: new_window}.
+  > **Note:** The [sr-create ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.citrix.com/article/CTX121313){: new_window} command is for adding a new hard disk drive. Creating a new hard disk drive is a destructive process that partitions and formats the drive, and any data on the drive is lost. If you want to reintroduce a drive that has existing data, use [sr-introduce ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.citrix.com/article/CTX121896){: new_window}.
 
   `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
   \- Or -<br/>

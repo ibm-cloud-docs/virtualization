@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-04"
+lastupdated: "2018-08-15"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -13,7 +13,7 @@ Managing multiple nodes is done through the PIM interface. You use PIM to have a
 Follow these steps to manage multiple hardware nodes:
 
 1. Go to **Infrastructure**.
-2. In the second tab <!--labeled what?-->, click **Hardware Nodes > New Hardware Node**
+2. In the second tab, click **Hardware Nodes > New Hardware Node**
 3. Click **Register**.
 
 You can now manage both the master and the slave through the same PIM interface.

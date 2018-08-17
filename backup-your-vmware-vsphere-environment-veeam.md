@@ -75,11 +75,11 @@ In this example configuration, the AltaVault appliance uses the **e0a** interfac
 
 For more information on the deployment of the AltaVault appliance and configuration of the VM settings for the appliance see [NetApp AltaVault Installation and Service Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){: new_window}.
 
-### Initial Configuration of the AltaVault Appliance <!--initial configuration?-->
+### Initial configuration of the AltaVault appliance <!--initial configuration?-->
 
 You can power on the AltaVault VM after it is configured with the appropriate hardware. **Note:** It takes some time for the AltaVault VM to initially start as the AltaVault appliance is formatting the secondary metadata cache disk.
 
-1. After the appliance has completed the boot process, log in to the AltaVault console. Use ``*admin`` as the **Username**, and ``password`` as the **Password** . You can change these credentials after the initial configuration completes.
+1. After the appliance completes the start process, log in to the AltaVault console. Use ``*admin`` as the **user name**, and ``password`` as the **Password**. You can change these credentials after the initial configuration completes.
 2. After you log in, you are asked whether you want to use the wizard for initial configuration. Enter **y** and press **Enter** to save your changes.
 
 Use the information in Table 1 after the wizard opens.
@@ -87,13 +87,13 @@ Use the information in Table 1 after the wizard opens.
 |Question|Answer|
 |---|---|
 |Step 1: Admin Password?|Enter a new admin password (it cannot be "password")|
-|Step 2: Hostname?|Enter the hostname you wish to use|
+|Step 2: Host name?|Enter the host name that you want to use|
 |Step 3: Use DHCP on primary interface?|Enter **n**|
-|Step 4: Primary IP Address?|Enter the primary network IPO address. In the example configuraiton, this is the network thatis used for cloud replicaiton and applicance management (192.168.50.15)|
+|Step 4: Primary IP address?|Enter the primary network IP address. In the example configuration, the primary IP address is the network that is used for cloud replication and appliance management (192.168.50.15)|
 |Step 5: Netmask?|Enter the netmask (255.255.255.0)|
 |Step 6: Default gateway?|Enter the default gateway (192.168.50.1)|
 |Step 7: Primary DNS server?|Enter the primary Domain Name System (DNS) server in your environment|
-|Step 8: Domain name?|Enter the domian name of your environment (testenv.org)|
+|Step 8: Domain name?|Enter the domain name of your environment (testenv.org)|
 {: caption="Table 1. AltaVault initial configuration values" caption-side="top"}
 
 ### Configuring AltaVault for Object Storage

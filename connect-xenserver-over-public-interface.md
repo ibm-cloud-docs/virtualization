@@ -14,7 +14,7 @@ By default the {{site.data.keyword.BluSoftlayer}} installation of XenServer is c
 Changing this configuration is a security risk and is not advised.
 {:tip}
 
-If you want to reconfigure XenServer to use the public interface, run the following commands as root from the host (host should not be pooled!): 
+If you want to reconfigure XenServer to use the public interface, run the following commands as root from the host (host cannot not be pooled!): 
 
 1. *xe pif-list*
 

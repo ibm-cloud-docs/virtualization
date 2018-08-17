@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-08-15"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -47,7 +47,7 @@ RAM needs vary based on requirements for the virtual machine. Check the system r
 
 You can grant a virtual machine access to multiple processors with any Windows virtual machine. However, Linux virtual machines are limited to a single processor.
 
-## Can hard drive sizes change after a virtual machine is created?
+## Can hard disk sizes change after a virtual machine is created?
 
 Yes.
 
@@ -73,7 +73,7 @@ For information about portable IP addresses, see [Getting started with Subnets a
 
 ## How do I order Hyper-V?
 
-If you have an existing server, you can install Hyper-V by issue an OS Reload and changing the operating system to “Windows 2008 Server Datacenter Edition with Hyper-V." If you would like to have a new server that is provisioned with Hyper-V, place an order for the new server and select “Windows 2008 Server Datacenter Edition with Hyper-V” as the operating system.
+You can install Hyper-V on an existing server by issuing an OS Reload and changing the operating system to “Windows 2008 Server Datacenter Edition with Hyper-V." To provision a new server with Hyper-V, order a new server and select “Windows 2008 Server Datacenter Edition with Hyper-V” as the operating system.
 
 ## Is Hyper-V preinstalled with Windows 2008 Server Datacenter Edition?
 
@@ -81,8 +81,8 @@ Hyper-V is not preinstalled on Windows 2008 servers. If you want to install Hype
 
 ## The OS Reload for Hyper-V is done. What's next?
 
-For more information, see [Hyper-V setup](hyper-v-setup.html).
+Hyper-V needs to be set up. For more information about setting up Hyper-V, see [Setting up Hyper-V](/docs/infrastructure/virtualization/hyper-v-setup.html).
 
-## A virtual machine will not start. “Could not initialize machine remoting system: Error:'Unspecified error'” How do I resolve this issue?
+## A virtual machine does not start. “Cannot initialize machine remoting system: Error:'Unspecified error'” How do I resolve this issue?
 
-To resolve this problem, stop the Hyper-V service and restart it. This is typically caused by the Hyper-V service starting while the server activation occurs. Restarting the service brings the virtual machine back up after the activation completes.
+To resolve this problem, stop the Hyper-V service and restart it. This problem is typically caused by Hyper-V trying to start while the server activation occurs. Restarting the service brings the virtual machine back up after the activation completes.

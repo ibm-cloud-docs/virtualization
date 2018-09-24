@@ -540,7 +540,7 @@ Now that you created a host profile, you need to attach the host profile to the 
 6. Remove the hosts from maintenance mode (non-maintenance mode). 
 
 ## Step 12 Order, configure, and attach shared storage 
-Before you continue, it is imperative that you order, configure, and attach shared storage for use with the management and capacity clusters and hosts within the environment. If you want to use the {{site.data.keyword.cloud_notm}} multi-tenant shared storage solution (File Storage), see [Architecture Guide for IBM File Storage for {{site.data.keyword.cloud_notm}} with VMware](..FileStorage/architecture-guide-file-storage-vmware.html#provisioning-file-storage-with-vmware.html).
+Before you continue, it is imperative that you order, configure, and attach shared storage for use with the management and capacity clusters and hosts within the environment. If you want to use the {{site.data.keyword.cloud_notm}} multi-tenant shared storage solution (File Storage), see [Architecture Guide for IBM File Storage for {{site.data.keyword.cloud_notm}} with VMware](../FileStorage/architecture-guide-file-storage-vmware.html#provisioning-file-storage-with-vmware.html).
 
 ## Step 13 Enabling HA/DRS and svMotion vCVA
 

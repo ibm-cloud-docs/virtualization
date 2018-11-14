@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-11-14"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -102,4 +102,4 @@ Moments later the container runs. You can check the status again with the `vzctl
 
         Saved parameters for Container 122
 
-The basic setup of a new Virtuozzo container using the command line is complete.
+The basic setup of a new Virtuozzo container by using the command line is complete.

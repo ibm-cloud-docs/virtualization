@@ -1,13 +1,13 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-06-25"
+lastupdated: "2018-11-15"
 ---
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Understanding UBC / User Beancounter Values
+# Understanding UBC / User Bean counter Values
 
 Use SLM Mode if UBC is not understood. SLM is easier and provides the same type of control.
 

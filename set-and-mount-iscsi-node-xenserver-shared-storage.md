@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-11-15"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Setting up and mounting an iSCSI node in XenServer Shared Storage
 
-Shared Storage is a storage repository (SR) that is any form of storage that can be used by XenServer. There are two categories of SRs: shared and non-shared. A shared SR allows multiple nodes to share a storage location from the same pool. {{site.data.keyword.cloud}} supports two options of SRs, NFS, and LVMoiSCSI (LVM over iSCSI).
+Shared Storage is a storage repository (SR) that is any form of storage that can be used by XenServer. You can chose from two categories of SRs: shared and non-shared. A shared SR allows multiple nodes to share a storage location from the same pool. {{site.data.keyword.cloud}} supports two options of SRs, NFS, and LVMoiSCSI (LVM over iSCSI).
 
 You need to install an NFS server and manage it from another customer system or by using am {{site.data.keyword.cloud_notm}} QuantaStor server. Follow these steps to mount the NFS repository in XenCenter:
 
@@ -21,7 +21,7 @@ You need to install an NFS server and manage it from another customer system or 
 
 This process scans the NFS share for any previous SRs. 
 
-You can use the {{site.data.keyword.cloud_notm}} iSCSI for LVMoiSCSI. The iSCSI can be either from a customer manage storage server of an {{site.data.keyword.cloud_notm}} iSCSI offering. For Performance and Redundant Block Storage, retrieve the IQN from the {{site.data.keyword.slportal}} by going to **Storage > Block Storage > Select Lun Name**. To mount the iSCSI node via XenCenter follow these steps:
+You can use the {{site.data.keyword.cloud_notm}} iSCSI for LVMoiSCSI. The iSCSI can be either from a customer manage storage server of an {{site.data.keyword.cloud_notm}} iSCSI offering. For Performance and Redundant Block Storage, retrieve the IQN from the {{site.data.keyword.slportal}} by going to **Storage > Block Storage > Select Lun Name**. To mount the iSCSI node via XenCenter, follow these steps:
 
 1. Open the XenCenter console.
 2. Go to **General > Properties** and set the IQN. 
@@ -34,6 +34,6 @@ You can use the {{site.data.keyword.cloud_notm}} iSCSI for LVMoiSCSI. The iSCSI 
 9. Click **Scan Target Host**.
 * Select a **Target IQNs** option.
 * Select a **Target  LUNs** option.
-10. After the IQN and LUN fields populate, click **Finish**. This scans the target to check for previous SRs. If an SR exists, the installer asks if you want to create a new SR or attach to the previous SR.
+10. After the IQN and LUN fields populate, click **Finish**. The target is scanned to check for previous SRs. If an SR exists, the installer asks if you want to create a new SR or attach to the previous SR.
 
-If the servers are in a pool together, the iSCSI repository are automatically shared.
+If the servers are in a pool together, the iSCSI repository is automatically shared.

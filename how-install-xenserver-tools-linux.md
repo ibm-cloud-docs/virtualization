@@ -1,29 +1,29 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-09"
+lastupdated: "2018-11-15"
 ---
 
 {:shortdesc: .shortdesc}
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# Installing XenServer Tools - Linux
+# Installing XenServer tools when using Linux
 
 Follow these steps to install XenServer Tools on your virtual machines that use CentOS, Debian, and RedHat operating systems.
 
 These steps are specifically for customer-managed XenServers, not {{site.data.keyword.cloud}} provided VSIs.
 {:tip}
 
-1. Open XenCenter and establish a connection to your XenServer. Here is an example of a new virtual machine that does not have XenServer Tools set up. You can see that for **"Virtualization State:"**, the software says, "Tools not installed".
+1. Open XenCenter and establish a connection to your XenServer. See the example of a new virtual machine that does not have XenServer Tools set up. You can see that for **"Virtualization State:"**, the software says, "Tools not installed".
 
-2. Right-click on the name of the virtual machine that you want to install XenServer Tools and then click **Install XenServer Tools**. A warning appears stating that, "Any CD or DVD currently in the Virtual Machine's CD drive will be ejected when xenServer Tools are installed." 
+2. Right-click on the name of the virtual machine that you want to install XenServer Tools and then click **Install XenServer Tools**. A warning appears stating that, "Any CD or DVD currently in the virtual machine's CD drive ejected when xenServer Tools are installed." 
 
 3. Click **Install XenServer Tools** to continue.
 
 On the console tab of XenCenter for your virtual machine, you see a CD image of "xs-tools.iso" that is loaded into the DVD drive. It also provides you with the device name within the system. 
 
-4. You can do the following steps through either the console or through an SSH session to the system. By following this example, the installation uses SSH. Here is session output. Remember that the drive device name is provided by XenCenter.
+4. You can do the following steps through either the console or through an SSH session to the system. By following this example, the installation uses SSH. **Note:** The drive device name is provided by XenCenter.
 
         $ ssh 10.17.37.243
         root@10.17.37.243's password:
@@ -37,8 +37,8 @@ On the console tab of XenCenter for your virtual machine, you see a CD image of 
         [root@ns0 Linux]# bash install.sh
         Detected `CentOS release 5.2 (Final)' (centos version 5).
 
-        The following changes will be made to this Virtual Machine:
-        * packages to be installed/upgraded:
+        The following changes are made to this virtual machine:
+        * packages to be installed or upgraded:
         - kernel-xen-2.6.18-53.1.13.el5.xs4.1.0.24.x86_64.rpm
         - xe-guest-utilities-4.1.0-257.x86_64.rpm
 
@@ -49,17 +49,17 @@ On the console tab of XenCenter for your virtual machine, you see a CD image of 
         Preparing...########################################### [100%]
         package kernel-xen-2.6.18-92.el5 (which is newer than kernel-xen-2.6.18-53.1.13.el5.xs4.1.0.24) is already installed
 
-        You should now reboot this Virtual Machine.
+        Reboot this virtual machine.
         [root@ns0 Linux]#
 
-If you would like to copy and paste into your shell, the following lines perform all of the steps, provided that you are assigned the same device name of /dev/xvdd.
+If you would like to copy and paste into your shell, the following lines perform all of the steps, if you are assigned the same device name of /dev/xvdd.
 
         mkdir /mnt/xs-tools
         mount /dev/xvdd /mnt/xs-tools
         cd /mnt/xs-tools/Linux/
         bash install.sh
 
-In some cases, the Xen Tools ISO are mounted to /dev/cdrom.
+In some cases, the Xen Tools ISO is mounted to /dev/cdrom.
 
         mkdir /mnt/xs-tools
         mount /dev/cdrom /mnt/xs-tools

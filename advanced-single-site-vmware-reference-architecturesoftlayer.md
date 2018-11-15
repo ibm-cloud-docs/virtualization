@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-09-25"
+lastupdated: "2018-11-15"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -24,7 +24,7 @@ The capacity cluster contains the resources and infrastructure that are needed t
 
 |VLAN Type|VLAN Name|Description|                                                                             |
 |---|---|---|
-|Primary Private| Management| Assigned to manage and access the physical ESXi hosts and virtual/cloud servers.|
+|Primary Private| Management| Assigned to manage and access the physical ESXi hosts and virtual servers.|
 |Primary Private| Storage| Assigned to manage and access the shared storage that is attached to each ESXi host.|
 |Primary Private| VM Access | Assigned to virtual machines that run on each ESXi host.|
 |Primary Public | Public | Assigned to virtual machines or other devices that require access from the public network.|
@@ -34,7 +34,7 @@ For shared storage, you can use OS Nexus QuantaStor, a single-tenant shared stor
 
 The storage environment is configured to support NFS volumes.
 
-## Step 1 Ordering Primary Public and Private VLANs
+## Step 1 Ordering primary public and private VLANs
 
 **Note:** VLAN orders are subject to review and approval. No specific conditions or requirements are in place that flags a VLAN order to be auto-approved. VLAN orders can be denied for various reasons.
 
@@ -48,7 +48,7 @@ After you log in to {{site.data.keyword.cloud_notm}}, open a support ticket for 
 |---|---|
 |Subject|Private Network Question|
 |Title|Order VLANs|
-|Details|Provision three primary private VLANSs and one primary public VLAN. Associate the following addressing scheme for each VLAN:<br/><ul><li>Associate 1x18 (16 addresses) for primary private VLAN</li><li>Associate 2x29 (eight addresses) for primary private VLAN</li><li>Associate 1x29 (eight addresses) primary public VLAN</li></ul>|
+|Details|Provision three primary private VLANSs and one primary public VLAN. Associate the following addressing scheme for each VLAN: <br/><ul><li>Associate 1x18 (16 addresses) for primary private VLAN</li><li>Associate 2x29 (eight addresses) for primary private VLAN</li><li>Associate 1x29 (eight addresses) primary public VLAN</li></ul>|
 |Why do I need these additional VLANs?|To place hosts, storage, and VMs on a different network for a VMware environment.
 |Do I need public and or private VLANs?|Private and Public|
 |How many VLANs do I need?|Private = 3, Public = 1|
@@ -57,7 +57,7 @@ After you log in to {{site.data.keyword.cloud_notm}}, open a support ticket for 
 |Which pod do the VLANs need to be in?|They all go in the same pod in <DATA CENTER NAME>.|
 <caption>Table 2. Support ticket information</caption>
 
-After the VLANs are provisioned, make note of the VLAN numbers, subnet range, and gateway, and assign them to logical vSphere networks. You can use the worksheet in Appendix A: VLAN Worksheet to record the VLAN and the associated information. For example:
+After the VLANs are provisioned, make note of the VLAN numbers, subnet range, and gateway, and assign them to logical vSphere networks. You can use the worksheet in Appendix A: VLAN worksheet to record the VLAN and the associated information. For example:
 
 |VLAN Type|VLAN Number|IP Range|Gateway|Purpose|
 |---|---|---|---|---|
@@ -71,10 +71,10 @@ After the VLANs are provisioned, make note of the VLAN numbers, subnet range, an
 
 ## Step 2 Ordering portable private IP addresses
 
-In Step 2, a request is made to create portable private subnets for management VMs, VMkernels accessing storage, and VMs in the capacity cluster. You need to determine how many addresses you need for each VLAN subnet. In the representative environment, order the following addresses:
+In Step 2, a request is made to create portable private subnets for management VMs, VM kernels accessing storage, and VMs in the capacity cluster. You need to determine how many addresses you need for each VLAN subnet. In the representative environment, order the following addresses:
 
 * Management VLAN - 1x8 addresses /29 – One address for vCenter Appliance; one address for DNS and Active Directory.
-* Storage VLAN - 1x16 addresses /28 – Create two subnets on the same VLAN for storage, allowing the creation of two VMkernel ports on each ESXi hosts by using different subnets to access the shared storage devices.
+* Storage VLAN - 1x16 addresses /28 – Create two subnets on the same VLAN for storage and two VM kernel ports on each ESXi hosts by using different subnets to access the shared storage devices.
 * VM VLAN - 1x32 addresses /27 – These addresses are used to assign IPs to VMs in the capacity cluster.
 
 When you order an amount, make sure that you consider how many IPs are needed within the next 30 days and 6 months. It is also important to note that {{site.data.keyword.cloud_notm}} reserves three to four IP addresses per portable subnet block. As a result, ordering four IP address nets one IP address, or zero if the pod supports Hot Standby Router Protocol.
@@ -83,33 +83,33 @@ Use the following steps to order a block of portable IP addresses for each VLAN 
 
 1. Open a browser window and log in to {{site.data.keyword.cloud_notm}}.
 2. Select **Account > Place an Order**.
-3. In the pop-up window, go to **Network > Subnets/IPs > Order**.
+3. In the pop-up window, go to **Network > Subnets / IPs > Order**.
 4. From drop-down menu, select **Portable Private**.
 5. Select **XX Portable Private IP address** and click **Continue**. **Note:** _XX_ specifies the number of IPs.
 6. Select the VLAN to associate with IP address block and click **Continue**.
 7. Complete filling out the information on the screen and click **Continue**.
 
-Creating IP addresses is fairly quick and is displayed by selecting **Subnets** from **Network > IP Management**. You can record these IP addresses in the worksheet that is found in Appendix A: VLAN Worksheet.
+Creating IP addresses is fairly quick and is displayed by selecting **Subnets** from **Network > IP Management**. You can record these IP addresses in the worksheet that is found in Appendix A: VLAN worksheet.
 
-## Step 3 Ordering Virtual/Cloud Server
+## Step 3 Ordering a virtual server
 
-A Windows 2012 R2 Standard virtual/cloud server is provisioned to use as a utility server for ISOs and provide access to the environment in this step.
+A Windows 2012 R2 Standard virtual server is provisioned to use as a utility server for ISOs and provide access to the environment in this step.
 
 1. Open a browser window and log in to {{site.data.keyword.cloud_notm}}.
 2. Select **Account > Place an Order**.
 3. Go to **Virtual Server > Hourly or Monthly**.
-4. Select the appropriate data center (where the VLANs were created) to provision the virtual/cloud server and specify the following specifications for each option:
-  * Computing Instancev - 1x2.0 GHz Cores
-  * RAM - 4 GB
-  * Operating System - Windows Server 2012 R2 Standard Edition (64-bit)
-  * First Disk - 100 GB (SAN)
+4. Select the appropriate data center (where the VLANs were created) to provision the virtual server and specify the following specifications for each option:
+  * Computing instance - 1x2.0 GHz Cores
+  * RAM: 4 GB
+  * Operating System: Windows Server 2012 R2 Standard Edition (64-bit)
+  * First Disk: 100 GB (SAN)
   * Uplink Port Speeds - 1 Gbps Public and Private Network Uplinks
 5. Click **Continue Your Order** and select the backend and fronted VLANs on the **Order Summary and Billing** screen. **Note:** The selection of VLANs is important so the utility can be placed in the correct pod within the data center. For the example environment, the backend VLAN is the management VLAN (1101) and the front end VLAN is the public VLAN (2101)
 6. Enter a host name and domain name for the server and click **Place Order**.
 
-## Step 4 Ordering ESXi Hosts and Gateway/Firewall
+## Step 4 Ordering ESXi hosts and gateway / firewall
 
-You need to order the ESXi hosts and Brocade vRouter (Vyatta) gateway and firewall appliance while the virtual/cloud server is provisioned. Order all of these servers at the same time so they are placed in the same pod at the same time. Ordering hardware at separate times can cause hosts and firewalls to be in separate pods within an {{site.data.keyword.cloud_notm}} data center.
+You need to order the ESXi hosts and Brocade vRouter (Vyatta) gateway and firewall appliance while the virtual server is provisioned. Order all of these servers at the same time so they are placed in the same pod at the same time. Ordering hardware at separate times can cause hosts and firewalls to be in separate pods within an {{site.data.keyword.cloud_notm}} data center.
 
 ### ESXi Hosts
 
@@ -126,7 +126,7 @@ Use the following steps to order the management host servers.
 1. Open a browser window and log in to {{site.data.keyword.cloud_notm}}.
 2. Select **Account > Place an Order**.
 3. Select **Bare Metal Servers > Monthly**.
-4. Choose an appropriate server that meets the requirements for the management cluster on the server list screen. **Note:** At a minimum, ESXi 5.5 requires a single dual-core processor, 4 GB of RAM, and 1 Gb Ethernet controller. <!--Click here for more information on vSphere ESXi minimums.-->
+4. Choose an appropriate server that meets the requirements for the management cluster on the server list screen. **Note:** At a minimum, ESXi 5.5 requires a single dual-core processor, 4 GB of RAM, and 1 Gb Ethernet controller. 
 5. Select the appropriate data center (where the VLANs were created) to provision the ESXi servers and specify the following specifications for each option:
   * Quantity: 2
   * RAM: 32 GB
@@ -183,12 +183,12 @@ Make sure to change the VLANs that are designated in the <> with your actual VLA
 
 ## Step 6 Configuring management host networking
 
-After the servers are provisioned and the VLANs are trunked, you need to set up networking on the hosts in the management cluster. For this configuration, you use vSphere standard switches for the management cluster. Except for the vMotion and fault tolerance port groups, you use portable IP addresses to configure the VMkernel port groups. **Note:** You use your own IP scheme for vMotion and fault tolerance because the traffic does not need to be routed. However, all hosts need to be on the same subnet as other hosts in the cluster to use vMotion and fault tolerance capabilities. If the subnet needs to be routed, it is recommended that you use {{site.data.keyword.cloud_notm}} Portable IPs.
+After the servers are provisioned and the VLANs are trunked, you need to set up networking on the hosts in the management cluster. For this configuration, you use vSphere standard switches for the management cluster. Except for the vMotion and fault tolerance port groups, you use portable IP addresses to configure the VM kernel port groups. **Note:** You use your own IP scheme for vMotion and fault tolerance because the traffic does not need to be routed. However, all hosts need to be on the same subnet as other hosts in the cluster to use vMotion and fault tolerance capabilities. If the subnet needs to be routed, it is recommended that you use {{site.data.keyword.cloud_notm}} Portable IPs.
 
-To configure the port groups, the vSphere client must be installed on the utility virtual/cloud server or the workstation that accesses the hosts via {{site.data.keyword.cloud_notm}} management VPN.
+To configure the port groups, the vSphere client must be installed on the utility virtual server or the workstation that accesses the hosts via {{site.data.keyword.cloud_notm}} management VPN.
 
 1. Open a browser window and log in to {{site.data.keyword.cloud_notm}}.
-2. After you connect to the utility/cloud server or {{site.data.keyword.cloud_notm}} VPN, start the vSphere client.
+2. After you connect to the utility server or {{site.data.keyword.cloud_notm}} VPN, start the vSphere client.
 3. Enter the IP address, user name, and password of one of the management ESXi hosts. (You can find the root password for the ESXi host by selecting **Device Details > Passwords**.
 4. Go to **Configurations > Networking** and create or modify the following port groups on the vSphere standards switch (most likely vSwitch0).
 
@@ -212,7 +212,7 @@ Complete these steps for each host in the management cluster.
 <tr><th>Network Label</th><th>*vmPG-Management*</th></tr>
 </table>
 
-### Edit existing vmkernel port group
+### Edit existing VM kernel port group
 
 <table border="1" cellpadding="0" cellspacing="0">
 <caption>Table 6. vmkPG-Management Port Group</caption>
@@ -220,7 +220,7 @@ Complete these steps for each host in the management cluster.
 <tr><th>Network Label</th><th>*vmkPG-Management*</th></tr>
 </table>
 
-### Add vMotion VMkernel port group
+### Add vMotion VM kernel port group
 
 <table border="1" cellpadding="0" cellspacing="0">
 <caption>Table 7. vMotion Port Group</caption>
@@ -233,27 +233,27 @@ Complete these steps for each host in the management cluster.
 <tr><td>Subnet Mask</td><td>255.255.255.0</td></tr>
 </table>
 
-### Add fault tolerance VMkernel port group
+### Add fault tolerance VM kernel port group
 
 <table border="1" cellpadding="0" cellspacing="0">
 <caption>Table 8. FT Port Group</caption>
 <tbody>
-<tr><th>Connection Type</th><th>VMKernel</th></tr>
+<tr><th>Connection Type</th><th>VM Kernel</th></tr>
 <tr><td>Network Label</td><td>*vmkPG-FT*</td></tr>
 <tr><td>VLAN ID</td><td>*&lt;Storage VLAN&gt; (1102)*</td></tr>
 <tr><td>Fault Tolerance Logging</td><td>Enabled</td></tr>
-<tr><td>IP Address</td><td>*172.16.20.X/24*<br/><br/>*User-defined address that can be a different subnet if needed. Make sure the other FT addresses on each host is on the same subnet.*</td></tr>
+<tr><td>IP Address</td><td>*172.16.20.X/24*<br/><br/>*User-defined address that can be a different subnet if needed. Make sure that the other FT addresses on each host are on the same subnet.*</td></tr>
 <tr><td>Netmask</td><td>255.255.255.0</td></tr>
 </table>
 
-### Add storage VMkernel port group
+### Add storage VM kernel port group
 
-Update the **Notes** section of each Portable IP address with the name of the host and VMkernel port assigned. The **Notes** section can be located by going to the {{site.data.keyword.slportal_full}} and selecting **Network > IP Management > Subnets > [Subnet]**.
+Update the **Notes** section of each Portable IP address with the name of the host and VM kernel port assigned. The **Notes** section can be located by going to the {{site.data.keyword.slportal_full}} and selecting **Network > IP Management > Subnets > [Subnet]**.
 
 <table border="1" cellpadding="0" cellspacing="0">
 <caption>Table 9. Storage Port Group</caption>
 <tbody>
-<tr><th>Connection Type</th><th>VMKernel</th></tr>
+<tr><th>Connection Type</th><th>VM Kernel</th></tr>
 <tr><td>Network Label</td><td>*vmkPG-Storage*</td></tr>
 <tr><td>VLAN ID</td><td>*&lt;Storage VLAN&gt; (1102)*</td></tr>
 <tr><td>IP Address</td><td>*Portable Private Address*<br/><br/>*An IP address that is selected from the portable private addresses that are bound to the storage VLAN.*</td></tr>
@@ -262,21 +262,21 @@ Update the **Notes** section of each Portable IP address with the name of the ho
 
 ### Add public address port group
 
-Update the **Notes** section of each Portable IP address with the name of the host and VMkernel port assigned. The **Notes** section is in the {{site.data.keyword.slportal}} and by selecting **Network > IP Management > Subnets > [Subnet]**.
+Update the **Notes** section of each Portable IP address with the name of the host and VM kernel port assigned. The **Notes** section is in the {{site.data.keyword.slportal}} and by selecting **Network > IP Management > Subnets > [Subnet]**.
 
 <table border="1" cellpadding="0" cellspacing="0">
 <caption>Table 10. Public Port Group</caption>
 <tbody>
 <tr><th>Connection Type</th><th>Virtual Machine</th></tr>
 <tr><td>Network Label</td><td>vmPG-Public</td></tr>
-<tr><td>VLAN ID</td><td>&lt;Primary Public VLAN&gt; (e.g., 2101)</td></tr>
+<tr><td>VLAN ID</td><td>&lt;Primary Public VLAN&gt; (for example 2101)</td></tr>
 </table>
 
-## Step 7 Download/upload ISO images and vCenter Virtual Appliance
+## Step 7 Download or upload ISO images and vCenter Virtual Appliance
 
-Now, the environment is ready to deploy the VMware vCenter Virtual Appliance and install a virtual machine for DNS, Active Directory, or BIND. However, before you deploy, you need to download the images. To do download the images, remote desktop to the virtual/cloud server previously provisioned and download the appropriate images on the virtual/cloud server for your environment:
+Now, the environment is ready to deploy the VMware vCenter Virtual Appliance and install a virtual machine for DNS, Active Directory, or BIND. However, before you deploy, you need to download the images. To do download the images, remote desktop to the virtual server previously provisioned and download the appropriate images on the virtual server for your environment:
 
-* Active Directory/Windows DNS: Windows Server 2008R2/Windows Server 2012 ISO Image (Your licensed Media)
+* Active Directory / Windows DNS: Windows Server 2008R2/Windows Server 2012 ISO Image (Your licensed Media)
 * Linux BIND: [CentOS Install Image ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
 * [vCenter Virtual Appliance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (requires a valid VMware subscription)
 
@@ -306,7 +306,7 @@ For more information, see the following links:
 
 Now that DNS is configured, you can deploy and configure the vCenter Server Appliance. To deploy the appliance, follow these steps:
 
-1. Remote desktop to the virtual/cloud server and open the vSphere Client.
+1. Remote desktop to the virtual server and open the vSphere Client.
 2. Connect to a management host and select **File, Deploy OVF Template**.
 3. Follow the wizard to complete the deployment.
 
@@ -316,9 +316,9 @@ Because no Dynamic Host Configuration Protocol (DHCP) server is available to ass
 
 Follow these steps to configure the appliance:
 
-1. Log in to the console with a **Username** of 'root' and a **Password** of 'vmware'.
+1. Log in to the console with a **User name** of 'root' and a **Password** of 'vmware'.
 2. Run `/opt/vmware/share/vami/vami_config_net` and follow the text wizard to configure the IP, subnet, and DNS properties. Remember to use the IP address of the DNS or BIND server that was created in **Step 8: Deploy DNS**.
-3. Save the network settings, exit the console, and open a browser on the virtual/cloud server.
+3. Save the network settings, exit the console, and open a browser on the virtual server.
 4. Go to the IP address that you gave to the vCenter virtual appliance (VCVA) appended with port 5480<!-- (https://:5480)-->.
 5. Accept the EULA in the wizard, answer the **Customer Improvement Experience Program** question, and select **Configure Options, Set custom configuration**.
 6. Click **Next** and enter the following values:
@@ -472,10 +472,10 @@ Before you begin adding VMkernel adapters, assign the vmnics to the uplinks on t
 9. Select **dvpg-Private-VM Management** on the pop-up screen and click **OK**. 
 10. Click **Next** twice and then click **Finish** to complete the migration to the distributed virtual switch. **Note:** You might briefly lose network connectivity to the host. The connection reestablishes quickly.
 
-After you migrate the vmk0 adapter to the distributed virtual switch, you can add VMkernels to each port group in the DVS.
+After you migrate the vmk0 adapter to the distributed virtual switch, you can add VM kernels to each port group in the DVS.
 
 11. Click **Manage > Networking** on the host within vCenter.
-12. Go to **VMKernel adapters > Add host networking** and add the VMkernel adapters that are in Tables 19 and 21. To add these adapters, you migrate to the “VMKernel adapters” menu that is in the **Manage > Networking** tab on the host within vCenter. Then, click the “Add host networking” icon and add the following VMKernel adapters.
+12. Go to **VM Kernel adapters > Add host networking** and add the VM kernel adapters that are in Tables 19 and 21. To add these adapters, you migrate to the “VM Kernel adapters” menu that is in the **Manage > Networking** tab on the host within vCenter. Then, click the “Add host networking” icon and add the following VM Kernel adapters.
 
 ***Add vmk1 for vMotion***
 
@@ -483,7 +483,7 @@ After you migrate the vmk0 adapter to the distributed virtual switch, you can ad
 |---|---|---|
 |Select connection type|Select connection type|VMKernel Network Adapter|
 |Select target device|Select an existing distributed port group|dvpg-Private-vMotion|
-|Select network adapter tasks|Select network adapter tasks|Select **Manage physical adapters** and **Manage VMkernel adapters**|
+|Select network adapter tasks|Select network adapter tasks|Select **Manage physical adapters** and **Manage VM kernel adapters**|
 |Port Properties|Enable Services|Check vMotion traffic|
 |IPv4 Settings|IPv4 Address|*172.16.10.X/24*<br/><br/>*This is a user-defined address and can be a different subnet if needed. Make sure the other vMotion addresses that are on each host are on the same subnet.*|
 |IPv4 Settings|Subnet Mask|255.255.255.0|
@@ -525,7 +525,7 @@ To create a host profile, you must capture it from the single capacity host that
 After you create the host profile, you need to modify it so that it does not prompt for MAC addresses when the profile is applied to the rest of the hosts in the capacity cluster.
 
 1. Right-click the host profile that you created and select **Edit Settings > Edit Host Profile, Host virtual NIC**.
-2. In the right pane, change **Determine how MAC address for vmknic is be decided** to **User must explicitly choose the policy option**.
+2. In the right pane, change **Determine how MAC address for vmknic is decided** to **User must explicitly choose the policy option**.
 3. Click **Next** and then click **Finish**.
 
 ***Attaching host profile to capacity cluster***
@@ -539,7 +539,8 @@ Now that you created a host profile, you need to attach the host profile to the 
 5. Enter the appropriate information on the **Customize host** screen and click **Finish**.
 6. Remove the hosts from maintenance mode (non-maintenance mode). 
 
-## Step 12 Order, configure, and attach shared storage 
+## Step 12 Order, configure, and attach shared storage
+
 Before you continue, it is imperative that you order, configure, and attach shared storage for use with the management and capacity clusters and hosts within the environment. If you want to use the {{site.data.keyword.cloud_notm}} multi-tenant shared storage solution (File Storage), see [Architecture Guide for IBM File Storage for {{site.data.keyword.cloud_notm}} with VMware](../FileStorage/architecture-guide-file-storage-vmware.html).
 
 ## Step 13 Enabling HA/DRS and svMotion vCVA
@@ -567,7 +568,7 @@ The advanced single-site VMware environment is complete.
 
 You now have a VMware environment that is running in an IBM Cloud data center. Your VMware environment can run production workloads and supplementing an on-premises IBM Cloud deployment. The environment enacts VMware best practices and enables features such as VMware DRS, HA, Storage DRS, and networking redundancy. You can extend this reference architecture implementation with greater capacity or management hosts and more storage.
 
-For more information and about VMware, see:  
+For more information about VMware, see  
 
 [Deploy VMware ](../vmware/deploy-vmwaresoftlayer.html)
 

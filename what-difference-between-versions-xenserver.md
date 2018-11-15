@@ -1,20 +1,20 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-23"
+lastupdated: "2018-11-15"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Differences between versions of XenServer
 
-There is no difference between versions of XenServer that are installed on the system, but only a change in the licensing. If you want to upgrade your license to a higher class license after installation, there is no downtime to reinstall your server. Contact {{site.data.keyword.BluSoftlayer}} sales for pricing information.
+Licensing is the only difference between versions of XenServer that are installed on the system. If you want to upgrade your license to a higher class license after installation, you experience no downtime to reinstall your server. Contact {{site.data.keyword.BluSoftlayer}} sales for pricing information.
 
 **Note:** Not all available features are supported. 
 
-The following list of features are included for each of the different licenses that are offered (as of XenServer 6.0):
+The following lists of features are included for each of the different licenses that are offered (as of XenServer 6.0):
 
-**XenServer Free, Advanced, Enterprise License Features**
+**XenServer free, advanced, enterprise license features**
 
 - XenServer Hypervisor
 - Conversion Tools       
@@ -24,7 +24,7 @@ The following list of features are included for each of the different licenses t
 - XenCenter Management Console       
 - XenMotion Live Migration   
 
-**XenServer Advanced and Enterprise License Features**
+**XenServer advanced and enterprise license features**
 
 - Automated VM protection and recovery (Automated VM protection and recovery is only available for the Advanced and Enterprise editions in the 6.0 release and later.)
 - Distributed virtual switching
@@ -33,7 +33,7 @@ The following list of features are included for each of the different licenses t
 - Memory Optimization
 - Performance alerting and reporting  
 
-**XenServer Enterprise License Features**
+**XenServer Enterprise license features**
 
 - Dynamic workload balancing       
 - GPU pass-thru       
@@ -43,6 +43,6 @@ The following list of features are included for each of the different licenses t
 - Provisioning Services (virtual)       
 - Role-based administration
 - StorageLink
-- Web management console with delegatedadmin
+- Web management console with delegated admin
 
 

@@ -1,14 +1,14 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-05-18"
+lastupdated: "2018-11-15"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
 # Working with ISOs on Xenserver
 
-XenServer expects you to do little with your base operating system as possible. This includes the storage of ISO media for your systems. For more information about setting up a XenServer's ISO Library, see {{site.data.keyword.BluSoftlayer}} LockBox.
+XenServer expects you to do little with your base operating system as possible, which includes the storage of ISO media for your systems. For more information about setting up a XenServer's ISO Library, see {{site.data.keyword.BluSoftlayer}} LockBox.
 
 **Prerequisites:**
 
@@ -74,7 +74,7 @@ Now that you downloaded the ISO that you want to use to create a new VM, use tha
 
 1. From the menu bar, click **New VM...**
 
-2. Select **Other install media** <!-- should be "Other installation media. UI needs updated.--> and click **Next**.
+2. Select **Other installaltion media** and click **Next**.
 
 3. Enter an appropriate name and description for the virtual machine and click **Next**. 
 

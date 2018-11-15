@@ -1,16 +1,16 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-15"
+lastupdated: "2018-11-14"
 ---
 
-# Parallels Virtuozzo Containers 4.0 Quick Reference Guide
+# Parallels Virtuozzo Containers 4.0 quick reference guide
 
 Use this information to find Virtuozzo container utilities and common terms. 
 
 ## General utilities
 
-General utilities are intended to perform day-to-day maintenance tasks.
+General utilities are for day-to-day maintenance tasks.
   
 |General Utilities||
 |---|---|
@@ -68,7 +68,7 @@ Template management tools are used to create templates and to maintain and insta
 |vzpkgls|Utility to get a list of templates available on the hardware node and in containers.|
 |vzpkginfo|Utility to get the information on any template installed on the hardware node.|
 |vzpkgcreat| Create a new package set from binary RPM or DEB files.|
-|vzpkgadd|Utility to add a new template to a Container.|
+|vzpkgadd|Utility to add a template to a Container.|
 |vzpkglink|Utility to replace real files inside a container with symlinks to the files on the node.|
 |vzpkgrm|Utility to remove a template from a container.|
 |vzpkgcache|Update a set of preinstalled container archives after new template installation.|
@@ -76,7 +76,7 @@ Template management tools are used to create templates and to maintain and insta
 
 ## Supplementary tools
 
-Supplementary tools are used to perform various miscellaneous tasks in the hardware node and container context.
+Supplementary tools are used for miscellaneous tasks in the hardware node and container context.
 
 |Supplementary Tools||
 |---|---|
@@ -86,14 +86,14 @@ Supplementary tools are used to perform various miscellaneous tasks in the hardw
 |vzcache|Utility to gain extra disk space by caching the files identical in different containers.|
 |vzsveinstall|Utility to create the Service Container on the Hardware Node.|
 |vzsveupgrade|Utility to update the packages inside the Service Container.|
-|vzps|Utility working as the standard ps and top utilities, with container related functionality added.|
-|vztop|Utility working as the standard ps and top utilities, with Containerrelated functionality added.|
-|vzsetxinetd|Utility to switch some services between a standalone and xinetddependent modes.|
+|vzps|Utility working as the standard ps and top utilities, with container-related functions added.|
+|vztop|Utility working as the standard ps and top utilities, with container-related functions added.|
+|vzsetxinetd|Utility to switch some services between stand-alone mode and `xinetddependent` mode.|
 |vzdqcheck|Print file space current usage from quota’s point of view.|
-|vzdqdump|Utility to dump the Container user/group quota limits and grace times from the kernel or the quota file or for loading them to a quota file.|
-|vzdqload|Utility to dump the Container user/group quota limits and grace times from the kernel or the quota file or for loading them to a quota file.|
+|vzdqdump|Utility to dump the Container user or group quota limits and grace times from the kernel or the quota file or for loading them to a quota file.|
+|vzdqload|Utility to dump the Container user or group quota limits and grace times from the kernel or the quota file or for loading them to a quota file.|
 |vznetstat|Utility that prints network traffic usage statistic by containers.|
-|vzcpucheck|Utility for checking CPU utilization by containers.|
+|vzcpucheck|Utility for checking CPU usage by containers.|
 |vzmemcheck|Utility for checking the hardware node and container current memory parameters.|
 |vzcalc|Utility to calculate resource usage by a container.|
 |vzcheckovr|Utility to check the current system overcommitment and safety of the total resource control settings.|
@@ -103,9 +103,9 @@ Supplementary tools are used to perform various miscellaneous tasks in the hardw
 |vzcfgscale|Utility to scale the container configuration.|
 |vzcfgvalidate|Utility to validate container configuration file correctness.|
 |vzcfgconvert|Utility to convert Virtuozzo 2.0.2 container configuration files to Virtuozzo 2.5.x format.|
-|vzstatrep|Utility to analyze the logs collected by vzlmond and to generate statistics reports on the basis of these logs (in the text and graphical form).|
+|vzstatrep|Utility to analyze the logs that are collected by vzlmond and to generate statistics reports based on these logs (in the text and graphical form).|
 |vzreport|Utility to draw up a problem report and to automatically send it to the Parallels support team.|
-|vzhwcalc|Utility to scan the main resources on any Linux server and create a file where this information will be specified.|
+|vzhwcalc|Utility to scan the main resources on any Linux server and create a file where this information is specified.|
 |vzveconvert|Utility to convert the containers based on Virtuozzo standard OS templates to the EZ template-based ones.|
 |vznetcfg|Utility to manage network devices on the hardware node.|
 |vzmtemplate|Utility to migrate the installed OS and application templates from the one hardware node to another.|
@@ -116,11 +116,11 @@ Supplementary tools are used to perform various miscellaneous tasks in the hardw
 |Common terms||
 |---|---|
 |Hardware Node|Hardware node (or HN) is a physical computer that hosts containers.|
-|Container|Container is functionally identical to an isolated standalone server with its own IP addresses, processes, files, users, its own version, its own configuration files, its own applications, system libraries, and so on. Containers share the same hardware node and the same OS kernel. However, they are isolated from each other. Each container has a unique numerical ID starting with 1.|
-|Host Operating System|Host operating system (or Host) is an operating system installed on the hardware node. It is also called container 0, in contrast to real containers that have IDs that start with 1.|
-|Template|Template (or package set) is a set of original application files repackaged for mounting over Virtuozzo File System (VZFS).  There are two types of templates in Virtuozzo: OS templates which can be used to create new containers on their basis and application templates which can be added to containers after their creation.|
-|PIM|Parallels Infrastructure Manager (or PIM) is a Web-based management tool designed for Host administrators.|
-|PMC|Parallels Management Console (or PMC) is a remote management tool with a graphical user interface designed for Host administrators.|
-|PPP|Parallels Power Panel is a Web-based management tool designed for Container owners.|
+|Container|Container is functionally identical to an isolated stand-alone server with its own IP addresses, processes, files, users, its own version, its own configuration files, its own applications, system libraries, and other server functions. Containers share hardware nodes and the same OS kernel, but they are isolated from each other. Each container has a unique numerical ID starting with 1.|
+|Host Operating System|Host operating system (or Host) is an operating system that is installed on the hardware node. It is also called container 0, in contrast to real containers that have IDs that start with 1.|
+|Template|Template (or package set) is a set of original application files that are repackaged for mounting over Virtuozzo File System (VZFS). Two types of templates are available in Virtuozzo: OS templates that can be used to create new containers on their basis and application templates that can be added to containers after their creation.|
+|PIM|Parallels Infrastructure Manager (or PIM) is a web-based management tool that is designed for Host administrators.|
+|PMC|Parallels Management Console (or PMC) is a remote management tool with a graphical user interface that is designed for Host administrators.|
+|PPP|Parallels Power Panel is a web-based management tool that is designed for Container owners.|
 {: caption="Table 7. Common terms" caption-side="top"}
 

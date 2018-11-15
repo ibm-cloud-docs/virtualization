@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-23"
+lastupdated: "2018-11-15"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -10,7 +10,7 @@ lastupdated: "2018-01-23"
 
 Network configuration on your new virtual machine is done in a few steps. You need a separate portable IP block for both the public and private network. It is assumed that you are using a virtualization offering that requires secondary on VLAN broadcast domain and not routed to VLAN (without network id/gateway/broadcast) subnet. If you do not plan to use the Private network on your virtual machine, you need only the Public subnet. Portable IP blocks can be ordered directly through the portal at [Sales->Add IP Addresses ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Sales/orderAdditionalServices/subnet){: new_window} or from the [Public Network IP Manager ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/PublicNetwork/ipManager){: new_window}.
 
-After you obtain your IP blocks, you can configure networking on the virtual machine. If the virtual machine is not installed, you can configure your public network block through the Operating System installation process. This process is the quickest method to configure your public network. <!--If you have installed the guest Operating System, this guide does also provide instructions for configuring your public network.--> All network configuration steps assume that the first network interface (eth0 or Local Area Connection) is the private network and the second network interface (eth1 or Local Area Connection 2) is the public network.
+After you obtain your IP blocks, you can configure networking on the virtual machine. If the virtual machine is not installed, you can configure your public network block through the Operating System installation process. This process is the quickest method to configure your public network. All network configuration steps assume that the first network interface is the private network and the second network interface is the public network.
 
 Configuring your network is different for each OS. You can find detailed information on configuring your network for the following Operating Systems. **Note:** Operating Systems that are grouped have the same network configuration.
 
@@ -39,13 +39,13 @@ Windows 2008 Server Core edition does not provide a graphical interface to confi
 
 **Example public IP block – 192.0.2.0/29**
 
-* IP Address – 192.0.2.2
+* IP address – 192.0.2.2
 * Gateway – 192.0.2.1
 * Subnet Mask – 255.255.255.248
 
 **Example private IP block – 10.0.0.0/29**
 
-* IP Address – 10.0.0.2
+* IP address – 10.0.0.2
 * Gateway – 10.0.0.1
 * Subnet Mask – 255.255.255.248
 
@@ -62,10 +62,10 @@ These commands create the DNS entries. If you are not using the private network,
 
 **Private Network**
 
-The following two commands configure the private network and create the persistent route for the private network. The persistent route provides your private network access to the entire private network. Access includes the DNS servers in the public network configuration. **Note:** No gateway is assigned to the private network. This is handled through the following route statemen.
+The following two commands configure the private network and create the persistent route for the private network. The persistent route provides your private network access to the entire private network. Access includes the DNS servers in the public network configuration. **Note:** No gateway is assigned to the private network.
 
-* *Netsh interface IP set address name=”Local Area Connection” static 10.0.0.2 255.255.255.248*
-* *Route add 10.0.0.0 mask 255.0.0.0 10.0.0.1 -p*
+* `Netsh interface IP set address name=”Local Area Connection” static 10.0.0.2 255.255.255.248`
+* `Route add 10.0.0.0 mask 255.0.0.0 10.0.0.1 -p`
 
 ## Windows 2003 Standard and Enterprise
 
@@ -73,7 +73,7 @@ You can use Windows 2003 to configure networking by using either the command lin
 
 **Example private IP block – 10.0.0.0/29**
 
-* IP Address – 10.0.0.2
+* IP address – 10.0.0.2
 * Gateway – 10.0.0.1
 * Subnet Mask – 255.255.255.248
 
@@ -101,19 +101,19 @@ Use the following instructions to configure the public network through the windo
 2. Go to **General > Use the following IP address:** and enter your private IP address and subnet mask. Leave the gateway field empty and click **OK**
 3. Click **OK** again to close the network configuration window.
 
-To provide access to the entire private network which includes the DNS servers, you need to add a custom route to the server. Following these steps to provide private network access: 
+To provide access to the entire private network that includes the DNS servers, you need to add a custom route to the server. Following these steps to provide private network access: 
 
 1. Go to **Start > Run** and enter *cmd* and press **OK**.
 2. Run the following command: **Note:** Make sure that you replace the gateway address (10.0.0.1) with your private IP block gateway.<br/>
 *“route add 10.0.0.0 mask 255.0.0.0 10.0.0.1 –p”*
 
-## Windows 2008 Web, Standard, Enterprise and Datacenter
+## Windows 2008 Web, Standard, Enterprise, and Datacenter
 
 If you have Windows 2008, you configure networking by using either the command prompt or the graphical user interface. If you intend to use the command prompt, refer to the configuration instructions for Windows 2008 Server Core. These instructions work for all 2008 servers. The instructions for using the graphical interface are provided here. The IP addresses that are used in this example need to be replaced with the IP addresses from your IP Blocks.
 
 **Example private IP block – 10.0.0.0/29**
 
-* IP Address – 10.0.0.2
+* IP address – 10.0.0.2
 * Gateway – 10.0.0.1
 * Subnet Mask – 255.255.255.248
 
@@ -121,11 +121,11 @@ If you have Windows 2008, you configure networking by using either the command p
 
 1. Go to **Start Menu > Settings > Control Panel**
 2. Open **Network and Sharing Center** and click **Manage network connections**
-* If you installed two network adaptors, you see “Local Area Connection” and “Local Area Connection 2”.
+* If you installed two network adapters, you see “Local Area Connection” and “Local Area Connection 2”.
 
 **Public Network**
 
-The following instructions will provide detailed steps on configuring the public network through the windows graphical interface.
+The following instructions provide detailed steps on configuring the public network through the windows graphical interface.
 
 1. Right-click **Local Area Connection > Properties**.
 2. Select **Internet Protocol Version 4 (TCP/IPv4) Properties**.
@@ -147,19 +147,19 @@ To provide access to the entire private network which includes the DNS servers, 
 2. Run the following command: **Note:** Replace the gateway address (_10.0.0.1_) with your private IP block gateway.
   * `route add 10.0.0.0 mask 255.0.0.0 10.0.0.1 –p`
 
-## RedHat, Fedora and CentOS
+## RedHat, Fedora, and CentOS
 
 Configuring the network on RedHat, Fedora and CentOS is done by manually editing configuration files. To manually edit the files, you need to log in to the virtual machine.
 
 **Example public IP block – 192.0.2.0/29**
 
-* IP Address – 192.0.2.2
+* IP address – 192.0.2.2
 * Gateway – 192.0.2.1
 * Subnet Mask – 255.255.255.248
 
 **Example private IP block – 10.0.0.0/29**
 
-* IP Address – 10.0.0.2
+* IP address – 10.0.0.2
 * Gateway – 10.0.0.1
 * Subnet Mask – 255.255.255.248
 
@@ -188,7 +188,7 @@ The private network settings are in the following file. You need to edit this fi
       NETMASK=255.255.255.248
       ONBOOT=yes
 
-Finally, a new route is required to provide private access to the entire private network to include the DNS server, which is done by editing the following file. This fill does not exist, so it needs to be created. **NOTE:** Replace "10.0.0.1" in the example with your private subnet IP gateway. <!--This gateway is defined in the IBM Cloud control panel in your Private Network.-->
+Finally, a new route is required to provide private access to the entire private network to include the DNS server, which is done by editing the following file. This fill does not exist, so it needs to be created. **NOTE:** Replace "10.0.0.1" in the example with your private subnet IP gateway.
 
 * /etc/sysconfig/network-scripts/route-eth0
       10.0.0.0/8 via 10.0.0.1
@@ -203,7 +203,7 @@ The primary and secondary DNS configurations are contained in a separate file. Y
 
 For these changes to take effect, you need to restart networking on the server. You can restart networking by running the following command:
 
-* service network restart
+* `service network restart`
 
 ## Ubuntu and Debian
 
@@ -211,13 +211,13 @@ You configure Ubuntu and Debian networks through a single configuration file. Yo
 
 **Example public IP block – 192.0.2.0/29**
 
-* IP Address – 192.0.2.2
+* IP address – 192.0.2.2
 * Gateway – 192.0.2.1
 * Subnet Mask – 255.255.255.248
 
 **Example private IP block – 10.0.0.0/29**
 
-·IP Address – 10.0.0.2
+·IP address – 10.0.0.2
 ·Gateway – 10.0.0.1
 ·Subnet Mask – 255.255.255.248
 
@@ -255,4 +255,4 @@ For these changes to take effect, you want to restart networking on the server. 
 
 * */etc/init.d/network restart*
 
-**Note:** 192.0.2.0/24 is used as Public IP Documentation as per RFC1166 and RFC5737.  You do not use these IP addresses on your servers.
+**Note:** 192.0.2.0/24 is used as Public IP Documentation per RFC1166 and RFC5737. You do not use these IP addresses on your servers.

@@ -1,12 +1,12 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Virtualization" audience="compute" href="/docs/infrastructure/virtualization/virt_index.html"}
+{: .toc subcollection="Virtualization" audience="compute" href="/docs/infrastructure/virtualization/virt_index.html" path="infrastructure/virtualization"}
 Virtualization
 
     {: .navgroup id="learn"}
     virt_index.md
-    
+
     {: .topicgroup}
     Virtuozzo
         what-virtuozzo.md

@@ -30,7 +30,7 @@ The capacity cluster contains the resources and infrastructure that are needed t
 |Primary Public | Public | Assigned to virtual machines or other devices that require access from the public network.|
 <caption>Table 1. Primary VLANs</caption>
 
-For shared storage, you can use OS Nexus QuantaStor, a single-tenant shared storage server, or {{site.data.keyword.cloud_notm}} Endurance or Performance storage services. In either case, the shared storage device is used to store the VMs on both the management and capacity clusters. For more information about storage options, see [{{site.data.keyword.cloud_notm}} Storage solutions ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.softlayer.com/cloud-storage){: new_window}.
+For shared storage, you can use OS Nexus QuantaStor, a single-tenant shared storage server, or {{site.data.keyword.cloud_notm}} Endurance or Performance storage services. In either case, the shared storage device is used to store the VMs on both the management and capacity clusters. For more information about storage options, see [{{site.data.keyword.cloud_notm}} Storage solutions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/storage){: new_window}.
 
 The storage environment is configured to support NFS volumes.
 
@@ -300,7 +300,7 @@ Although it is beyond the scope of this document to detail the steps that are ne
 
 For more information, see the following links:
 * [Windows DNS and Active Directory ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: new_window}.
-* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.
+<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
 
 ## Step 9 Deploying and configuring vCenter Virtual Appliance
 

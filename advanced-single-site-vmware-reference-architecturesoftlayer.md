@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-15"
+  years: 2014, 2019
+lastupdated: "2019-01-15"
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
@@ -13,7 +13,7 @@ Use the following steps to create an advanced single-site vSphere environment. T
 
 The reference architecture is intended for provisioning an environment that uses shared storage, VMware High Availability (HA) and vSphere Distributed Resource Scheduler (DRS), and an {{site.data.keyword.cloud_notm}} gateway or firewall. Advanced single-site VMware reference architecture is suitable for most production deployments that can be scaled as workload dictates and can replace an on-premises implementation or extend into a hybrid IT scenario.
 
-## Environment Overview
+## Environment overview
 
 The advanced representative VMware environment that is outlined, consists of one data center that manages two separate clusters: management and capacity. The configuration can be set up by using a single four node cluster that depending on requirements. The management cluster contains the following virtual machines (VMs) that are used for managing the infrastructure:
 
@@ -71,13 +71,13 @@ After the VLANs are provisioned, make note of the VLAN numbers, subnet range, an
 
 ## Step 2 Ordering portable private IP addresses
 
-In Step 2, a request is made to create portable private subnets for management VMs, VM kernels accessing storage, and VMs in the capacity cluster. You need to determine how many addresses you need for each VLAN subnet. In the representative environment, order the following addresses:
+In Step 2, a request is made to create portable private subnets for management VMs, VM kernel storage access, and VMs in the capacity cluster. You need to determine how many addresses you need for each VLAN subnet. In the representative environment, order the following addresses:
 
 * Management VLAN - 1x8 addresses /29 – One address for vCenter Appliance; one address for DNS and Active Directory.
 * Storage VLAN - 1x16 addresses /28 – Create two subnets on the same VLAN for storage and two VM kernel ports on each ESXi hosts by using different subnets to access the shared storage devices.
-* VM VLAN - 1x32 addresses /27 – These addresses are used to assign IPs to VMs in the capacity cluster.
+* VM VLAN - 1x32 addresses /27 – These addresses are used to assign IP addresses to VMs in the capacity cluster.
 
-When you order an amount, make sure that you consider how many IPs are needed within the next 30 days and 6 months. It is also important to note that {{site.data.keyword.cloud_notm}} reserves three to four IP addresses per portable subnet block. As a result, ordering four IP address nets one IP address, or zero if the pod supports Hot Standby Router Protocol.
+When you order an amount, make sure that you consider how many IP addresses are needed within the next 30 days and 6 months. It is also important to note that {{site.data.keyword.cloud_notm}} reserves three to four IP addresses per portable subnet block. As a result, ordering four IP address nets one IP address, or zero if the pod supports Hot Standby Router Protocol.
 
 Use the following steps to order a block of portable IP addresses for each VLAN for each subnet that you want to create:
 
@@ -85,7 +85,7 @@ Use the following steps to order a block of portable IP addresses for each VLAN 
 2. Select **Account > Place an Order**.
 3. In the pop-up window, go to **Network > Subnets / IPs > Order**.
 4. From drop-down menu, select **Portable Private**.
-5. Select **XX Portable Private IP address** and click **Continue**. **Note:** _XX_ specifies the number of IPs.
+5. Select **XX Portable Private IP address** and click **Continue**. **Note:** _XX_ specifies the number of IP addresses.
 6. Select the VLAN to associate with IP address block and click **Continue**.
 7. Complete filling out the information on the screen and click **Continue**.
 
@@ -104,7 +104,7 @@ A Windows 2012 R2 Standard virtual server is provisioned to use as a utility ser
   * Operating System: Windows Server 2012 R2 Standard Edition (64-bit)
   * First Disk: 100 GB (SAN)
   * Uplink Port Speeds - 1 Gbps Public and Private Network Uplinks
-5. Click **Continue Your Order** and select the backend and fronted VLANs on the **Order Summary and Billing** screen. **Note:** The selection of VLANs is important so the utility can be placed in the correct pod within the data center. For the example environment, the backend VLAN is the management VLAN (1101) and the front end VLAN is the public VLAN (2101)
+5. Click **Continue Your Order** and select the backend and fronted VLANs on the **Order Summary and Billing** screen. **Note:** The selection of VLANs is important so the utility can be placed in the correct pod within the data center. For the example environment, the backend VLAN is the management VLAN (1101) and the front-end VLAN is the public VLAN (2101)
 6. Enter a host name and domain name for the server and click **Place Order**.
 
 ## Step 4 Ordering ESXi hosts and gateway / firewall
@@ -139,13 +139,13 @@ Use the following steps to order the management host servers.
 
 ### Ordering capacity hosts
 
-1. Choose an appropriate server that meets the requirements for the capacity cluster hosts on the server list screen. **Note:** At a minimum, ESXi 5.5 requires a single dual-core processor, 4 GB of RAM, and 1 Gb Ethernet controller. <!--Click here for more information on vSphere ESXi minimums.)-->
+1. Choose an appropriate server that meets the requirements for the capacity cluster hosts on the server list screen. **Note:** At a minimum, ESXi 5.5 requires a single dual-core processor, 4 GB of RAM, and one 1 GB Ethernet controller. 
 2. Select the appropriate data center (where the VLANs were created) to provision the ESXi servers and specify the following specifications for each option:
   * Quantity: 3
   * RAM: 128 GB
   * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](../vmware/installing-vmware-vsphere-esxi-remote-console-and-virtual-media.html))
   * Hard disk: Disks 1 & 2: 500 GB SATA in RAID 1
-  * Public Bandwidth: Private Network Only-> 0 GB bandwidth
+  * Public Bandwidth: Private Network Only > 0 GB bandwidth
   * Uplink Port Speeds: 10 Gbps Redundant Private Network Uplinks
 3. Click **Continue Your Order**.
 
@@ -183,7 +183,7 @@ Make sure to change the VLANs that are designated in the <> with your actual VLA
 
 ## Step 6 Configuring management host networking
 
-After the servers are provisioned and the VLANs are trunked, you need to set up networking on the hosts in the management cluster. For this configuration, you use vSphere standard switches for the management cluster. Except for the vMotion and fault tolerance port groups, you use portable IP addresses to configure the VM kernel port groups. **Note:** You use your own IP scheme for vMotion and fault tolerance because the traffic does not need to be routed. However, all hosts need to be on the same subnet as other hosts in the cluster to use vMotion and fault tolerance capabilities. If the subnet needs to be routed, it is recommended that you use {{site.data.keyword.cloud_notm}} Portable IPs.
+After the servers are provisioned and the VLANs are trunked, you need to set up networking on the hosts in the management cluster. For this configuration, you use vSphere standard switches for the management cluster. Except for the vMotion and fault tolerance port groups, you use portable IP addresses to configure the VM kernel port groups. **Note:** You use your own IP scheme for vMotion and fault tolerance because the traffic does not need to be routed. However, all hosts need to be on the same subnet as other hosts in the cluster to use vMotion and fault tolerance capabilities. If the subnet needs to be routed, it is recommended that you use {{site.data.keyword.cloud_notm}} Portable IP addresses.
 
 To configure the port groups, the vSphere client must be installed on the utility virtual server or the workstation that accesses the hosts via {{site.data.keyword.cloud_notm}} management VPN.
 
@@ -346,7 +346,7 @@ Now that VCVA is configured and licensed, you can create the data center and clu
 
 You can now add the management and capacity hosts to the Management and Capacity clusters, by using **Add a host**. Be sure to use the fully qualified domain name (FQDN) of the server rather than the IP address so that DNS is used when each host is added.
 
-After you add the ESXi hosts to vCenter, you might notice a couple of warnings messages about the enablement of the shell and SSH on each ESXi host. To suppress these warnings, click **Suppress Warning > Yes** on the pop-up screen. If the Suppress Warnings link is not present, follow these steps:
+After you add the ESXi hosts to vCenter, you might notice a couple of warnings messages about the enablement of the shell and SSH on each ESXi host. To suppress these warnings, click **Suppress Warning > Yes** on the pop-up window. If the Suppress Warnings link is not present, follow these steps:
 
 1. Go to the ESXi host **Manage** tab.
 2. Select the **Settings** and click **Advanced System Settings**.
@@ -362,7 +362,7 @@ After the management and capacity hosts are added to their respective clusters, 
 For NTP settings:
 
 1. Go to **Manage, Settings, Time Configuration**.
-* Enter `servertime.service.softlayer.com` as the NTP server. <!-- is this current?-->
+* Enter `servertime.service.softlayer.com` as the NTP server. 
 * Set the **NTP Service Startup Policy** to `Start and stop with host`.
 
 ***Creating a distributed virtual switch for the capacity hosts***
@@ -469,7 +469,7 @@ Before you begin adding VMkernel adapters, assign the vmnics to the uplinks on t
 6. Select `uplink1` on the pop-up screen and click **OK**.
 7. Repeat these steps for the other private vmnic and assign it to `uplink2`.
 8. Click **Next**, highlight the vmk0 VMkernel adapter, and click **Assign port group**.
-9. Select **dvpg-Private-VM Management** on the pop-up screen and click **OK**. 
+9. Select **dvpg-Private-VM Management** on the pop-up window and click **OK**. 
 10. Click **Next** twice and then click **Finish** to complete the migration to the distributed virtual switch. **Note:** You might briefly lose network connectivity to the host. The connection reestablishes quickly.
 
 After you migrate the vmk0 adapter to the distributed virtual switch, you can add VM kernels to each port group in the DVS.
@@ -517,7 +517,7 @@ After you migrate the vmk0 adapter to the distributed virtual switch, you can ad
 To create a host profile, you must capture it from the single capacity host that you previously configured.
 
 1. Go to the vSphere Web Client home screen click the **Host Profiles** icon.
-2. Click the green plus (+) sign, **Extract profile from a host**, and select the previously configured capacity host on the pop-up screen.
+2. Click the green plus (+) sign, **Extract profile from a host**, and select the previously configured capacity host on the pop-up window.
 3. Click **Next**.
 4. Give the host profile (Capacity01 Host Profile) an appropriate name, enter a description, and click **Next**.
 5. Review the settings and click **Finish**.
@@ -547,7 +547,7 @@ Before you continue, it is imperative that you order, configure, and attach shar
 
 ***Enabling HA/DRS on management and capacity clusters***
 
-Now that shared storage is set up, you need to enable HA and DRS to provide extra protection and load balancing capabilities to the VMs on the management cluster.
+Now that shared storage is set up, you need to enable HA and DRS to provide extra protection and load-balancing capabilities to the VMs on the management cluster.
 
 1. Go to the vSphere web client.
 * Select Manage, Settings for the management cluster.
@@ -568,11 +568,7 @@ The advanced single-site VMware environment is complete.
 
 You now have a VMware environment that is running in an IBM Cloud data center. Your VMware environment can run production workloads and supplementing an on-premises IBM Cloud deployment. The environment enacts VMware best practices and enables features such as VMware DRS, HA, Storage DRS, and networking redundancy. You can extend this reference architecture implementation with greater capacity or management hosts and more storage.
 
-For more information about VMware, see  
-
-[Deploy VMware ](../vmware/deploy-vmwaresoftlayer.html)
-
-[VMware FAQ](../vmware/vmware-faq.html)
+For more information about VMware, see [Deploy VMware](../vmware/deploy-vmwaresoftlayer.html) and [VMware FAQ](../vmware/vmware-faq.html) 
 
 ## Appendix A: VLAN Worksheet
 

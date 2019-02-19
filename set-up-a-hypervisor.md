@@ -28,7 +28,7 @@ Use the following steps to set up a hypervisor.
     * Portable private IPs
     * Static route that relates to the 10.0.0.0/8 network range
 
-For more information about the VM routing process, see [Setting up a virtual machine network](virtual-machine-network-setup.html). Machines that are on the same VLAN can communicate after you set up the VM network. [Enable VLAN spanning](/docs/infrastructure/vlans/vlan-spanning.html) if machines that are on different VLANs must communicate.
+For more information about the VM routing process, see [Setting up a virtual machine network](/docs/infrastructure/virtualization/virtual-machine-network-setup.html). Machines that are on the same VLAN can communicate after you set up the VM network. [Enable VLAN spanning](/docs/infrastructure/vlans/vlan-spanning.html) if machines that are on different VLANs must communicate.
 
 ## Access and securely store ISOs
 

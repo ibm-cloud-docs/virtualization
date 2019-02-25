@@ -22,13 +22,13 @@ Use the following steps to set up a hypervisor.
 
 4. Obtain portable IPs for your virtual machines.
     * VMs require portable IP addresses. Blocks of public and private portable IPs can be ordered through the {{site.data.keyword.slportal}}.
-    * For more information about allocating IP addresses, see [Getting started with subnets and IPs](/docs/infrastructure/subnets/getting-started.html).
+    * For more information about allocating IP addresses, see [Getting started with subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
 
 5. Establish routing for VMs on the Private Network. VMs need the following specifications in order to route to other VMs over the Private Network:
     * Portable private IPs
     * Static route that relates to the 10.0.0.0/8 network range
 
-For more information about the VM routing process, see [Setting up a virtual machine network](/docs/infrastructure/virtualization/virtual-machine-network-setup.html). Machines that are on the same VLAN can communicate after you set up the VM network. [Enable VLAN spanning](/docs/infrastructure/vlans/vlan-spanning.html) if machines that are on different VLANs must communicate.
+For more information about the VM routing process, see [Setting up a virtual machine network](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network). Machines that are on the same VLAN can communicate after you set up the VM network. [Enable VLAN spanning](/docs/infrastructure/vlans?topic=vlans-vlan-spanning) if machines that are on different VLANs must communicate.
 
 ## Access and securely store ISOs
 

@@ -69,7 +69,7 @@ No. The secondary IP that was provided with your server is routed specifically t
 
 ## What are portable IP addresses?
 
-For information about portable IP addresses, see [Getting started with Subnets and IPs](/docs/infrastructure/subnets/getting-started.html).
+For information about portable IP addresses, see [Getting started with Subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
 
 ## How do I order Hyper-V?
 
@@ -81,7 +81,7 @@ Hyper-V is not preinstalled on Windows 2008 servers. If you want to install Hype
 
 ## The OS Reload for Hyper-V is done. What's next?
 
-Hyper-V needs to be set up. For more information about setting up Hyper-V, see [Setting up Hyper-V](/docs/infrastructure/virtualization/hyper-v-setup.html).
+Hyper-V needs to be set up. For more information about setting up Hyper-V, see [Setting up Hyper-V](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-hyper-v).
 
 ## A virtual machine does not start. “Cannot initialize machine remoting system: Error:'Unspecified error'” How do I resolve this issue?
 

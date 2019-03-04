@@ -2,6 +2,8 @@
 copyright:
   years: 2014, 2018
 lastupdated: "2018-11-14"
+
+subcollection: virtualization
 ---
 
 # Parallels Virtuozzo Containers 4.0 quick reference guide

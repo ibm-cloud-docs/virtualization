@@ -2,6 +2,8 @@
 copyright:
   years: 2014, 2018
 lastupdated: "2018-01-24"
+
+subcollection: virtualization
 ---
 
 {:shortdesc: .shortdesc}

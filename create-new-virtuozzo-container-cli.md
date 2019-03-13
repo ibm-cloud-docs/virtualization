@@ -9,8 +9,10 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Creating a new Virtuozzo container (CLI)
+{: #creating-a-new-virtuozzo-container-cli-}
 
 ## How to create a new Virtuozzo container (CLI)
+{: #how-to-create-a-new-virtuozzo-container-cli-}
 
 Complete the following steps to create a new container on a Virtuozzo server.
 
@@ -52,7 +54,7 @@ Complete the following steps to create a new container on a Virtuozzo server.
 
 After you create a container, the VZ is in the stopped state. If you are not sure what packages are installed, you can use the `vzpkgls` command. This command shows you a list of installed Virtuozzo OS and application packages that are on the server. For the example, a RedHat template is used, but Virtuozzo supports several different operating systems: RedHat, CentOS, Debian, Fedora Core, and SUSE.
 
-3. Review the default configuration for the container and make necessary changes. 
+3. Review the default configuration for the container and make necessary changes.
 
         [root@vztrain01 ~]# less /vz/private/122/ve.conf
 
@@ -61,7 +63,7 @@ After you create a container, the VZ is in the stopped state. If you are not sur
         [root@vztrain01 ~]# vzctl start 122
 
         Starting Container ...
-  
+
         Container is mounted
 
         Setup slm memory limit

@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Managing multiple Virtuozzo hardware nodes through a single interface
+{: #managing-multiple-virtuozzo-hardware-nodes-through-a-single-interface}
 
 Managing multiple nodes is done through the PIM interface. You use PIM to have a master server with multiple slaves. A slave is managed by only a single master. It cannot be a part of alternative groups that are managed by a separate master.
 

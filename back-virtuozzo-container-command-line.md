@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Backing up a Virtuozzo container in the command line
+{: #backing-up-a-virtuozzo-container-in-the-command-line}
 
 Use the following steps to back up a container on a Virtuozzo server.
 
@@ -70,8 +71,8 @@ Use the following steps to back up a container on a Virtuozzo server.
 
         Backup operation for node 'virtuozzo01.softlayer.local' was finished successfully.
 
-Two things to note about the preceding command: 
-1. You must log in and run the backup command on the “destination” server (the server that you want the backup to be on). After you run the command, a request for the container ID from the original hardware node is made. 
+Two things to note about the preceding command:
+1. You must log in and run the backup command on the “destination” server (the server that you want the backup to be on). After you run the command, a request for the container ID from the original hardware node is made.
 2. The option `-e` is used to designate a single container. Without this option, the command backs up all containers on the host server to the new location.
 
         [root@virtuozzo00 vz]# vzabackup virtuozzo01.softlayer.local

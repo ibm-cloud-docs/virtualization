@@ -10,13 +10,14 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Connecting to XenServer over a public interface
+{: #connecting-to-xenserver-over-a-public-interface}
 
 By default the {{site.data.keyword.BluSoftlayer}} installation of XenServer is configured to use the private network interface for all management connections. If you have connection issues on the private network, open a support ticket.
 
 Changing this configuration is a security risk and is not advised.
 {:tip}
 
-If you want to reconfigure XenServer to use the public interface, run the following commands as root from the host (host cannot not be pooled!). 
+If you want to reconfigure XenServer to use the public interface, run the following commands as root from the host (host cannot not be pooled!).
 
 1. `xe pif-list`
 

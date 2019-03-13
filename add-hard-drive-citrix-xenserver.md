@@ -10,12 +10,14 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Adding a hard disk drive to Citrix XenServer
+{: #adding-a-hard-disk-drive-to-citrix-xenserver}
 
 Adding new hard disk drive in XenServer is different from the traditional Linux process. For XenServer, you need to create a container that is called a "storage repository" to define a particular storage target (such as a hard disk). This container is where virtual disk images (VDIs) of VMs are stored. A VDI is an abstracted storage space that acts as the hard disk for VMs.
 
 Xen storage repository supports IDE, SATA, SCSI, and SAS drives when locally connected, apart from iSCSI, NFS, SAS, and Fibre Channel for remote storage.
 
 ## Creating a storage repository in a XenServer
+{: #creating-a-storage-repository-in-a-xenserver}
 
 1. SSH to the XenServer as root.
 
@@ -46,6 +48,7 @@ Xen storage repository supports IDE, SATA, SCSI, and SAS drives when locally con
   `# xe sr-create content-type=user device-config:device=/dev/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`
 
 ## Verifying the Storage Repository in XenCenter
+{: #verifying-the-storage-repository-in-xencenter}
 
 You can verify the Storage Repository from XenCenter by following these steps:
 

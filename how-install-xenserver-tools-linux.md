@@ -11,6 +11,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Installing XenServer tools when using Linux
+{: #installing-xenserver-tools-when-using-linux}
 
 Follow these steps to install XenServer Tools on your virtual machines that use CentOS, Debian, and RedHat operating systems.
 
@@ -19,11 +20,11 @@ These steps are specifically for customer-managed XenServers, not {{site.data.ke
 
 1. Open XenCenter and establish a connection to your XenServer. See the example of a new virtual machine that does not have XenServer Tools set up. You can see that for **"Virtualization State:"**, the software says, "Tools not installed".
 
-2. Right-click on the name of the virtual machine that you want to install XenServer Tools and then click **Install XenServer Tools**. A warning appears stating that, "Any CD or DVD currently in the virtual machine's CD drive ejected when xenServer Tools are installed." 
+2. Right-click on the name of the virtual machine that you want to install XenServer Tools and then click **Install XenServer Tools**. A warning appears stating that, "Any CD or DVD currently in the virtual machine's CD drive ejected when xenServer Tools are installed."
 
 3. Click **Install XenServer Tools** to continue.
 
-On the console tab of XenCenter for your virtual machine, you see a CD image of "xs-tools.iso" that is loaded into the DVD drive. It also provides you with the device name within the system. 
+On the console tab of XenCenter for your virtual machine, you see a CD image of "xs-tools.iso" that is loaded into the DVD drive. It also provides you with the device name within the system.
 
 4. You can do the following steps through either the console or through an SSH session to the system. By following this example, the installation uses SSH. **Note:** The drive device name is provided by XenCenter.
 
@@ -71,4 +72,3 @@ In some cases, the Xen Tools ISO is mounted to /dev/cdrom.
 5. Restart your system from the command line and you can see that XenServer Tools are installed.
 
 6. Now XenCenter has more control of the operating system within the virtual machine, and you can view the previously unavailable counters in the **Performance** tab of XenCenter.
-

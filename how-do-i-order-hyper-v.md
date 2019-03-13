@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Ordering Hyper-V
+{: #ordering-hyper-v}
 
 If you have an existing server, you can install Hyper-V on a server by initiating an OS reload and by changing the operating system to `Windows 2008 Server Datacenter Edition with Hyper-V`.
 

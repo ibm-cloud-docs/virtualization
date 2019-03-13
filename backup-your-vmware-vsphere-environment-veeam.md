@@ -13,6 +13,7 @@ subcollection: virtualization
 {:table: .aria-labeledby="caption"}
 
 # Backing up your VMware vSphere environment by using Veeam
+{: #backing-up-your-vmware-vsphere-environment-by-using-veeam}
 
 You can back up your VMware vSphere environment by using a hybrid solution that consists of the following services:
 
@@ -23,10 +24,12 @@ You can back up your VMware vSphere environment by using a hybrid solution that 
 Veeam Backup & Replication enables a hybrid solution that includes NetApp AltaVault cloud-integrated storage appliance and {{site.data.keyword.cos_full}}. Software creates, maintains, and restores virtual environments from backups. When used along with a NetApp AltaVault cloud-integrated storage appliance, you create backups that are stored locally (on-premises). The backup is also simultaneously replicated to {{site.data.keyword.cos_full_notm}}. With this hybrid solution, two copies of a backup are made, but only one of them exists locally.
 
 ## AltaVault Cloud-Integrated Storage Gateway
+{: #altavault-cloud-integrated-storage-gateway}
 
 You can use AltaVault Cloud Storage Gateway to integrate your on-premises environment with the cloud without having to write scripts or applications by using REST APIs for {{site.data.keyword.cos_full_notm}}. You can mount or point to the mount points and begin copying data into the cloud securely.
 
 ### Deploying AltaVault On-Premises
+{: #deploying-altavault-on-premises}
 
 Follow these steps to deploy AltaVault as an on-premises backup solution to {{site.data.keyword.cos_full_notm}}.
 
@@ -46,6 +49,7 @@ Verify that the following prerequisites are met:
 * Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources that include networking and storage.
 
 ### Deploying AltaVault OVA
+{: #deploying-altavault-ova}
 
 You can deploy the AltaVault OVA to the vSphere environment after all of the prerequisites are met. Instructions for OVA deployment can be found in the [NetApp AltaVault Installation and Service Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){: new_window}.
 
@@ -65,6 +69,7 @@ In this example configuration, the AltaVault appliance uses the **e0a** interfac
 For more information about the deploying the AltaVault appliance and configuration of the VM settings for the appliance, see [NetApp AltaVault Installation and Service Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){: new_window}.
 
 ### Initial configuration of the AltaVault appliance <!--initial configuration?-->
+{: #initial-configuration-of-the-altavault-appliance-initial-configuration-}
 
 You can power on the AltaVault VM after it is configured with the appropriate hardware. **Note:** It takes some time for the AltaVault VM to initially start as the AltaVault appliance is formatting the secondary metadata cache disk.
 
@@ -86,6 +91,7 @@ Use the information in Table 1 after the wizard opens.
 {: caption="Table 1. AltaVault initial configuration values" caption-side="top"}
 
 ### Configuring AltaVault for Object Storage
+{: #configuring-altavault-for-object-storage}
 
 Use the following steps to configure the appliance to connect to {{site.data.keyword.cos_full_notm}} service.
 
@@ -107,6 +113,7 @@ Use the following steps to configure the appliance to connect to {{site.data.key
 The AltaVault appliance is configured to communicate with the {{site.data.keyword.cos_full_notm}} service.
 
 ### Configuring the CIFS/SMB mount point in AltaVault
+{: #configuring-the-cifs-smb-mount-point-in-altavault}
 
 The **e0b** interface needs to be configured to create a CIFS/SMB mount point. Use the following steps to configure **e0b**.
 
@@ -114,7 +121,7 @@ The **e0b** interface needs to be configured to create a CIFS/SMB mount point. U
 2. Leave the default **MTU** value of **1500 bytes**.<br/><br/>Although the default maximum transmission unit (MTU) is set to 1,500, you can change it to 9,000 if you use jumbo frames. **Note:** Your ESXi host and physical infrastructure is required to support jumbo frames. By default, {{site.data.keyword.cloud_notm}} already supports an MTU size of 9,000 bytes with no configuration changes needed.
 3. Click **Apply**. The mount point is ready for configuration.
 4. Select **Storage > CIFS > Add CIFS Share** and enter a unique name.
-5. Click the **Pin Share** drop-down menu and select **Yes**. **Note:** Veeam Backup & Replication backups can fail to an unpinned share. 
+5. Click the **Pin Share** drop-down menu and select **Yes**. **Note:** Veeam Backup & Replication backups can fail to an unpinned share.
 6. Enter a unique path for the share in the **Path** field. It is preferable to use the share name as the path, that is, if the share name is `cifs_share0, enter /cifs_share0` as the path.
 7. Clear **Allow Everyone Access** if security is not an issue. It is preferable to whitelist the clients that use the CIFS/SMB share. Otherwise, leave **Allow Everyone Access** selected if security is an issue and click **Add Share**.
 8. Click **Add CIFS User** to create accounts for authorized users and complete the **User name** and **Password** fields.
@@ -130,10 +137,12 @@ To export your AltaVault appliance configuration, follow these steps.
 3. Save the configuration file (a tarball/.tar) in a safe location.
 
 ## Veeam Backup & Replication
+{: #veeam-backup-replication}
 
 Veeam Backup & Replication software provides complete backup, replication, and recovery capabilities for VMs and their data. The backup can fully integrate with an AltaVault Cloud Gateway Appliance.
 
 ### Provisioning Veeam on a new server
+{: #provisioning-veeam-on-a-new-server}
 
 You can order Veeam when you provision a new VSI or bare metal server. Use the following information when provisioning.
   * Veeam is only available with monthly billing
@@ -144,6 +153,7 @@ To add Veeam:
   * In the System Addons section, under CDP Addon, select any additional Veeam options to add. <br><br>**Note**: If you select *Veeam Backup and Replication 9.5 Update 3*, you are required to select at least one option in the CDP Addon list.
 
 ### Ordering Veeam on an existing server
+{: #ordering-veeam-on-an-existing-server}
 
 You can add Veeam to an existing server with the [OS reload](/docs/infrastructure/software?topic=software-reloading-the-os) procedure. The server must be running a Windows OS and it must be set up for monthly billing.
 
@@ -152,10 +162,12 @@ To add Veeam:
 2. In the System Addons section, under CDP Addon, select any additional Veeam options to add. <br><br>**Note**: If you select *Veeam Backup and Replication 9.5 Update 3*, you are required to select at least one option in the CDP Addon list.
 
 ### Deploying Veeam Backup & Replication
+{: #deploying-veeam-backup-replication}
 
 A trial version of Veeam Backup & Replication Version 8 is used in the example.
 
-#### *Prerequisites*
+#### Prerequisites
+{: #prerequisites-deploying-veeam-backup-replication}
 
 Before you proceed with deployment, verify that the following prerequisites are satisfied:
 
@@ -174,6 +186,7 @@ Before you proceed with deployment, verify that the following prerequisites are 
 {: caption="Table 2. System requirements for Veeam Backup & Replication backup server" caption-side="top"}
 
 #### Installing Veeam Backup & Replication
+{: #installing-veeam-backup-replication}
 
 Use the following steps to install Veeam Backup & Replication to the backup server after all of the prerequisites are met.
 
@@ -190,6 +203,7 @@ Use the following steps to install Veeam Backup & Replication to the backup serv
 11. Verify that all settings and values are correct and click **Install** to start the installation. After installation is complete, click **Finish**.
 
 ### Configuring Veeam Backup & Replication for Backups
+{: #configuring-veeam-backup-replication-for-backups}
 
 After you install Veeam Backup & Replication, you are ready to connect it to the vSphere ESXi host that contains the AltaVault virtual appliance.
 
@@ -202,6 +216,7 @@ After you install Veeam Backup & Replication, you are ready to connect it to the
 7. Click **Finish** on the **Summary** window and verify that the vSphere server was added successfully by clicking **Managed Servers > VMware vSphere**.
 
 ### Adding a Backup Repository to Veeam Backup & Replication
+{: #adding-a-backup-repository-to-veeam-backup-replication}
 
 By default, Veeam Backup & Replication creates a local backup repository on the C:\ drive of the Veeam Backup & Replication backup server during program installation.
 
@@ -219,6 +234,7 @@ Use the following steps to create a backup repository to store all backups on th
 10. Click **Finish** to exit the wizard. You can now begin backing up your data.
 
 ### Backing up the Environment
+{: #backing-up-the-environment}
 
 Follow these steps to create a backup of a complete virtual environment.
 
@@ -236,8 +252,8 @@ Follow these steps to create a backup of a complete virtual environment.
 4. If you want application-aware processing and or guest file system indexing, select the appropriate check box. Set the **Guest OS credentials** [the username and password of the guest OS of the VMs that is being backed up], if necessary. Click **Next**.
 5. Select the **Run the job automatically** check box if backups run regularly and set the intervals that you want. Otherwise, click **Create** and **Finish**.
 
-#### *Starting a manual backup*
-
+#### Starting a manual backup
+{: starting-a-manual-backup}
 To manually start a backup, right-click on the backup job and select **Start**. Alternatively, select **Active Full** if you want a new backup.
 
 **Note:** Veeam Backup & Replication can restore virtual environments from a backup. For more information about restoring virtual environments, see the [Veeam Backup & Replication ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window} website.

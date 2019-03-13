@@ -10,6 +10,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Adding a host node in PIM
+{: #adding-a-host-node-in-pim}
 
 Complete the following steps to add a host node as a slave of another in PIM:
 
@@ -18,5 +19,3 @@ Complete the following steps to add a host node as a slave of another in PIM:
 
 The new node resources are not immediately updated in the Master PIM.
 {:tip}
-
-

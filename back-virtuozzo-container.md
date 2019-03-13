@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Backing up a Virtuozzo container
+{: #backing-up-a-virtuozzo-container}
 
 1. Make sure that both hardware nodes are set up in PIM.
 2. Go to the infrastructure and hardware nodes that the container is on.
@@ -27,5 +28,4 @@ subcollection: virtualization
    * Maximum
 7. Select the hardware node where you want the backup file housed. If you have multiple hardware nodes, then it is advised that you save your backups to these nodes, rather than the same server.
   * Other options are at the administrator's digression.
-8. Backup. The backup is complete. You can view the details of the backup by going to the **Hardware Node, Container, and Backups** tab and selecting the backup. 
-
+8. Backup. The backup is complete. You can view the details of the backup by going to the **Hardware Node, Container, and Backups** tab and selecting the backup.

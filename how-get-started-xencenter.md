@@ -10,8 +10,10 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Getting started with XenCenter
+{: #getting-started-with-xencenter}
 
 ## Before you begin
+{: #before-you-begin}
 
 Before you begin, review the following prerequisites:
 
@@ -22,6 +24,7 @@ Before you begin, review the following prerequisites:
 **Note:** Your server is pre-configured with various of templates to help you get off and running with XenServer quickly.
 
 ## Creating a virtual machine with XenCenter
+{: #creating-a-virtual-machine-with-xencenter}
 
 Use the following steps to help you create a virtual machine with XenCenter.
 
@@ -30,7 +33,7 @@ Use the following steps to help you create a virtual machine with XenCenter.
 3. Enter your server host name, your user name, and your password. You need to use your server's Private IP address (looks like 10.x.x.x), the user name `root`, then your server's root password. This information is available in the {{site.data.keyword.slportal}} by going to your [Devices ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/devices){: new_window} then clicking the name of your XenServer. Click **Connect**.
 4. If you receive a Free License activation screen, complete this information now.
 5. Right-click your {{site.data.keyword.cloud_notm}} name and select **New VM...**.<!--You can now create your first Virtual Machine. Create a CentOS virtual machine with a disk of 10 GB and have both Public and Private Networks functioning-->
-6. Select the operating system that you want to use for the new virtual machine and then click **Next**. **Note:** Some templates require that you provide your own media.<!--Because you are using CentOS, you can use {{site.data.keyword.BluSoftlayer_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.--> 
+6. Select the operating system that you want to use for the new virtual machine and then click **Next**. **Note:** Some templates require that you provide your own media.<!--Because you are using CentOS, you can use {{site.data.keyword.BluSoftlayer_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
 7. Enter an appropriate name and description for the new virtual machine.
 8. Enter the location of the guest operating system installation media and click **Next**. <!-- In the example, {{site.data.keyword.BluSoftlayer_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: http://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
   *A trailing ‘/’ at the end of the URL can sometimes break the installation.*
@@ -47,4 +50,3 @@ Use the following steps to help you create a virtual machine with XenCenter.
 16. Confirm that you are aware of how to use your Private IP Subnet (10.17.37.240/29) and click **OK**<!-- to go to the CentOS installer-->. You and your system administrator can install the guest operating system according to your own guidelines. For more informatin about static and portable IP blocks, see [Getting started with subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
 
 You have created a new VM.
-

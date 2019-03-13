@@ -10,11 +10,12 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Activating XenServer
+{: #activating-xenserver}
 
-The Citrix XenServer free license is licensed for 30 days from the initial install or reload. During this time, you need to register with Citrix and request a fully functional 1-year license. To create this license, Citrix requires personal information that {{site.data.keyword.BluSoftlayer}} doesn't have access to. The license is an agreement between you and Citrix to use XenServer. 
+The Citrix XenServer free license is licensed for 30 days from the initial install or reload. During this time, you need to register with Citrix and request a fully functional 1-year license. To create this license, Citrix requires personal information that {{site.data.keyword.BluSoftlayer}} doesn't have access to. The license is an agreement between you and Citrix to use XenServer.
 {:shortdesc}
 
-If you don't register your system within 30 days, you can't power on any virtual machines. 
+If you don't register your system within 30 days, you can't power on any virtual machines.
 {:tip}
 
 To register your system, complete the following steps:
@@ -34,5 +35,3 @@ To register your system, complete the following steps:
 7. After you receive the email, save the attached license key file locally.
 
 8. In the XenCenter left pane, highlight your server. In the menu bar, go to **Server > Install license key...**. A dialog box appears that asks for the location of the license key. Point it to the saved location from Step 7.
-
-

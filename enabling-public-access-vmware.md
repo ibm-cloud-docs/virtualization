@@ -9,8 +9,9 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Enabling public access to VMware
+{: #enabling-public-access-to-vmware}
 
-By default, the ESX Host is installed with the service console on only the private network, which means public traffic to and from the public network is prevented on the ESX Host. 
+By default, the ESX Host is installed with the service console on only the private network, which means public traffic to and from the public network is prevented on the ESX Host.
 
 To get started, you need to connect to the server by using a VMware vSphere Client on the server's private interface by following these steps.
 
@@ -20,5 +21,3 @@ To get started, you need to connect to the server by using a VMware vSphere Clie
 4. Rename the Service Console to something that is easily recognizable (for example, "Public Service Console").
 5. Input the primary external IP address that is assigned to the server with the correct subnet mask.
 6. Click **Edit** and add the default gateway that is assigned to the server.
-
-

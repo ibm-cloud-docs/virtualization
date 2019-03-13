@@ -20,10 +20,12 @@ subcollection: virtualization
 {:table: .aria-labeledby="caption"}
 
 # Getting started with Virtuozzo
+{: #getting-started-with-virtuozzo}
 
 ## Accessing the Parallels Infrastructure Manager (PIM)
+{: #accessing-the-parallels-infrastructure-manager-pim-}
 
-1. Obtain information from the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} about your bare metal server. 
+1. Obtain information from the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} about your bare metal server.
     1. From the **Devices** menu select **Device list**.
     2. Click on your server.
     3. Locate the public IP address and password.
@@ -34,10 +36,11 @@ JavaScript is required. Without JavaScript, you can be redirected to a non-exist
 
 6. Enter your username and password to log in to the PIM.
 
-The username is "root" and the password is the root password for the server, as listed in the {{site.data.keyword.slportal}}. 
+The username is "root" and the password is the root password for the server, as listed in the {{site.data.keyword.slportal}}.
 {:tip}
 
 ## Installing and caching templates
+{: #installing-and-caching-templates}
 
 1. In the PIM screen, select **Management** > **Updates**.
 2. Go to the server that you want to update.
@@ -49,6 +52,7 @@ The username is "root" and the password is the root password for the server, as 
 8. Wait for the full template RPMs to download and install. Click **Details** to view the caching status.
 
 ## Setting up network range for containers
+{: #setting-up-network-range-for-containers}
 
 While the server downloads and caches templates, you can set up the network range for the containers.
 

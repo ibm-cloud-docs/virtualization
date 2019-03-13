@@ -60,7 +60,6 @@ Virtualization
         activate-xenserver-free-license.md
         connect-xenserver-over-public-interface.md
         set-and-mount-iscsi-node-xenserver-shared-storage.md
-        working-isos-xenserver.md
         quantastor-storagelink-xenserver-configuration.md
         add-hard-drive-citrix-xenserver.md
 

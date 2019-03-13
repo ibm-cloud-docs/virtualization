@@ -41,4 +41,4 @@ You can use the {{site.data.keyword.blockstoragefull}} for LVMoiSCSI. The iSCSI 
 
 If the servers are in a pool together, the iSCSI repository is automatically shared.
 
-For information about configuring iSCSI for multipath, see [Configuring iSCSI Multipath ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus1000/sw/4_0_4_s_v_1_3/system_management/configuration/guide/n1000v_system/n1000v_system_13iscsi.pdf){: new_window}
+For information about configuring iSCSI for multipath, see [Configuring iSCSI Multipath ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus1000/sw/5_x/sys_mgmt_config/b_Cisco_N1KV_VMware_Sys_Mgmt_Config_5x/b_Cisco_N1KV_VMware_Sys_Mgmt_Config_5x_chapter_01110.html?dtid=osscdc000283){: new_window}

@@ -13,6 +13,7 @@ subcollection: virtualization
 {:table: .aria-labeledby="caption"}
 
 # Operating systems supported by IBM Cloud under XenServer
+{: #operating-systems-supported-by-ibm-cloud-under-xenserver}
 
 The following operating systems can tie into the {{site.data.keyword.slapi_full}} while XenServer runs:
 

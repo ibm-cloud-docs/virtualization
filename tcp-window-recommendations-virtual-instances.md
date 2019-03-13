@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Optimizing TCP window size for virtual instances
+{: #optimizing-tcp-window-size-for-virtual-instances}
 
 Use the following guidelines to tune the TCP window size on a VSI for optimal performance on an {{site.data.keyword.cloud}} hypervisor. {{site.data.keyword.cloud_notm}} virtual hosts have a default TCP buffer size with the range 3 - 6 MB.
 

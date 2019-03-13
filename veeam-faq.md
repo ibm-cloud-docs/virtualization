@@ -20,11 +20,14 @@ subcollection: virtualization
 {:table: .aria-labeledby="caption"}
 
 # FAQs: Veeam backup and replication
+{: #faqs-veeam-backup-and-replication}
 
 ## Can I add extra license packs to my Veeam server?
+{: #can-i-add-extra-license-packs-to-my-veeam-server-}
 
 Yes. If you need to add more license packs to your Veeam backup and replication server, open a sales ticket to start the process.
 
 ## Can I add Veeam backup and replication to my existing server?
+{: #can-i-add-veeam-backup-and-replication-to-my-existing-server-}
 
 Unfortunately it is not possible to add the Veeam backup and replication application to an existing server. You need to either order Veeam when you create the server or issue an OS Reload and add the Veeam backup and replication offering during the reload process.

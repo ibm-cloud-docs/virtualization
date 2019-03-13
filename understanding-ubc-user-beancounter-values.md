@@ -10,6 +10,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Understanding UBC / User Bean counter Values
+{: #understanding-ubc-user-beancounter-values}
 
 Use SLM Mode if UBC is not understood. SLM is easier and provides the same type of control.
 
@@ -45,7 +46,7 @@ Use SLM Mode if UBC is not understood. SLM is easier and provides the same type 
 |`diskinodes`|*disk*|Disk inode (filesystem object) quota|
 |`quotatime`|*disk*|Disk quota grace period|
 |`quotaugidlimit`|*disk*|Limit on the number of uid and gid accounting entries|
-<caption>Table 1. SLM parameter descriptions</caption> 
+<caption>Table 1. SLM parameter descriptions</caption>
 
 You can access VzLinuxUBCMgmt.pdf or view it in HTML, within PIM on your server by going to:
 **Management > Support > Downloads > Management of UBC Resources Administrator's Guide**

@@ -10,12 +10,13 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Migrating a container to a different hardware node
+{: #migrating-a-container-to-a-different-hardware-node}
 
 1. Make sure that you have both hardware nodes set up in PIM.
 2. Go to **Infrastructure** and select the hardware node that the container is on.
 3. Select the container and click **Migrate**.
 4. Select the **Destination Node**.
-5. Choose if you want the migration to be performed live. 
+5. Choose if you want the migration to be performed live.
 
 **Note:** Depending on the size of the container, a live migration might not be feasible. Most of the information in the containers needs to be held in RAM until the migration is complete.
 

@@ -10,8 +10,9 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # XenServer pooling
+{: #xenserver-pooling}
 
-XenServer pooling can be thought of as up to 16 servers that work as a cluster. This cluster not only allows for shared resources but allows for live migration of virtual machines that use XenMotion. One server acts as the "master node", while the rest of them are slaves. Opening any of the servers in the pool through XenCenter opens the management information for the entire pool. When a node joins the pool, its management password is changed to match the management password of the master node. When you remove a node from the pool, this password is not changed. 
+XenServer pooling can be thought of as up to 16 servers that work as a cluster. This cluster not only allows for shared resources but allows for live migration of virtual machines that use XenMotion. One server acts as the "master node", while the rest of them are slaves. Opening any of the servers in the pool through XenCenter opens the management information for the entire pool. When a node joins the pool, its management password is changed to match the management password of the master node. When you remove a node from the pool, this password is not changed.
 
 All systems in the node must be from the same processor family, as in Intel or AMD. Ideally, hardware must be identical for pooling to be successful. Compatibility issues aren't entirely true with heterogeneous CPU pooling. You need to perform compatibility tests for yourself to see whether your hardware is compatible. For more information, see [Understanding heterogeneous CPU pooling ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.citrix.com/article/CTX127059){: new_window}.
 

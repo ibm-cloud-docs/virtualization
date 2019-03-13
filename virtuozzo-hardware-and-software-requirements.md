@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Virtuozzo: Hardware Requirements
+{: #virtuozzo-hardware-requirements}
 
 * You need at least 2 GB of RAM.
   * 4 GB to 8 GB or more is recommended.

@@ -9,10 +9,11 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Differences between versions of XenServer
+{: #differences-between-versions-of-xenserver}
 
 Licensing is the only difference between versions of XenServer that are installed on the system. If you want to upgrade your license to a higher class license after installation, you experience no downtime to reinstall your server. Contact {{site.data.keyword.BluSoftlayer}} sales for pricing information.
 
-**Note:** Not all available features are supported. 
+**Note:** Not all available features are supported.
 
 The following lists of features are included for each of the different licenses that are offered (as of XenServer 6.0):
 
@@ -46,5 +47,3 @@ The following lists of features are included for each of the different licenses 
 - Role-based administration
 - StorageLink
 - Web management console with delegated admin
-
-

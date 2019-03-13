@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Setting up and mounting an iSCSI node in XenServer Shared Storage
+{: #setting-up-and-mounting-an-iscsi-node-in-xenserver-shared-storage}
 
 Shared Storage is a storage repository (SR) that is any form of storage that can be used by XenServer. You can chose from two categories of SRs: shared and non-shared. A shared SR allows multiple nodes to share a storage location from the same pool. {{site.data.keyword.cloud}} supports two options of SRs, NFS, and LVMoiSCSI (LVM over iSCSI).
 
@@ -21,13 +22,13 @@ You need to install an NFS server and manage it from another customer system or 
 * Enter the server:/path under **Share Name**
 * Click **Scan**
 
-This process scans the NFS share for any previous SRs. 
+This process scans the NFS share for any previous SRs.
 
 You can use the {{site.data.keyword.blockstoragefull}} for LVMoiSCSI. The iSCSI can be from a customer manage storage server or an {{site.data.keyword.blockstoragefull}} offering. For Performance and Redundant Block Storage, retrieve the IQN from the {{site.data.keyword.slportal}} by going to **Storage > Block Storage > Select Lun Name**. To mount the iSCSI node via XenCenter, follow these steps:
 
 1. Open the XenCenter console.
-2. Go to **General > Properties** and set the IQN. 
-3. Click **New Storage** 
+2. Go to **General > Properties** and set the IQN.
+3. Click **New Storage**
 4. In the new dialog box, go to **Virtual disk storage > Software iSCSI**.
 5. Enter an appropriate name for the new SR.
 6. Enter the hostname or IP of the iSCSI Target and keep the port at the default 3260.

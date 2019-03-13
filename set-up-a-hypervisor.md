@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Setting up a hypervisor
+{: #setting-up-a-hypervisor}
 
 Use the following steps to set up a hypervisor.
 
@@ -33,6 +34,7 @@ Use the following steps to set up a hypervisor.
 For more information about the VM routing process, see [Setting up a virtual machine network](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network). Machines that are on the same VLAN can communicate after you set up the VM network. [Enable VLAN spanning](/docs/infrastructure/vlans?topic=vlans-vlan-spanning) if machines that are on different VLANs must communicate.
 
 ## Access and securely store ISOs
+{: #access-and-securely-store-isos}
 
 VMs on the {{site.data.keyword.cloud_notm}} network can run pre-configured or custom ISOs. VMs on the {{site.data.keyword.cloud_notm}} network can access the internal mirrors site, which is available exclusively to {{site.data.keyword.cloud_notm}} users and provides popular configurations of the most commonly used operating systems. If you need a special version or configuration for a specific operating system, see the OS vendor's website.
 

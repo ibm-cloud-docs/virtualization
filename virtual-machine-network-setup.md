@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Setting up a virtual machine network
+{: #setting-up-a-virtual-machine-network}
 
 Network configuration on your new virtual machine is done in a few steps. You need a separate portable IP block for both the public and private network. It is assumed that you are using a virtualization offering that requires secondary on VLAN broadcast domain and not routed to VLAN (without network id/gateway/broadcast) subnet. If you do not plan to use the Private network on your virtual machine, you need only the Public subnet. Portable IP blocks can be ordered directly through the portal at [Sales->Add IP Addresses ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Sales/orderAdditionalServices/subnet){: new_window} or from the [Public Network IP Manager ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/PublicNetwork/ipManager){: new_window}.
 
@@ -36,6 +37,7 @@ Network configuration requires the following information for both your Public an
     ---/24 - 255.255.255.0
 
 ## Windows 2008 Server Core
+{: #windows-2008-server-core}
 
 Windows 2008 Server Core edition does not provide a graphical interface to configure the system network. The configuration needs to be done manually by using the command prompt. You need to run the following commands. The IP addresses that are used in this example need to be replaced with the IP addresses from your IP Blocks. These commands work with older versions of Windows Server that include the [netsh ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.microsoft.com/kb/242468){: new_window} command.
 
@@ -70,6 +72,7 @@ The following two commands configure the private network and create the persiste
 * `Route add 10.0.0.0 mask 255.0.0.0 10.0.0.1 -p`
 
 ## Windows 2003 Standard and Enterprise
+{: #windows-2003-standard-and-enterprise}
 
 You can use Windows 2003 to configure networking by using either the command line or the graphical user interface. If want to use the command line, see the configuration instructions for Windows 2008 Server Core. These instructions also work for Windows 2003. The instructions for using the graphical interface are provided here. The IP addresses that are used in this example need to be replaced with the IP addresses from your IP Blocks.
 
@@ -80,6 +83,7 @@ You can use Windows 2003 to configure networking by using either the command lin
 * Subnet Mask – 255.255.255.248
 
 ### Opening your network configurations
+{: #opening-your-network-configurations}
 
 1. Go to **Start Menu > Settings > Control Panel**
 2. Open **Network Connections**
@@ -89,7 +93,7 @@ You can use Windows 2003 to configure networking by using either the command lin
 
 Use the following instructions to configure the public network through the windows graphical interface.
 
-1. Right-click on **Local Area Connection > Properties** and select **Internet Protocol (TCP/IP) > Properties**. 
+1. Right-click on **Local Area Connection > Properties** and select **Internet Protocol (TCP/IP) > Properties**.
 2. Go to **General > Use the following IP address:**
 3. Enter your public IP address, subnet mask, and gateway.
 4. Select **Use the following DNS server addresses:**. If you are configuring the private network, use the following DNS Servers. If you are not configuring the private network, you need to provide DNS servers.
@@ -103,13 +107,14 @@ Use the following instructions to configure the public network through the windo
 2. Go to **General > Use the following IP address:** and enter your private IP address and subnet mask. Leave the gateway field empty and click **OK**
 3. Click **OK** again to close the network configuration window.
 
-To provide access to the entire private network that includes the DNS servers, you need to add a custom route to the server. Following these steps to provide private network access: 
+To provide access to the entire private network that includes the DNS servers, you need to add a custom route to the server. Following these steps to provide private network access:
 
 1. Go to **Start > Run** and enter *cmd* and press **OK**.
 2. Run the following command: **Note:** Make sure that you replace the gateway address (10.0.0.1) with your private IP block gateway.<br/>
 *“route add 10.0.0.0 mask 255.0.0.0 10.0.0.1 –p”*
 
 ## Windows 2008 Web, Standard, Enterprise, and Datacenter
+{: #windows-2008-web-standard-enterprise-and-datacenter}
 
 If you have Windows 2008, you configure networking by using either the command prompt or the graphical user interface. If you intend to use the command prompt, refer to the configuration instructions for Windows 2008 Server Core. These instructions work for all 2008 servers. The instructions for using the graphical interface are provided here. The IP addresses that are used in this example need to be replaced with the IP addresses from your IP Blocks.
 
@@ -139,8 +144,8 @@ The following instructions provide detailed steps on configuring the public netw
 
 **Private Network**
 
-1. Right-click on **Local Area Connection 2 > Properties** and select **Internet Protocol Version 4 (TCP/IPv4) > Properties**. 
-2. Go to **General > Use the following IP address:**, enter your private IP address and subnet mask, and click **OK**. 
+1. Right-click on **Local Area Connection 2 > Properties** and select **Internet Protocol Version 4 (TCP/IPv4) > Properties**.
+2. Go to **General > Use the following IP address:**, enter your private IP address and subnet mask, and click **OK**.
 3. Click **OK** again to close the network configuration window.
 
 To provide access to the entire private network which includes the DNS servers, you need to add a custom route to the server.
@@ -150,6 +155,7 @@ To provide access to the entire private network which includes the DNS servers, 
   * `route add 10.0.0.0 mask 255.0.0.0 10.0.0.1 –p`
 
 ## RedHat, Fedora, and CentOS
+{: #redhat-fedora-and-centos}
 
 Configuring the network on RedHat, Fedora and CentOS is done by manually editing configuration files. To manually edit the files, you need to log in to the virtual machine.
 
@@ -208,6 +214,7 @@ For these changes to take effect, you need to restart networking on the server. 
 * `service network restart`
 
 ## Ubuntu and Debian
+{: #ubuntu-and-debian}
 
 You configure Ubuntu and Debian networks through a single configuration file. You need to edit this configuration file with the following information. To edit this file, you need to have root access to the server. The base installation of Ubuntu does not provide a root login. However, the user that was created in the installation process can access sudo. You need to use the sudo command to edit the file if you are running Ubuntu.
 

@@ -10,6 +10,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Overview of Parallels Server 4 bare metal server
+{: #overview-of-parallels-server-4-bare-metal}
 
 Parallels Server Bare Metal is a virtualization solution that provides hardware virtualization along side the software virtualization of Virtuozzo, providing technology for both virtual machines and containers*.
 {:shortdesc}

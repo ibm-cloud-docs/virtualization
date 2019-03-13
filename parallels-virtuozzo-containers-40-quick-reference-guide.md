@@ -7,13 +7,15 @@ subcollection: virtualization
 ---
 
 # Parallels Virtuozzo Containers 4.0 quick reference guide
+{: #parallels-virtuozzo-containers-4-0-quick-reference-guide}
 
-Use this information to find Virtuozzo container utilities and common terms. 
+Use this information to find Virtuozzo container utilities and common terms.
 
 ## General utilities
+{: #general-utilities}
 
 General utilities are for day-to-day maintenance tasks.
-  
+
 |General Utilities||
 |---|---|
 |vzctl|Utility to control Containers.|
@@ -22,6 +24,7 @@ General utilities are for day-to-day maintenance tasks.
 {: caption="Table 1. General utilities" caption-side="top"}
 
 ## Licensing utilities
+{: #licensing-utilities}
 
 Licensing utilities are used to install a new license, view the license state, or generate a license request for a new license.
 
@@ -33,6 +36,7 @@ Licensing utilities are used to install a new license, view the license state, o
 {: caption="Table 2. Licensing utilities" caption-side="top"}
 
 ## Container migration utilities
+{: #container-migration-utilities}
 
 Container migration tools are used to migrate containers between hardware nodes or within one hardware node.
 
@@ -45,6 +49,7 @@ Container migration tools are used to migrate containers between hardware nodes 
 {: caption="Table 3. Container migration utilities" caption-side="top"}
 
 ## Container backup utilities
+{: #container-backup-utilities}
 
 Container backup utilities are used to back up and restore the container private areas, configuration files, action scripts, and quota information.
 
@@ -57,6 +62,7 @@ Container backup utilities are used to back up and restore the container private
 {: caption="Table 4. Container backup utilities" caption-side="top"}
 
 ## Template management utilities
+{: #template-management-utilities}
 
 Template management tools are used to create templates and to maintain and install applications into a container.
 
@@ -77,6 +83,7 @@ Template management tools are used to create templates and to maintain and insta
 {: caption="Table 5. Template management utilities" caption-side="top"}
 
 ## Supplementary tools
+{: #supplementary-tools}
 
 Supplementary tools are used for miscellaneous tasks in the hardware node and container context.
 
@@ -114,6 +121,7 @@ Supplementary tools are used for miscellaneous tasks in the hardware node and co
 {: caption="Table 6. Supplemental tools" caption-side="top"}
 
 ## Common Terms
+{: #common-terms}
 
 |Common terms||
 |---|---|
@@ -125,4 +133,3 @@ Supplementary tools are used for miscellaneous tasks in the hardware node and co
 |PMC|Parallels Management Console (or PMC) is a remote management tool with a graphical user interface that is designed for Host administrators.|
 |PPP|Parallels Power Panel is a web-based management tool that is designed for Container owners.|
 {: caption="Table 7. Common terms" caption-side="top"}
-

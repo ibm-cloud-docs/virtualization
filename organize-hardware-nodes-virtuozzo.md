@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Organizing hardware nodes in Virtuozzo
+{: #organizing-hardware-nodes-in-virtuozzo}
 
 1. Go to **Infrastructure > Hardware Nodes**.
 2. Clock **Add New Subfolder**.
@@ -17,4 +18,3 @@ subcollection: virtualization
 4. Return to **Infrastructure > Hardware Nodes**.
 5. Select the nodes that you want to move and click **Move**.
 6. Select the destination and click **Submit**.
-

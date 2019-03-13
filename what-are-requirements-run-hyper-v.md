@@ -9,5 +9,6 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Hyper-V: Hardware requirements
+{: #hyper-v-hardware-requirements}
 
 Hyper-V must be installed on Windows 2008 Server 64-bit Datacenter Edition. All {{site.data.keyword.cloud}} hardware meets the system requirements of Hyper-V. Microsoft recommends at least 2 GB of RAM on your server.

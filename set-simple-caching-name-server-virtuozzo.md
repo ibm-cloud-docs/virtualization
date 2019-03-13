@@ -9,6 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Using a simple caching name server with Virtuozzo
+{: #using-a-simple-caching-name-server-with-virtuozzo}
 
 Virtuozzo attempts to send packets out of the internal interface of the hardware node by using the public IP address of the container. All that you need to do is run a caching name server on the hardware node, which is available only on the private interface.
 

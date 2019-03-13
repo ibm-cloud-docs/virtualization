@@ -7,6 +7,7 @@ subcollection: virtualization
 ---
 
 # What is Citrix XenServer?
+{: #what-is-citrix-xenserver-}
 
 XenServer is a server virtualization platform that offers near bare metal virtualization performance for virtualized server and client operating systems.
 

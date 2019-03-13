@@ -9,8 +9,9 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Changes with Citrix XenServer 6.2 and greater
+{: #changes-with-citrix-xenserver-6-2-and-greater}
 
-The release of Citrix XenServer 6.2+ brings several changes that not only impact how XenServer functions but how the product is offered. 
+The release of Citrix XenServer 6.2+ brings several changes that not only impact how XenServer functions but how the product is offered.
 
 XenServer 6.2+ Free is now an option, but it is unlicensed. After a device is provisioned with XenServer Free, it can be upgraded to the licensed version at any time. If you want to upgrade to XenServer Paid, the license is available for direct purchase from [Citrix ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.citrix.com/products/xenserver/buy.html){: new_window}. Licensing is acquired on a per-socket basis.
 

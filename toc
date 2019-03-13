@@ -5,7 +5,7 @@
 Virtualization
 
     {: .navgroup id="learn"}
-    virt_index.md
+    getting-started.md
 
     {: .topicgroup}
     Virtuozzo

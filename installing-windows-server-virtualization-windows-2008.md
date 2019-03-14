@@ -16,7 +16,7 @@ subcollection: virtualization
 Note: At this time, this is only available in full installation of 64-bit editions of Windows 2008. 32-bit versions and Server-core installations do not support this.-->
 
 ## Before you begin
-{: #before-you-begin}
+{: #before-you-begin-win-2008}
 
 Before you begin, review the following prerequisites.
 

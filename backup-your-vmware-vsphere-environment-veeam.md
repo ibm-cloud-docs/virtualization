@@ -137,7 +137,7 @@ To export your AltaVault appliance configuration, follow these steps.
 3. Save the configuration file (a tarball/.tar) in a safe location.
 
 ## Veeam Backup & Replication
-{: #veeam-backup-replication}
+{: #veeam-backup-replication-backup}
 
 Veeam Backup & Replication software provides complete backup, replication, and recovery capabilities for VMs and their data. The backup can fully integrate with an AltaVault Cloud Gateway Appliance.
 

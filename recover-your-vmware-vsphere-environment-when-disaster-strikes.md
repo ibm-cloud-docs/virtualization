@@ -115,7 +115,7 @@ Verify that the following prerequisites are met before you proceed:
     * Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources such as networking and storage.
 
 ### Deploying AltaVault OVA
-{: #deploying-altavault-ova}
+{: #deploying-altavault-ova-disaster}
 
 Deploy the AltaVault OVA to the vSphere environment by using the utility server after all of the prerequisites are met. Instructions for OVA deployment can be found in the [NetApp AltaVault Installation and Service Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){: new_window}. The trial version of AltaVault comes configured with four virtual CPUs, 6 GB of memory, and a 150 GB primary disk. Use the Installation and Service Guide to do the following steps:
 
@@ -209,7 +209,7 @@ After the internal connection to {{site.data.keyword.cos_full_notm}} is establis
 The AltaVault appliance is now minimally configured to allow communications between itself, {{site.data.keyword.cos_full_notm}}, and Veeam Backup & Replication.
 
 ## Veeam Backup & Replication
-{: #veeam-backup-replication}
+{: #veeam-backup-replication-recover}
 
 Veeam Backup & Replication software provides complete backup, replication, and recovery capabilities for VMs and their data. Veeam Backup & Replication can be fully integrated with an AltaVault Cloud Gateway Appliance, making for a seamless backup and recovery experience.
 
@@ -240,7 +240,7 @@ Before you proceed with deployment, make sure that the following prerequisites a
 Provision the VSI within the same data center as the AltaVault appliance and vSphere environment. The VSI must have access to the AltaVault appliance and vCenter.
 
 ### Installing Veeam Backup & Replication
-{: #installing-veeam-backup-replication}
+{: #installing-veeam-backup-replication-disaster}
 
 Use the following steps to install Veeam Backup & Replication to the {{site.data.keyword.cloud_notm}} VSI after all of the prerequisites are met.
 
@@ -272,7 +272,7 @@ After Veeam Backup & Replication installs, you are ready to connect with the Alt
 8. Verify that the vSphere server is successfully added by clicking **Managed Servers > VMware vSphere**.
 
 ### Adding a Backup Repository to Veeam Backup & Replication
-{: #adding-a-backup-repository-to-veeam-backup-replication}
+{: #adding-a-backup-repository-to-veeam-backup-replication-disaster}
 
 Follow these steps to create a new backup repository to store restored backups on the AltaVault appliance. **Note:** A CIFS/SMB share is used for the example because the Veeam Backup & Replication backup server must be hosted on a machine that is running Windows. The share protocol that is used for restoring backups in the {{site.data.keyword.cloud_notm}} AltaVault appliance must be identical to the share protocol that is used for those same backups in the on-premises AltaVault appliance, a CIFS/SMB share is used.
 

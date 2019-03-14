@@ -13,7 +13,7 @@ subcollection: virtualization
 {: #getting-started-with-xencenter}
 
 ## Before you begin
-{: #before-you-begin}
+{: #before-you-begin-xencenter}
 
 Before you begin, review the following prerequisites:
 

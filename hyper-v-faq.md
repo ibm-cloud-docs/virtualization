@@ -27,12 +27,12 @@ Hyper-V must be installed on Windows 2008 Server 64-bit Datacenter Edition. All 
 {{site.data.keyword.BluSoftlayer_notm}} offers Hyper-V only on Datacenter Edition.
 
 ## Can Hyper-V run on Windows 2003?
-{: #how-many-virtual-machines-can-a-server-run-}
+{: #can-hyper-v-run-on-windows-2003}
 
 Hyper-V was developed for Windows 2008 and cannot run on Windows 2003.
 
 ## What operating systems can be installed on a virtual machine?
-{: #is-the-ram-customizable-on-each-virtual-machine-}
+{: #what-operating-systems-can-be-installed-on-a-virtual-machine}
 
 {{site.data.keyword.BluSoftlayer_notm}} supports the following operating systems on Hyper-V:
 

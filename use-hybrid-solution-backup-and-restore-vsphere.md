@@ -4,6 +4,8 @@ copyright:
 lastupdated: "2018-01-05"
 
 subcollection: virtualization
+
+keywords: hybrid
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}

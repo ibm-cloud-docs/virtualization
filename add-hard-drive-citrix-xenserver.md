@@ -4,6 +4,8 @@ copyright:
 lastupdated: "2018-08-14"
 
 subcollection: virtualization
+
+keywords: Citrix XenServer
 ---
 
 {:shortdesc: .shortdesc}

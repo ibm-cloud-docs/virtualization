@@ -4,6 +4,8 @@ copyright:
 lastupdated: "2018-08-15"
 
 subcollection: virtualization
+
+keywords: vmware, virtuozzo, hyper-V, ESX, ESXi
 ---
 
 {:shortdesc: .shortdesc}

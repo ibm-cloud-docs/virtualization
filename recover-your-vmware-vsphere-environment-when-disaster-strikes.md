@@ -4,6 +4,8 @@ copyright:
 lastupdated: "2018-06-22"
 
 subcollection: virtualization
+
+keywords: disaster recovery
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}

@@ -4,6 +4,8 @@ copyright:
 lastupdated: "2018-11-14"
 
 subcollection: virtualization
+
+keywords: Xenserver
 ---
 {:shortdesc: .shortdesc}
 {:tip: .tip}

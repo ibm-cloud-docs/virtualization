@@ -4,6 +4,8 @@ copyright:
 lastupdated: "2018-11-14"
 
 subcollection: virtualization
+
+keywords: Virtuozzo
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}

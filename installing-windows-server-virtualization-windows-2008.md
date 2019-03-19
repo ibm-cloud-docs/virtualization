@@ -4,6 +4,8 @@ copyright:
 lastupdated: "2018-01-23"
 
 subcollection: virtualization
+
+keywords: Windows 2008
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}

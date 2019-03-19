@@ -4,6 +4,8 @@ copyright:
 lastupdated: "2019-01-15"
 
 subcollection: virtualization
+
+keywords: vmware, ESXi
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}

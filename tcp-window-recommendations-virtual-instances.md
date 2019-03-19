@@ -4,6 +4,8 @@ copyright:
 lastupdated: "2018-05-18"
 
 subcollection: virtualization
+
+keywords: TCP window size
 ---
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}

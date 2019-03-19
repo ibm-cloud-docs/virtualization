@@ -4,6 +4,8 @@ copyright:
 lastupdated: "2018-01-10"
 
 subcollection: virtualization
+
+keywords: hypervisor
 ---
 {:shortdesc: .shortdesc}
 {:codeblock: .codeblock}

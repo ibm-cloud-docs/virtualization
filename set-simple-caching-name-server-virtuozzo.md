@@ -13,7 +13,8 @@ subcollection: virtualization
 
 Virtuozzo attempts to send packets out of the internal interface of the hardware node by using the public IP address of the container. All that you need to do is run a caching name server on the hardware node, which is available only on the private interface.
 
-    ```[root@virtuozzo ~]# yum install bind
+```
+    [root@virtuozzo ~]# yum install bind
 
     Loading "security" plugin
 
@@ -111,7 +112,9 @@ Virtuozzo attempts to send packets out of the internal interface of the hardware
 
     Starting named:                                            [  OK  ]
 
-    [root@virtuozzo ~]#```
+    [root@virtuozzo ~]#
+
+```
 
 
 Alternatively, you can add a bridged network interface by using Virtuozzo, assign unique internal IP addresses from your internal net block, and add a static route. Internal routing provides access to your internal infrastructure, so keep this alternative solution in mind if you have a mixed network and relaxed filtering on the servers in your internal network.

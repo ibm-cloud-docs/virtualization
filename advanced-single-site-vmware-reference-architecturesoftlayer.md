@@ -219,6 +219,7 @@ Complete these steps for each host in the management cluster.
 <tr><th>Network Adapter</th><th>vmnicX and vmnicY</th></tr>
 <tr><td>Load Balancing</td><td>Router based on the originating virtual port ID</td></tr>
 <tr><td>Active Adapters</td><td>vmnicX and vmnicY</td></tr>
+</tbody>
 </table>
 
 ### Edit existing virtual machine port group
@@ -228,6 +229,7 @@ Complete these steps for each host in the management cluster.
 <caption>Table 5. vmPG-Management Port Group</caption>
 <tbody>
 <tr><th>Network Label</th><th>*vmPG-Management*</th></tr>
+</tbody>
 </table>
 
 ### Edit existing VM kernel port group
@@ -237,6 +239,7 @@ Complete these steps for each host in the management cluster.
 <caption>Table 6. vmkPG-Management Port Group</caption>
 <tbody>
 <tr><th>Network Label</th><th>*vmkPG-Management*</th></tr>
+</tbody>
 </table>
 
 ### Add vMotion VM kernel port group
@@ -251,6 +254,7 @@ Complete these steps for each host in the management cluster.
 <tr><td>vMotion Traffic</td><td>Enabled</td></tr>
 <tr><td>IP Address</td><td>*172.16.10.X/24*<br/><br/>*User-defined address that can be a different subnet. Make sure the other vMotion addresses on each host is on the same subnet.*</td></tr>
 <tr><td>Subnet Mask</td><td>255.255.255.0</td></tr>
+</tbody>
 </table>
 
 ### Add fault tolerance VM kernel port group
@@ -265,6 +269,7 @@ Complete these steps for each host in the management cluster.
 <tr><td>Fault Tolerance Logging</td><td>Enabled</td></tr>
 <tr><td>IP Address</td><td>*172.16.20.X/24*<br/><br/>*User-defined address that can be a different subnet if needed. Make sure that the other FT addresses on each host are on the same subnet.*</td></tr>
 <tr><td>Netmask</td><td>255.255.255.0</td></tr>
+</tbody>
 </table>
 
 ### Add storage VM kernel port group
@@ -280,6 +285,7 @@ Update the **Notes** section of each Portable IP address with the name of the ho
 <tr><td>VLAN ID</td><td>*&lt;Storage VLAN&gt; (1102)*</td></tr>
 <tr><td>IP Address</td><td>*Portable Private Address*<br/><br/>*An IP address that is selected from the portable private addresses that are bound to the storage VLAN.*</td></tr>
 <tr><td>Netmask</td><td>*Subnet Mask Associated with the IP Range*</td></tr>
+</tbody>
 </table>
 
 ### Add public address port group
@@ -293,6 +299,7 @@ Update the **Notes** section of each Portable IP address with the name of the ho
 <tr><th>Connection Type</th><th>Virtual Machine</th></tr>
 <tr><td>Network Label</td><td>vmPG-Public</td></tr>
 <tr><td>VLAN ID</td><td>&lt;Primary Public VLAN&gt; (for example 2101)</td></tr>
+</tbody>
 </table>
 
 ## Step 7 Download or upload ISO images and vCenter Virtual Appliance
@@ -348,7 +355,7 @@ Follow these steps to configure the appliance:
 4. Go to the IP address that you gave to the vCenter virtual appliance (VCVA) appended with port 5480<!-- (https://:5480)-->.
 5. Accept the EULA in the wizard, answer the **Customer Improvement Experience Program** question, and select **Configure Options, Set custom configuration**.
 6. Click **Next** and enter the following values:
-<table border="1" cellpadding="0" cellspacing="0"><caption>Table 11. VCVA Setup Wizard</caption><tbody><tr><th>Wizard Menu</th><th>Option</th><th>Value</th></tr><tr><td>Database Settings</td><td>Database Type</td><td>embedded</td></tr><tr><td>SSO Settings</td><td>SSO Deployment Type</td><td>embedded</td></tr><tr><td>SSO Settings</td><td>New administrator password *(for administrator@vsphere.local)*</td><td>&lt;Enter a password&gt;</td></tr><tr><td>SSO Settings</td><td>Retype the new password</td><td>&lt;Enter the same password that you use previously&gt;</td></tr><tr><td>Time synchronization</td><td>NTP synchronization</td><td>servertime.service.softlayer.com</td></tr></table>
+<table border="1" cellpadding="0" cellspacing="0"><caption>Table 11. VCVA Setup Wizard</caption><tbody><tr><th>Wizard Menu</th><th>Option</th><th>Value</th></tr><tr><td>Database Settings</td><td>Database Type</td><td>embedded</td></tr><tr><td>SSO Settings</td><td>SSO Deployment Type</td><td>embedded</td></tr><tr><td>SSO Settings</td><td>New administrator password *(for administrator@vsphere.local)*</td><td>&lt;Enter a password&gt;</td></tr><tr><td>SSO Settings</td><td>Retype the new password</td><td>&lt;Enter the same password that you use previously&gt;</td></tr><tr><td>Time synchronization</td><td>NTP synchronization</td><td>servertime.service.softlayer.com</td></tr></tbody></table>
 7. Click **Start**. The VCVA is configured.
 8. Change the root password by using the options under **Admin**.
 9. Log out of the VCVA configuration web page.
@@ -493,7 +500,7 @@ Before you begin adding VMkernel adapters, assign the vmnics to the uplinks on t
 2. Select the appropriate distributed switch for the capacity hosts.
 3. Click **Add and manage hosts** on the **Getting Started** page.
 4. Use the following settings to add uplinks and migrate the existing VMkernel that are associated with management of the host.
-  - <table border="1" cellpadding="0" cellspacing="0"><caption>Table 18. DVS Add Hosts</caption><tbody><tr><th>Menu</th><th>Field</th><th>Value</th></tr><tr><td>Select Task</td><td>Select Tasks</td><td>Add Hosts</td></tr><tr><td>Select Hosts</td><td>Click **New Hosts**</td><td>Click the Capacity Host</td></tr><tr><td>Select network adapter tasks</td><td>Select network adapter tasks</td><td>Select Manage physical adapters and Manage VMkernel adapters</td></tr></table>
+  - <table border="1" cellpadding="0" cellspacing="0"><caption>Table 18. DVS Add Hosts</caption><tbody><tr><th>Menu</th><th>Field</th><th>Value</th></tr><tr><td>Select Task</td><td>Select Tasks</td><td>Add Hosts</td></tr><tr><td>Select Hosts</td><td>Click **New Hosts**</td><td>Click the Capacity Host</td></tr><tr><td>Select network adapter tasks</td><td>Select network adapter tasks</td><td>Select Manage physical adapters and Manage VMkernel adapters</td></tr></tbody></table>
 5. Select one of the private vmnics and click **Manage physical network adapters > Assign uplink**.
 6. Select `uplink1` on the pop-up screen and click **OK**.
 7. Repeat these steps for the other private vmnic and assign it to `uplink2`.

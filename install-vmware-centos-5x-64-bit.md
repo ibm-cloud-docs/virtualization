@@ -51,7 +51,7 @@ Before you begin the installation, review the following prerequisites:
 
 3. The installation presents basic questions and wants to know what directories to create and install certain parts of VMware into. From here, accept the defaults. Accept the license agreement to proceed with the installation.
 
-4. You might be asked this question: `“None of the pre-built vmmon modules for VMware Server is suitable for your running kernel. Do you want this program to try to build the vmmon module for your system (you need a C compiler installed on your system)?”`
+4. You might be asked this question: `None of the pre-built vmmon modules for VMware Server is suitable for your running kernel. Do you want this program to try to build the vmmon module for your system (you need a C compiler installed on your system)?`
 * Answer `yes` to this question (which is the default).
 
 ## Setting up VMware networking

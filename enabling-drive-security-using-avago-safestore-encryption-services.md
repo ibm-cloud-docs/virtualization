@@ -26,7 +26,7 @@ Setting up drive security helps prevent access to stored data on removed disks w
 ## Enabling drive security by using MegaRAID Storage Manager (MSM)
 {: #enabling-drive-security-by-using-megaraid-storage-manager-msm-}
 
-Use can set the security key and safe guard data in it by using the MegaRAID Storage Manager. You can also use the WebBIOS interface that requires one at server start time to enter the MegaRAID card BIOS to configure the drive security setting. For more information about MegaRAID Controller Card SAS 9361-8i, see the Broadcom site, [MegaRAID SAS 9361-8i ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.broadcom.com/products/storage/raid-controllers/megaraid-sas-9361-8i#documentation).
+Use can set the security key and safe guard data in a removed disk by using the MegaRAID Storage Manager. You can also use the WebBIOS interface that requires a security key at server start time to enter the MegaRAID card BIOS to configure the drive security setting. For more information about MegaRAID Controller Card SAS 9361-8i, see the Broadcom site, [MegaRAID SAS 9361-8i ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.broadcom.com/products/storage/raid-controllers/megaraid-sas-9361-8i#documentation).
 
 ### Identifying preinstalled SED drives
 {: #identifying-preinstalled-sed-drives}
@@ -40,11 +40,11 @@ When you start MSM, you must enter **User name** and **Password** which is the p
 <!--![Figure 1](images/1_adapter_login.jpg)-->
 
 Click the **Physical** tab. Then, click the drives that are available on the system. The **Properties** pane has the
-**Drive Security Properties** mentioning **Full Disk Encryption capable** field, which shows **Yes**. In the example used, 2 non-SED disks and 4 SED disks are used.
+**Drive Security Properties** section that includes **Full Disk Encryption capable** field, which shows **Yes**. In the example used, 2 non-SED disks and 4 SED disks are used.
 
 <!--![Figure 2](images/1_fde_capable_drives.jpg)-->
 
-### Enabling drive security at the controller
+### Enabling drive security on the controller
 {: #enabling-drive-security-at-the-controller}
 
 1. To enable Drive security, right-click the **Controller 0 :AVAGO MegaRAID SAS 9361-8i** from the **Physical** tab and select

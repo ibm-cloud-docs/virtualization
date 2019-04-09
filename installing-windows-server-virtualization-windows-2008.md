@@ -53,7 +53,7 @@ To enable the **Role** option for Windows Server virtualization a few patches mu
 To resolve the error, go to **Start > Programs > Administrative Tools > Windows Virtualization Management** in the management console for Windows virtualization.
 5. In the right pane, click on the appropriate server.
 6. Then in the action pane, click **Virtual Network Manager**. You now see **Virtual Network Switch Management**.
-7. In the left pane, click the network switch under **Add New** network switch.
+7. In the left pane, click the network switch under **Add New**.
 8. Rename the network switch to private.
 9. Select Physical network adapter for **Connection** and select the first network adapter. All network protocols are now unbound from the private network interface.
 10. **IMPORTANT** To reestablish network connectivity to private, you need to configure the new switch device, **NOT** the private interface. Go to **Start > Settings > Network Connections**. You see a new device that is called **Local Area Connection 2**.

@@ -24,7 +24,7 @@ You need to install an NFS server and manage it from another customer system or 
 
 This process scans the NFS share for any previous SRs.
 
-You can use the {{site.data.keyword.blockstoragefull}} for LVMoiSCSI. The iSCSI can be from a customer manage storage server or an {{site.data.keyword.blockstoragefull}} offering. For Performance and Redundant Block Storage, retrieve the IQN from the {{site.data.keyword.slportal}} by going to **Storage > Block Storage > Select Lun Name**. To mount the iSCSI node via XenCenter, follow these steps:
+You can use the {{site.data.keyword.blockstoragefull}} for LVMoiSCSI. The iSCSI can be from a customer managed storage server or an {{site.data.keyword.blockstoragefull}} offering. For Performance and Redundant Block Storage, retrieve the IQN from the {{site.data.keyword.slportal}} by going to **Storage > Block Storage > Select Lun Name**. To mount the iSCSI node via XenCenter, follow these steps:
 
 1. Open the XenCenter console.
 2. Go to **General > Properties** and set the IQN.

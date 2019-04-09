@@ -28,6 +28,6 @@ keywords: Virtuozzo
    * Normal (choose normal minimize server load)
    * High
    * Maximum
-7. Select the hardware node where you want the backup file housed. If you have multiple hardware nodes, then it is advised that you save your backups to these nodes, rather than the same server.
-  * Other options are at the administrator's digression.
+7. Select the hardware node where you want the backup file housed. If you have multiple hardware nodes, save your backups to one of these nodes, rather than saving them on the same server.
+  * Other options are at the administrator's discretion.
 8. Backup. The backup is complete. You can view the details of the backup by going to the **Hardware Node, Container, and Backups** tab and selecting the backup.

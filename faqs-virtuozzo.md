@@ -29,7 +29,7 @@ subcollection: virtualization
     * Routed to VLAN: Use this method if you have multiple host nodes within the same VLAN. You also use this method to migrate a container to a different hardware node within the same VLAN without changing the IP of the container.
     * Secondary on VLAN: This method works, but you don't need a secondary gateway. You lose 3 of the IP addresses due to host ID, gateway, and broadcast.
 
-Costs per IP can change depending on the routed type. Prices are shown in the portal after you select the server that you are ordering the IP addresses for. Routing can be changed at any time by opening a support ticket.
+Costs per IP can change depending on the routing type (Routed to VLAN or Secondary on VLAN). Prices are shown in the portal after you select the server that you are ordering the IP addresses for. Routing can be changed at any time by opening a support ticket.
 {:tip}
 
 ## Can I migrate a Virtuozzo 3 Container to a Virtuozzo Container 4 hardware node with no downtime?

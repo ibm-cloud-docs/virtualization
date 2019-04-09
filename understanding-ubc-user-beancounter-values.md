@@ -31,7 +31,7 @@ Use SLM Mode if UBC is not understood. SLM is easier and provides the same type 
 |`tcprcvbuf`|*system*|Total size of TCP receive buffers|
 |`othersockbuf`|*system*|Total size of UNIX-domain socket buffers, UDP and other datagram protocol send buffers|
 |`dgramrcvbuf`|*system*|Receive buffers of UDP and other datagram protocols|
-|`oomguardpages`|*system*|The guaranteed amount of memory for the case the memory is over-booked (out-of-memory kill guarantee)|
+|`oomguardpages`|*system*|The guaranteed amount of memory when the memory is over-booked (out-of-memory kill guarantee)|
 |`privvmpages`|*system*|Memory allocation limit|
 |`lockedpages`|*system*|Process pages not allowed to be swapped out (pages locked by [mlock(2) ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://linux.die.net/man/2/mlock))|
 |`shmpages`|*system*|Total size of shared memory (interprocess communication or IPC, shared anonymous mappings and tmpfs objects) in pages|
@@ -44,7 +44,7 @@ Use SLM Mode if UBC is not understood. SLM is easier and provides the same type 
 |`numiptent`|*system*|Number of NETFILTER (IP packet filtering) entries|
 |`cpulimit`|*cpu*|Limit on CPU consumption|
 |`diskinodes`|*disk*|Disk inode (filesystem object) quota|
-|`quotatime`|*disk*|Disk quota grace period|
+|`quotatime`|*disk*|Amount of time, in seconds that the disk can exceed it's quota limits.|
 |`quotaugidlimit`|*disk*|Limit on the number of uid and gid accounting entries|
 <caption>Table 1. SLM parameter descriptions</caption>
 

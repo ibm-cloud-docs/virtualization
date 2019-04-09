@@ -18,7 +18,7 @@ For more information about the {{site.data.keyword.cloud_notm}} VPN, see [Gettin
 ## Accessing your ESX host
 {: #accessing-your-esx-host}
 
-After you connect to the {{site.data.keyword.cloud_notm}} VPN, you can communicate with your new VMware server. ESX is managed by a vSphere client. You can retrieve from your new VMware server by entering the private network IP address into a web browser and click the "Download vSphere Client" link on the resulting page.
+After you connect to the {{site.data.keyword.cloud_notm}} VPN, you can communicate with your new VMware server. ESX is managed by a vSphere client. You can download your new VMware server by entering the private network IP address into a web browser and click the "Download vSphere Client" link on the resulting page.
 
 After the vSphere client downloads and you install it on your local workstation, you can start the application and enter your server private address and login credentials. Your login credentials are viewed on the Devices page in the {{site.data.keyword.slportal_full}} after your click the Passwords tab.
 

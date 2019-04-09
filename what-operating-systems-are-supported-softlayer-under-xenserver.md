@@ -15,7 +15,7 @@ subcollection: virtualization
 # Operating systems supported by IBM Cloud under XenServer
 {: #operating-systems-supported-by-ibm-cloud-under-xenserver}
 
-The following operating systems can tie into the {{site.data.keyword.slapi_full}} while XenServer runs:
+The following operating systems can integrate with {{site.data.keyword.slapi_full}} while XenServer runs:
 
 - CentOS 6.x, 7.x
 - CloudLinux 6.x

@@ -36,11 +36,11 @@ You can find Hyper-V Manager under **Administrative Tools** in the Windows Contr
 
 The first configuration to check is the storage location for your virtual hard disks. From the Hyper-V Manager window, on the left side you see **Hyper-V Manager** and the server name. Click your server name and you see the information that is available to the Hyper-V service on your server. Now, the middle of the screen is empty since shows that no virtual machines are installed. On the right side of the screen, you see a link for **Hyper-V Settings**. Clicking the link brings up the basic settings for Hyper-V.
 
-The primary setting that you need to look at is **Virtual Hard Disks**. On the right side, you see the default location stores your virtual hard disks. The default location is:
+The primary setting that you need to look at is **Virtual Hard Disks**. On the right side, you see the default location where your virtual hard disks are stored. The default location is:
 
 `C:\Users\Public\Documents\Hyper-V\Virtual Hard Disks`
 
-When you create a virtual machine, you can specify a specific place if you do not want to store that specific virtual hard disk in the default location. For example, you want to store your virtual hard disks on a second, larger drive (Drive D in this example) and you want those virtual drives to be stored in the **VirtualMachine** folder, enter `D:\VirtualMachine` into the field.
+When you create a virtual machine, you can specify a specific place if you do not want to store that specific virtual hard disk in the default location. For example, if you want to store your virtual hard disks on a second, larger drive (Drive D in this example) and you want those virtual drives to be stored in the **VirtualMachine** folder, enter `D:\VirtualMachine` into the field.
 
 ****
 
@@ -54,7 +54,7 @@ Before you configure virtual network devices, determine which network adapters a
 ### Configuring a private network device
 {: #configuring-a-private-network-device}
 
-Now that the default location to store your virtual hard disks is configured, you need to configure the virtual network devices that the virtual machines use. To open the Virtual Network Manager, click **Virtual Network Manager** on the right side of the Hyper-V Manager window that is labeled.
+Now that the default location to store your virtual hard disks is configured, you need to configure the virtual network devices that the virtual machines use. To open the Virtual Network Manager, click **Virtual Network Manager** on the right side of the Hyper-V Manager window.
 
 The first time that you open this window, you see Virtual Networks on the left with the only listed option, **New Virtual Network**. On the right side, you have three options:
 * External

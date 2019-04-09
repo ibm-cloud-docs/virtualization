@@ -11,7 +11,7 @@ subcollection: virtualization
 # Setting up a virtual machine network
 {: #setting-up-a-virtual-machine-network}
 
-Network configuration on your new virtual machine is done in a few steps. You need a separate portable IP block for both the public and private network. It is assumed that you are using a virtualization offering that requires secondary on VLAN broadcast domain and not routed to VLAN (without network id/gateway/broadcast) subnet. If you do not plan to use the Private network on your virtual machine, you need only the Public subnet. Portable IP blocks can be ordered directly through the portal at [Sales->Add IP Addresses ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Sales/orderAdditionalServices/subnet){: new_window} or from the [Public Network IP Manager ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/PublicNetwork/ipManager){: new_window}.
+The network configuration on your new virtual machine (VM) is done in a few steps. You need a separate portable IP block for both the public and private network. It is likely that your virtualization offering requires a secondary VM. The secondary VM should be on a VLAN broadcast domain and should not routed to a VLAN subnet that does not have an associated network id, gateway, or broadcast address. If you do not plan to use the Private network on your virtual machine, you need only the Public subnet. Portable IP blocks can be ordered directly through the portal at [Sales->Add IP Addresses ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Sales/orderAdditionalServices/subnet){: new_window} or from the [Public Network IP Manager ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/PublicNetwork/ipManager){: new_window}.
 
 After you obtain your IP blocks, you can configure networking on the virtual machine. If the virtual machine is not installed, you can configure your public network block through the Operating System installation process. This process is the quickest method to configure your public network. All network configuration steps assume that the first network interface is the private network and the second network interface is the public network.
 
@@ -196,7 +196,7 @@ The private network settings are in the following file. You need to edit this fi
       NETMASK=255.255.255.248
       ONBOOT=yes
 
-Finally, a new route is required to provide private access to the entire private network to include the DNS server, which is done by editing the following file. This fill does not exist, so it needs to be created. **NOTE:** Replace "10.0.0.1" in the example with your private subnet IP gateway.
+Finally, a new route is required to provide private access to the entire private network to include the DNS server, which is done by creating and editing the following file.  **NOTE:** Replace "10.0.0.1" in the example with your private subnet IP gateway.
 
 * /etc/sysconfig/network-scripts/route-eth0
       10.0.0.0/8 via 10.0.0.1

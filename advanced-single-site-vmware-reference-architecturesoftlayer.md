@@ -60,7 +60,7 @@ After you log in to {{site.data.keyword.cloud_notm}}, open a support ticket for 
 |Do I need public and or private VLANs?|Private and Public|
 |How many VLANs do I need?|Private = 3, Public = 1|
 |How many IP addresses do I need?|8 - 16 for each VLAN|
-|What router do I the VLANs need to be behind?|It doesn't matter that the VLANs are all in the same pod.|
+|What router do the VLANs need to be behind?|It doesn't matter that the VLANs are all in the same pod.|
 |Which pod do the VLANs need to be in?|They all go in the same pod in <DATA CENTER NAME>.|
 <caption>Table 2. Support ticket information</caption>
 
@@ -85,7 +85,7 @@ In Step 2, a request is made to create portable private subnets for management V
 * Storage VLAN - 1x16 addresses /28 – Create two subnets on the same VLAN for storage and two VM kernel ports on each ESXi hosts by using different subnets to access the shared storage devices.
 * VM VLAN - 1x32 addresses /27 – These addresses are used to assign IP addresses to VMs in the capacity cluster.
 
-When you order an amount, make sure that you consider how many IP addresses are needed within the next 30 days and 6 months. It is also important to note that {{site.data.keyword.cloud_notm}} reserves three to four IP addresses per portable subnet block. As a result, ordering four IP address nets one IP address, or zero if the pod supports Hot Standby Router Protocol.
+When you order an amount, make sure that you consider how many IP addresses are needed within the next 30 days and 6 months. It is also important to note that {{site.data.keyword.cloud_notm}} reserves three to four IP addresses per portable subnet block. In order to get one IP address, you must order 4 IP addresses to account for the three to four reserved addresses, or zero if the pod supports Hot Standby Router Protocol.
 
 Use the following steps to order a block of portable IP addresses for each VLAN for each subnet that you want to create:
 
@@ -566,7 +566,7 @@ After you create the host profile, you need to modify it so that it does not pro
 
 ***Attaching host profile to capacity cluster***
 
-Now that you created a host profile, you need to attach the host profile to the cluster. Clusters are attached so that they can be applied to the capacity hosts.
+Now that you created a host profile, you need to attach the host profile to the cluster. Profiles are attached so that they can be applied to the capacity hosts.
 
 1. Go to the **Host and Clusters** view in the vSphere Web Client.
 2. Enter maintenance mode for each host in the cluster. **Note:** Profiles can be applied only to hosts that are in maintenance mode.
@@ -591,7 +591,7 @@ Now that shared storage is set up, you need to enable HA and DRS to provide extr
 * Select Manage, Settings for the management cluster.
 * Select vSphere DRS and click Edit. Ensure that the following settings are selected: **Turn on vSphere DRS**, Automation Level - **Fully Automated**, Migration threshold slider setting - midway, virtual machine automation - **Enable individual virtual machine automation levels.**, Power Management - **Off**.  
 * On the vSphere HA Settings screen, ensure that the following settings are selected: **Turn on vSphere HA**, **Host Monitoring**, VM restart priority - **Medium**, Host isolation response - **Leave powered on**.  
-***Storage vMotion the vCenter Virtual Appliance***
+***Storage vMotion for the vCenter Virtual Appliance***
 
 Now that storage is set up on the management cluster and HA and DRS are enabled, you need to set the vCenter Virtual Appliance to shared storage.
 

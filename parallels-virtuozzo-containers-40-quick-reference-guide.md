@@ -95,8 +95,8 @@ Supplementary tools are used for miscellaneous tasks in the hardware node and co
 |vzcache|Utility to gain extra disk space by caching the files identical in different containers.|
 |vzsveinstall|Utility to create the Service Container on the Hardware Node.|
 |vzsveupgrade|Utility to update the packages inside the Service Container.|
-|vzps|Utility working as the standard ps and top utilities, with container-related functions added.|
-|vztop|Utility working as the standard ps and top utilities, with container-related functions added.|
+|vzps|Utility working as the standard ps and htop utilities, with container-related functions added.|
+|vztop|Utility working as the standard ps and htop utilities, with container-related functions added.|
 |vzsetxinetd|Utility to switch some services between stand-alone mode and `xinetddependent` mode.|
 |vzdqcheck|Print file space current usage from quota’s point of view.|
 |vzdqdump|Utility to dump the Container user or group quota limits and grace times from the kernel or the quota file or for loading them to a quota file.|

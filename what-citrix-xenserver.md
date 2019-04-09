@@ -9,7 +9,7 @@ subcollection: virtualization
 # What is Citrix XenServer?
 {: #what-is-citrix-xenserver-}
 
-XenServer is a server virtualization platform that offers near bare metal virtualization performance for virtualized server and client operating systems.
+XenServer is a server virtualization platform that offers virtualization performance for virtualized server and client operating systems that nearly matches the performance of a bare metal servers.
 
 XenServer uses the Xen hypervisor to virtualize each server, on which it is installed, enabling each to host multiple virtual machines simultaneously with great performance. You can also use XenServer to combine multiple Xen-enabled servers into a powerful resource pool, by using industry-standard shared storage architectures and by using resource clustering. In doing so, XenServer extends the basic single-server notion of virtualization to enable seamless virtualization of multiple servers as a resource pool, whose storage, memory, CPU, and networking resources can be dynamically controlled to deliver optimal performance, increased resiliency and availability, and maximum use of data center resources.
 

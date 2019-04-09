@@ -33,7 +33,7 @@ This request is filled during normal United States CST business hours.
 ## If clients are a service provider, can they use their own VSPP licensing for hosts that they rent in IBM Cloud?
 {: #if-clients-are-a-service-provider-can-they-use-their-own-vspp-licensing-for-hosts-that-they-rent-in-ibm-cloud-}
 
-No. You can either use {{site.data.keyword.cloud}} VSPP or BYOL for socket-based licensing. You cannot use your own VSPP agreement.
+No. You can either use {{site.data.keyword`.cloud}} VSPP or BYOL for socket-based licensing. You cannot use your own VSPP agreement.
 
 ## Can I use the secondary IP block that came with the server for virtual machines?
 {: #can-i-use-the-secondary-ip-block-that-came-with-the-server-for-virtual-machines-}

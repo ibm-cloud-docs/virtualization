@@ -118,7 +118,7 @@ The AltaVault appliance is configured to communicate with the {{site.data.keywor
 
 The **e0b** interface needs to be configured to create a CIFS/SMB mount point. Use the following steps to configure **e0b**.
 
-1. Go to **Settings > Data Interfaces** and expand the **e0b** interface. Check **Enable Data Interface**, and enter the **IP address, Subnet Mask,** and **Gateway** that you use to mount the CIFS/SMB share.
+1. Go to **Settings > Data Interfaces** and expand the **e0b** interface. Select **Enable Data Interface**, and enter the **IP address, Subnet Mask,** and **Gateway** that you use to mount the CIFS/SMB share.
 2. Leave the default **MTU** value of **1500 bytes**.<br/><br/>Although the default maximum transmission unit (MTU) is set to 1,500, you can change it to 9,000 if you use jumbo frames. **Note:** Your ESXi host and physical infrastructure is required to support jumbo frames. By default, {{site.data.keyword.cloud_notm}} already supports an MTU size of 9,000 bytes with no configuration changes needed.
 3. Click **Apply**. The mount point is ready for configuration.
 4. Select **Storage > CIFS > Add CIFS Share** and enter a unique name.

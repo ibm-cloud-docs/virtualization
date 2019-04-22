@@ -14,7 +14,7 @@ keywords: vmware, virtuozzo, hyper-V, ESX, ESXi
 # Guía de aprendizaje de iniciación
 {: #getting-started}
 
-Puede utilizar la solución de virtualización para ejecutar varias máquinas virtuales en un único entorno dedicado. Las máquinas virtuales que se ejecutan en la red de {{site.data.keyword.BluSoftlayer_full}} se pueden integrar con otros dispositivos físicos y virtuales de la red y se pueden gestionar a través del portal de clientes y de la API. La ejecución de máquinas virtuales en la plataforma automatizada y la arquitectura propietaria de {{site.data.keyword.cloud_notm}} ofrece altos niveles de estabilidad adecuados para la virtualización a nivel empresarial, así como virtualización a una escala menor.
+Puede utilizar la solución de virtualización para ejecutar varias máquinas virtuales en un único entorno dedicado. Las máquinas virtuales que se ejecutan en la red de {{site.data.keyword.cloud}} se pueden integrar con otros dispositivos físicos y virtuales de la red y se pueden gestionar a través del portal de clientes y de la API. La ejecución de máquinas virtuales en la plataforma automatizada y la arquitectura propietaria de {{site.data.keyword.cloud_notm}} ofrece altos niveles de estabilidad adecuados para la virtualización a nivel empresarial, así como virtualización a una escala menor.
 {:shortdesc}
 
 | Iniciación       |

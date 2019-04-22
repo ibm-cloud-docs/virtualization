@@ -47,5 +47,5 @@ Parallels Server Bare Metal 提供備份及還原功能，用來備份及還原�
 
 Parallels Server Bare Metal 使用「可攜式」IP 位址，而 Virtuozzo 則會使用「可攜式」或「靜態」IP 位址（視配置而定）。
 
-\* {{site.data.keyword.BluSoftlayer_full}} 僅授權 Parallels Server 4 Bare Metal 上的硬體虛擬機器，除非訂單表格上另有指示。
+\* {{site.data.keyword.cloud}} 僅授權 Parallels Server 4 Bare Metal 上的硬體虛擬機器，除非訂單表格上另有指示。
 _VM_ = 虛擬機器。_V_ = VPS 或容器。

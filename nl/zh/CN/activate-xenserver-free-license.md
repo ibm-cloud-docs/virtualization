@@ -14,7 +14,7 @@ keywords: Citrix XenServer
 # 激活 XenServer
 {: #activating-xenserver}
 
-Citrix XenServer 免费许可证从初始安装或重新装入后许可使用 30 天。在此期间，您需要向 Citrix 注册并请求完整功能的 1 年许可证。要创建此许可证，Citrix 需要 {{site.data.keyword.BluSoftlayer}} 无权访问的个人信息。许可证是您与 Citrix 之间的 XenServer 使用协议。
+Citrix XenServer 免费许可证从初始安装或重新装入后许可使用 30 天。在此期间，您需要向 Citrix 注册并请求完整功能的 1 年许可证。要创建此许可证，Citrix 需要 {{site.data.keyword.cloud}} 无权访问的个人信息。许可证是您与 Citrix 之间的 XenServer 使用协议。
 {:shortdesc}
 
 如果未在 30 天内注册系统，那么 30 天后将无法打开任何虚拟机的电源。

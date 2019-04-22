@@ -25,4 +25,4 @@ subcollection: virtualization
 - Ubuntu 14.04 LTS - 16.04 LTS
 - Microsoft Windows Server 2012, 2012 R2, 2016
 
-XenServer는 {{site.data.keyword.slapi_short}}로 묶을 수 없는 이전 목록을 넘어서는 다양한 소프트웨어를 지원합니다. XenCenter에서 *"기타 설치 매체"* 옵션으로 설치되는 게스트 운영 체제는 {{site.data.keyword.BluSoftlayer_notm}}에서 지원되지 않으며, XenServer 환경에서 작동하지 않습니다. 
+XenServer는 {{site.data.keyword.slapi_short}}로 묶을 수 없는 이전 목록을 넘어서는 다양한 소프트웨어를 지원합니다. XenCenter에서 *"기타 설치 매체"* 옵션으로 설치되는 게스트 운영 체제는 {{site.data.keyword.cloud_notm}}에서 지원되지 않으며, XenServer 환경에서 작동하지 않습니다. 

@@ -14,7 +14,7 @@ keywords: Avago SafeStore, encryption
 # Avago SafeStore 암호화 서비스를 사용하여 드라이브 보안 사용
 {: #enabling-drive-security-by-using-avago-safestore-encryption-services}
 
-드라이브 보안을 설정하면 보안 키 없이 제거된 디스크에 있는 저장된 데이터에 대한 액세스를 방지하는 데 도움이 됩니다. 이 키를 사용하지 않으면 드라이브 데이터를 복구할 수 없습니다. {{site.data.keyword.BluSoftlayer_full}}는 Bare Metal Server에서 구입할 수 있는 드라이브의 선택 데이터 센터에서 자체 암호화 드라이브(SED)를 제공합니다. US 데이터 센터에서는 10개의 TB SATA 드라이브를 사용할 수 있습니다.
+드라이브 보안을 설정하면 보안 키 없이 제거된 디스크에 있는 저장된 데이터에 대한 액세스를 방지하는 데 도움이 됩니다. 이 키를 사용하지 않으면 드라이브 데이터를 복구할 수 없습니다. {{site.data.keyword.cloud}}는 Bare Metal Server에서 구입할 수 있는 드라이브의 선택 데이터 센터에서 자체 암호화 드라이브(SED)를 제공합니다. US 데이터 센터에서는 10개의 TB SATA 드라이브를 사용할 수 있습니다.
 
 ## 전제조건
 {: #prerequisites-enabling-drive-security-by-using-avago-safestore-encryption-services}

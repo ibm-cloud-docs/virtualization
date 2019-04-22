@@ -14,7 +14,7 @@ keywords: Xenserver
 # Conectando-se ao XenServer por meio de uma interface pública
 {: #connecting-to-xenserver-over-a-public-interface}
 
-Por padrão, a instalação do {{site.data.keyword.BluSoftlayer}} do XenServer é configurada para usar a interface de rede privada para todas as conexões de gerenciamento. Se você tiver problemas de conexão na rede privada, abra um chamado de suporte.
+Por padrão, a instalação do {{site.data.keyword.cloud}} do XenServer é configurada para usar a interface de rede privada para todas as conexões de gerenciamento. Se você tiver problemas de conexão na rede privada, abra um chamado de suporte.
 
 Mudar essa configuração é um risco de segurança e não é aconselhável.
 {:tip}

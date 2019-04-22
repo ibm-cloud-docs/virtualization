@@ -28,4 +28,4 @@ Los sistemas operativos siguientes se pueden enlazar a {{site.data.keyword.slapi
 XenServer admite software más allá de la lista anterior, que es posible que no se enlace con
 {{site.data.keyword.slapi_short}}. Cualquier sistema operativo de invitado que se instale mediante las opciones
 *“Otros soportes de instalación”* en XenCenter, no será compatible con
-{{site.data.keyword.BluSoftlayer_notm}} y podría no funcionar en el entorno XenServer.
+{{site.data.keyword.cloud_notm}} y podría no funcionar en el entorno XenServer.

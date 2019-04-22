@@ -19,12 +19,12 @@ Hyper-V는 Windows 2008 Server Datacenter Edition의 가상화 시스템으로, 
 ## Hyper-V 실행을 위한 요구사항은 무엇입니까?
 {: #what-are-the-requirements-to-run-hyper-v-}
 
-Hyper-V는 Windows 2008 Server 64비트 Datacenter Edition에 설치해야 합니다. 모든 {{site.data.keyword.BluSoftlayer}} 하드웨어는 Hyper-V의 시스템 요구사항을 충족합니다. Microsoft는 서버에 최소 2GB의 RAM을 권장합니다.
+Hyper-V는 Windows 2008 Server 64비트 Datacenter Edition에 설치해야 합니다. 모든 {{site.data.keyword.cloud}} 하드웨어는 Hyper-V의 시스템 요구사항을 충족합니다. Microsoft는 서버에 최소 2GB의 RAM을 권장합니다.
 
 ## Hyper-V를 2008의 다른 버전에서 사용할 수 있습니까?
 {: #is-hyper-v-available-on-any-other-versions-of-2008-}
 
-{{site.data.keyword.BluSoftlayer_notm}}의 경우 Datacenter Edition에서만 Hyper-V를 제공합니다.
+{{site.data.keyword.cloud_notm}}의 경우 Datacenter Edition에서만 Hyper-V를 제공합니다.
 
 ## Hyper-V를 Windows 2003에서 실행할 수 있습니까?
 {: #can-hyper-v-run-on-windows-2003}
@@ -34,7 +34,7 @@ Hyper-V는 Windows 2008용으로 개발되었으며 Windows 2003에서는 실행
 ## 가상 머신에 설치할 수 있는 운영 체제는 무엇입니까?
 {: #what-operating-systems-can-be-installed-on-a-virtual-machine}
 
-{{site.data.keyword.BluSoftlayer_notm}}의 경우 다음과 같은 운영 체제를 Hyper-V에서 지원합니다.
+{{site.data.keyword.cloud_notm}}의 경우 다음과 같은 운영 체제를 Hyper-V에서 지원합니다.
 
 * Windows 2003 및 2008 Server의 모든 버전 
 * CentOS, Fedora 및 Ubuntu Linux Distributions
@@ -67,7 +67,7 @@ Hyper-V는 Windows 2008용으로 개발되었으며 Windows 2003에서는 실행
 ## 각 가상 운영 체제가 라이센스를 가지도록 해야 합니까? 
 {: #does-each-virtual-operating-system-need-to-have-a-license-}
 
-Windows 2003 및 2008 가상 머신은 {{site.data.keyword.BluSoftlayer_notm}}를 통해 라이센스가 부여됩니다. Linux 가상 머신은 무료로 라이센스가 부여되며 별도의 조치가 필요하지 않습니다.
+Windows 2003 및 2008 가상 머신은 {{site.data.keyword.cloud_notm}}를 통해 라이센스가 부여됩니다. Linux 가상 머신은 무료로 라이센스가 부여되며 별도의 조치가 필요하지 않습니다.
 
 ## 가상 머신에 사설 네트워크에 대한 액세스 권한이 있습니까?
 {: #will-the-virtual-machines-have-access-to-the-private-network-}
@@ -77,7 +77,7 @@ Windows 2003 및 2008 가상 머신은 {{site.data.keyword.BluSoftlayer_notm}}�
 ## 가상 머신에 사설 네트워크 액세스를 제공하는 데 있어 어떠한 이점이 있습니까?
 {: #what-advantages-are-there-to-providing-private-network-access-to-virtual-machines-}
 
-가상 머신에 대한 사설 네트워크 액세스를 제공하면 가상 머신이 서로 통신할 수 있습니다. 사설 네트워크 액세스는 또한 NAS 및 iSCSI, 그리고 {{site.data.keyword.BluSoftlayer_notm}}와 함께 가지고 있는 다른 서버와 같이 가상 머신이 다른 내부 시스템과 통신하도록 허용합니다.
+가상 머신에 대한 사설 네트워크 액세스를 제공하면 가상 머신이 서로 통신할 수 있습니다. 사설 네트워크 액세스는 또한 NAS 및 iSCSI, 그리고 {{site.data.keyword.cloud_notm}}와 함께 가지고 있는 다른 서버와 같이 가상 머신이 다른 내부 시스템과 통신하도록 허용합니다.
 
 ## 가상 머신은 서버와 함께 제공되는 보조 IP 블록을 사용할 수 있습니까?
 {: #can-virtual-machines-use-the-secondary-ip-block-that-came-with-the-server-}

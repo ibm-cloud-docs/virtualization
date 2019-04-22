@@ -25,4 +25,4 @@ subcollection: virtualization
 - Ubuntu 14.04 LTS 到 16.04 LTS
 - Microsoft Windows Server 2012、Windows Server 2012 R2 和 Windows Server 2016
 
-除了上面列表中的软件外，XenServer 还支持可能未绑定到 {{site.data.keyword.slapi_short}} 的各种软件。{{site.data.keyword.BluSoftlayer_notm}} 不支持在 XenServer 中通过*“其他安装介质”*选项安装的任何访客操作系统，并且这些操作系统可能无法在 XenServer 环境中运行。
+除了上面列表中的软件外，XenServer 还支持可能未绑定到 {{site.data.keyword.slapi_short}} 的各种软件。{{site.data.keyword.cloud_notm}} 不支持在 XenServer 中通过*“其他安装介质”*选项安装的任何访客操作系统，并且这些操作系统可能无法在 XenServer 环境中运行。

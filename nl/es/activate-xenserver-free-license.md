@@ -14,7 +14,7 @@ keywords: Citrix XenServer
 # Activación de XenServer
 {: #activating-xenserver}
 
-La licencia gratuita de Citrix XenServer ofrece una licencia de 30 días desde la recarga o la instalación inicial. Durante este tiempo, necesita registrarse en Citrix y solicitar una licencia de 1 año completamente funcional. Para crear esta licencia, Citrix requiere información personal a la que {{site.data.keyword.BluSoftlayer}} no tiene acceso. La licencia es un acuerdo entre usted y Citrix para el uso de XenServer.
+La licencia gratuita de Citrix XenServer ofrece una licencia de 30 días desde la recarga o la instalación inicial. Durante este tiempo, necesita registrarse en Citrix y solicitar una licencia de 1 año completamente funcional. Para crear esta licencia, Citrix requiere información personal a la que {{site.data.keyword.cloud}} no tiene acceso. La licencia es un acuerdo entre usted y Citrix para el uso de XenServer.
 {:shortdesc}
 
 Si no registra su sistema en un plazo de 30 días, no podrá encender ninguna máquina virtual.

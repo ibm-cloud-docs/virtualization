@@ -308,7 +308,7 @@ Update the **Notes** section of each Portable IP address with the name of the ho
 Now, the environment is ready to deploy the VMware vCenter Virtual Appliance and install a virtual machine for DNS, Active Directory, or BIND. However, before you deploy, you need to download the images. To do download the images, remote desktop to the virtual server previously provisioned and download the appropriate images on the virtual server for your environment:
 
 * Active Directory / Windows DNS: Windows Server 2008R2/Windows Server 2012 ISO Image (Your licensed Media)
-* Linux BIND: [CentOS Install Image ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [CentOS Install Image ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/download/){: new_window}
 * [vCenter Virtual Appliance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (requires a valid VMware subscription)
 
 After you download the ISO, you need to upload the image to a management host data store so it can be attached to a virtual machine. Use the vSphere client to connect to a management host and create an ISO directory on the local data store.
@@ -607,7 +607,7 @@ The advanced single-site VMware environment is complete.
 
 You now have a VMware environment that is running in an IBM Cloud data center. Your VMware environment can run production workloads and supplementing an on-premises IBM Cloud deployment. The environment enacts VMware best practices and enables features such as VMware DRS, HA, Storage DRS, and networking redundancy. You can extend this reference architecture implementation with greater capacity or management hosts and more storage.
 
-For more information about VMware, see [Deploy VMware](/docs/infrastructure/vmware?topic=VMware-using-cookbooks-for-vmware-deployments) and [VMware FAQ](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
+For more information about VMware, see [Deploy VMware](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) and [VMware FAQ](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
 
 ## Appendix A: VLAN Worksheet
 {: #appendix-a-vlan-worksheet}

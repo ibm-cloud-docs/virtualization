@@ -14,7 +14,7 @@ keywords: vmware, virtuozzo, hyper-V, ESX, ESXi
 # Esercitazione introduttiva
 {: #getting-started}
 
-Puoi utilizzare la soluzione di virtualizzazione per eseguire più macchine virtuali in un singolo ambiente dedicato. Le macchine virtuali eseguite sulla rete {{site.data.keyword.BluSoftlayer_full}} si possono integrare con altri dispositivi fisici e virtuali sulla rete e possono essere gestite sia tramite il Portale del Cliente che mediante l'API. L'esecuzione delle macchine virtuali sulla piattaforma automatizzata e sull'architettura proprietaria {{site.data.keyword.cloud_notm}} offre elevati livelli di stabilità adatti per la virtualizzazione a livello aziendale e la virtualizzazione su una scala più piccola.
+Puoi utilizzare la soluzione di virtualizzazione per eseguire più macchine virtuali in un singolo ambiente dedicato. Le macchine virtuali eseguite sulla rete {{site.data.keyword.cloud}} si possono integrare con altri dispositivi fisici e virtuali sulla rete e possono essere gestite sia tramite il Portale del Cliente che mediante l'API. L'esecuzione delle macchine virtuali sulla piattaforma automatizzata e sull'architettura proprietaria {{site.data.keyword.cloud_notm}} offre elevati livelli di stabilità adatti per la virtualizzazione a livello aziendale e la virtualizzazione su una scala più piccola.
 {:shortdesc}
 
 | Introduzione       |

@@ -11,7 +11,7 @@ subcollection: virtualization
 # XenServer 버전 간의 차이점
 {: #differences-between-versions-of-xenserver}
 
-라이센싱은 시스템에 설치된 XenServer 버전 간의 유일한 차이점입니다. 설치 후 라이센스를 더 높은 클래스 라이센스로 업그레이드하려는 경우, 서버를 다시 설치할 때 중단 시간이 발생하지 않습니다. 가격 정보는 {{site.data.keyword.BluSoftlayer}} 담당자에게 문의하십시오.
+라이센싱은 시스템에 설치된 XenServer 버전 간의 유일한 차이점입니다. 설치 후 라이센스를 더 높은 클래스 라이센스로 업그레이드하려는 경우, 서버를 다시 설치할 때 중단 시간이 발생하지 않습니다. 가격 정보는 {{site.data.keyword.cloud}} 담당자에게 문의하십시오.
 
 **참고:** 사용 가능한 일부 기능이 지원되지 않습니다. 
 

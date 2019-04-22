@@ -14,7 +14,7 @@ keywords: Avago SafeStore, encryption
 # Laufwerksicherheit mit Avago SafeStore Encryption Services aktivieren
 {: #enabling-drive-security-by-using-avago-safestore-encryption-services}
 
-Die Einrichtung der Laufwerksicherheit ermöglicht es Ihnen, den Zugriff auf Daten, die auf entfernten Platten gespeichert sind, ohne einen Sicherheitsschlüssel zu verhindern. Ohne diesen Schlüssel können die auf dem Laufwerk gespeicherten Daten nicht wiederhergestellt werden. {{site.data.keyword.BluSoftlayer_full}} stellt in ausgewählten Rechenzentren SEDs (Self-Encrypting Drives) für die Laufwerke zur Verfügung, die für Bare Metal Server erworben werden können. In den Rechenzentren in USA werden SATA-Laufwerke mit einer Kapazität von 10 TB angeboten.
+Die Einrichtung der Laufwerksicherheit ermöglicht es Ihnen, den Zugriff auf Daten, die auf entfernten Platten gespeichert sind, ohne einen Sicherheitsschlüssel zu verhindern. Ohne diesen Schlüssel können die auf dem Laufwerk gespeicherten Daten nicht wiederhergestellt werden. {{site.data.keyword.cloud}} stellt in ausgewählten Rechenzentren SEDs (Self-Encrypting Drives) für die Laufwerke zur Verfügung, die für Bare Metal Server erworben werden können. In den Rechenzentren in USA werden SATA-Laufwerke mit einer Kapazität von 10 TB angeboten.
 
 ## Voraussetzungen
 {: #prerequisites-enabling-drive-security-by-using-avago-safestore-encryption-services}

@@ -25,4 +25,4 @@ Die folgenden Betriebssysteme können während der Laufzeit von XenServer in {{s
 - Ubuntu 14.04 LTS bis 16.04 LTS
 - Microsoft Windows Server 2012, 2012 R2, 2016
 
-Neben den in der hier aufgeführten Liste enthaltenen Betriebssystemen unterstützt XenServer weitere Softwarekomponenten, die möglicherweise nicht in {{site.data.keyword.slapi_short}} integriert werden können. Gastbetriebssysteme, die mithilfe der Option *Andere Installationsmedien* in XenCenter installiert werden, werden von {{site.data.keyword.BluSoftlayer_notm}} nicht unterstützt und funktionieren in der XenServer-Umgebung eventuell nicht.
+Neben den in der hier aufgeführten Liste enthaltenen Betriebssystemen unterstützt XenServer weitere Softwarekomponenten, die möglicherweise nicht in {{site.data.keyword.slapi_short}} integriert werden können. Gastbetriebssysteme, die mithilfe der Option *Andere Installationsmedien* in XenCenter installiert werden, werden von {{site.data.keyword.cloud_notm}} nicht unterstützt und funktionieren in der XenServer-Umgebung eventuell nicht.

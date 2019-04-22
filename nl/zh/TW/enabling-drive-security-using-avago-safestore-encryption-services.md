@@ -14,7 +14,7 @@ keywords: Avago SafeStore, encryption
 # 使用 Avago SafeStore Encryption Services 啟用磁碟機安全
 {: #enabling-drive-security-by-using-avago-safestore-encryption-services}
 
-設定磁碟機安全有助於防止在沒有安全金鑰的情況下，存取已移除磁碟上儲存的資料。沒有此金鑰就無法回復磁碟機資料。{{site.data.keyword.BluSoftlayer_full}} 會在選取資料中心提供「自行加密磁碟機 (SED)」，作為可在裸機伺服器上購買的磁碟機。我們的美國資訊中心提供 10 TB SATA 磁碟機。
+設定磁碟機安全有助於防止在沒有安全金鑰的情況下，存取已移除磁碟上儲存的資料。沒有此金鑰就無法回復磁碟機資料。{{site.data.keyword.cloud}} 會在選取資料中心提供「自行加密磁碟機 (SED)」，作為可在裸機伺服器上購買的磁碟機。我們的美國資訊中心提供 10 TB SATA 磁碟機。
 
 ## 必要條件
 {: #prerequisites-enabling-drive-security-by-using-avago-safestore-encryption-services}

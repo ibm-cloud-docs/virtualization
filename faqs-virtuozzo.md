@@ -17,12 +17,14 @@ subcollection: virtualization
 {:pre: .pre}
 {:tip: .tip}
 {:table: .aria-labeledby="caption"}
+{:faq: data-hd-content-type='faq'}
 
 # FAQs: Virtuozzo
 {: #faqs-virtuozzo}
 
 ## Do I need static or portable IP addresses for Virtuozzo?
 {: #do-i-need-static-or-portable-ip-addresses-for-virtuozzo-}
+{: faq}
 
 * Static IP address: Use a static IP address if you have only one hardware node (per VLAN or in total)
 * Portable IP address:
@@ -34,6 +36,7 @@ Costs per IP can change depending on the routing type (Routed to VLAN or Seconda
 
 ## Can I migrate a Virtuozzo 3 Container to a Virtuozzo Container 4 hardware node with no downtime?
 {: #can-i-migrate-a-virtuozzo-3-container-to-a-virtuozzo-container-4-hardware-node-with-no-downtime-}
+{: faq}
 
 **Linux:**
 
@@ -56,6 +59,7 @@ Make sure that the same templates are installed on the new hardware node.
 
 ## Are containers isolated from each other and the host?
 {: #are-containers-isolated-from-each-other-and-the-host-}
+{: faq}
 
 Your containers are restricted from loading LKMs, performing a `chroot(“../../../”)` out of their own environment and don't share IPC Resources (semaphore sets and shared memory segments).
 
@@ -63,6 +67,7 @@ You have no security concerns with how Virtuozzo manages resources and isolates 
 
 ## Why can't I cache RedHat and SUSE OS templates in Virtuozzo?
 {: #why-can-t-i-cache-redhat-and-suse-os-templates-in-virtuozzo-}
+{: faq}
 
 You can experience issues when you cache to RedHat and SUSE OS templates if you use Vitruozzo. These OS templates require extra licensing, which {{site.data.keyword.cloud_notm}} doesn't provide. If you receive any of the following errors, you need to have your own accounts with the respective vendors and configure the corresponding variables within /etc/vztt/url.map (/etc/vztt/vztt.conf in Virtuozzo 3.)
 
@@ -89,6 +94,7 @@ You can experience issues when you cache to RedHat and SUSE OS templates if you 
 
 ## Why can I ping my ServiceVE but cannot log in to via SSH (PIM/PMC)?
 {: #why-can-i-ping-my-serviceve-but-cannot-log-in-to-via-ssh-pim-pmc-}
+{: faq}
 
 Make sure that the host node doesn't have any IP addresses assigned other than the IP addresses that are listed in the Portal (1 public IP and 1 private IP [located in 10.0.0.0/8]).
 

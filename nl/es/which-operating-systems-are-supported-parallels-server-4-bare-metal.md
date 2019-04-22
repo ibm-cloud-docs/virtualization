@@ -128,7 +128,7 @@ subcollection: virtualization
   </table>
 
 \* Los contenedores de Virtuozzo no tienen licencia ni soporte con Parallels Server 4 nativo cuando se utiliza
-{{site.data.keyword.BluSoftlayer_full}}.
+{{site.data.keyword.cloud}}.
 
 A partir del 23/04/2009, [Archivo readme de Parallels Server 4 nativo
 ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://download.parallels.com/doc/psbm/en/Readme.pdf)

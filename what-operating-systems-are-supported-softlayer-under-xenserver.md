@@ -25,4 +25,4 @@ The following operating systems can integrate with {{site.data.keyword.slapi_ful
 - Ubuntu 14.04 LTS through 16.04 LTS
 - Microsoft Windows Server 2012, 2012 R2, 2016
 
-XenServer supports various software beyond the preceding list that might not tie into the {{site.data.keyword.slapi_short}}. Any guest operating system that is installed by *“Other installation media”* options in XenCenter, is not supported by {{site.data.keyword.BluSoftlayer_notm}} and might not work in the XenServer environment.
+XenServer supports various software beyond the preceding list that might not tie into the {{site.data.keyword.slapi_short}}. Any guest operating system that is installed by *“Other installation media”* options in XenCenter, is not supported by {{site.data.keyword.cloud_notm}} and might not work in the XenServer environment.

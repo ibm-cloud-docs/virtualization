@@ -315,7 +315,7 @@ Aktualisieren Sie den Abschnitt **Hinweise** für jede portierbare IP-Adresse mi
 Nun ist die Umgebung bereit für die Bereitstellung von VMware vCenter Virtual Appliance und die Installation einer virtuellen Maschine für DNS, Active Directory oder BIND. Vor der Bereitstellung müssen Sie allerdings die Images herunterladen. Um die Images herunterzuladen, rufen Sie den Remote Desktop für den virtuellen Server auf, der zuvor bereitgestellt wurde, und laden Sie die entsprechenden Images auf den virtuellen Server für Ihre Umgebung herunter:
 
 * Active Directory / Windows DNS: Windows Server 2008 R2/Windows Server 2012 ISO Image (Ihre lizenzierten Medien)
-* Linux BIND: [CentOS-Installationsimage ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [CentOS-Installationsimage ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.centos.org/download/){: new_window}
 * [vCenter Virtual Appliance ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (gültiges VMware-Abonnement erforderlich)
 
 Nach dem Herunterladen der ISO-Komponente müssen Sie das Image in den Datenspeicher eines Management-Hosts hochladen, um die Zuordnung zu einer virtuellen Maschine durchzuführen. Verwenden Sie den vSphere-Client, um eine Verbindung zu einem Management-Host herzustellen und ein ISO-Verzeichnis im lokalen Datenspeicher zu erstellen.
@@ -614,7 +614,7 @@ Die erweiterte Single-Site-VMware-Umgebung ist nun vollständig.
 
 Sie verfügen nun über eine VMware-Umgebung, die in einem IBM Cloud-Rechenzentrum ausgeführt wird. Ihre VMware-Umgebung kann Produktionsworkloads ausführen und eine lokale IBM Cloud-Bereitstellung ergänzen. Die Umgebung stellt eine Umsetzung der bewährten Verfahren (Best Practices) für VMware dar und aktiviert Funktionen wie z. B. VMware DRS, HA, Storage DRS und die Redundanz beim Netzbetrieb. Sie können diese Referenzarchitekturbereitstellung durch größere Kapazitätshosts oder Management-Hosts und eine höhere Speicherkapazität ausbauen.
 
-Weitere Informationen zu VMware finden Sie in [VMware bereitstellen](/docs/infrastructure/vmware?topic=VMware-using-cookbooks-for-vmware-deployments) und [Häufig gestellte Fragen zu VMware](/docs/infrastructure/vmware?topic=VMware-faqs-vmware).
+Weitere Informationen zu VMware finden Sie in [VMware bereitstellen](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) und [Häufig gestellte Fragen zu VMware](/docs/infrastructure/vmware?topic=VMware-faqs-vmware).
 
 ## Anhang A: VLAN-Arbeitsblatt
 {: #appendix-a-vlan-worksheet}

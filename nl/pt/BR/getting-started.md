@@ -14,7 +14,7 @@ keywords: vmware, virtuozzo, hyper-V, ESX, ESXi
 # Tutorial Introdução
 {: #getting-started}
 
-É possível usar a solução Virtualização para executar múltiplas máquinas virtuais em um único ambiente dedicado. As máquinas virtuais que são executadas na rede do {{site.data.keyword.BluSoftlayer_full}} podem ser integradas com outros dispositivos físicos e virtuais na rede e podem ser gerenciadas por meio do Portal do cliente e da API. A execução de máquinas virtuais na arquitetura proprietária do {{site.data.keyword.cloud_notm}} e na plataforma automatizada oferece altos níveis de estabilidade adequados para a virtualização em nível corporativo e em escala menor.
+É possível usar a solução Virtualização para executar múltiplas máquinas virtuais em um único ambiente dedicado. As máquinas virtuais que são executadas na rede do {{site.data.keyword.cloud}} podem ser integradas com outros dispositivos físicos e virtuais na rede e podem ser gerenciadas por meio do Portal do cliente e da API. A execução de máquinas virtuais na arquitetura proprietária do {{site.data.keyword.cloud_notm}} e na plataforma automatizada oferece altos níveis de estabilidade adequados para a virtualização em nível corporativo e em escala menor.
 {:shortdesc}
 
 | Introdução       |

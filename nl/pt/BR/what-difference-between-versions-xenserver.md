@@ -11,7 +11,7 @@ subcollection: virtualization
 # Diferenças entre versões do XenServer
 {: #differences-between-versions-of-xenserver}
 
-O licenciamento é a única diferença entre as versões do XenServer que estão instaladas no sistema. Se desejar fazer upgrade de sua licença para uma licença de classe mais alta após a instalação, você não experimentará nenhum tempo de inatividade para reinstalar o servidor. Entre em contato com Vendas do {{site.data.keyword.BluSoftlayer}} para obter informações de precificação
+O licenciamento é a única diferença entre as versões do XenServer que estão instaladas no sistema. Se desejar fazer upgrade de sua licença para uma licença de classe mais alta após a instalação, você não experimentará nenhum tempo de inatividade para reinstalar o servidor. Entre em contato com Vendas do {{site.data.keyword.cloud}} para obter informações de precificação
 
 **Nota:** nem todos os recursos disponíveis são suportados.
 

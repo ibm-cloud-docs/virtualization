@@ -11,7 +11,7 @@ subcollection: virtualization
 # XenServer 版本之間的差異
 {: #differences-between-versions-of-xenserver}
 
-授權是系統上安裝的 XenServer 版本之間的唯一差異。如果您要在安裝之後將授權升級為較高等級的授權，則不需關閉時間即可重新安裝伺服器。如需定價資訊，請聯絡 {{site.data.keyword.BluSoftlayer}} 銷售人員。
+授權是系統上安裝的 XenServer 版本之間的唯一差異。如果您要在安裝之後將授權升級為較高等級的授權，則不需關閉時間即可重新安裝伺服器。如需定價資訊，請聯絡 {{site.data.keyword.cloud}} 銷售人員。
 
 **附註：**並非所有可用的功能都得到支援。
 

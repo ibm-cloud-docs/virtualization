@@ -33,11 +33,11 @@ XenCenter를 사용하는 가상 머신을 작성하는 데 도움이 되도록 
 3. 서버 호스트 이름, 사용자 이름 및 비밀번호를 입력하십시오. 서버의 사설 IP 주소(예: 10.x.x.x), 사용자 이름 `root` 및 서버의 루트 비밀번호를 사용해야 합니다. [디바이스 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/devices){: new_window}로 이동한 후 XenServer의 이름을 클릭하면 이 정보를 {{site.data.keyword.slportal}}에서 사용할 수 있습니다. **연결**을 클릭하십시오.
 4. 무료 라이센스 활성화 화면을 수신하면 이 정보를 입력하십시오.
 5. {{site.data.keyword.cloud_notm}} 이름을 마우스 오른쪽 단추로 클릭하고 **새 VM...**을 선택하십시오. < ! -- 이제 첫 번째 가상 머신을 만들 수 있다. 디스크가 10 GB인 CentOS 가상 머신을 작성하고 공용 및 사설 네트워크 기능을 모두 갖추고 있음-> 
-6. 새 가상 머신에 사용할 운영 체제를 선택한 후 **다음**을 클릭하십시오. **참고:** 일부 템플리트를 사용하려면 사용자가 자체 매체를 제공해야 합니다.<!--Because you are using CentOS, you can use {{site.data.keyword.BluSoftlayer_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
+6. 새 가상 머신에 사용할 운영 체제를 선택한 후 **다음**을 클릭하십시오. **참고:** 일부 템플리트를 사용하려면 사용자가 자체 매체를 제공해야 합니다.<!--Because you are using CentOS, you can use {{site.data.keyword.cloud_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
 7. 새 가상 머신에 대한 적절한 이름 및 설명을 입력하십시오. 
-8. 게스트 운영 체제 설치 매체의 위치를 입력하고 **다음**을 클릭하십시오. <!-- In the example, {{site.data.keyword.BluSoftlayer_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: https://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
+8. 게스트 운영 체제 설치 매체의 위치를 입력하고 **다음**을 클릭하십시오. <!-- In the example, {{site.data.keyword.cloud_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: https://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
   *A trailing ‘/’ at the end of the URL can sometimes break the installation.*
-  *This mirror is available only on the {{site.data.keyword.BluSoftlayer_notm}} Private Network. The full mirror's contents are  available here: https://mirrors.service.softlayer.com/.-->
+  *This mirror is available only on the {{site.data.keyword.cloud_notm}} Private Network. The full mirror's contents are  available here: https://mirrors.service.softlayer.com/.-->
 9. CPU 수 및 메모리 할당량을 선택하십시오. (간소화된 시스템을 빌드 중이므로 지나치게 많은 RAM은 필요하지 않습니다. 따라서 512MB이면 충분합니다.) **다음**을 클릭하십시오. 
 10. 가상 디스크를 선택하여 디스크 공간을 VM에 할당하십시오.<!--Remember that this is like adding hard disks, it is not like partitioning your system. Partitioning is done during the installation of the OS.--> 기본 크기는 이 템플리트의 경우 8GB입니다. 이 양은 사용자가 빌드 중인 서버에 충분한 양입니다. *선택사항: 디스크를 강조표시하고 **편집...**을 클릭하여 사용자 요구에 맞게 디스크를 더 크게 변경할 수도 있습니다.* **다음**을 클릭하십시오. 
 11. 가상 머신에 대한 가상 네트워크 인터페이스를 추가 또는 제거하십시오. 시스템을 사설 네트워크에서 통신할 수 없도록 하지 않는 한 기본값이 허용 가능합니다. 이 예에서는 시스템에 인터페이스를 둘 다 남겨 두어야 하지만, 숙련된 Xen 관리자는 필요에 따라 해당 인터페이스 중 하나를 제거할 수 있습니다. 이 경우, 원하는 경우에는 인터페이스를 강조표시하고 삭제할 수 있습니다. **다음**을 클릭하십시오. 

@@ -14,7 +14,7 @@ keywords: Citrix XenServer
 # XenServer のアクティブ化
 {: #activating-xenserver}
 
-Citrix XenServer のフリー・ライセンスは、初回インストールまたは再ロードから 30 日間にわたって供与されます。 この期間中に、Citrix に登録して、フル機能付きの 1 年間のライセンスを要請する必要があります。 このライセンスを作成するために、Citrix は、{{site.data.keyword.BluSoftlayer}} がアクセスできない個人情報を必要とします。 このライセンスは、XenServer を使用するにあたってのユーザーと Citrix の間の契約です。
+Citrix XenServer のフリー・ライセンスは、初回インストールまたは再ロードから 30 日間にわたって供与されます。 この期間中に、Citrix に登録して、フル機能付きの 1 年間のライセンスを要請する必要があります。 このライセンスを作成するために、Citrix は、{{site.data.keyword.cloud}} がアクセスできない個人情報を必要とします。 このライセンスは、XenServer を使用するにあたってのユーザーと Citrix の間の契約です。
 {:shortdesc}
 
 ご使用のシステムを 30 日以内に登録しない場合は、どの仮想マシンの電源もオンにできなくなります。

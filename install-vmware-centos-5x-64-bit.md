@@ -64,7 +64,7 @@ You are prompted with the following questions:
 Answer **yes**. This response creates a network for your public network device so that you can access the internet on your virtual machines.
 
 2. “Your computer has multiple ethernet interfaces available: eth0, eth1. Which one do you want to bridge to vmnet0?”
-Type *eth1* and press Enter. All {{site.data.keyword.BluSoftlayer}} servers are set up with the public network running on eth1 and the private network runing on eth0. In VMware, the default bridge device for vmnet0 is eth0.
+Type *eth1* and press Enter. All {{site.data.keyword.cloud}} servers are set up with the public network running on eth1 and the private network runing on eth0. In VMware, the default bridge device for vmnet0 is eth0.
 
 ## Bridging the private network
 {: #bridging-the-private-network}

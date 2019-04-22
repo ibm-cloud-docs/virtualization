@@ -33,11 +33,11 @@ subcollection: virtualization
 3. 输入服务器主机名、用户名和密码。您需要使用服务器的专用 IP 地址（类似于 10.x.x.x）、用户名 `root` 以及服务器的 root 用户密码。这些信息可通过在 {{site.data.keyword.slportal}} 中转至[设备 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/devices){: new_window}，然后单击 XenServer 的名称来获取。单击**连接**。
 4. 如果收到“免费许可证”激活屏幕，请立即填写这些信息。
 5. 右键单击您的 {{site.data.keyword.cloud_notm}} 名称，并选择**新建 VM...**。<!--You can now create your first Virtual Machine. Create a CentOS virtual machine with a disk of 10 GB and have both Public and Private Networks functioning-->
-6. 选择要用于新虚拟机的操作系统，然后单击**下一步**。**注：**某些模板需要提供您自己的介质。<!--Because you are using CentOS, you can use {{site.data.keyword.BluSoftlayer_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
+6. 选择要用于新虚拟机的操作系统，然后单击**下一步**。**注：**某些模板需要提供您自己的介质。<!--Because you are using CentOS, you can use {{site.data.keyword.cloud_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
 7. 为新虚拟机输入适用的名称和描述。
-8. 输入访客操作系统安装介质的位置，然后单击**下一步**。<!-- In the example, {{site.data.keyword.BluSoftlayer_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: https://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
+8. 输入访客操作系统安装介质的位置，然后单击**下一步**。<!-- In the example, {{site.data.keyword.cloud_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: https://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
   *A trailing ‘/’ at the end of the URL can sometimes break the installation.*
-  *This mirror is available only on the {{site.data.keyword.BluSoftlayer_notm}} Private Network. The full mirror's contents are  available here: https://mirrors.service.softlayer.com/.-->
+  *This mirror is available only on the {{site.data.keyword.cloud_notm}} Private Network. The full mirror's contents are  available here: https://mirrors.service.softlayer.com/.-->
 9. 选择 CPU 数和内存分配量。（您要构建的是简化的系统，无需太多 RAM。因此，512 MB 绰绰有余。）单击**下一步**。
 10. 选择虚拟盘，以将磁盘空间分配给 VM。<!--Remember that this is like adding hard disks, it is not like partitioning your system. Partitioning is done during the installation of the OS.--> 对于此模板，缺省大小为 8 GB。对于要构建的服务器，此空间量绰绰有余。*可选：可以通过突出显示磁盘并单击**编辑...** 来增大磁盘以适应您的需求。*单击**下一步**。
 11. 针对虚拟机，添加或除去虚拟网络接口。缺省值是可接受的，除非您不希望系统能够在专用网络上进行通信。示例需要在系统中保留两个接口，但经验丰富的 Xen 管理员可以除去其中一个接口以用于自己的用途。对于这种情况，您可以根据需要突出显示并删除接口。单击**下一步**。

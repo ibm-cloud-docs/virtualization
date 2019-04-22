@@ -19,12 +19,12 @@ Hyper-V es un sistema de virtualización para Windows 2008 Server Datacenter Edi
 ## ¿Cuáles son los requisitos para ejecutar Hyper-V?
 {: #what-are-the-requirements-to-run-hyper-v-}
 
-Hyper-V se debe instalar en Windows 2008 Server de 64 bits Datacenter Edition. Todo el hardware de {{site.data.keyword.BluSoftlayer}} cumple los requisitos del sistema de Hyper-V. Microsoft recomienda al menos 2 GB de RAM para el servidor.
+Hyper-V se debe instalar en Windows 2008 Server de 64 bits Datacenter Edition. Todo el hardware de {{site.data.keyword.cloud}} cumple los requisitos del sistema de Hyper-V. Microsoft recomienda al menos 2 GB de RAM para el servidor.
 
 ## ¿Está disponible Hyper-V en cualquier otra versión de 2008?
 {: #is-hyper-v-available-on-any-other-versions-of-2008-}
 
-{{site.data.keyword.BluSoftlayer_notm}} ofrece Hyper-V únicamente en Datacenter Edition.
+{{site.data.keyword.cloud_notm}} ofrece Hyper-V únicamente en Datacenter Edition.
 
 ## ¿Es posible ejecutar Hyper-V en Windows 2003?
 {: #can-hyper-v-run-on-windows-2003}
@@ -34,7 +34,7 @@ Hyper-V se ha desarrollado para Windows 2008 y no se puede ejecutar en Windows 2
 ## ¿Qué sistemas operativos se pueden instalar en una máquina virtual?
 {: #what-operating-systems-can-be-installed-on-a-virtual-machine}
 
-{{site.data.keyword.BluSoftlayer_notm}} admite los sistemas operativos en Hyper-V:
+{{site.data.keyword.cloud_notm}} admite los sistemas operativos en Hyper-V:
 
 * Todas las versiones de Windows 2003 y 2008 Server
 * Distribuciones Linux CentOS, Fedora y Ubuntu
@@ -67,7 +67,7 @@ Sí.
 ## ¿Es necesario que cada sistema operativo virtual tenga una licencia?
 {: #does-each-virtual-operating-system-need-to-have-a-license-}
 
-Las máquinas virtuales Windows 2003 y 2008 tienen licencia a través de {{site.data.keyword.BluSoftlayer_notm}}. Las máquinas virtuales Linux tienen licencia gratuita y no requieren ninguna acción.
+Las máquinas virtuales Windows 2003 y 2008 tienen licencia a través de {{site.data.keyword.cloud_notm}}. Las máquinas virtuales Linux tienen licencia gratuita y no requieren ninguna acción.
 
 ## ¿Tendrá las máquinas virtuales acceso a la red privada?
 {: #will-the-virtual-machines-have-access-to-the-private-network-}
@@ -78,7 +78,7 @@ Sí. Las máquinas virtuales se pueden conectar tanto a una red pública como a 
 {: #what-advantages-are-there-to-providing-private-network-access-to-virtual-machines-}
 
 Proporcionar a las máquinas virtuales acceso a red privada permite que puedan comunicarse entre ellas. El acceso a red privada también permite que las máquinas virtuales se puedan comunicar con otros sistemas internos como NAS e iSCSI y otros servidores que tenga con
-{{site.data.keyword.BluSoftlayer_notm}}.
+{{site.data.keyword.cloud_notm}}.
 
 ## ¿Pueden las máquinas virtuales utilizar el bloque de IP secundario que se incluye con el servidor?
 {: #can-virtual-machines-use-the-secondary-ip-block-that-came-with-the-server-}

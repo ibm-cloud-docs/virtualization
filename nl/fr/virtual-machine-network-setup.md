@@ -39,7 +39,7 @@ La configuration de réseau requiert les informations ci-après pour les blocs d
 ## Windows 2008 Server Core
 {: #windows-2008-server-core}
 
-L'édition Windows 2008 Server Core ne fournit pas d'interface graphique pour configurer le réseau système. La configuration doit être effectuée manuellement à l'aide de l'invite de commande. Vous devez exécuter les commandes ci-dessous. Les adresses IP qui sont utilisées dans cet exemple doivent être remplacées par les adresses IP provenant de vos blocs d'adresses IP. Ces commandes fonctionnent avec des versions antérieures de Windows Server qui incluent la commande [netsh ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://support.microsoft.com/kb/242468){: new_window}. 
+L'édition Windows 2008 Server Core ne fournit pas d'interface graphique pour configurer le réseau système. La configuration doit être effectuée manuellement à l'aide de l'invite de commande. Vous devez exécuter les commandes ci-dessous. Les adresses IP qui sont utilisées dans cet exemple doivent être remplacées par les adresses IP provenant de vos blocs d'adresses IP. Ces commandes fonctionnent avec des versions antérieures de Windows Server qui incluent la commande [netsh ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://docs.microsoft.com/en-us/previous-versions/tn-archive/bb490939(v=technet.10)){: new_window}. 
 
 **Exemple de bloc d'adresses IP publiques – 192.0.2.0/29**
 

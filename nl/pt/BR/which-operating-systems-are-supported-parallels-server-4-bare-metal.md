@@ -127,6 +127,6 @@ subcollection: virtualization
     <CAPTION>Tabela 1. Sistemas operacionais suportados</CAPTION>
   </table>
 
-\ * Os contêineres do Virtuozzo não são licenciados, nem suportados com o Parallels Server 4 Bare Metal quando você usa o {{site.data.keyword.BluSoftlayer_full}}.
+\ * Os contêineres do Virtuozzo não são licenciados, nem suportados com o Parallels Server 4 Bare Metal quando você usa o {{site.data.keyword.cloud}}.
 
 A partir de 23/04/2009, [arquivo leia-me do Parallels Server 4 Bare Metal ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://download.parallels.com/doc/psbm/en/Readme.pdf)

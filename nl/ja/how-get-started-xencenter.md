@@ -33,11 +33,11 @@ XenCenter で仮想マシンを作成するには、以下の手順を使用し�
 3. サーバーのホスト名、ユーザー名、およびパスワードを入力します。 サーバーのプライベート IP アドレス (例えば 10.x.x.x)、ユーザー名 `root`、サーバーの root のパスワードを使用する必要があります。 この情報を入手するには、{{site.data.keyword.slportal}}で、[デバイス ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/devices){: new_window} に移動し、XenServer の名前をクリックします。 **「接続」**をクリックします。
 4. 無料ライセンスのアクティベーション画面が表示されたら、ここで、この情報を入力してください。
 5. {{site.data.keyword.cloud_notm}} 名を右クリックし、**「新規 VM...」**を選択します。<!--You can now create your first Virtual Machine. Create a CentOS virtual machine with a disk of 10 GB and have both Public and Private Networks functioning-->
-6. 新規仮想マシンに使用するオペレーティング・システムを選択して、**「次へ」**をクリックします。 **注:** 一部のテンプレートは、ユーザーが独自にメディアを用意する必要があります。<!--Because you are using CentOS, you can use {{site.data.keyword.BluSoftlayer_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
+6. 新規仮想マシンに使用するオペレーティング・システムを選択して、**「次へ」**をクリックします。 **注:** 一部のテンプレートは、ユーザーが独自にメディアを用意する必要があります。<!--Because you are using CentOS, you can use {{site.data.keyword.cloud_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
 7. 新規仮想マシンにとって適切な名前および説明を入力します。
-8. ゲスト・オペレーティング・システムのインストール・メディアのロケーションを入力して、**「次へ」**をクリックします。 <!-- In the example, {{site.data.keyword.BluSoftlayer_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: https://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
+8. ゲスト・オペレーティング・システムのインストール・メディアのロケーションを入力して、**「次へ」**をクリックします。 <!-- In the example, {{site.data.keyword.cloud_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: https://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
   *A trailing ‘/’ at the end of the URL can sometimes break the installation.*
-  *This mirror is available only on the {{site.data.keyword.BluSoftlayer_notm}} Private Network. The full mirror's contents are  available here: https://mirrors.service.softlayer.com/.-->
+  *This mirror is available only on the {{site.data.keyword.cloud_notm}} Private Network. The full mirror's contents are  available here: https://mirrors.service.softlayer.com/.-->
 9. CPU の数とメモリーの割り当て量を選択します (ここでは簡単なシステムを構築するので、あまり多くの RAM は必要ありません。 したがって、512 MB あれば十分すぎるほどです)。 **「次へ」**をクリックします。
 10. VM にディスク・スペースを割り振るための仮想ディスクを選択します。<!--Remember that this is like adding hard disks, it is not like partitioning your system. Partitioning is done during the installation of the OS.--> このテンプレートのデフォルト・サイズは 8 GB です。 この量は、ここで構築するサーバーには十分すぎるほどです。 *オプション: 要件に合わせてディスクを大きくするには、ディスクを強調表示し、**「編集...」**をクリックします。* **「次へ」**をクリックします。
 11. 仮想マシンの仮想ネットワーク・インターフェースを追加または削除します。 プライベート・ネットワークでの通信が不要なシステムの場合は、デフォルトを受け入れることができます。 この例では、システム内の両方のインターフェースをそのままにする必要がありますが、経験豊富な Xen 管理者であれば、独自の目的のためにそのいずれかを削除できます。 その場合は、インターフェースを強調表示して削除できます。 **「次へ」**をクリックします。

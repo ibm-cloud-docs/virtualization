@@ -14,7 +14,7 @@ keywords: Citrix XenServer
 # 啟動 XenServer
 {: #activating-xenserver}
 
-Citrix XenServer 免費授權可讓您從起始安裝或重新載入 Citrix XenServer 起，免費使用 30 天。在這段時間，您需要先向 Citrix 登錄，並要求完整功能的 1 年授權。若要建立此授權，Citrix 需要 {{site.data.keyword.BluSoftlayer}} 無權存取的個人資訊。此授權是您為了使用 XenServer 而與 Citrix 訂定的協議。
+Citrix XenServer 免費授權可讓您從起始安裝或重新載入 Citrix XenServer 起，免費使用 30 天。在這段時間，您需要先向 Citrix 登錄，並要求完整功能的 1 年授權。若要建立此授權，Citrix 需要 {{site.data.keyword.cloud}} 無權存取的個人資訊。此授權是您為了使用 XenServer 而與 Citrix 訂定的協議。
 {:shortdesc}
 
 如果未在 30 天內登錄您的系統，則您無法開啟任何虛擬機器的電源。

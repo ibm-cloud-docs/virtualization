@@ -47,5 +47,5 @@ Parallels Server Bare Metal を使用して、現在や過去のネットワー�
 
 Parallels Server Bare Metal はポータブル IP アドレスを使用しますが、Virtuozzo はポータブル IP アドレスまたは静的 IP アドレスのいずれかを (構成に応じて) 使用します。
 
-\* 注文フォームに特に記載しない限り、{{site.data.keyword.BluSoftlayer_full}} から提供されるライセンスは、Parallels Server 4 Bare Metal のハードウェア仮想マシンのライセンスのみです。
+\* 注文フォームに特に記載しない限り、{{site.data.keyword.cloud}} から提供されるライセンスは、Parallels Server 4 Bare Metal のハードウェア仮想マシンのライセンスのみです。
 _VM_ = 仮想マシン。 _V_ = VPS またはコンテナー。

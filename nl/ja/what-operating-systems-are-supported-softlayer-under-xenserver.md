@@ -25,4 +25,4 @@ XenServer を実行する場合に、{{site.data.keyword.slapi_full}} が対応�
 - Ubuntu 14.04 LTS から 16.04 LTS
 - Microsoft Windows Server 2012、2012 R2、2016
 
-上記のリスト以外にも、XenServer は、{{site.data.keyword.slapi_short}} が対応していないさまざまなソフトウェアをサポートしています。 XenServer の*「他のインストール・メディア (Other installation media)」* オプションを使用してインストールしたゲスト・オペレーティング・システムは、{{site.data.keyword.BluSoftlayer_notm}} でサポートされません。そのため、XenServer 環境で正常に機能しない可能性があります。
+上記のリスト以外にも、XenServer は、{{site.data.keyword.slapi_short}} が対応していないさまざまなソフトウェアをサポートしています。 XenServer の*「他のインストール・メディア (Other installation media)」* オプションを使用してインストールしたゲスト・オペレーティング・システムは、{{site.data.keyword.cloud_notm}} でサポートされません。そのため、XenServer 環境で正常に機能しない可能性があります。

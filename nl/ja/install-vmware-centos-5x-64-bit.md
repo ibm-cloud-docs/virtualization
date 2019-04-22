@@ -63,7 +63,7 @@ subcollection: virtualization
 * **「yes」**と答えます。 パブリック・ネットワーク・デバイス用のネットワーク・セットアップを作成して、仮想マシン上でインターネットにアクセスできるようにする必要があります。
 
 2. 「Your computer has multiple ethernet interfaces available: eth0, eth1. Which one do you want to bridge to vmnet0?」(コンピューターには複数のイーサネット・インターフェースがあります。どちらを vmnet0 にブリッジしますか?)
-* すべての {{site.data.keyword.BluSoftlayer}} サーバーは、パブリック・ネットワークを eth1 上で実行し、プライベート・ネットワークを eth0 上で実行するようにセットアップされます。 VMware では、vmnet0 のデフォルトのブリッジ・デバイスは eth0 です。 Enter キーを押さずに、eth1 と入力してください。
+* すべての {{site.data.keyword.cloud}} サーバーは、パブリック・ネットワークを eth1 上で実行し、プライベート・ネットワークを eth0 上で実行するようにセットアップされます。 VMware では、vmnet0 のデフォルトのブリッジ・デバイスは eth0 です。 Enter キーを押さずに、eth1 と入力してください。
 
 ## プライベート・ネットワークのブリッジング
 {: #bridging-the-private-network}

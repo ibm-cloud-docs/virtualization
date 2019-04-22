@@ -63,7 +63,7 @@ subcollection: virtualization
 * 回答**是**。您需要為公用網路裝置建立網路設定，以便您可以在虛擬機器上存取網際網路。
 
 2. 「您的電腦有多個可用的乙太網路介面：eth0、eth1。您想要哪一個橋接至 vmnet0？」
-* 請記住，設定及執行所有 {{site.data.keyword.BluSoftlayer}} 伺服器的方式，公用網路執行於 eth1 上，而專用網路則執行於 eth0 上。在 VMware 中，vmnet0 的預設橋接器裝置為 eth0。請鍵入 eth1，而非按下 Enter 鍵。
+* 請記住，設定及執行所有 {{site.data.keyword.cloud}} 伺服器的方式，公用網路執行於 eth1 上，而專用網路則執行於 eth0 上。在 VMware 中，vmnet0 的預設橋接器裝置為 eth0。請鍵入 eth1，而非按下 Enter 鍵。
 
 ## 橋接專用網路
 {: #bridging-the-private-network}

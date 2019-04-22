@@ -19,12 +19,12 @@ Hyper-V 是適用於 Windows 2008 Server Datacenter Edition 的虛擬化系統�
 ## 執行 Hyper-V 的需求為何？
 {: #what-are-the-requirements-to-run-hyper-v-}
 
-Hyper-V 必須安裝在 Windows 2008 Server 64 位元 Datacenter Edition 上。所有 {{site.data.keyword.BluSoftlayer}} 硬體都符合 Hyper-V 的系統需求。Microsoft 建議至少要有 2 GB RAM 用於伺服器。
+Hyper-V 必須安裝在 Windows 2008 Server 64 位元 Datacenter Edition 上。所有 {{site.data.keyword.cloud}} 硬體都符合 Hyper-V 的系統需求。Microsoft 建議至少要有 2 GB RAM 用於伺服器。
 
 ## 在 2008 的任何其他版本上可以使用 Hyper-V 嗎？
 {: #is-hyper-v-available-on-any-other-versions-of-2008-}
 
-{{site.data.keyword.BluSoftlayer_notm}} 只在 Datacenter Edition 上提供 Hyper-V。
+{{site.data.keyword.cloud_notm}} 只在 Datacenter Edition 上提供 Hyper-V。
 
 ## Hyper-V 可在 Windows 2003 上執行嗎？
 {: #can-hyper-v-run-on-windows-2003}
@@ -34,7 +34,7 @@ Hyper-V 是針對 Windows 2008 開發的，無法在 Windows 2003 上執行。
 ## 虛擬機器上可以安裝哪些作業系統？
 {: #what-operating-systems-can-be-installed-on-a-virtual-machine}
 
-{{site.data.keyword.BluSoftlayer_notm}} 在 Hyper-V 上支援下列作業系統：
+{{site.data.keyword.cloud_notm}} 在 Hyper-V 上支援下列作業系統：
 
 * Windows 2003 及 2008 Server 的所有版本
 * CentOS、Fedora 及 Ubuntu Linux 發行套件
@@ -67,7 +67,7 @@ Hyper-V 是針對 Windows 2008 開發的，無法在 Windows 2003 上執行。
 ## 每一個虛擬作業系統都需要有授權嗎？
 {: #does-each-virtual-operating-system-need-to-have-a-license-}
 
-Windows 2003 及 2008 虛擬機器是透過 {{site.data.keyword.BluSoftlayer_notm}} 授權。Linux 虛擬機器是免費授權的，不需要任何動作。
+Windows 2003 及 2008 虛擬機器是透過 {{site.data.keyword.cloud_notm}} 授權。Linux 虛擬機器是免費授權的，不需要任何動作。
 
 ## 虛擬機器是否有權存取專用網路？
 {: #will-the-virtual-machines-have-access-to-the-private-network-}
@@ -77,7 +77,7 @@ Windows 2003 及 2008 虛擬機器是透過 {{site.data.keyword.BluSoftlayer_not
 ## 將專用網路存取權提供給虛擬機器有哪些優點？
 {: #what-advantages-are-there-to-providing-private-network-access-to-virtual-machines-}
 
-將專用網路存取權提供給虛擬機器，可讓虛擬機器彼此通訊。專用網路存取權也容許虛擬機器與其他內部系統（例如 NAS 及 iSCSI）進行通訊，以及與您所擁有之與 {{site.data.keyword.BluSoftlayer_notm}} 搭配使用的任何其他伺服器進行通訊。
+將專用網路存取權提供給虛擬機器，可讓虛擬機器彼此通訊。專用網路存取權也容許虛擬機器與其他內部系統（例如 NAS 及 iSCSI）進行通訊，以及與您所擁有之與 {{site.data.keyword.cloud_notm}} 搭配使用的任何其他伺服器進行通訊。
 
 ## 虛擬機器是否可以使用伺服器隨附的次要 IP 區塊？
 {: #can-virtual-machines-use-the-secondary-ip-block-that-came-with-the-server-}

@@ -14,7 +14,7 @@ keywords: Avago SafeStore, encryption
 # Avago SafeStore 暗号化サービスを使用したドライブ・セキュリティーの有効化
 {: #enabling-drive-security-by-using-avago-safestore-encryption-services}
 
-ドライブ・セキュリティーをセットアップすると、取り外されたディスクに保管されているデータにセキュリティー・キーなしでアクセスされることを防止できます。 このキーがないと、ドライブのデータを回復できません。 {{site.data.keyword.BluSoftlayer_full}} は、ベアメタル・サーバー上で購入できるドライブ用に一部のデータ・センターで自己暗号化ドライブ (SED) を提供しています。 IBM の米国データ・センターでは 10 TB SATA ドライブを使用できます。
+ドライブ・セキュリティーをセットアップすると、取り外されたディスクに保管されているデータにセキュリティー・キーなしでアクセスされることを防止できます。 このキーがないと、ドライブのデータを回復できません。 {{site.data.keyword.cloud}} は、ベアメタル・サーバー上で購入できるドライブ用に一部のデータ・センターで自己暗号化ドライブ (SED) を提供しています。 IBM の米国データ・センターでは 10 TB SATA ドライブを使用できます。
 
 ## 前提条件
 {: #prerequisites-enabling-drive-security-by-using-avago-safestore-encryption-services}

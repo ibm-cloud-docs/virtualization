@@ -19,12 +19,12 @@ Hyper-V ist ein Virtualisierungssystem für Windows 2008 Server Datacenter Editi
 ## Welche Voraussetzungen gelten für die Ausführung von Hyper-V?
 {: #what-are-the-requirements-to-run-hyper-v-}
 
-Hyper-V muss unter Windows 2008 Server Datacenter Edition (64-Bit) installiert werden. Die gesamte {{site.data.keyword.BluSoftlayer}}-Hardware muss die Systemanforderungen von Hyper-V erfüllen. Microsoft empfiehlt mindestens 2 GB Arbeitsspeicher (RAM) für den Server.
+Hyper-V muss unter Windows 2008 Server Datacenter Edition (64-Bit) installiert werden. Die gesamte {{site.data.keyword.cloud}}-Hardware muss die Systemanforderungen von Hyper-V erfüllen. Microsoft empfiehlt mindestens 2 GB Arbeitsspeicher (RAM) für den Server.
 
 ## Steht Hyper-V auch unter anderen 2008-Versionen zur Verfügung?
 {: #is-hyper-v-available-on-any-other-versions-of-2008-}
 
-{{site.data.keyword.BluSoftlayer_notm}} bietet Hyper-V nur für die Datacenter Edition an.
+{{site.data.keyword.cloud_notm}} bietet Hyper-V nur für die Datacenter Edition an.
 
 ## Kann Hyper-V unter Windows 2003 ausgeführt werden?
 {: #can-hyper-v-run-on-windows-2003}
@@ -34,7 +34,7 @@ Hyper-V wurde für Windows 2008 entwickelt und kann nicht unter Windows 2003 aus
 ## Welche Betriebssysteme können auf einer virtuellen Maschine installiert werden?
 {: #what-operating-systems-can-be-installed-on-a-virtual-machine}
 
-{{site.data.keyword.BluSoftlayer_notm}} unterstützt die folgenden Betriebssysteme für Hyper-V:
+{{site.data.keyword.cloud_notm}} unterstützt die folgenden Betriebssysteme für Hyper-V:
 
 * Alle Versionen von Windows 2003 und 2008 Server
 * CentOS-, Fedora- und Ubuntu Linux-Distributionen
@@ -67,7 +67,7 @@ Ja.
 ## Muss für jedes virtuelle Betriebssystem eine Lizenz vorhanden sein?
 {: #does-each-virtual-operating-system-need-to-have-a-license-}
 
-Virtuelle Maschinen, die mit Windows 2003 und 2008 arbeiten, werden über {{site.data.keyword.BluSoftlayer_notm}} lizenziert. Für virtuelle Maschinen unter Linux besteht eine freie Lizenz, sodass keine Aktion erforderlich ist.
+Virtuelle Maschinen, die mit Windows 2003 und 2008 arbeiten, werden über {{site.data.keyword.cloud_notm}} lizenziert. Für virtuelle Maschinen unter Linux besteht eine freie Lizenz, sodass keine Aktion erforderlich ist.
 
 ## Haben die virtuellen Maschinen Zugriff auf das private Netz?
 {: #will-the-virtual-machines-have-access-to-the-private-network-}
@@ -77,7 +77,7 @@ Ja. Virtuelle Maschinen können Verbindungen zu öffentlichen und privaten Netze
 ## Welche Vorteile bietet der Zugriff auf private Netze für virtuelle Maschinen?
 {: #what-advantages-are-there-to-providing-private-network-access-to-virtual-machines-}
 
-Der Zugriff virtueller Maschinen auf private Netze erlaubt es diesen virtuellen Maschinen, untereinander zu kommunizieren. Der Zugriff auf private Netze erlaubt virtuellen Maschinen außerdem die Kommunikation mit anderen internen Systemen wie beispielsweise NAS und iSCSI sowie mit allen anderen Servern, die mit {{site.data.keyword.BluSoftlayer_notm}} arbeiten.
+Der Zugriff virtueller Maschinen auf private Netze erlaubt es diesen virtuellen Maschinen, untereinander zu kommunizieren. Der Zugriff auf private Netze erlaubt virtuellen Maschinen außerdem die Kommunikation mit anderen internen Systemen wie beispielsweise NAS und iSCSI sowie mit allen anderen Servern, die mit {{site.data.keyword.cloud_notm}} arbeiten.
 
 ## Können virtuelle Maschinen den sekundären IP-Block nutzen, der zum Lieferumfang des Servers gehört?
 {: #can-virtual-machines-use-the-secondary-ip-block-that-came-with-the-server-}

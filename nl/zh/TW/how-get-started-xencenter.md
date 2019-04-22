@@ -33,11 +33,11 @@ subcollection: virtualization
 3. 輸入您的伺服器主機名稱、使用者名稱及密碼。您需要使用伺服器的「專用」IP 位址（類似於 10.x.x.x）、使用者名稱 `root`，然後使用伺服器的 root 密碼。可在 {{site.data.keyword.slportal}} 取得此資訊，方法為移至[裝置 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/devices){: new_window}，然後按一下 XenServer 的名稱。按一下**連接**。
 4. 如果您收到「免費授權」啟動畫面，請立即完成此資訊。
 5. 用滑鼠右鍵按一下 {{site.data.keyword.cloud_notm}} 名稱，然後選取**新建 VM...**。<!--You can now create your first Virtual Machine. Create a CentOS virtual machine with a disk of 10 GB and have both Public and Private Networks functioning-->
-6. 選取要用於新虛擬機器的作業系統，然後按**下一步**。**附註：**部分範本需要您提供自己的媒體。<!--Because you are using CentOS, you can use {{site.data.keyword.BluSoftlayer_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
+6. 選取要用於新虛擬機器的作業系統，然後按**下一步**。**附註：**部分範本需要您提供自己的媒體。<!--Because you are using CentOS, you can use {{site.data.keyword.cloud_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
 7. 輸入新虛擬機器的適當名稱和說明。
-8. 輸入來賓作業系統安裝媒體的位置，然後按**下一步**。<!-- In the example, {{site.data.keyword.BluSoftlayer_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: https://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
+8. 輸入來賓作業系統安裝媒體的位置，然後按**下一步**。<!-- In the example, {{site.data.keyword.cloud_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: https://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
   *A trailing ‘/’ at the end of the URL can sometimes break the installation.*
-  *This mirror is available only on the {{site.data.keyword.BluSoftlayer_notm}} Private Network. The full mirror's contents are  available here: https://mirrors.service.softlayer.com/.-->
+  *This mirror is available only on the {{site.data.keyword.cloud_notm}} Private Network. The full mirror's contents are  available here: https://mirrors.service.softlayer.com/.-->
 9. 選取 CPU 數目及記憶體配置數量。（您正在建置簡化的系統，而且不需要太多 RAM。因此，512 MB 綽綽有餘。）。按**下一步**。
 10. 選取您的虛擬磁碟，以將磁碟空間配置給您的 VM。<!--Remember that this is like adding hard disks, it is not like partitioning your system. Partitioning is done during the installation of the OS.-->此範本的預設大小為 8 GB。此數量對於您正在建置的伺服器綽綽有餘。*選用項目：您可以強調顯示磁碟，並按一下**編輯**，讓磁碟變得更大以符合您的需求。*按**下一步**。
 11. 新增或移除虛擬機器的虛擬網路介面。除非您不想要系統能夠在「專用網路」上進行通訊，否則接受預設值。此範例需要您將這兩個介面留在系統中，但經驗豐富的「Xen 管理者」可以基於其自己的用途移除其中一個介面。在此情況下，您可以強調顯示並刪除介面（如果喜歡的話）。按**下一步**。

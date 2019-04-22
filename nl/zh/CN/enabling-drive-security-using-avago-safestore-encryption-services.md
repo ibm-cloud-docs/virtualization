@@ -14,7 +14,7 @@ keywords: Avago SafeStore, encryption
 # 使用 Avago SafeStore 加密服务启用驱动器安全性
 {: #enabling-drive-security-by-using-avago-safestore-encryption-services}
 
-设置驱动器安全性有助于阻止在没有安全密钥的情况下，访问已除去磁盘上存储的数据。没有此密钥，无法恢复驱动器数据。{{site.data.keyword.BluSoftlayer_full}} 在精选数据中心为可以在裸机服务器上购买的驱动器提供自加密驱动器 (SED)。美国数据中心内提供 10 TB SATA 驱动器。
+设置驱动器安全性有助于阻止在没有安全密钥的情况下，访问已除去磁盘上存储的数据。没有此密钥，无法恢复驱动器数据。{{site.data.keyword.cloud}} 在精选数据中心为可以在裸机服务器上购买的驱动器提供自加密驱动器 (SED)。美国数据中心内提供 10 TB SATA 驱动器。
 
 ## 先决条件
 {: #prerequisites-enabling-drive-security-by-using-avago-safestore-encryption-services}

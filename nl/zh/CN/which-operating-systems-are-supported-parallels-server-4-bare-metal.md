@@ -127,6 +127,6 @@ subcollection: virtualization
     <CAPTION>表 1. 支持的操作系统</CAPTION>
   </table>
 
-\* 使用 {{site.data.keyword.BluSoftlayer_full}} 时，Virtuozzo Containers 未获许可，也不支持将其用于 Parallels Server 4 Bare Metal。
+\* 使用 {{site.data.keyword.cloud}} 时，Virtuozzo Containers 未获许可，也不支持将其用于 Parallels Server 4 Bare Metal。
 
 截至 2009 年 4 月 23 日的 [Parallels Server 4 Bare Metal 自述文件 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://download.parallels.com/doc/psbm/en/Readme.pdf)

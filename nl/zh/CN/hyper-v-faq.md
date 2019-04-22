@@ -19,12 +19,12 @@ Hyper-V 是用于 Windows 2008 Server Datacenter Edition 的虚拟化系统，�
 ## 运行 Hyper-V 的需求是什么？
 {: #what-are-the-requirements-to-run-hyper-v-}
 
-Hyper-V 必须安装在 Windows 2008 Server Datacenter Edition（64 位）上。所有 {{site.data.keyword.BluSoftlayer}} 硬件均满足 Hyper-V 的系统需求。Microsoft 建议至少有 2 GB RAM 用于服务器。
+Hyper-V 必须安装在 Windows 2008 Server Datacenter Edition（64 位）上。所有 {{site.data.keyword.cloud}} 硬件均满足 Hyper-V 的系统需求。Microsoft 建议至少有 2 GB RAM 用于服务器。
 
 ## 其他任何版本的 2008 都可以使用 Hyper-V 吗？
 {: #is-hyper-v-available-on-any-other-versions-of-2008-}
 
-{{site.data.keyword.BluSoftlayer_notm}} 仅在 Datacenter Edition 上提供 Hyper-V。
+{{site.data.keyword.cloud_notm}} 仅在 Datacenter Edition 上提供 Hyper-V。
 
 ## Hyper-V 可以在 Windows 2003 上运行吗？
 {: #can-hyper-v-run-on-windows-2003}
@@ -34,7 +34,7 @@ Hyper-V 是针对 Windows 2008 开发的，不能在 Windows 2003 上运行。
 ## 可以在虚拟机上安装哪些操作系统？
 {: #what-operating-systems-can-be-installed-on-a-virtual-machine}
 
-{{site.data.keyword.BluSoftlayer_notm}} 在 Hyper-V 上支持以下操作系统：
+{{site.data.keyword.cloud_notm}} 在 Hyper-V 上支持以下操作系统：
 
 * Windows 2003 Server 和 Windows 2008 Server 的所有版本
 * CentOS、Fedora 和 Ubuntu Linux 分发版
@@ -67,7 +67,7 @@ RAM 需求根据虚拟机的需求而变化。请查看访客操作系统的系�
 ## 每个虚拟操作系统都需要拥有许可证吗？
 {: #does-each-virtual-operating-system-need-to-have-a-license-}
 
-Windows 2003 和 Windows 2008 虚拟机通过 {{site.data.keyword.BluSoftlayer_notm}} 获得许可。Linux 虚拟机可免费获得许可，无需进行任何操作。
+Windows 2003 和 Windows 2008 虚拟机通过 {{site.data.keyword.cloud_notm}} 获得许可。Linux 虚拟机可免费获得许可，无需进行任何操作。
 
 ## 虚拟机有权访问专用网络吗？
 {: #will-the-virtual-machines-have-access-to-the-private-network-}
@@ -77,7 +77,7 @@ Windows 2003 和 Windows 2008 虚拟机通过 {{site.data.keyword.BluSoftlayer_n
 ## 为虚拟机提供专用网络访问权有哪些优势？
 {: #what-advantages-are-there-to-providing-private-network-access-to-virtual-machines-}
 
-为虚拟机提供专用网络访问权将允许虚拟机相互通信。通过专用网络访问权，虚拟机还可以与其他内部系统（例如，NAS 和 iSCSI）以及您针对 {{site.data.keyword.BluSoftlayer_notm}} 拥有的其他任何服务器进行通信。
+为虚拟机提供专用网络访问权将允许虚拟机相互通信。通过专用网络访问权，虚拟机还可以与其他内部系统（例如，NAS 和 iSCSI）以及您针对 {{site.data.keyword.cloud_notm}} 拥有的其他任何服务器进行通信。
 
 ## 虚拟机可以使用服务器随附的辅助 IP 块吗？
 {: #can-virtual-machines-use-the-secondary-ip-block-that-came-with-the-server-}

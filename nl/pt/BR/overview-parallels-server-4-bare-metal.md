@@ -47,5 +47,5 @@ Use o Parallels Server Bare Metal para visualizar e localizar facilmente VMs ou 
 
 O Parallels Server Bare Metal usa endereços IP móveis, enquanto o Virtuozzo usa endereços IP móveis ou estáticos (dependendo da configuração).
 
-\* O {{site.data.keyword.BluSoftlayer_full}} licencia apenas máquinas virtuais de hardware no Parallels Server 4 Bare Metal, a menos que indicado de outra forma no formulário de pedido.
+\* O {{site.data.keyword.cloud}} licencia apenas máquinas virtuais de hardware no Parallels Server 4 Bare Metal, a menos que indicado de outra forma no formulário de pedido.
 _VM_ = máquina virtual. _V_ = VPS ou contêiner.

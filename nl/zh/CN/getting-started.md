@@ -14,7 +14,7 @@ keywords: vmware, virtuozzo, hyper-V, ESX, ESXi
 # 入门教程
 {: #getting-started}
 
-您可以使用虚拟化解决方案在单个专用环境中运行多个虚拟机。在 {{site.data.keyword.BluSoftlayer_full}} 网络上运行的虚拟机可以与该网络上的其他物理和虚拟设备相集成，并且可以通过客户门户网站和 API 进行管理。在 {{site.data.keyword.cloud_notm}} 专有体系结构和自动化平台上运行虚拟机可提供高水平的稳定性，适用于企业级虚拟化和更小规模的虚拟化。
+您可以使用虚拟化解决方案在单个专用环境中运行多个虚拟机。在 {{site.data.keyword.cloud}} 网络上运行的虚拟机可以与该网络上的其他物理和虚拟设备相集成，并且可以通过客户门户网站和 API 进行管理。在 {{site.data.keyword.cloud_notm}} 专有体系结构和自动化平台上运行虚拟机可提供高水平的稳定性，适用于企业级虚拟化和更小规模的虚拟化。
 {:shortdesc}
 
 |入门|

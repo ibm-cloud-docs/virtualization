@@ -14,7 +14,7 @@ keywords: Xenserver
 # 透過公用介面連接 XenServer
 {: #connecting-to-xenserver-over-a-public-interface}
 
-依預設，XenServer 的 {{site.data.keyword.BluSoftlayer}} 安裝會配置為針對所有管理連線使用專用網路介面。如果您在專用網路上有連線問題，請開立支援問題單。
+依預設，XenServer 的 {{site.data.keyword.cloud}} 安裝會配置為針對所有管理連線使用專用網路介面。如果您在專用網路上有連線問題，請開立支援問題單。
 
 變更此配置會有安全風險，不建議這樣做。
 {:tip}

@@ -309,7 +309,7 @@ Mettez à jour la section **Remarques** de chaque adresse IP portable avec le no
 A présent, l'environnement est prêt pour déployer VMware vCenter Virtual Appliance et installer une machine virtuelle pour DNS, Active Directory ou BIND. Toutefois, avant de procéder au déploiement, vous devez recevoir par téléchargement les images. Pour cela, ouvrez une session via la fonction de bureau à distance sur le serveur virtuel précédemment mis à disposition et recevez par téléchargement les images appropriées sur le serveur virtuel pour votre environnement :
 
 * Active Directory / Windows DNS : Image ISO Windows Server 2008R2/Windows Server 2012 (votre support sous licence)
-* Linux BIND : Image d'installation [CentOS ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND : Image d'installation [CentOS ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.centos.org/download/){: new_window}
 * [vCenter Virtual Appliance ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (requiert un abonnement VMware valide)
 
 Après avoir reçu par téléchargement l'image ISO, vous devez l'envoyer par téléchargement à un magasin de données hôte de gestion afin de pouvoir la connecter à une machine virtuelle. Utilisez le client vSphere pour vous connecter à un hôte de gestion et créez un répertoire d'images ISO sur le magasin de données local. 
@@ -608,7 +608,7 @@ L'environnement VMware mono-site avancé est terminé.
 
 Vous disposez désormais d'un environnement VMware qui s'exécute dans un centre de données IBM Cloud. Votre environnement VMware peut exécuter des charges de travail et prendre en charge un déploiement IBM Cloud sur site. L'environnement adopte les meilleures pratiques VMware et active des fonctions telles que VMware DRS, Haute disponibilité, Storage DRS et la redondance de mise en réseau. Vous pouvez étendre cette implémentation d'architecture de référence à des hôtes de gestion ou de capacité plus grands et à davantage de stockage. 
 
-Pour plus d'informations sur VMware, voir [Déploiement de VMware](/docs/infrastructure/vmware?topic=VMware-using-cookbooks-for-vmware-deployments) et  [Foire aux questions sur VMware](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
+Pour plus d'informations sur VMware, voir [Déploiement de VMware](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) et  [Foire aux questions sur VMware](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
 
 ## Annexe A : Feuille de calcul VLAN
 {: #appendix-a-vlan-worksheet}

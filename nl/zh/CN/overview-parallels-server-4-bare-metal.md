@@ -47,4 +47,4 @@ Parallels Server Bare Metal 提供了在本地裸机服务器或远程裸机服�
 
 Parallels Server Bare Metal 使用可移植 IP 地址，而 Virtuozzo 使用可移植或静态 IP 地址（取决于配置）。
 
-\* {{site.data.keyword.BluSoftlayer_full}} 仅许可 Parallels Server 4 Bare Metal 上的硬件虚拟机，除非在订购表单上另有指示。_VM_ = 虚拟机。_V_ = VPS 或容器。
+\* {{site.data.keyword.cloud}} 仅许可 Parallels Server 4 Bare Metal 上的硬件虚拟机，除非在订购表单上另有指示。_VM_ = 虚拟机。_V_ = VPS 或容器。

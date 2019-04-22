@@ -63,7 +63,7 @@ subcollection: virtualization
 * **예**로 답변하십시오. 가상 머신에서 인터넷에 액세스할 수 있도록 공용 네트워크 디바이스에 대한 네트워크 설정을 작성해야 합니다. 
 
 2. "컴퓨터에 eth0, eth1 등 사용 가능한 이더넷 인터페이스가 여러 개 있습니다. 어떤 인터페이스로 vmnet0에 브릿징하시겠습니까?"
-* 모든 {{site.data.keyword.BluSoftlayer}} 서버가 설정 및 실행되는 방법은 eth1에서 공용 네트워크가 실행되고 eth0에서 사설 네트워크가 실행된다는 점을 기억해 두십시오. VMware에서 vmnet0에 대한 기본 브릿지 디바이스가 eth0입니다. Enter를 누르는 대신 eth1을 입력하십시오.
+* 모든 {{site.data.keyword.cloud}} 서버가 설정 및 실행되는 방법은 eth1에서 공용 네트워크가 실행되고 eth0에서 사설 네트워크가 실행된다는 점을 기억해 두십시오. VMware에서 vmnet0에 대한 기본 브릿지 디바이스가 eth0입니다. Enter를 누르는 대신 eth1을 입력하십시오.
 
 ## 사설 네트워크 브릿징
 {: #bridging-the-private-network}

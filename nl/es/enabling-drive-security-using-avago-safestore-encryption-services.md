@@ -14,7 +14,7 @@ keywords: Avago SafeStore, encryption
 # Habilitación de la seguridad de unidad utilizando Avago SafeStore Encryption Services
 {: #enabling-drive-security-by-using-avago-safestore-encryption-services}
 
-La configuración de la seguridad de unidad ayuda a evitar el acceso a datos almacenados en discos eliminados sin una clave de seguridad. Los datos de la unidad no se pueden recuperar sin esta clave. {{site.data.keyword.BluSoftlayer_full}} proporciona unidades de cifrado automático (SED) en centros de datos selectos para las unidades que se pueden adquirir en un servidor nativo. Hay unidades SATA de 10 TB disponibles en nuestros centros de datos de EE.UU.
+La configuración de la seguridad de unidad ayuda a evitar el acceso a datos almacenados en discos eliminados sin una clave de seguridad. Los datos de la unidad no se pueden recuperar sin esta clave. {{site.data.keyword.cloud}} proporciona unidades de cifrado automático (SED) en centros de datos selectos para las unidades que se pueden adquirir en un servidor nativo. Hay unidades SATA de 10 TB disponibles en nuestros centros de datos de EE.UU.
 
 ## Requisitos previos
 {: #prerequisites-enabling-drive-security-by-using-avago-safestore-encryption-services}

@@ -308,7 +308,7 @@ Actualice la sección **Notas** de cada dirección IP portátil con el nombre de
 Ahora, el entorno está preparado para desplegar el dispositivo virtual VMware vCenter e instalar una máquina virtual para DNS, Active Directory o BIND. No obstante, antes del despliegue, necesita descargar las imágenes. Para descargar las imágenes, realice una conexión de escritorio remota con el servidor virtual suministrado anteriormente y descargue las imágenes adecuadas en el servidor virtual del entorno:
 
 * Active Directory / Windows DNS: imagen ISO de Windows Server 2008R2/Windows Server 2012 (su soporte con licencia)
-* Linux BIND: [Imagen de instalación de CentOS ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [Imagen de instalación de CentOS ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.centos.org/download/){: new_window}
 * [Dispositivo virtual vCenter ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (requiere una suscripción válida a VMware)
 
 Tras descargar el ISO, debe cargar la imagen en el almacén de datos de un host de gestión para que se pueda adjuntar a una máquina virtual. Utilice el cliente vSphere para conectarse a un host de gestión y cree un directorio ISO en el almacén de datos local.
@@ -607,7 +607,7 @@ El entorno avanzado de VMware de un solo sitio se ha completado.
 
 Ahora tiene un entorno VMware en ejecución en un centro de datos de IBM Cloud. El entorno VMware puede ejecutar cargas de trabajo de producción y complementar un despliegue de IBM Cloud local. El entorno proporciona métodos recomendados de VMware y permite características como VMware DRS, HA, DRS de almacenamiento y redundancia de redes. Puede ampliar esta implementación de arquitectura de referencia con más hosts de capacidad o de gestión y más almacenamiento.
 
-Para obtener más información acerca de VMware, consulte [Desplegar](/docs/infrastructure/vmware?topic=VMware-using-cookbooks-for-vmware-deployments) y [Preguntas más frecuentes de VMware](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
+Para obtener más información acerca de VMware, consulte [Desplegar](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) y [Preguntas más frecuentes de VMware](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
 
 ## Apéndice A: Hoja de trabajo de VLAN
 {: #appendix-a-vlan-worksheet}

@@ -63,7 +63,7 @@ Ti vengono presentate le seguenti domande:
 * Rispondi **yes**. Devi creare una configurazione di rete per il tuo dispositivo di rete pubblica in modo da poter accedere a internet sulle tue macchine virtuali.
 
 2. “Your computer has multiple ethernet interfaces available: eth0, eth1. Which one do you want to bridge to vmnet0?”
-* Tutti i server {{site.data.keyword.BluSoftlayer}} sono configurati con la rete pubblica in esecuzione su eth1 e la rete privata in esecuzione su eth0. In VMware, il dispositivo bridge predefinito per vmnet0 è eth0. Invece di premere Invio, immetti eth1.
+* Tutti i server {{site.data.keyword.cloud}} sono configurati con la rete pubblica in esecuzione su eth1 e la rete privata in esecuzione su eth0. In VMware, il dispositivo bridge predefinito per vmnet0 è eth0. Invece di premere Invio, immetti eth1.
 
 ## Bridging della rete privata
 {: #bridging-the-private-network}

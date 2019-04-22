@@ -308,7 +308,7 @@ VLAN をトランキングして NIC をアンバインドするには、次の�
 これで、この環境に VMware vCenter 仮想アプライアンスをデプロイして、DNS 用、Active Directory 用、または BIND 用の仮想マシンをインストールする準備ができました。 ただし、デプロイ前にイメージをダウンロードする必要があります。 イメージをダウンロードするには、既にプロビジョンされた仮想サーバーにリモート・デスクトップ接続して、この環境用にその仮想サーバー上の適切なイメージをダウンロードします。
 
 * Active Directory/Windows DNS: Windows Server 2008R2/Windows Server 2012 の ISO イメージ (ライセンス交付済みメディア)
-* Linux BIND: [CentOS Install Image ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [CentOS Install Image ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.centos.org/download/){: new_window}
 * [vCenter Virtual Appliance ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (有効な VMware サブスクリプションが必要)
 
 ISO をダウンロードした後に、そのイメージを管理ホストのデータ・ストアにアップロードする必要があります。これにより、そのイメージを仮想マシンに添付できるようになります。 vSphere クライアントを使用して管理ホストに接続して、ローカル・データ・ストア上に ISO ディレクトリーを作成します。
@@ -607,7 +607,7 @@ vmk0 アダプターを分散仮想スイッチにマイグレーションした
 
 これで、IBM Cloud データ・センターで稼働している VMware 環境が得られました。 この VMware 環境は実稼働ワークロードを実行可能であり、オンプレミスの IBM Cloud デプロイメント環境を補っています。 この環境では、VMware のベスト・プラクティスが実践されており、VMware DRS、HA、ストレージ DRS、ネットワーキング冗長性などの機能を使用できます。 より大規模な容量ホストや管理ホスト、および追加のストレージを使用して、このリファレンス・アーキテクチャー実装を拡張できます。
 
-VMware について詳しくは、[VMware のデプロイ](/docs/infrastructure/vmware?topic=VMware-using-cookbooks-for-vmware-deployments)および [VMware の FAQ](/docs/infrastructure/vmware?topic=VMware-faqs-vmware) を参照してください。
+VMware について詳しくは、[VMware のデプロイ](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks)および [VMware の FAQ](/docs/infrastructure/vmware?topic=VMware-faqs-vmware) を参照してください。
 
 ## 付録 A: VLAN ワークシート
 {: #appendix-a-vlan-worksheet}

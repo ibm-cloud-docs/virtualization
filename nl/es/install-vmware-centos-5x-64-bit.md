@@ -65,7 +65,7 @@ Se le realizarán las preguntas siguientes:
 * Responda **sí**. Necesita crear una configuración de red para el dispositivo de red público, de manera que pueda acceder a Internet en sus máquinas virtuales.
 
 2. "Su sistema tiene varias interfaces Ethernet disponibles: eth0, eth1. ¿Cuál desea utilizar como puente para vmnet0?"
-* Recuerde, la manera en que todos los servidores se configuran y ejecutan en {{site.data.keyword.BluSoftlayer}}, con la red pública en eth1 y la red privada en eth0. En VMware, el dispositivo de puente predeterminado para vmnet0 es eth0. En lugar de pulsar Intro, escriba eth1.
+* Recuerde, la manera en que todos los servidores se configuran y ejecutan en {{site.data.keyword.cloud}}, con la red pública en eth1 y la red privada en eth0. En VMware, el dispositivo de puente predeterminado para vmnet0 es eth0. En lugar de pulsar Intro, escriba eth1.
 
 ## Puente de la red privada
 {: #bridging-the-private-network}

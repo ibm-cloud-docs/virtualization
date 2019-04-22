@@ -63,7 +63,7 @@ Sie werden aufgefordert, die folgenden Fragen zu beantworten:
 * Antworten Sie mit **Ja**. Daraufhin wird eine Netzkonfiguration für die öffentliche Netzeinheit erstellt, damit Sie über Ihre virtuellen Maschinen auf das Internet zugreifen können.
 
 2. Ihr Computer verfügt über mehrere Ethernet-Schnittstellen: 'eth0', 'eth1'. Welche soll als Brücke zu 'vmnet0' verwendet werden?
-* Geben Sie 'eth1' ein und drücken Sie dann die Eingabetaste. Beachten Sie hierbei, dass alle {{site.data.keyword.BluSoftlayer}}-Server so eingerichtet sind, dass das öffentliche Netz auf 'eth1' und das private Netz auf 'eth0' ausgeführt wird. In VMware ist die Standardbrückeneinheit für 'vmnet0' die Einheit 'eth0'. Geben Sie 'eth1' ein, anstatt die Eingabetaste zu drücken.
+* Geben Sie 'eth1' ein und drücken Sie dann die Eingabetaste. Beachten Sie hierbei, dass alle {{site.data.keyword.cloud}}-Server so eingerichtet sind, dass das öffentliche Netz auf 'eth1' und das private Netz auf 'eth0' ausgeführt wird. In VMware ist die Standardbrückeneinheit für 'vmnet0' die Einheit 'eth0'. Geben Sie 'eth1' ein, anstatt die Eingabetaste zu drücken.
 
 ## Privates Netz überbrücken
 {: #bridging-the-private-network}

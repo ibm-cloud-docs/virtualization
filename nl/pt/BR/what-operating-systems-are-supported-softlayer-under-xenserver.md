@@ -25,4 +25,4 @@ Os sistemas operacionais a seguir podem ser vinculativos no {{site.data.keyword.
 - Ubuntu 14.04 LTS a 16.04 LTS
 - Microsoft Windows Server 2012, 2012 R2, 2016
 
-O XenServer suporta vários softwares além da lista anterior que podem não ser vinculados ao {{site.data.keyword.slapi_short}}. Qualquer sistema operacional guest que é instalado pelas opções *"Outra mídia de instalação"* no XenCenter, não é suportado pelo {{site.data.keyword.BluSoftlayer_notm}} e pode não funcionar no ambiente XenServer.
+O XenServer suporta vários softwares além da lista anterior que podem não ser vinculados ao {{site.data.keyword.slapi_short}}. Qualquer sistema operacional guest que é instalado pelas opções *"Outra mídia de instalação"* no XenCenter, não é suportado pelo {{site.data.keyword.cloud_notm}} e pode não funcionar no ambiente XenServer.

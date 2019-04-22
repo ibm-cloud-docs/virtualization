@@ -14,7 +14,7 @@ keywords: Citrix XenServer
 # XenServer 활성화
 {: #activating-xenserver}
 
-Citrix XenServer 무료 라이센스는 초기 설치 또는 다시 로드한 후에 30일 동안 라이센스가 부여됩니다. 이 시간 동안에는 Citrix로 등록해야 하며 완전한 1년 라이센스를 요청해야 합니다. 이 라이센스를 작성하려면 Citrix에 {{site.data.keyword.BluSoftlayer}}에서 액세스 권한을 갖고 있지 않은 개인 정보가 필요합니다. 라이센스는 XenServer를 사용하기 위한 사용자와 Citrix 간의 계약입니다. {:shortdesc}
+Citrix XenServer 무료 라이센스는 초기 설치 또는 다시 로드한 후에 30일 동안 라이센스가 부여됩니다. 이 시간 동안에는 Citrix로 등록해야 하며 완전한 1년 라이센스를 요청해야 합니다. 이 라이센스를 작성하려면 Citrix에 {{site.data.keyword.cloud}}에서 액세스 권한을 갖고 있지 않은 개인 정보가 필요합니다. 라이센스는 XenServer를 사용하기 위한 사용자와 Citrix 간의 계약입니다. {:shortdesc}
 
 30일 내에 시스템을 등록하지 않으면 가상 머신의 전원을 켤 수 없습니다.
 {:tip}

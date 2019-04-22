@@ -11,7 +11,7 @@ subcollection: virtualization
 # Unterschiede zwischen XenServer-Versionen
 {: #differences-between-versions-of-xenserver}
 
-Zwischen den verschiedenen XenServer-Versionen, die auf dem System installiert sind, bestehen lediglich Abweichungen in Bezug auf die Lizenzierung. Wenn Sie für Ihre Lizenz nach der Installation ein Upgrade auf eine Lizenz einer höheren Klasse durchführen wollen, dann kommt es hierbei nicht zu Ausfallzeiten während der Neuinstallation des Servers. Die Preisinformationen erhalten Sie bei der zuständigen {{site.data.keyword.BluSoftlayer}}-Vertriebsfunktion.
+Zwischen den verschiedenen XenServer-Versionen, die auf dem System installiert sind, bestehen lediglich Abweichungen in Bezug auf die Lizenzierung. Wenn Sie für Ihre Lizenz nach der Installation ein Upgrade auf eine Lizenz einer höheren Klasse durchführen wollen, dann kommt es hierbei nicht zu Ausfallzeiten während der Neuinstallation des Servers. Die Preisinformationen erhalten Sie bei der zuständigen {{site.data.keyword.cloud}}-Vertriebsfunktion.
 
 **Hinweis:** Nicht alle verfügbaren Funktionen werden unterstützt.
 

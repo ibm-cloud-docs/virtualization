@@ -308,7 +308,7 @@ keywords: vmware, ESXi
 现在，环境已准备好部署 VMware vCenter 虚拟设备，并为 DNS、Active Directory 或 BIND 安装虚拟机。但是，部署之前，需要下载映像。要下载映像，请通过远程桌面访问先前供应的虚拟服务器，并在该虚拟服务器上下载与您的环境相应的映像：
 
 * Active Directory/Windows DNS：Windows Server 2008R2/Windows Server 2012 ISO 映像（您的许可介质）
-* Linux BIND：[CentOS 安装映像 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND：[CentOS 安装映像 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.centos.org/download/){: new_window}
 * [vCenter 虚拟设备 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window}（需要有效的 VMware 预订）
 
 下载 ISO 后，需要将映像上传到管理主机数据存储，以便可以将其连接到虚拟机。使用 vSphere Client 连接到管理主机，并在本地数据存储上创建 ISO 目录。
@@ -607,7 +607,7 @@ keywords: vmware, ESXi
 
 现在，您的 VMware 环境正在 IBM Cloud 数据中心运行。该 VMware 环境可以运行生产工作负载，并补充内部部署 IBM Cloud 部署。该环境制定了 VMware 最佳实践，并启用 VMware DRS、HA、Storage DRS 和联网冗余等功能。可以使用更多容量或管理主机以及更多存储器来扩展此参考体系结构实现。
 
-有关 VMware 的更多信息，请参阅[部署 VMware](/docs/infrastructure/vmware?topic=VMware-using-cookbooks-for-vmware-deployments) 和 [VMware 常见问题](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)。
+有关 VMware 的更多信息，请参阅[部署 VMware](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) 和 [VMware 常见问题](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)。
 
 ## 附录 A：VLAN 工作表
 {: #appendix-a-vlan-worksheet}

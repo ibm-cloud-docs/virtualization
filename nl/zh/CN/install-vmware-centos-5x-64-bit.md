@@ -63,7 +63,7 @@ subcollection: virtualization
 * 请回答**是**。您需要为公用网络设备创建网络设置，以便可以在虚拟机上访问因特网。
 
 2. “计算机有多个可用的以太网接口：eth0 和 eth1。您希望哪个接口桥接到 vmnet0？”
-* 请记住，所有 {{site.data.keyword.BluSoftlayer}} 服务器的设置和运行方式是，公用网络在 eth1 上运行，专用网络在 eth0 上运行。在 VMware 中，vmnet0 的缺省网桥设备为 eth0。不要按 Enter 键，请改为输入 eth1。
+* 请记住，所有 {{site.data.keyword.cloud}} 服务器的设置和运行方式是，公用网络在 eth1 上运行，专用网络在 eth0 上运行。在 VMware 中，vmnet0 的缺省网桥设备为 eth0。不要按 Enter 键，请改为输入 eth1。
 
 ## 桥接专用网络
 {: #bridging-the-private-network}

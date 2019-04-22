@@ -309,7 +309,7 @@ Atualize a seção **Notas** de cada endereço IP móvel com o nome do host e a 
 Agora, o ambiente está pronto para implementar o VMware vCenter Virtual Appliance e instalar uma máquina virtual para DNS, Active Directory ou BIND. No entanto, antes de implementar, é necessário fazer download das imagens. Para fazer download das imagens, acesse remotamente a área de trabalho para o servidor virtual fornecido anteriormente e faça download das imagens apropriadas no servidor virtual para o seu ambiente:
 
 * Active Directory / Windows DNS: imagem ISO do Windows Server 2008R2/Windows Server 2012 (sua mídia licenciada)
-* Linux BIND: [Imagem de instalação do CentOS ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [Imagem de instalação do CentOS ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.centos.org/download/){: new_window}
 * [vCenter Virtual Appliance ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (requer uma assinatura válida do VMware)
 
 Depois de fazer download do ISO, é necessário fazer upload da imagem para um armazenamento de dados do host de gerenciamento para que ela possa ser anexada a uma máquina virtual. Use o cliente vSphere para se conectar a um host de gerenciamento e criar um diretório ISO no armazenamento de dados local.
@@ -608,7 +608,7 @@ O ambiente VMware avançado de site único está completo.
 
 Agora você tem um ambiente VMware que está em execução em um data center do IBM Cloud. O seu ambiente VMware pode executar cargas de trabalho de produção e complementar uma implementação no IBM Cloud no local. O ambiente decreta as melhores práticas do VMware e ativa recursos como VMware DRS, HA, Storage DRS e redundância de rede. É possível estender essa implementação de arquitetura de referência com maior capacidade ou hosts de gerenciamento e mais armazenamento.
 
-Para obter mais informações sobre o VMware, consulte [Implementar o VMware](/docs/infrastructure/vmware?topic=VMware-using-cookbooks-for-vmware-deployments) e [Perguntas frequentes do VMware](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
+Para obter mais informações sobre o VMware, consulte [Implementar o VMware](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) e [Perguntas frequentes do VMware](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
 
 ## Apêndice A: Planilha de VLAN
 {: #appendix-a-vlan-worksheet}

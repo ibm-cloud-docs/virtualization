@@ -14,7 +14,7 @@ keywords: Xenserver
 # Verbindung zu XenServer über öffentliche Schnittstelle herstellen
 {: #connecting-to-xenserver-over-a-public-interface}
 
-Standardmäßig wird die {{site.data.keyword.BluSoftlayer}}-Installation von XenServer so konfiguriert, dass die Schnittstelle für das private Netz für alle Managementverbindungen verwendet wird. Wenn im privaten Netz Verbindungsprobleme auftreten, dann öffnen Sie ein Support-Ticket.
+Standardmäßig wird die {{site.data.keyword.cloud}}-Installation von XenServer so konfiguriert, dass die Schnittstelle für das private Netz für alle Managementverbindungen verwendet wird. Wenn im privaten Netz Verbindungsprobleme auftreten, dann öffnen Sie ein Support-Ticket.
 
 Die Änderungen dieser Konfiguration stellt ein Sicherheitsrisiko dar und ist nicht zu empfehlen.
 {:tip}

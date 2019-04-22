@@ -19,12 +19,12 @@ Hyper-V est un système de virtualisation pour Windows 2008 Server Datacenter Ed
 ## Quelle est la configuration requise pour l'exécution de Hyper-V ?
 {: #what-are-the-requirements-to-run-hyper-v-}
 
-Hyper-V doit être installé sur Windows 2008 Server 64-bit Datacenter Edition. Tout le matériel {{site.data.keyword.BluSoftlayer}} doit répondre à la configuration système requise de Hyper-V. Microsoft recommande d'utiliser au moins 2 Go de mémoire RAM pour le serveur. 
+Hyper-V doit être installé sur Windows 2008 Server 64-bit Datacenter Edition. Tout le matériel {{site.data.keyword.cloud}} doit répondre à la configuration système requise de Hyper-V. Microsoft recommande d'utiliser au moins 2 Go de mémoire RAM pour le serveur. 
 
 ## Hyper-V est-il disponible sur n'importe quelle autre version de 2008 ?
 {: #is-hyper-v-available-on-any-other-versions-of-2008-}
 
-{{site.data.keyword.BluSoftlayer_notm}} offre Hyper-V uniquement sur Datacenter Edition.
+{{site.data.keyword.cloud_notm}} offre Hyper-V uniquement sur Datacenter Edition.
 
 ## Hyper-V peut-il s'exécuter sur Windows 2003 ?
 {: #can-hyper-v-run-on-windows-2003}
@@ -34,7 +34,7 @@ Hyper-V a été développé pour Windows 2008 et ne peut pas s'exécuter sur Win
 ## Quels systèmes d'exploitation peuvent-être installés sur une machine virtuelle ?
 {: #what-operating-systems-can-be-installed-on-a-virtual-machine}
 
-{{site.data.keyword.BluSoftlayer_notm}} prend en charge les systèmes d'exploitation suivants pour Hyper-V :
+{{site.data.keyword.cloud_notm}} prend en charge les systèmes d'exploitation suivants pour Hyper-V :
 
 * Toutes les versions de Windows 2003 et 2008 Server
 * CentOS, Fedora et Ubuntu Linux Distributions
@@ -67,7 +67,7 @@ Oui.
 ## Une licence est-elle requise pour chaque système d'exploitation virtuel ?
 {: #does-each-virtual-operating-system-need-to-have-a-license-}
 
-Les machines virtuelles Windows 2003 et 2008 sont concédés sous licence via {{site.data.keyword.BluSoftlayer_notm}}. Les machines virtuelles Linux sont concédées sous licence libre et aucune action n'est requise. 
+Les machines virtuelles Windows 2003 et 2008 sont concédés sous licence via {{site.data.keyword.cloud_notm}}. Les machines virtuelles Linux sont concédées sous licence libre et aucune action n'est requise. 
 
 ## Les machines virtuelles auront-elles accès au réseau privé ?
 {: #will-the-virtual-machines-have-access-to-the-private-network-}
@@ -77,7 +77,7 @@ Oui. Les machines virtuelles peuvent se connecter à un réseau public et à un 
 ## Quels sont les avantages présentés par l'accès des machines virtuelles à un réseau privé ?
 {: #what-advantages-are-there-to-providing-private-network-access-to-virtual-machines-}
 
-Le fait de fournir à des machines virtuelles un accès à un réseau privé leur permet de communiquer entre elles. Cela leur permet également de communiquer avec d'autres systèmes internes, tels que NAS et iSCSI, et avec d'autres serveurs dont vous disposez avec {{site.data.keyword.BluSoftlayer_notm}}.
+Le fait de fournir à des machines virtuelles un accès à un réseau privé leur permet de communiquer entre elles. Cela leur permet également de communiquer avec d'autres systèmes internes, tels que NAS et iSCSI, et avec d'autres serveurs dont vous disposez avec {{site.data.keyword.cloud_notm}}.
 
 ## Les machines virtuelles peuvent-elles utiliser le bloc d'adresses IP secondaires qui est fourni avec le serveur ?
 {: #can-virtual-machines-use-the-secondary-ip-block-that-came-with-the-server-}

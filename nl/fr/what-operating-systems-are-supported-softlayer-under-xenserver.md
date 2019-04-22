@@ -25,4 +25,4 @@ Les systèmes d'exploitation suivants peuvent s'intégrer à {{site.data.keyword
 - Ubuntu 14.04 LTS à 16.04 LTS
 - Microsoft Windows Server 2012, 2012 R2, 2016
 
-XenServer prend en charge différents logiciels en plus de la liste précédente qui peuvent ne pas s'intégrer à {{site.data.keyword.slapi_short}}. Tout système d'exploitation invité qui est installé par les options *"Other installation media"* dans XenCenter, n'est pas pris en charge par {{site.data.keyword.BluSoftlayer_notm}} et peut ne pas fonctionner dans l'environnement XenServer. 
+XenServer prend en charge différents logiciels en plus de la liste précédente qui peuvent ne pas s'intégrer à {{site.data.keyword.slapi_short}}. Tout système d'exploitation invité qui est installé par les options *"Other installation media"* dans XenCenter, n'est pas pris en charge par {{site.data.keyword.cloud_notm}} et peut ne pas fonctionner dans l'environnement XenServer. 

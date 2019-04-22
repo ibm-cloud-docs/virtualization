@@ -63,7 +63,7 @@ As seguintes perguntas são feitas a você:
 * Responda **sim**. É necessário criar uma configuração de rede para o seu dispositivo de rede pública para que seja possível acessar a Internet em suas máquinas virtuais.
 
 2. "Seu computador tem múltiplas interfaces ethernet disponíveis: eth0, eth1. Em qual você deseja criar uma ponte para vmnet0?"
-* Lembre-se, a maneira como todos os servidores {{site.data.keyword.BluSoftlayer}} são configurados e executados é com a rede pública em eth1 e a rede privada em eth0. No VMware, o dispositivo de ponte padrão para vmnet0 é eth0. Em vez de pressionar Enter, digite eth1.
+* Lembre-se, a maneira como todos os servidores {{site.data.keyword.cloud}} são configurados e executados é com a rede pública em eth1 e a rede privada em eth0. No VMware, o dispositivo de ponte padrão para vmnet0 é eth0. Em vez de pressionar Enter, digite eth1.
 
 ## Colocando a rede privada em bridge
 {: #bridging-the-private-network}

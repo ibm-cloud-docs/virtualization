@@ -14,7 +14,7 @@ keywords: vmware, virtuozzo, hyper-V, ESX, ESXi
 # 入門指導教學
 {: #getting-started}
 
-您可以使用「虛擬化」解決方案，在單一專用環境中執行多個虛擬機器。在「{{site.data.keyword.BluSoftlayer_full}} 網路」上執行的虛擬機器可以與網路上的其他實體及虛擬裝置進行整合，且可以同時透過「客戶入口網站」及 API 進行管理。在 {{site.data.keyword.cloud_notm}} 專屬架構及自動化平台上執行虛擬機器時，會提供適合企業層級虛擬化的高階穩定性，並以較小的規模進行虛擬化。
+您可以使用「虛擬化」解決方案，在單一專用環境中執行多個虛擬機器。在「{{site.data.keyword.cloud}} 網路」上執行的虛擬機器可以與網路上的其他實體及虛擬裝置進行整合，且可以同時透過「客戶入口網站」及 API 進行管理。在 {{site.data.keyword.cloud_notm}} 專屬架構及自動化平台上執行虛擬機器時，會提供適合企業層級虛擬化的高階穩定性，並以較小的規模進行虛擬化。
 {:shortdesc}
 
 | 入門       |

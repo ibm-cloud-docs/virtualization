@@ -47,5 +47,5 @@ Parallels Server Bare Metal을 사용하여 현재 및 히스토리 네트워크
 
 Parallels Server Bare Metal은 휴대용 IP 주소를 사용하는 반면, Virtuozzo는 휴대용 또는 정적 IP 주소 중 하나를 사용합니다(구성에 따라 다름).
 
-\* {{site.data.keyword.BluSoftlayer_full}}의 경우 주문 양식에 달리 표시되지 않는 한 Parallels Server 4 Bare Metal의 하드웨어 가상 머신만 라이센스가 부여됩니다.
+\* {{site.data.keyword.cloud}}의 경우 주문 양식에 달리 표시되지 않는 한 Parallels Server 4 Bare Metal의 하드웨어 가상 머신만 라이센스가 부여됩니다.
 _VM_ = 가상 머신. _V_ = VPS 또는 컨테이너.

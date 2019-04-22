@@ -14,7 +14,7 @@ keywords: Xenserver
 # 공용 인터페이스를 통해 XenServer에 연결
 {: #connecting-to-xenserver-over-a-public-interface}
 
-기본적으로 XenServer의 {{site.data.keyword.BluSoftlayer}} 설치는 모든 관리 연결을 위해 사설 네트워크 인터페이스를 사용하도록 구성됩니다. 사설 네트워크에 연결 문제가 있는 경우, 지원 티켓을 여십시오.
+기본적으로 XenServer의 {{site.data.keyword.cloud}} 설치는 모든 관리 연결을 위해 사설 네트워크 인터페이스를 사용하도록 구성됩니다. 사설 네트워크에 연결 문제가 있는 경우, 지원 티켓을 여십시오.
 
 이 구성 변경에는 보안 위협이 따르므로 권장되지 않습니다.
 {:tip}

@@ -308,7 +308,7 @@ NIC를 트렁킹하고 NIC를 결합 해제하려면 다음과 같은 단계를 
 이제 환경은 VMware vCenter Virtual Appliance를 배치하고 DNS, Active Directory 또는 BIND용 가상 머신을 설치할 준비가 되었습니다. 그러나 배치하기 전에 이미지를 다운로드해야 합니다. 이미지를 다운로드하려면 원격 데스크탑을 이전에 프로비저닝된 가상 서버로 다운로드하고 사용자 환경에 맞게 가상 서버에서 적절한 이미지를 다운로드하십시오.
 
 * Active Directory / Windows DNS: Windows Server 2008R2/Windows Server 2012 ISO 이미지(라이센스가 부여된 매체)
-* Linux BIND: [CentOS 설치 이미지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [CentOS 설치 이미지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.centos.org/download/){: new_window}
 * [vCenter Virtual Appliance ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window}(유효한 VMware 가입 필요)
 
 ISO를 다운로드한 후에는 가상 머신에 연결할 수 있도록 이미지를 관리 호스트 데이터 저장소에 업로드해야 합니다. vSphere 클라이언트를 사용하여 관리 호스트에 연결하고 로컬 데이터 저장소에서 ISO 디렉토리를 작성하십시오. 
@@ -609,7 +609,7 @@ vmk0 어댑터를 분산 가상 스위치로 마이그레이션하고 나면 DVS
 
 이제 IBM Cloud 데이터 센터에서 실행 중인 VMware 환경이 있습니다. VMware 환경은 프로덕션 워크로드를 실행하고 온프레미스 IBM Cloud 배치를 보완할 수 있습니다. 환경은 VMware 우수 사례를 지원하고 VMware DRS, HA, Storage DRS 및 네트워킹 이중화와 같은 기능을 사용할 수 있습니다. 더 많은 용량 또는 관리 호스트와 더 많은 스토리지를 사용하여 이 참조 아키텍처 구현을 확장할 수 있습니다.
 
-VMware에 대한 자세한 정보는 [VMware 배치](/docs/infrastructure/vmware?topic=VMware-using-cookbooks-for-vmware-deployments) 및 [VMware FAQ](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)를 참조하십시오. 
+VMware에 대한 자세한 정보는 [VMware 배치](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) 및 [VMware FAQ](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)를 참조하십시오. 
 
 ## 부록 A: VLAN 워크시트
 {: #appendix-a-vlan-worksheet}

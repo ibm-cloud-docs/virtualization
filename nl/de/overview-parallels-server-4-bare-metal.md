@@ -47,5 +47,5 @@ Sie können Parallels Server Bare Metal verwenden, um VMs oder Container auf Bas
 
 Parallels Server Bare Metal verwendet portierbare IP-Adressen, während Virtuozzo (abhängig von der Konfiguration) entweder portierbare oder statische IP-Adressen verwendet.
 
-\* {{site.data.keyword.BluSoftlayer_full}} lizenziert nur virtuelle Maschine für Hardware unter Parallels Server 4 Bare Metal, es sei denn, auf dem Bestellschein werden anderen Angaben gemacht.
+\* {{site.data.keyword.cloud}} lizenziert nur virtuelle Maschine für Hardware unter Parallels Server 4 Bare Metal, es sei denn, auf dem Bestellschein werden anderen Angaben gemacht.
 _VM_ = virtuelle Maschine. _V_ = VPS oder Container.

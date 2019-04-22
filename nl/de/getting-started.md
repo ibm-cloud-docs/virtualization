@@ -14,7 +14,7 @@ keywords: vmware, virtuozzo, hyper-V, ESX, ESXi
 # Lernprogramm 'Einführung'
 {: #getting-started}
 
-Sie können die Virtualisierungslösung verwenden, um mehrere virtuelle Maschinen in einer einzigen dedizierten Umgebung auszuführen. Virtuelle Maschinen, die im {{site.data.keyword.BluSoftlayer_full}}-Netz ausgeführt werden, können mit anderen physischen und virtuellen Einheiten im Netz integriert werden und können sowohl über das Kundenportal als auch über die API verwaltet werden. Die Ausführung virtueller Maschinen auf der proprietären {{site.data.keyword.cloud_notm}}-Architektur und der automatisierten Plattform bietet hohe Stabilität, die für die Virtualisierung auf Unternehmensebene und auch die Virtualisierung in kleinerem Umfang geeignet ist.
+Sie können die Virtualisierungslösung verwenden, um mehrere virtuelle Maschinen in einer einzigen dedizierten Umgebung auszuführen. Virtuelle Maschinen, die im {{site.data.keyword.cloud}}-Netz ausgeführt werden, können mit anderen physischen und virtuellen Einheiten im Netz integriert werden und können sowohl über das Kundenportal als auch über die API verwaltet werden. Die Ausführung virtueller Maschinen auf der proprietären {{site.data.keyword.cloud_notm}}-Architektur und der automatisierten Plattform bietet hohe Stabilität, die für die Virtualisierung auf Unternehmensebene und auch die Virtualisierung in kleinerem Umfang geeignet ist.
 {:shortdesc}
 
 | Einführung |

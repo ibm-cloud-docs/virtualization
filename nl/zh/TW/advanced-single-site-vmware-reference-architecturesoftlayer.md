@@ -308,7 +308,7 @@ Windows 2012 R2 Standard 虛擬伺服器會佈建為公用程式伺服器以供 
 現在，環境已準備好部署「VMware vCenter 虛擬應用裝置」，並安裝 DNS、Active Directory 或 BIND 的虛擬機器。不過，在部署之前，您需要下載映像檔。若要下載映像檔，透過遠端桌面移至先前佈建的虛擬伺服器，然後在虛擬伺服器上針對您的環境下載適當的映像檔：
 
 * Active Directory / Windows DNS：Windows Server 2008R2/Windows Server 2012 ISO 映像檔（您的授權媒體）
-* Linux BIND：[CentOS 安裝映像檔 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND：[CentOS 安裝映像檔 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.centos.org/download/){: new_window}
 * [vCenter 虛擬應用裝置 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window}（需要有效的 VMware 訂閱）
 
 在下載 ISO 之後，您需要將映像檔上傳至管理主機資料儲存庫，以便它可以連接至虛擬機器。請使用 vSphere 用戶端來連接至管理主機，並在本端資料儲存庫上建立 ISO 目錄。
@@ -607,7 +607,7 @@ Windows 2012 R2 Standard 虛擬伺服器會佈建為公用程式伺服器以供 
 
 您現在具有正在 IBM Cloud 資料中心執行的 VMware 環境。您的 VMware 環境可以執行正式作業工作負載，並補充內部部署 IBM Cloud 部署。此環境會實施 VMware 最佳作法，並啟用 VMware DRS、HA、Storage DRS 及網路備援等功能。您可以使用更大的容量或管理主機，以及更多的儲存空間，來擴充此參照架構實作。
 
-如需 VMware 的相關資訊，請參閱[部署 VMware](/docs/infrastructure/vmware?topic=VMware-using-cookbooks-for-vmware-deployments) 及 [VMware 常見問題](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
+如需 VMware 的相關資訊，請參閱[部署 VMware](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) 及 [VMware 常見問題](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
 
 ## 附錄 A：VLAN 工作表
 {: #appendix-a-vlan-worksheet}

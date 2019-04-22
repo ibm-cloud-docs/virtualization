@@ -14,7 +14,7 @@ keywords: Xenserver
 # 通过公共接口连接到 XenServer
 {: #connecting-to-xenserver-over-a-public-interface}
 
-缺省情况下，在 {{site.data.keyword.BluSoftlayer}} 上安装的 XenServer 配置为将专用网络接口用于所有管理连接。如果专用网络上存在连接问题，请开具支持凭单。
+缺省情况下，在 {{site.data.keyword.cloud}} 上安装的 XenServer 配置为将专用网络接口用于所有管理连接。如果专用网络上存在连接问题，请开具支持凭单。
 
 更改此配置存在安全风险，因此建议不要更改。
 {:tip}

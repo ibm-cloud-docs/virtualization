@@ -19,12 +19,12 @@ Hyper-V は、Windows 2008 Server Datacenter Edition の仮想化システムで
 ## Hyper-V を実行するための要件は何ですか?
 {: #what-are-the-requirements-to-run-hyper-v-}
 
-Hyper-V が Windows 2008 Server 64 ビット Datacenter Edition にインストールされている必要があります。 すべての {{site.data.keyword.BluSoftlayer}} ハードウェアが Hyper-V のシステム要件を満たしていなければなりません。 Microsoft は、サーバーの RAM として 2 GB 以上を推奨しています。
+Hyper-V が Windows 2008 Server 64 ビット Datacenter Edition にインストールされている必要があります。 すべての {{site.data.keyword.cloud}} ハードウェアが Hyper-V のシステム要件を満たしていなければなりません。 Microsoft は、サーバーの RAM として 2 GB 以上を推奨しています。
 
 ## Hyper-V は、他のバージョンの 2008 で使用できますか?
 {: #is-hyper-v-available-on-any-other-versions-of-2008-}
 
-{{site.data.keyword.BluSoftlayer_notm}} では、Hyper-V は Datacenter Edition でのみ利用できます。
+{{site.data.keyword.cloud_notm}} では、Hyper-V は Datacenter Edition でのみ利用できます。
 
 ## Hyper-V は Windows 2003 で実行できますか?
 {: #can-hyper-v-run-on-windows-2003}
@@ -34,7 +34,7 @@ Hyper-V は Windows 2008 用に開発されたものであり、Windows 2003 で
 ## 仮想マシンにインストールできるオペレーティング・システムは何ですか?
 {: #what-operating-systems-can-be-installed-on-a-virtual-machine}
 
-{{site.data.keyword.BluSoftlayer_notm}} では、Hyper-V で以下のオペレーティング・システムを利用できます。
+{{site.data.keyword.cloud_notm}} では、Hyper-V で以下のオペレーティング・システムを利用できます。
 
 * すべてのバージョンの Windows 2003 サーバーと 2008 サーバー
 * CentOS、Fedora、および Ubuntu Linux ディストリビューション
@@ -67,7 +67,7 @@ Windows 仮想マシンの場合は、1 台の仮想マシンに複数のプロ�
 ## ライセンスは仮想オペレーティング・システムごとに必要ですか?
 {: #does-each-virtual-operating-system-need-to-have-a-license-}
 
-Windows 2003 と 2008 の仮想マシンのライセンスは、{{site.data.keyword.BluSoftlayer_notm}} から提供されます。 Linux 仮想マシンのライセンスは無料で提供されるので、アクションは不要です。
+Windows 2003 と 2008 の仮想マシンのライセンスは、{{site.data.keyword.cloud_notm}} から提供されます。 Linux 仮想マシンのライセンスは無料で提供されるので、アクションは不要です。
 
 ## 仮想マシンは、プライベート・ネットワークにアクセスできますか?
 {: #will-the-virtual-machines-have-access-to-the-private-network-}
@@ -77,7 +77,7 @@ Windows 2003 と 2008 の仮想マシンのライセンスは、{{site.data.keyw
 ## 仮想マシンからプライベート・ネットワークにアクセスできると、どのような利点がありますか?
 {: #what-advantages-are-there-to-providing-private-network-access-to-virtual-machines-}
 
-仮想マシンからプライベート・ネットワークにアクセスできると、仮想マシンどうしの相互通信が可能になります。 また、プライベート・ネットワークにアクセスできれば、仮想マシンは、他の内部システム (NAS および iSCSIなど) や、{{site.data.keyword.BluSoftlayer_notm}} で使用している他のサーバーとも通信できるようになります。
+仮想マシンからプライベート・ネットワークにアクセスできると、仮想マシンどうしの相互通信が可能になります。 また、プライベート・ネットワークにアクセスできれば、仮想マシンは、他の内部システム (NAS および iSCSIなど) や、{{site.data.keyword.cloud_notm}} で使用している他のサーバーとも通信できるようになります。
 
 ## サーバーに設定されていたセカンダリー IP ブロックは、仮想マシンに使用できますか?
 {: #can-virtual-machines-use-the-secondary-ip-block-that-came-with-the-server-}

@@ -19,12 +19,12 @@ Hyper-V is a virtualization system for the Windows 2008 Server Datacenter Editio
 ## What are the requirements to run Hyper-V?
 {: #what-are-the-requirements-to-run-hyper-v-}
 
-Hyper-V must be installed on Windows 2008 Server 64-bit Datacenter Edition. All {{site.data.keyword.BluSoftlayer}} hardware meets the system requirements of Hyper-V. Microsoft recommends at least 2 GB of RAM for the server.
+Hyper-V must be installed on Windows 2008 Server 64-bit Datacenter Edition. All {{site.data.keyword.cloud}} hardware meets the system requirements of Hyper-V. Microsoft recommends at least 2 GB of RAM for the server.
 
 ## Is Hyper-V available on any other versions of 2008?
 {: #is-hyper-v-available-on-any-other-versions-of-2008-}
 
-{{site.data.keyword.BluSoftlayer_notm}} offers Hyper-V only on Datacenter Edition.
+{{site.data.keyword.cloud_notm}} offers Hyper-V only on Datacenter Edition.
 
 ## Can Hyper-V run on Windows 2003?
 {: #can-hyper-v-run-on-windows-2003}
@@ -34,7 +34,7 @@ Hyper-V was developed for Windows 2008 and cannot run on Windows 2003.
 ## What operating systems can be installed on a virtual machine?
 {: #what-operating-systems-can-be-installed-on-a-virtual-machine}
 
-{{site.data.keyword.BluSoftlayer_notm}} supports the following operating systems on Hyper-V:
+{{site.data.keyword.cloud_notm}} supports the following operating systems on Hyper-V:
 
 * All versions of Windows 2003 and 2008 Server
 * CentOS, Fedora, and Ubuntu Linux Distributions
@@ -67,7 +67,7 @@ Yes.
 ## Does each virtual operating system need to have a license?
 {: #does-each-virtual-operating-system-need-to-have-a-license-}
 
-Windows 2003 and 2008 virtual machines are licensed through {{site.data.keyword.BluSoftlayer_notm}}. Linux virtual machines are freely licensed and require no action.
+Windows 2003 and 2008 virtual machines are licensed through {{site.data.keyword.cloud_notm}}. Linux virtual machines are freely licensed and require no action.
 
 ## Will the virtual machines have access to the private network?
 {: #will-the-virtual-machines-have-access-to-the-private-network-}
@@ -77,7 +77,7 @@ Yes. Virtual machines can connect to both a public and private network.
 ## What advantages are there to providing private network access to virtual machines?
 {: #what-advantages-are-there-to-providing-private-network-access-to-virtual-machines-}
 
-Providing private network access to virtual machines allows virtual machines to communicate with each other. Private network access also allows virtual machines to communicate with other internal systems such as NAS and iSCSI and any other servers that you have with {{site.data.keyword.BluSoftlayer_notm}}.
+Providing private network access to virtual machines allows virtual machines to communicate with each other. Private network access also allows virtual machines to communicate with other internal systems such as NAS and iSCSI and any other servers that you have with {{site.data.keyword.cloud_notm}}.
 
 ## Can virtual machines use the secondary IP block that came with the server?
 {: #can-virtual-machines-use-the-secondary-ip-block-that-came-with-the-server-}

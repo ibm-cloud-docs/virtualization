@@ -39,7 +39,7 @@ subcollection: virtualization
 ## Windows 2008 Server Core
 {: #windows-2008-server-core}
 
-Windows 2008 Server Core 版本未提供圖形介面來配置系統網路。需要使用命令提示字元來手動執行配置。您需要執行下列指令。此範例中使用的 IP 位址需要取代為您 IP 區塊中的 IP 位址。這些指令使用舊版的 Windows Server，其中包括 [netsh ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://support.microsoft.com/kb/242468){: new_window} 指令。
+Windows 2008 Server Core 版本未提供圖形介面來配置系統網路。需要使用命令提示字元來手動執行配置。您需要執行下列指令。此範例中使用的 IP 位址需要取代為您 IP 區塊中的 IP 位址。這些指令使用舊版的 Windows Server，其中包括 [netsh ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://docs.microsoft.com/en-us/previous-versions/tn-archive/bb490939(v=technet.10)){: new_window} 指令。
 
 **範例公用 IP 區塊 - 192.0.2.0/29**
 

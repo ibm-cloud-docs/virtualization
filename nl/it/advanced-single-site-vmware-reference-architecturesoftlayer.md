@@ -308,7 +308,7 @@ Aggiorna la sezione **Notes** di ogni indirizzo IP portatile con il nome dell'ho
 Ora, l'ambiente è pronto per distribuire VMware vCenter Virtual Appliance e installare una macchina virtuale per DNS, Active Directory o BIND. Tuttavia, prima di distribuire, devi scaricare le immagini. Per scaricare le immagini, collegati tramite desktop remoto al server virtuale di cui è stato eseguito il provisioning in precedenza e scarica le immagini appropriate sul server virtuale per il tuo ambiente:
 
 * Active Directory / DNS di Windows: immagine ISO Windows Server 2008R2/Windows Server 2012 (il tuo supporto su licenza)
-* Linux BIND: [CentOS Install Image ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [CentOS Install Image ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.centos.org/download/){: new_window}
 * [vCenter Virtual Appliance ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (è necessaria una sottoscrizione VMware valida)
 
 Dopo aver scaricato l'ISO, devi caricare l'immagine in un archivio dati host di gestione in modo da poterla collegare a una macchina virtuale. Utilizza il client vSphere per la connessione a un host di gestione e creare una directory ISO sull'archivio dati locale.
@@ -607,7 +607,7 @@ L'ambiente VMware a singolo sito avanzato è completo.
 
 Ora hai un ambiente VMware in esecuzione in un data center IBM Cloud. Il tuo ambiente VMware può eseguire carichi di lavoro di produzione e l'integrazione di una distribuzione IBM Cloud in loco. L'ambiente applica le procedure consigliate VMware e abilita funzioni come VMware DRS, HA, DRS di archiviazione e ridondanza di rete. Puoi estendere questa implementazione dell'architettura di riferimento con host di capacità o gestione più grandi e ulteriore archiviazione.
 
-Per ulteriori informazioni su VMware, vedi [Deploy VMware](/docs/infrastructure/vmware?topic=VMware-using-cookbooks-for-vmware-deployments) e [VMware FAQ](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
+Per ulteriori informazioni su VMware, vedi [Deploy VMware](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) e [VMware FAQ](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
 
 ## Appendice A: foglio di lavoro VLAN 
 {: #appendix-a-vlan-worksheet}

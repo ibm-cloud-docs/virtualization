@@ -63,7 +63,7 @@ Vous êtes invité à répondre aux questions suivantes :
 * Répondez **oui**. Vous devez créer une configuration de réseau pour votre périphérique de réseau public afin de pouvoir accéder à Internet sur vos machines virtuelles.
 
 2. "Plusieurs interfaces Ethernet sont disponibles pour votre ordinateur : eth0, eth1. Laquelle souhaitez-vous utiliser pour établir un pont avec vmnet0 ?"
-* N'oubliez pas que pour tous les serveurs {{site.data.keyword.BluSoftlayer}}, le réseau public s'exécute sur eth1 et le réseau privé s'exécute sur eth0. Dans VMware, le périphérique de pont par défaut pour vmnet0 est eth0. Au lieu d'appuyer sur Entrée, tapez eth1.
+* N'oubliez pas que pour tous les serveurs {{site.data.keyword.cloud}}, le réseau public s'exécute sur eth1 et le réseau privé s'exécute sur eth0. Dans VMware, le périphérique de pont par défaut pour vmnet0 est eth0. Au lieu d'appuyer sur Entrée, tapez eth1.
 
 ## Etablissement d'un pont pour le réseau privé
 {: #bridging-the-private-network}

@@ -39,7 +39,7 @@ IP 블록을 확보하고 나면 가상 머신에서 네트워킹을 구성할 �
 ## Windows 2008 Server Core
 {: #windows-2008-server-core}
 
-Windows 2008 Server Core 에디션은 시스템 네트워크를 구성하기 위해 그래픽 인터페이스를 제공하지 않습니다. 구성은 명령 프롬프트를 사용하여 수동으로 수행되어야 합니다. 다음 명령을 실행해야 합니다. 이 예제에서 사용되는 IP 주소는 IP 블록의 IP 주소로 교체해야 합니다. 이러한 명령은 [netsh ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://support.microsoft.com/kb/242468){: new_window} 명령가 포함된 Windows Server의 이전 버전과 함께 작동합니다.
+Windows 2008 Server Core 에디션은 시스템 네트워크를 구성하기 위해 그래픽 인터페이스를 제공하지 않습니다. 구성은 명령 프롬프트를 사용하여 수동으로 수행되어야 합니다. 다음 명령을 실행해야 합니다. 이 예제에서 사용되는 IP 주소는 IP 블록의 IP 주소로 교체해야 합니다. 이러한 명령은 [netsh ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://docs.microsoft.com/en-us/previous-versions/tn-archive/bb490939(v=technet.10)){: new_window} 명령가 포함된 Windows Server의 이전 버전과 함께 작동합니다.
 
 **예제 공인 IP 블록 – 192.0.2.0/29**
 

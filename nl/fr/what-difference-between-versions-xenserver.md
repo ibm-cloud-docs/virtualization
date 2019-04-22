@@ -11,7 +11,7 @@ subcollection: virtualization
 # Différences entre les versions de XenServer
 {: #differences-between-versions-of-xenserver}
 
-L'octroi de licences constitue la seule différence entre les versions de XenServer que sont installées sur le système. Si vous souhaitez mettre à niveau votre licence vers une licence de classe supérieure après l'installation, aucune interruption ne se produit lorsque vous réinstallez votre serveur. Pour obtenir des informations sur la tarification, contactez le service commercial d'{{site.data.keyword.BluSoftlayer}}. 
+L'octroi de licences constitue la seule différence entre les versions de XenServer que sont installées sur le système. Si vous souhaitez mettre à niveau votre licence vers une licence de classe supérieure après l'installation, aucune interruption ne se produit lorsque vous réinstallez votre serveur. Pour obtenir des informations sur la tarification, contactez le service commercial d'{{site.data.keyword.cloud}}. 
 
 **Remarque :** les fonctions disponibles ne sont pas toutes prises en charge. 
 

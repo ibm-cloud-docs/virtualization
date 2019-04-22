@@ -37,7 +37,6 @@ Virtualization
     set-up-a-hypervisor.md
     tcp-window-recommendations-virtual-instances.md
     installing-windows-server-virtualization-windows-2008.md
-    enabling-drive-security-using-avago-safestore-encryption-services.md
     virtual-machine-network-setup.md
 
     {: .topicgroup}

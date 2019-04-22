@@ -42,7 +42,7 @@ Puoi acquistare AltaVault come un'appliance fisica o virtuale. Questa procedura 
 
 Verifica che siano soddisfatti i seguenti prerequisiti:
 
-* Una copia dell'appliance virtuale AltaVault. È un singolo file con un'estensione file OVA. Contatta il tuo rappresentante NetApp per l'appliance oppure scarica una versione di prova di 90 giorni dal [sito web di NetApp AltaVault ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}.
+* Una copia dell'appliance virtuale AltaVault. È un singolo file con un'estensione file OVA. Contatta il tuo rappresentante NetApp per l'appliance oppure scarica una versione di prova di 90 giorni dal [sito web di NetApp AltaVault ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}.
 * Un ambiente vSphere ESXi 5.5 in loco esistente con i requisiti minimi di CPU, memoria e spazio su disco disponibili per l'appliance AltaVault. Se utilizzi la versione di prova, questi requisiti sono: quattro vCPU (virtual CPU), 24 GB di memoria e fino a 8 TB di spazio su disco.
 * Due NIC (network interface controller) da 10 Gbps disponibili nell'ambiente vSphere. Un NIC viene utilizzato per l'input dei dati e altro viene utilizzato per la replica dei dati a {{site.data.keyword.cos_full_notm}}.
 * Due reti che corrispondono ai due NIC (VLAN) che sono definiti nell'ambiente vSphere. La rete di replica non può essere assegnata alla stessa rete della rete di input di dati; farlo può creare un loop di instradamento.
@@ -173,7 +173,7 @@ Nell'esempio viene utilizzata una versione di prova di Veeam Backup & Replicatio
 Prima di procedere con la distribuzione, verifica che siano soddisfatti i seguenti prerequisiti:
 
 * Disponi di un'appliance AltaVault esistente configurata per l'utilizzo con {{site.data.keyword.cos_full_notm}} e Veeam Backup & Replication.
-* Ottieni una copia di Veeam Backup & Replication per gli ambienti VMware, che è un singolo file eseguibile. Contatta il tuo rappresentante Veeam per una copia oppure scarica una [versione di prova di 30 giorni![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}.
+* Ottieni una copia di Veeam Backup & Replication per gli ambienti VMware, che è un singolo file eseguibile. Contatta il tuo rappresentante Veeam per una copia oppure scarica una [versione di prova di 30 giorni![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}.
 * Ottieni un file di licenza da utilizzare con Veeam Backup & Replication. Nella maggior parte dei casi, questo file viene inviato per email all'indirizzo email utilizzato per scaricare Veeam Backup & Replication. Se non hai ricevuto questo file, contatta il rappresentante di Veeam.<br/><br/>Il file di licenza viene utilizzato per attivare tutte le funzioni di Veeam Backup & Replication, Se questo file non viene fornito durante l'installazione del programma, tutte le funzioni e tutta la funzionalità sono ripristinate a quelle della versione di prova di 30 giorni.
 * Disponi di un server di backup esistente, che può essere in loco o non in loco, con le specifiche disponibili nella Tabella 2. Il sistema operativo installato deve essere una versione a 64 bit.
 

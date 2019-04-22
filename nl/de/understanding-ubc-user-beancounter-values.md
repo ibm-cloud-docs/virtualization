@@ -33,7 +33,7 @@ Wenn die Informationen zu UBC nicht interpretiert werden können, dann verwenden
 |`dgramrcvbuf`|*System*|Empfangspuffer von UDP und anderen Datagrammprotokollen|
 |`oomguardpages`|*System*|Garantierte Speicherkapazität bei Überbelegung des Speichers (Kill-Garantie bei Speicherengpass)|
 |`privvmpages`|*System*|Speicherzuordnungsgrenzwert|
-|`lockedpages`|*System*|Nicht auslagerbare Prozessseiten (mit [mlock(2) ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://linux.die.net/man/2/mlock) gesperrte Seiten)|
+|`lockedpages`|*System*|Nicht auslagerbare Prozessseiten (mit [mlock(2) ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://linux.die.net/man/2/mlock) gesperrte Seiten)|
 |`shmpages`|*System*|Gesamtgröße des gemeinsam genutzten Speichers (Interprozesskommunikation oder IPC, gemeinsam genutzte anonyme Zuordnungen und tmpfs-Objekte) in Seiten|
 |`physpages`|*System*|Gesamtzahl der von Prozessen belegten Arbeitsspeicherseiten|
 |`numfile`|*System*|Anzahl offener Dateien|
@@ -50,5 +50,5 @@ Wenn die Informationen zu UBC nicht interpretiert werden können, dann verwenden
 
 Sie können auf die Datei 'VzLinuxUBCMgmt.pdf' zugreifen oder diese Datei im HTML-Format in PIM (Parallels Infrastructure Manager) auf Ihrem Server wie folgt anzeigen: **Management > Support > Downloads > Administratorhandbuch zum Management von UBC-Ressourcen**
 
-Weitere Informationen zu UBC finden Sie in [OpenVZ Virtuozzo Containers, Category: UBC ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://wiki.openvz.org/Category:UBC).
+Weitere Informationen zu UBC finden Sie in [OpenVZ Virtuozzo Containers, Category: UBC ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://wiki.openvz.org/Category:UBC).
 **Hinweis:** Die Funktionen von OpenVZ und Virtuozzo sind nicht alle gleich.

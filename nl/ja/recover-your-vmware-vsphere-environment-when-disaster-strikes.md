@@ -69,7 +69,7 @@ AltaVault では、環境内の別々のネットワークにネットワーク�
 1. ユーザー固有の資格情報を使用して、[{{site.data.keyword.slportal_full}} ![「外部リンク」アイコン](../../icons/launch-glyph.svg "「外部リンク」アイコン")](https://control.softlayer.com/){: new_window} にアクセスします。
 2. **「アカウント」>「注文」**をクリックします。
 3. **「ネットワーク」**セクションを選択し、**「サブネット/IP」>「オーダー」**をクリックします。
-4. ドロップダウン・メニューから**「ポータブル・プライベート」**を選択します。 「ポータブル・プライベート」を選択すると、ポータブル・プライベート IP アドレスの数を選択するオプションが表示されます。 **注:** {{site.data.keyword.cloud_notm}} は、ポータブル・プライベート・ネットワークごとにアドレス・ブロック内の IP アドレスを 3 つ以上、自動的に予約します。 予約されたアドレスは、ネットワーク・アドレス、ゲートウェイ・アドレス、およびブロードキャスト・アドレスとして使用されます。 これらのアドレスは、仮想 LAN (VLAN) に直接バインドされている必要があります。<!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> ポータブル IP アドレスについて詳しくは、[サブネットおよび IP の概説](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)を参照してください。
+4. ドロップダウン・メニューから**「ポータブル・プライベート」**を選択します。 「ポータブル・プライベート」を選択すると、ポータブル・プライベート IP アドレスの数を選択するオプションが表示されます。 **注:** {{site.data.keyword.cloud_notm}} は、ポータブル・プライベート・ネットワークごとにアドレス・ブロック内の IP アドレスを 3 つ以上、自動的に予約します。 予約されたアドレスは、ネットワーク・アドレス、ゲートウェイ・アドレス、およびブロードキャスト・アドレスとして使用されます。 これらのアドレスは、仮想 LAN (VLAN) に直接バインドされている必要があります。<!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> ポータブル IP アドレスについて詳しくは、[サブネットおよび IP の概説](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)を参照してください。
 5. ポータブル・プライベート IP アドレスの数を選択したら、**「続行」**をクリックします。
 6. ポータブル・プライベート IP アドレスをルーティングする VLAN を選択し、**「続行」**をクリックします。
 7. 必要な連絡先情報を入力し、**「注文」**をクリックします。
@@ -103,7 +103,7 @@ AltaVault を使用すると、{{site.data.keyword.cos_full_notm}} の REST API 
 
 先に進む前に、以下の前提条件を満たしてください。
 
-* AltaVault 仮想アプライアンスのコピーを取得し、ユーティリティー・サーバー上に配置する。 これは、OVA ファイル拡張子の単一ファイルです。 アプライアンスについて NetApp 担当員に問い合わせていただくか、[NetApp AltaVault Web サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window} から 90 日間の評価版をダウンロードしてください。
+* AltaVault 仮想アプライアンスのコピーを取得し、ユーティリティー・サーバー上に配置する。 これは、OVA ファイル拡張子の単一ファイルです。 アプライアンスについて NetApp 担当員に問い合わせていただくか、[NetApp AltaVault Web サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window} から 90 日間の評価版をダウンロードしてください。
 * 既存のオンプレミスの vSphere ESXi 5.5 環境が AltaVault アプライアンス用の CPU、メモリー、ディスク・スペースの最小要件を満たしている。 評価版を使用する場合のリソース要件は、仮想 CPU (vCPU) 4 つ、メモリー 24 GB、ディスク・スペース最大 8 TB です。
 * vSphere 環境内に 10 Gbps ネットワーク・インターフェース・コントローラー (NIC) が 2 つある。 NIC の 1 つはデータ・アクセス用に使用し、もう 1 つは {{site.data.keyword.cos_full_notm}} へのデータ・レプリケーション用に使用します。
 * vSphere 環境内に定義した 2 つの NIC に対応する 2 つのポータブル・プライベート・ネットワークがある。 レプリケーション・ネットワークをデータ・アクセス・ネットワークと同じネットワークに割り当てることはできません。ルーティング・ループが生じる可能性があるためです。
@@ -226,7 +226,7 @@ Veeam Backup & Replication ソフトウェアは、VM とそのデータのバ�
 デプロイメントに進む前に、以下の前提条件が満たされていることを確認してください。
 
 * IBM Cloud Object Storage および Veeam Backup & Replication を使用するように構成した既存の AltaVault アプライアンスがある。
-* VMware 環境用の Veeam Backup & Replication (単一の実行可能ファイル) を取得します。 Veeam 担当員に問い合わせていただくか、[30 日間の評価版 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window} をダウンロードしてください。
+* VMware 環境用の Veeam Backup & Replication (単一の実行可能ファイル) を取得します。 Veeam 担当員に問い合わせていただくか、[30 日間の評価版 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window} をダウンロードしてください。
 * Veeam Backup & Replication に使用するライセンス・ファイルを入手する。 ほとんどの場合、このファイルは Veeam Backup & Replication のダウンロードに使用した E メール・アドレス宛てにメールで送信されます。 このファイルを受信していない場合は、Veeam 担当員にお問い合わせください。<br/><br/>ライセンス・ファイルを使用することで、Veeam Backup & Replication のすべての機能がアクティブ化されます。 プログラムのインストール時にこのファイルを指定しない場合は、すべてのフィーチャーおよび機能が 30 日間の評価版のものになります。
 * 表 2 の仕様の仮想サーバー・インスタンス (VSI) が IBM Cloud にプロビジョンされている。**注:** インストールされているオペレーティング・システムは 64 ビット・バージョンでなければなりません。
 
@@ -326,7 +326,7 @@ Veeam Backup & Replication が構成されたので、バックアップのリ�
 
 このハイブリッド・ソリューションのコンポーネントについて詳しくは、以下を参照してください。
 
-* [NetApp AltaVault の Web サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}
+* [NetApp AltaVault の Web サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}
 * [Veeam Backup & Replication の Web サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}
 * [IBM Cloud Object Storage の Web サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ibm.com/cloud/storage){: new_window}
 

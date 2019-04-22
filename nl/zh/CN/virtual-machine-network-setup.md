@@ -39,7 +39,7 @@ subcollection: virtualization
 ## Windows 2008 Server Core
 {: #windows-2008-server-core}
 
-Windows 2008 Server Core 版本未提供图形界面来配置系统网络。配置需要使用命令提示符来手动完成。您需要运行以下命令。此示例中使用的 IP 地址需要替换为您的 IP 块中的 IP 地址。这些命令适用于包含 [netsh ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://support.microsoft.com/kb/242468){: new_window} 命令的较低版本 Windows 服务器。
+Windows 2008 Server Core 版本未提供图形界面来配置系统网络。配置需要使用命令提示符来手动完成。您需要运行以下命令。此示例中使用的 IP 地址需要替换为您的 IP 块中的 IP 地址。这些命令适用于包含 [netsh ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://support.microsoft.com/kb/242468){: new_window} 命令的较低版本 Windows 服务器。
 
 **示例公共 IP 块 - 192.0.2.0/29**
 

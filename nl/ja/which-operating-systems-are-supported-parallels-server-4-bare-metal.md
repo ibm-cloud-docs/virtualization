@@ -129,4 +129,4 @@ subcollection: virtualization
 
 \* {{site.data.keyword.BluSoftlayer_full}} を使用する場合、Parallels Server 4 Bare Metal のライセンスは Virtuozzo Containers に適用されません。またサポートもされません。
 
-2009 年 4 月 23 日の時点の [Parallels Server 4 Bare Metal の README ファイル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://download.parallels.com/doc/psbm/en/Readme.pdf)
+2009 年 4 月 23 日の時点の [Parallels Server 4 Bare Metal の README ファイル ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://download.parallels.com/doc/psbm/en/Readme.pdf)

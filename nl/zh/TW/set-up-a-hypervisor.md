@@ -13,19 +13,19 @@ subcollection: virtualization
 
 請使用下列步驟來設定 Hypervisor。
 
-1. 使用您的唯一認證登入 [{{site.data.keyword.slportal_full}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://control.softlayer.com/){: new_window}。
+1. 使用您的唯一認證登入 [{{site.data.keyword.slportal_full}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window}。
 2. 從**裝置**功能表中，選取**裝置清單**，並尋找您的 Hypervisor。
-3. 透過[安全 VPN ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.softlayer.com/vpn-access){: new_window} 連接至「專用網路」，以存取您的 Hypervisor。
+3. 透過[安全 VPN ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.softlayer.com/vpn-access){: new_window} 連接至「專用網路」，以存取您的 Hypervisor。
 
 **附註：**{{site.data.keyword.cloud}}Hypervisor 提供者包括 XenServer、VMware 和 Hyper-V。每一個提供者都有以不同方式存取的專用管理主控台。如需在管理主控台中存取及運作的相關資訊，請參閱下列鏈結：
 
    * [XenServer ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://support.citrix.com/en/products/xenserver){: new_window}
    * [VMware ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.vmware.com/support/vsphere-hypervisor.html){: new_window}
-   * [Hyper-V ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
+   * [Hyper-V ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
 
 4. 取得虛擬機器的可攜式 IP。
     * VM 需要可攜式 IP 位址。公用及專用可攜式 IP 的區塊可以透過 {{site.data.keyword.slportal}} 訂購。
-    * 如需配置 IP 位址的相關資訊，請參閱[開始使用子網路及 IP](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)。
+    * 如需配置 IP 位址的相關資訊，請參閱[開始使用子網路及 IP](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)。
 
 5. 為 VM 建立「專用網路」上的遞送。VM 需要下列規格，才能透過「專用網路」遞送至其他 VM：
     * 可攜式專用 IP

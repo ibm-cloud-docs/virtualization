@@ -13,19 +13,19 @@ subcollection: virtualization
 
 Führen Sie die folgenden Schritte aus, um einen Hypervisor einzurichten.
 
-1. Melden Sie sich beim [{{site.data.keyword.slportal_full}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://control.softlayer.com/){: new_window} an und verwenden Sie dazu Ihre eindeutigen Berechtigungsnachweise.
+1. Melden Sie sich beim [{{site.data.keyword.slportal_full}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/){: new_window} an und verwenden Sie dazu Ihre eindeutigen Berechtigungsnachweise.
 2. Wählen Sie im Menü **Geräte** die Option **Geräteliste** aus und suchen Sie den gewünschten Hypervisor.
-3. Stellen Sie über das [sichere VPN ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.softlayer.com/vpn-access){: new_window} eine Verbindung zum privaten Netz her, um auf den Hypervisor zuzugreifen.
+3. Stellen Sie über das [sichere VPN ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.softlayer.com/vpn-access){: new_window} eine Verbindung zum privaten Netz her, um auf den Hypervisor zuzugreifen.
 
 **Hinweis:** Die {{site.data.keyword.cloud}}-Hypervisor-Provider umfassen XenServer, VMware und Hyper-V. Jeder Provider verfügt über individuelle Managementkonsolen, auf die in unterschiedlicher Weise zugegriffen wird. Weitere Informationen zum Zugreifen auf eine Managementkonsole und zum Arbeiten mit einer Managementkonsole finden Sie über die folgenden Links:
 
    * [XenServer ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://support.citrix.com/en/products/xenserver){: new_window}
    * [VMware ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.vmware.com/support/vsphere-hypervisor.html){: new_window}
-   * [Hyper-V ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
+   * [Hyper-V ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
 
 4. Fordern Sie portierbare IPs für Ihre virtuellen Maschinen an.
     * VMs benötigen portierbare IP-Adressen. Blöcke von öffentlichen und privaten portierbaren IPs können über das {{site.data.keyword.slportal}} bestellt werden.
-    * Weitere Informationen zur Zuordnung von IP-Adressen finden Sie im Abschnitt mit der [Einführung zu Teilnetzen und IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+    * Weitere Informationen zur Zuordnung von IP-Adressen finden Sie im Abschnitt mit der [Einführung zu Teilnetzen und IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 5. Richten Sie das Routing für VMs im privaten Netz ein. VMs benötigen die folgenden Spezifikationen, um das Routing zu anderen VMs über das private Netz durchzuführen:
     * Portierbare private IPs

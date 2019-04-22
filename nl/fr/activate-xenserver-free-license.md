@@ -22,7 +22,7 @@ Si vous ne vous enregistrez pas votre système dans les 30 jours, vous ne pourre
 
 Pour enregistrer votre système, procédez comme suit :
 
-1. Téléchargez et installez le client XenCenter. Vous pouvez accéder au client à partir de la page [Citrix XenCenter ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://community.citrix.com/display/xs/XenCenter){: new_window}. 
+1. Téléchargez et installez le client XenCenter. Vous pouvez accéder au client à partir de la page [Citrix XenCenter ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://community.citrix.com/display/xs/XenCenter){: new_window}. 
 
 2. Connectez-vous à votre réseau privé via un VPN.
 

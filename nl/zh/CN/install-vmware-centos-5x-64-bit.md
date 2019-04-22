@@ -16,11 +16,11 @@ subcollection: virtualization
 ## 准备安装 VMware
 {: #preparing-to-install-vmware}
 
-1. 下载 [VMware 安装程序 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://vmware.com/download/server/){: new_window}。单击下载链接，接受 EULA，然后下载 LinuxTarball（在此示例中为 VMware-server-1.0.3-44356.tar.gz）：
+1. 下载 [VMware 安装程序 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://vmware.com/download/server/){: new_window}。单击下载链接，接受 EULA，然后下载 LinuxTarball（在此示例中为 VMware-server-1.0.3-44356.tar.gz）：
 
-* `# wget –O vmware-server.tar.gz http://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
+* `# wget –O vmware-server.tar.gz https://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
 
-2. 下载软件后，需要获取许可证密钥（这在 VMWare 服务器免费版本中是免费的）。要进行注册，请参阅 [VMware ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://register.vmware.com/content/registration.html){: new_window}。
+2. 下载软件后，需要获取许可证密钥（这在 VMWare 服务器免费版本中是免费的）。要进行注册，请参阅 [VMware ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://register.vmware.com/content/registration.html){: new_window}。
 
 3. 解压缩该 .tar 文件：
 
@@ -111,7 +111,7 @@ subcollection: virtualization
 ## 提供 VMware 的序列号
 {: #providing-the-serial-number-for-vmware}
 
-安装的最后一部分需要插入 VMware 许可证密钥和序列号。如果您还没有许可证密钥，请参阅 [VMware 站点 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://register.vmware.com/content/registration.html){: new_window}。如果您具有此 VMware 服务器的序列号，请将其插入提示符处，然后按 Enter 键。
+安装的最后一部分需要插入 VMware 许可证密钥和序列号。如果您还没有许可证密钥，请参阅 [VMware 站点 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://register.vmware.com/content/registration.html){: new_window}。如果您具有此 VMware 服务器的序列号，请将其插入提示符处，然后按 Enter 键。
 
 现在，您会看到类似于以下语句的内容：
 
@@ -122,7 +122,7 @@ VMware 现在已在服务器上设置。现在，您需要下载 VMware Server C
 ## 下载 VMware Server Console
 {: #downloading-vmware-server-console}
 
-VMware Server Console 是 VMware 服务器的客户机应用程序。您可使用该控制台来管理可以在其中创建、配置和安装虚拟机的 VMware 服务器。要安装此应用程序，请从 [VMware 下载 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://vmware.com/download/server/){: new_window} 中下载 VMware Server Windows 客户机包。此包是 .zip 文件。下载后，解压缩该包并安装 VMware-console-1.0.3-x 文件。安装完成后，即已完成安装 VMware Server Console，并准备好配置 VMware 服务器。
+VMware Server Console 是 VMware 服务器的客户机应用程序。您可使用该控制台来管理可以在其中创建、配置和安装虚拟机的 VMware 服务器。要安装此应用程序，请从 [VMware 下载 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://vmware.com/download/server/){: new_window} 中下载 VMware Server Windows 客户机包。此包是 .zip 文件。下载后，解压缩该包并安装 VMware-console-1.0.3-x 文件。安装完成后，即已完成安装 VMware Server Console，并准备好配置 VMware 服务器。
 
 ## 登录到 VMware 控制台
 {: #logging-in-to-the-vmware-console}

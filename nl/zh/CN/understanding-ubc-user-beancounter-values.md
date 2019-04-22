@@ -33,7 +33,7 @@ subcollection: virtualization
 |`dgramrcvbuf`|*系统*|UDP 和其他数据报协议的接收缓冲区|
 |`oomguardpages`|*系统*|内存过量分配时保证的内存量（内存不足终止保证）|
 |`privvmpages`|*系统*|内存分配限制|
-|`lockedpages`|*系统*|不允许换出的进程页面数（由 [mlock(2) ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://linux.die.net/man/2/mlock) 锁定的页面数）|
+|`lockedpages`|*系统*|不允许换出的进程页面数（由 [mlock(2) ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://linux.die.net/man/2/mlock) 锁定的页面数）|
 |`shmpages`|*系统*|页面中共享内存的总大小（进程间通信或 IPC、共享匿名映射和 tmpfs 对象）|
 |`physpages`|*系统*|进程使用的 RAM 页面总数|
 |`numfile`|*系统*|打开文件数|
@@ -50,4 +50,4 @@ subcollection: virtualization
 
 可以通过在服务器上的 PIM 中，转至**管理 > 支持 > 下载 > 管理 UBC 资源管理员指南**，以访问 VzLinuxUBCMgmt.pdf 或以 HTML 格式查看此指南。
 
-有关 UBC 的更多信息，请参阅 [OpenVZ Virtuozzo Containers, Category: UBC ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://wiki.openvz.org/Category:UBC)。**注：**OpenVZ 中并非所有内容都与 Virtuozzo 相同。
+有关 UBC 的更多信息，请参阅 [OpenVZ Virtuozzo Containers, Category: UBC ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://wiki.openvz.org/Category:UBC)。**注：**OpenVZ 中并非所有内容都与 Virtuozzo 相同。

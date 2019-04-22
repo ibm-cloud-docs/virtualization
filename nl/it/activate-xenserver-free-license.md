@@ -22,7 +22,7 @@ Se non esegui la registrazione del tuo sistema entro 30 giorni, non puoi accende
 
 Per registrare il tuo sistema, completa la seguente procedura:
 
-1. Scarica e installa il client XenCenter. Puoi accedere al client dalla pagina [Citrix XenCenter ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://community.citrix.com/display/xs/XenCenter){: new_window}.
+1. Scarica e installa il client XenCenter. Puoi accedere al client dalla pagina [Citrix XenCenter ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://community.citrix.com/display/xs/XenCenter){: new_window}.
 
 2. Stabilisci una connessione alla tua rete privata tramite VPN.
 

@@ -87,7 +87,7 @@ Windows 2003 和 Windows 2008 虚拟机通过 {{site.data.keyword.BluSoftlayer_n
 ## 什么是可移植 IP 地址？
 {: #what-are-portable-ip-addresses-}
 
-有关可移植 IP 地址的信息，请参阅[子网和 IP 入门](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)。
+有关可移植 IP 地址的信息，请参阅[子网和 IP 入门](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)。
 
 ## 如何订购 Hyper-V？
 {: #how-do-i-order-hyper-v-}

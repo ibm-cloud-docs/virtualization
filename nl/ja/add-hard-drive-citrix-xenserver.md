@@ -41,7 +41,7 @@ Xen ストレージ・リポジトリーは、リモート・ストレージ用�
 
 4. ストレージ・リポジトリー (SR) を作成します。
 
-  > **注:** [sr-create ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://support.citrix.com/article/CTX121313){: new_window} コマンドは、新しいハード・ディスク・ドライブを追加するためのものです。 新しいハード・ディスク・ドライブの作成は破壊的なプロセスであり、このプロセスによってそのドライブがパーティション化およびフォーマットされて、そのドライブ上のデータはすべて失われます。 既存のデータが配置されているドライブを再導入するには、[sr-introduce ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://support.citrix.com/article/CTX121896){: new_window} を使用します。
+  > **注:** [sr-create ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://support.citrix.com/article/CTX121313){: new_window} コマンドは、新しいハード・ディスク・ドライブを追加するためのものです。 新しいハード・ディスク・ドライブの作成は破壊的なプロセスであり、このプロセスによってそのドライブがパーティション化およびフォーマットされて、そのドライブ上のデータはすべて失われます。 既存のデータが配置されているドライブを再導入するには、[sr-introduce ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://support.citrix.com/article/CTX121896){: new_window} を使用します。
 
   `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
   \- または -<br/>

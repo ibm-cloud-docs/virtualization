@@ -87,7 +87,7 @@ No. L'IP secondario fornito con il tuo server viene instradato specificamente pe
 ## Cosa sono gli indirizzi IP portatili?
 {: #what-are-portable-ip-addresses-}
 
-Per informazioni sugli indirizzi IP portatili, vedi [Introduzione alle sottoreti e agli IP](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+Per informazioni sugli indirizzi IP portatili, vedi [Introduzione alle sottoreti e agli IP](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 ## Come ordino Hyper-V?
 {: #how-do-i-order-hyper-v-}

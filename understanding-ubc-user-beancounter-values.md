@@ -33,7 +33,7 @@ Use SLM Mode if UBC is not understood. SLM is easier and provides the same type 
 |`dgramrcvbuf`|*system*|Receive buffers of UDP and other datagram protocols|
 |`oomguardpages`|*system*|The guaranteed amount of memory when the memory is over-booked (out-of-memory kill guarantee)|
 |`privvmpages`|*system*|Memory allocation limit|
-|`lockedpages`|*system*|Process pages not allowed to be swapped out (pages locked by [mlock(2) ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://linux.die.net/man/2/mlock))|
+|`lockedpages`|*system*|Process pages not allowed to be swapped out (pages locked by [mlock(2) ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://linux.die.net/man/2/mlock))|
 |`shmpages`|*system*|Total size of shared memory (interprocess communication or IPC, shared anonymous mappings and tmpfs objects) in pages|
 |`physpages`|*system*|Total number of RAM pages used by processes|
 |`numfile`|*system*|Number of open files|
@@ -51,5 +51,5 @@ Use SLM Mode if UBC is not understood. SLM is easier and provides the same type 
 You can access VzLinuxUBCMgmt.pdf or view it in HTML, within PIM on your server by going to:
 **Management > Support > Downloads > Management of UBC Resources Administrator's Guide**
 
-For more information about UBC, see, [OpenVZ Virtuozzo Containers, Category: UBC ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://wiki.openvz.org/Category:UBC).
+For more information about UBC, see, [OpenVZ Virtuozzo Containers, Category: UBC ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://wiki.openvz.org/Category:UBC).
 **Note:** Not everything in OpenVZ is the same as Virtuozzo.

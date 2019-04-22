@@ -90,8 +90,8 @@ Ahora que se han creado los dispositivos de red virtual, es necesario obtener el
 * Ubuntu.
 **Nota:** si ya tiene el soporte de instalación, vaya a **Creación de una máquina virtual**.
 
-Los soportes de instalación para [CentOS ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://centos.org){: new_window}, [Fedora ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://fedoraproject.org/){: new_window} y
-[Ubuntu ![Icono de enlaceexterno](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.ubuntu.com/){: new_window} están disponibles en sus respectivos sitios web. Los tres sistemas operativos tienen licencia gratuita y no es necesario que el usuario realice ninguna otra acción.
+Los soportes de instalación para [CentOS ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://centos.org){: new_window}, [Fedora ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://fedoraproject.org/){: new_window} y
+[Ubuntu ![Icono de enlaceexterno](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.ubuntu.com/){: new_window} están disponibles en sus respectivos sitios web. Los tres sistemas operativos tienen licencia gratuita y no es necesario que el usuario realice ninguna otra acción.
 
 
 ## Creación de una máquina virtual

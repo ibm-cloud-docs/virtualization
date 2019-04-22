@@ -21,7 +21,7 @@ Citrix XenServer 무료 라이센스는 초기 설치 또는 다시 로드한 �
 
 시스템을 등록하려면 다음 단계를 완료하십시오. 
 
-1. XenCenter 클라이언트를 다운로드하여 설치하십시오. [Citrix XenCenter ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://community.citrix.com/display/xs/XenCenter){: new_window} 페이지에서 클라이언트에 액세스할 수 있습니다. 
+1. XenCenter 클라이언트를 다운로드하여 설치하십시오. [Citrix XenCenter ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://community.citrix.com/display/xs/XenCenter){: new_window} 페이지에서 클라이언트에 액세스할 수 있습니다. 
 
 2. VPN을 통해 사설 네트워크에 연결하십시오.
 

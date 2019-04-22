@@ -82,7 +82,7 @@ Hyper-V 管理器是用于操作 Hyper-V 的管理控制台。通过 Hyper-V 管
 * Ubuntu。
 **注：**如果您已有安装介质，请转至**创建虚拟机**。
 
-[CentOS ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://centos.org){: new_window}、[Fedora ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://fedoraproject.org/){: new_window} 和 [Ubuntu ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.ubuntu.com/){: new_window} 的安装介质可从其各自的 Web 站点获取。所有这三个操作系统都是免费许可的，无需用户方面执行任何进一步操作。
+[CentOS ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://centos.org){: new_window}、[Fedora ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://fedoraproject.org/){: new_window} 和 [Ubuntu ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ubuntu.com/){: new_window} 的安装介质可从其各自的 Web 站点获取。所有这三个操作系统都是免费许可的，无需用户方面执行任何进一步操作。
 
 ## 创建虚拟机
 {: #creating-a-virtual-machine}

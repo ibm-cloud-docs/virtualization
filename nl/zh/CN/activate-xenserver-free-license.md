@@ -22,7 +22,7 @@ Citrix XenServer 免费许可证从初始安装或重新装入后许可使用 30
 
 要注册系统，请完成以下步骤：
 
-1. 下载并安装 XenCenter 客户机。可以从 [Citrix XenCenter ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://community.citrix.com/display/xs/XenCenter){: new_window} 页面访问客户机。
+1. 下载并安装 XenCenter 客户机。可以从 [Citrix XenCenter ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://community.citrix.com/display/xs/XenCenter){: new_window} 页面访问客户机。
 
 2. 通过 VPN 连接到专用网络。
 

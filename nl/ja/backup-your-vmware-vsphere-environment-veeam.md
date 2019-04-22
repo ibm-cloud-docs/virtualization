@@ -42,7 +42,7 @@ AltaVault を {{site.data.keyword.cos_full_notm}} のオンプレミス・バッ
 
 以下の前提条件が満たされていることを確認します。
 
-* AltaVault 仮想アプライアンス。 これは、OVA ファイル拡張子の単一ファイルです。 アプライアンスについて NetApp 担当員に問い合わせていただくか、[NetApp AltaVault Web サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window} から 90 日間の評価版をダウンロードしてください。
+* AltaVault 仮想アプライアンス。 これは、OVA ファイル拡張子の単一ファイルです。 アプライアンスについて NetApp 担当員に問い合わせていただくか、[NetApp AltaVault Web サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window} から 90 日間の評価版をダウンロードしてください。
 * AltaVault アプライアンス用の CPU、メモリー、ディスク・スペースの最小要件を満たしている既存のオンプレミス vSphere ESXi 5.5 環境。 評価版を使用する場合、これらの要件は、4 つの仮想 CPU (vCPU)、24 GB のメモリー、最大 8 TB のディスク・スペースです。
 * vSphere 環境内で使用可能な 2 つの 10 Gbps ネットワーク・インターフェース・コントローラー (NIC)。 一方の NIC はデータ入力に使用され、もう一方は {{site.data.keyword.cos_full_notm}} へのデータ複製に使用されます。
 * vSphere 環境内で定義される 2 つの NIC に対応する 2 つのネットワーク (VLAN)。 複製用のネットワークをデータ入力用のネットワークと同じネットワークに割り当てることはできません。これを行うと、ルーティング・ループが生じる可能性があります。
@@ -173,7 +173,7 @@ Veeam を追加するには、以下のようにします。
 デプロイメントを進める前に、以下の前提条件が満たされていることを確認します。
 
 * {{site.data.keyword.cos_full_notm}} と Veeam Backup & Replication と共に使用するように構成されている既存の AltaVault アプライアンスがあります。
-* VMware 環境用の Veeam Backup & Replication (単一の実行可能ファイル) を取得します。 Veeam 担当員に問い合わせていただくか、[30 日間の評価版 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window} をダウンロードしてください。
+* VMware 環境用の Veeam Backup & Replication (単一の実行可能ファイル) を取得します。 Veeam 担当員に問い合わせていただくか、[30 日間の評価版 ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window} をダウンロードしてください。
 * Veeam Backup & Replication と共に使用するライセンス・ファイルを取得します。 多くの場合、このファイルは、Veeam Backup & Replication のダウンロードに使用した E メール・アドレスに送信されます。 このファイルを受信していない場合は、Veeam 担当員にお問い合わせください。<br/><br/>ライセンス・ファイルは、Veeam Backup & Replication のすべての機能をアクティブにするために使用されます。 プログラムのインストール時にこのファイルが指定されない場合、すべての機能は 30 日間の評価版に戻されます。
 * オンサイトの場合でもオフサイトの場合でも、既存のバックアップ・サーバーに表 2 の仕様を使用します。インストールされているオペレーティング・システムは 64 ビット・バージョンでなければなりません。
 

@@ -16,7 +16,7 @@ La agrupación de XenServer puede estar pensada para hasta 16 servidores que tra
 
 Todos los sistemas del nodo deben ser de la misma familia de procesadores, ya sea Intel o AMD. Idealmente, el hardware debe ser idéntico para que la agrupación tenga éxito. No es totalmente cierto que existan problemas de compatibilidad con agrupaciones de CPU heterogéneas. Es necesario realizar pruebas de compatibilidad para comprobar si el hardware es compatible o no. Para obtener más información, consulte
 [Explicación de las agrupaciones de CPU heterogéneas
-![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://support.citrix.com/article/CTX127059){: new_window}.
+![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://support.citrix.com/article/CTX127059){: new_window}.
 
 Tiene dos métodos para crear una agrupación de XenServer. Uno es a través de la consola de XenCenter mediante el uso de la opción "Nueva agrupación". Siga las instrucciones detalladas en pantalla paso a paso para crear y añadir sistemas a la agrupación. El otro método es mediante el uso de la línea de mandatos. En el nuevo nodo esclavo, se puede ejecutar el mandato siguiente:
 

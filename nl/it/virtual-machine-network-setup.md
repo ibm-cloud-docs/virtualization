@@ -39,7 +39,7 @@ La configurazione di rete richiede le seguenti informazioni sia per i blocchi di
 ## Windows 2008 Server Core
 {: #windows-2008-server-core}
 
-Windows 2008 Server Core Edition non fornisce un'interfaccia grafica per configurare la rete di sistema. La configurazione deve essere eseguita manualmente utilizzando il prompt dei comandi. Devi eseguire questi comandi. Gli indirizzi IP utilizzati in questo esempio devono essere sostituiti con gli indirizzi IP dai tuoi blocchi di IP. Questi comandi funzionano con versioni meno recenti di Windows Server che includono il comando [netsh ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://support.microsoft.com/kb/242468){: new_window}.
+Windows 2008 Server Core Edition non fornisce un'interfaccia grafica per configurare la rete di sistema. La configurazione deve essere eseguita manualmente utilizzando il prompt dei comandi. Devi eseguire questi comandi. Gli indirizzi IP utilizzati in questo esempio devono essere sostituiti con gli indirizzi IP dai tuoi blocchi di IP. Questi comandi funzionano con versioni meno recenti di Windows Server che includono il comando [netsh ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://support.microsoft.com/kb/242468){: new_window}.
 
 **Blocco di IP pubblici di esempio – 192.0.2.0/29**
 

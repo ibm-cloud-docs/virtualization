@@ -42,7 +42,7 @@ Veeam Backup & Replication 會啟用混合式解決方案，其中包括 NetApp 
 
 驗證是否符合下列必要條件：
 
-* 「AltaVault 虛擬應用裝置」的副本。它是副檔名為 OVA 的單一檔案。請聯絡您的 NetApp 代表以取得應用裝置，或從 [NetApp AltaVault 網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window} 中下載 90 天試用版。
+* 「AltaVault 虛擬應用裝置」的副本。它是副檔名為 OVA 的單一檔案。請聯絡您的 NetApp 代表以取得應用裝置，或從 [NetApp AltaVault 網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window} 中下載 90 天試用版。
 * 現有的內部部署 vSphere ESXi 5.5 環境，其中具有適用於 AltaVault 應用裝置的最低 CPU、記憶體及磁碟空間需求。如果您使用試用版，則這些需求為四個虛擬 CPU (vCPU)、24 GB 記憶體，以及最高 8 TB 的磁碟空間。
 * 兩個可在 vSphere 環境內使用的 10-Gbps 網路介面控制器 (NIC)。一個 NIC 用於資料輸入，另一個則用於將資料抄寫至 {{site.data.keyword.cos_full_notm}}。
 * 兩個網路，對應於 vSphere 環境內定義的兩個 NIC (VLAN)。無法將抄寫網路指派給與資料輸入網路相同的網路，若這樣做可能會產生遞送迴圈。
@@ -173,7 +173,7 @@ Veeam Backup & Replication 軟體可為 VM 及其資料提供完整備份、抄�
 在繼續進行部署之前，請驗證是否滿足下列必要條件：
 
 * 具有已配置要與 {{site.data.keyword.cos_full_notm}} 及 Veeam Backup & Replication 搭配使用的現有 AltaVault 應用裝置。
-* 取得適用於 VMware 環境的 Veeam Backup & Replication 副本，這是單一執行檔。請聯絡您的 Veeam 代表以取得副本，或下載 [30 天試用版本 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}。
+* 取得適用於 VMware 環境的 Veeam Backup & Replication 副本，這是單一執行檔。請聯絡您的 Veeam 代表以取得副本，或下載 [30 天試用版本 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}。
 * 取得要與 Veeam Backup & Replication 搭配使用的授權檔。在大部分情況下，此檔案會透過電子郵件傳送至用來下載 Veeam Backup & Replication 的電子郵件位址。如果未收到此檔案，請與您的 Veeam 代表聯絡。<br/><br/>授權檔用來啟動所有 Veeam Backup & Replication 功能。如果在程式安裝期間未提供此檔案，則所有特性及功能都會回復為 30 天試用版。
 * 具有現有的備用伺服器（可為站上或異地），其中的規格可在表 2 找到。安裝的作業系統必須是 64 位元版本。
 

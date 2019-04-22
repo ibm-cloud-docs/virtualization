@@ -33,7 +33,7 @@ subcollection: virtualization
 |`dgramrcvbuf`|*系統*|UDP 及其他資料封包通訊協定的接收緩衝區|
 |`oomguardpages`|*系統*|保證的記憶體數量，以防記憶體超出預訂數量（保證不會發生記憶體不足的情況）|
 |`privvmpages`|*系統*|記憶體配置限制|
-|`lockedpages`|*系統*|不容許交換處理程序頁面（透過 [mlock(2) ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://linux.die.net/man/2/mlock) 鎖定的頁面）|
+|`lockedpages`|*系統*|不容許交換處理程序頁面（透過 [mlock(2) ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://linux.die.net/man/2/mlock) 鎖定的頁面）|
 |`shmpages`|*系統*|頁面中共用記憶體（交互處理程序通訊或 IPC、共用的匿名對映及 tmpfs 物件）的大小總計|
 |`physpages`|*系統*|處理程序使用的 RAM 頁面總數|
 |`numfile`|*系統*|開啟的檔案數目|
@@ -50,5 +50,5 @@ subcollection: virtualization
 
 您可以在伺服器上的 PIM 內存取 VzLinuxUBCMgmt.pdf，或以 HTML 檢視它，方法為移至：**管理 > 支援 > 下載 > Management of UBC Resources Administrator's Guide**
 
-如需 UBC 的相關資訊，請參閱 [OpenVZ Virtuozzo Containers, Category: UBC ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://wiki.openvz.org/Category:UBC)。
+如需 UBC 的相關資訊，請參閱 [OpenVZ Virtuozzo Containers, Category: UBC ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://wiki.openvz.org/Category:UBC)。
 **附註：**並非 OpenVZ 中的一切都與 Virtuozzo 相同。

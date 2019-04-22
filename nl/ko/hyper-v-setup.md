@@ -81,7 +81,7 @@ Hyper-v Manager는 Windows 제어판의 **관리 도구** 아래에 있습니다
 * Ubuntu.
 **참고:** 설치 매체가 이미 있는 경우 **가상 머신 작성**으로 이동하십시오.
 
-[CentOS ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://centos.org){: new_window}, [Fedora ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://fedoraproject.org/){: new_window} 및 [Ubuntu ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.ubuntu.com/){: new_window}용 설치 매체는 해당 웹 사이트에서 사용할 수 있습니다. 세 OS 모두 무료로 라이센스가 부여되며, 사용자의 일부에 대해 추가 조치를 취할 필요가 없습니다.
+[CentOS ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://centos.org){: new_window}, [Fedora ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://fedoraproject.org/){: new_window} 및 [Ubuntu ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ubuntu.com/){: new_window}용 설치 매체는 해당 웹 사이트에서 사용할 수 있습니다. 세 OS 모두 무료로 라이센스가 부여되며, 사용자의 일부에 대해 추가 조치를 취할 필요가 없습니다.
 
 ## 가상 머신 작성
 {: #creating-a-virtual-machine}

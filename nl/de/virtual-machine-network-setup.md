@@ -39,7 +39,7 @@ Für die Netzkonfiguration sind die folgenden Informationen sowohl für öffentl
 ## Windows 2008 Server Core
 {: #windows-2008-server-core}
 
-Windows 2008 Server Core Edition stellt keine grafische Oberfläche bereit, um das Systemnetz zu konfigurieren. Die Konfiguration muss manuell über die Eingabeaufforderung ausgeführt werden. Sie müssen die folgenden Befehle ausführen. Die IP-Adressen, die in diesem Beispiel verwendet werden, müssen durch die IP-Adressen aus Ihren IP-Blöcken ersetzt werden. Diese Befehle können mit älteren Windows Server-Versionen verwendet werden, die den Befehl [netsh ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://support.microsoft.com/kb/242468){: new_window} enthalten.
+Windows 2008 Server Core Edition stellt keine grafische Oberfläche bereit, um das Systemnetz zu konfigurieren. Die Konfiguration muss manuell über die Eingabeaufforderung ausgeführt werden. Sie müssen die folgenden Befehle ausführen. Die IP-Adressen, die in diesem Beispiel verwendet werden, müssen durch die IP-Adressen aus Ihren IP-Blöcken ersetzt werden. Diese Befehle können mit älteren Windows Server-Versionen verwendet werden, die den Befehl [netsh ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://support.microsoft.com/kb/242468){: new_window} enthalten.
 
 **Beispiel für öffentlichen IP-Block – 192.0.2.0/29**
 

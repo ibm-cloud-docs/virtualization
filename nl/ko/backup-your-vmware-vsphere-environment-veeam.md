@@ -42,7 +42,7 @@ AltaVault 클라우드 스토리지 게이트웨이를 사용하면 {{site.data.
 
 다음 전제조건을 충족하는지 확인하십시오. 
 
-* AltaVault 가상 어플라이언스의 사본. OVA 파일 확장자를 가진 단일 파일입니다. 어플라이언스의 NetApp 담당자에게 문의하거나 [NetApp AltaVault 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}에서 90일 평가판을 다운로드하십시오.
+* AltaVault 가상 어플라이언스의 사본. OVA 파일 확장자를 가진 단일 파일입니다. 어플라이언스의 NetApp 담당자에게 문의하거나 [NetApp AltaVault 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}에서 90일 평가판을 다운로드하십시오.
 * AltaVault 어플라이언스에 대해 최소 CPU, 메모리, 디스크 공간 요구사항에 맞는 기존의 온프레미스 vSphere ESXi 5.5 환경. 평가판을 사용하는 경우, 4개의 가상 CPU(vCPU), 24GB의 메모리, 그리고 최대 8TB의 디스크 공간이 필요합니다.
 * vSphere 환경 내에서 사용할 수 있는 두 개의 10Gbps 네트워크 인터페이스 컨트롤러(NIC). 한 NIC는 데이터 입력에 사용되고, 다른 하나는 {{site.data.keyword.cos_full_notm}} 복제에 사용됩니다.
 * vSphere 환경 내에 정의된 두 개의 NIC(VLAN)에 해당하는 두 개의 네트워크. 복제 네트워크는 데이터 입력 네트워크와 동일한 네트워크에 지정될 수 없으므로 이렇게 할 경우 라우팅 루프를 작성할 수 있습니다.
@@ -173,7 +173,7 @@ Veeam Backup & Replication 버전 8의 평가판이 예에서 사용됩니다.
 배치를 계속하기 전에 다음 전제조건이 충족되었는지 확인하십시오.
 
 * {{site.data.keyword.cos_full_notm}} 및 Veeam Backup & Replication과 함께 사용하도록 구성된 기존 AltaVault 어플라이언스를 확보하십시오.
-* 단일 실행 파일인 VMware 환경에 대한 Veeam Backup & Replication의 사본을 확보하십시오. [30일 평가판 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}의 복사 또는 다운로드는 Veeam 담당자에게 문의하십시오.
+* 단일 실행 파일인 VMware 환경에 대한 Veeam Backup & Replication의 사본을 확보하십시오. [30일 평가판 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}의 복사 또는 다운로드는 Veeam 담당자에게 문의하십시오.
 * Veeam Backup & Replication과 함께 사용할 라이센스 파일을 가져오십시오. 대부분의 경우, 이 파일은 Veeam Backup & Replication을 다운로드하는 데 사용된 이메일 주소로 이메일로 보내집니다. 이 파일을 수신하지 못한 경우, Veeam 담당자에게 문의하십시오.<br/><br/>라이센스 파일은 모든 Veeam Backup & Replication 기능을 활성화하는 데 사용됩니다. 이 파일이 프로그램 설치 동안 제공되지 않으면 모든 기능을 30일 평가판으로 되돌립니다.
 * 표 2에 있는 스펙과 함께 온사이트와 오프사이트가 될 수 있는 기존 백업 서버가 있어야 합니다. 설치된 운영 체제는 64비트 버전이어야 합니다. 
 

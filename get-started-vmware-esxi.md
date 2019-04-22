@@ -13,7 +13,7 @@ subcollection: virtualization
 
 After your ESX server is provisioned, the first step to accessing your server is connecting to the {{site.data.keyword.cloud}} Private Network VPN. By default, all {{site.data.keyword.cloud_notm}} deployed VMware servers have only the private network interface or bond that is configured with an IP address. This deployment is an extra security measure that is put in place to limit exposure of your new ESX server to the public internet. As a result of this added security, the server listens only on an {{site.data.keyword.cloud_notm}} private 10.x.x.x IP address, which is accessible only through the {{site.data.keyword.cloud_notm}} VPN or another one of your existing {{site.data.keyword.cloud_notm}} hosts with access to the same private VLAN on which your new VMware server resides.
 
-For more information about the {{site.data.keyword.cloud_notm}} VPN, see [Getting started with Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-).
+For more information about the {{site.data.keyword.cloud_notm}} VPN, see [Getting started with Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking).
 
 ## Accessing your ESX host
 {: #accessing-your-esx-host}
@@ -38,4 +38,4 @@ Complete the following steps to upload an ISO to the server's datastore.
   * To upload an ISO, click the volume icon (with the upward pointing arrow) and select **Upload File**.
 5. Select the ISO file on your local filesystem that you want to upload to the datastore and click **Open**.
 6. The ISO of your choosing is now in the datastore.
-7. Now that your install medium is on the VMWare server, you can proceed with [creating your virtual machine](/docs/infrastructure/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine).
+7. Now that your install medium is on the VMWare server, you can proceed with [creating your virtual machine](/docs/infrastructure/vmware?topic=VMware-create-esx-vm#create-esx-vm).

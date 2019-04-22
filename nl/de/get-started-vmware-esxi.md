@@ -13,7 +13,7 @@ subcollection: virtualization
 
 Nach der Bereitstellung des ESX-Servers müssen Sie als ersten Schritt für den Zugriff auf Ihren Server eine Verbindung zu {{site.data.keyword.cloud}} Private Network VPN herstellen. Standardmäßig verfügen alle von {{site.data.keyword.cloud_notm}} bereitgestellten VMware Server-Systeme nur über die Schnittstelle für das private Netz oder über eine Bindung, die mit einer IP-Adresse konfiguriert wurde. Diese Bereitstellung ist eine zusätzliche Sicherheitsmaßnahme, die angewendet wird, um die Zugriffsmöglichkeiten des öffentlichen Internets auf Ihren neuen ESX-Server einzuschränken. Aufgrund dieser zusätzlichen Sicherheitsfunktion ist der Server nur über eine private {{site.data.keyword.cloud_notm}}-IP-Adresse im Format 10.x.x.x emfangsbereit. Auf diese Adresse kann nur über das {{site.data.keyword.cloud_notm}}-VPN oder einen anderen vorhandenen {{site.data.keyword.cloud_notm}}-Host mit Zugriff auf dasselbe private VLAN zugegriffen werden, in dem sich auch Ihr neues VMware Server-System befindet.
 
-Weitere Informationen zum {{site.data.keyword.cloud_notm}}-VPN finden Sie im Abschnitt mit der [Einführung zu Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-).
+Weitere Informationen zum {{site.data.keyword.cloud_notm}}-VPN finden Sie im Abschnitt mit der [Einführung zu Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking).
 
 ## Auf ESX-Host zugreifen
 {: #accessing-your-esx-host}
@@ -38,4 +38,4 @@ Führen Sie die folgenden Schritte aus, um eine ISO in den Datenspeicher des Ser
   * Wenn Sie eine ISO hochladen möchten, klicken Sie auf das Symbol für Datenträger (mit dem Aufwärtspfeil) und wählen Sie **Datei hochladen** aus.
 5. Wählen Sie die ISO-Datei, die Sie in den Datenspeicher hochladen möchten, in Ihrem lokalen Dateisystem aus und klicken Sie auf **Öffnen**.
 6. Die ISO Ihrer Wahl befindet sich jetzt im Datenspeicher.
-7. Da sich Ihr Installationsdatenträger jetzt auf dem VMWare Server-System befindet, können Sie mit dem [Erstellen der virtuellen Maschine](/docs/infrastructure/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine) fortfahren.
+7. Da sich Ihr Installationsdatenträger jetzt auf dem VMWare Server-System befindet, können Sie mit dem [Erstellen der virtuellen Maschine](/docs/infrastructure/vmware?topic=VMware-create-esx-vm#create-esx-vm) fortfahren.

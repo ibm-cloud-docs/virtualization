@@ -13,19 +13,19 @@ subcollection: virtualization
 
 Utilizza la seguente procedura per configurare un hypervisor.
 
-1. Accedi al [{{site.data.keyword.slportal_full}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://control.softlayer.com/){: new_window} utilizzando le tue credenziali univoche.
+1. Accedi al [{{site.data.keyword.slportal_full}} ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://control.softlayer.com/){: new_window} utilizzando le tue credenziali univoche.
 2. Dal menu **Devices**, seleziona **Device List** e trova il tuo hypervisor.
-3. Stabilisci una connessione alla rete privata tramite la [VPN sicura ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.softlayer.com/vpn-access){: new_window} per accedere al tuo hypervisor.
+3. Stabilisci una connessione alla rete privata tramite la [VPN sicura ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.softlayer.com/vpn-access){: new_window} per accedere al tuo hypervisor.
 
 **Nota:** i provider di hypervisor {{site.data.keyword.cloud}} includono XenServer, VMware e Hyper-V. Ogni provider ha delle console di gestione uniche a cui si accede in modo diverso. Per ulteriori informazioni sull'accesso e l'esecuzione di operazioni in una console di gestione, vedi i seguenti link:
 
    * [XenServer ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://support.citrix.com/en/products/xenserver){: new_window}
    * [VMware ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.vmware.com/support/vsphere-hypervisor.html){: new_window}
-   * [Hyper-V ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
+   * [Hyper-V ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
 
 4. Ottieni gli IP portatili per le tue macchine virtuali.
     * Le VM richiedono indirizzi IP portatili. Puoi ordinare blocchi di IP portatili pubblici e privati tramite il {{site.data.keyword.slportal}}.
-    * Per ulteriori informazioni sull'assegnazione di indirizzi IP, vedi [Introduzione alle sottoreti e agli IP](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+    * Per ulteriori informazioni sull'assegnazione di indirizzi IP, vedi [Introduzione alle sottoreti e agli IP](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 5. Stabilisci l'instradamento per le VM sulla rete privata. Le VM hanno bisogno delle seguenti specifiche per eseguire l'instradamento ad altre VM sulla rete privata:
     * IP privati portatili

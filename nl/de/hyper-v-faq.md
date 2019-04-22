@@ -87,7 +87,7 @@ Nein. Die sekundäre IP, die mit Ihrem Server bereitgestellt wurde, ist speziell
 ## Was sind portierbare IP-Adressen?
 {: #what-are-portable-ip-addresses-}
 
-Informationen zu portierbaren IP-Adressen finden Sie im Abschnitt mit der [Einführung zu Teilnetzen und IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+Informationen zu portierbaren IP-Adressen finden Sie im Abschnitt mit der [Einführung zu Teilnetzen und IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 ## Wie kann ich Hyper-V bestellen?
 {: #how-do-i-order-hyper-v-}

@@ -82,7 +82,7 @@ Nachdem die virtuellen Netzeinheiten erstellt wurden, müssen Sie jetzt die Inst
 * Ubuntu.
 **Hinweis:** Wenn Sie die Installationsmedien bereits erhalten haben, dann rufen Sie **Virtuelle Maschine erstellen** auf.
 
-Die Installationsmedien für [CentOS ![Symbol für externenLink](../../icons/launch-glyph.svg "Symbol für externen Link")](http://centos.org){: new_window}, [Fedora ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://fedoraproject.org/){: new_window} und [Ubuntu ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://www.ubuntu.com/){: new_window} stehen auf den entsprechenden Websites zur Verfügung. Alle drei Betriebssysteme können frei lizenziert werden. Der Benutzer muss keine weiteren Aktionen ausführen.
+Die Installationsmedien für [CentOS ![Symbol für externenLink](../../icons/launch-glyph.svg "Symbol für externen Link")](https://centos.org){: new_window}, [Fedora ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://fedoraproject.org/){: new_window} und [Ubuntu ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://www.ubuntu.com/){: new_window} stehen auf den entsprechenden Websites zur Verfügung. Alle drei Betriebssysteme können frei lizenziert werden. Der Benutzer muss keine weiteren Aktionen ausführen.
 
 
 ## Virtuelle Maschine erstellen

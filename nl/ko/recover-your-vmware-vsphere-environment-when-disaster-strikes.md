@@ -69,7 +69,7 @@ AltaVault는 네트워크 인터페이스가 환경 내의 서로 다른 네트�
 1. 고유 인증 정보를 사용하여 [{{site.data.keyword.slportal_full}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/){: new_window}에 액세스하십시오.
 2. **계정 > 주문**을 클릭하십시오. 
 3. **네트워크** 섹션을 선택하고 **Subnets/IPs > 주문**을 선택하십시오.
-4. 드롭 다운 메뉴에서 **휴대용 사설**을 선택하십시오. 휴대용 사설을 선택하면 표시할 휴대용 사설 IP 주소의 수를 선택할 수 있는 옵션이 트리거됩니다. **참고:** {{site.data.keyword.cloud_notm}}에서는 각 휴대용 사설 네트워크에 대한 주소 블록에 적어도 3개의 IP 주소를 자동으로 예약합니다. 예약된 주소는 네트워크 주소, 게이트웨이 주소 및 브로드캐스트 주소용입니다. 이러한 주소는 가상 LAN(VLAN)에 직접 바인드되어야 합니다. <!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> 휴대용 IP 주소에 대한 자세한 정보는 [서브넷 및 IP 시작하기](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)의 내용을 참조하십시오.
+4. 드롭 다운 메뉴에서 **휴대용 사설**을 선택하십시오. 휴대용 사설을 선택하면 표시할 휴대용 사설 IP 주소의 수를 선택할 수 있는 옵션이 트리거됩니다. **참고:** {{site.data.keyword.cloud_notm}}에서는 각 휴대용 사설 네트워크에 대한 주소 블록에 적어도 3개의 IP 주소를 자동으로 예약합니다. 예약된 주소는 네트워크 주소, 게이트웨이 주소 및 브로드캐스트 주소용입니다. 이러한 주소는 가상 LAN(VLAN)에 직접 바인드되어야 합니다. <!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> 휴대용 IP 주소에 대한 자세한 정보는 [서브넷 및 IP 시작하기](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)의 내용을 참조하십시오.
 5. 휴대용 사설 IP 주소의 수를 선택한 후에 **계속**을 클릭하십시오. 
 6. 휴대용 사설 IP 주소가 라우팅되는 VLAN을 선택하고 **계속**을 클릭하십시오.
 7. 필수 연락처 정보를 입력하고 **주문**을 클릭하십시오.
@@ -103,7 +103,7 @@ AltaVault를 사용하면 {{site.data.keyword.cos_full_notm}}용 REST API를 사
 
 진행하기 전에 다음 전제조건이 충족되는지 확인하십시오.
 
-* AltaVault Virtual Appliance의 사본을 얻고 유틸리티 서버에 상주하는지 확인하십시오. OVA 파일 확장자를 가진 단일 파일입니다. 어플라이언스의 NetApp 담당자에게 문의하거나 [NetApp AltaVault 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}에서 90일 평가판을 다운로드하십시오.
+* AltaVault Virtual Appliance의 사본을 얻고 유틸리티 서버에 상주하는지 확인하십시오. OVA 파일 확장자를 가진 단일 파일입니다. 어플라이언스의 NetApp 담당자에게 문의하거나 [NetApp AltaVault 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}에서 90일 평가판을 다운로드하십시오.
 * AltaVault 어플라이언스에 대해 최소 CPU, 메모리, 디스크 공간 요구사항에 맞는 기존의 온프레미스 vSphere ESXi 5.5 환경이 구현되어 있습니다. 평가판을 사용하는 경우, 4개의 가상 CPU(vCPU), 24GB의 메모리, 그리고 최대 8TB의 디스크 공간 등의 리소스 요구사항이 있습니다. 
 * vSphere 환경 내에서 사용할 수 있는 두 개의 10Gbps 네트워크 인터페이스 컨트롤러(NIC)를 가집니다. 한 NIC는 데이터 액세스에 사용되고, 다른 하나는 {{site.data.keyword.cos_full_notm}} 복제에 사용됩니다.
 * vSphere 환경 내에 정의되어 있는 두 개의 NIC에 해당하는 두 개의 휴대용 사설 네트워크를 가집니다. 복제 네트워크는 데이터 액세스 네트워크와 동일한 네트워크에 지정될 수 없으므로 이렇게 할 경우 라우팅 루프를 작성할 수 있습니다.
@@ -226,7 +226,7 @@ Veeam Backup & Replication 버전 8의 평가판이 예에서 사용됩니다.
 배치를 계속하기 전에 다음 전제조건이 충족되었는지 확인하십시오.
 
 * IBM Cloud Object Storage 및 Veeam Backup & Replication과 함께 사용하도록 구성된 기존 AltaVault 어플라이언스를 확보하십시오. 
-* 단일 실행 파일인 VMware 환경에 대한 Veeam Backup & Replication의 사본을 확보하십시오. [30일 평가판 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}의 복사 또는 다운로드는 Veeam 담당자에게 문의하십시오.
+* 단일 실행 파일인 VMware 환경에 대한 Veeam Backup & Replication의 사본을 확보하십시오. [30일 평가판 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}의 복사 또는 다운로드는 Veeam 담당자에게 문의하십시오.
 * Veeam Backup & Replication과 함께 사용할 라이센스 파일을 가져오십시오. 대부분의 경우, 이 파일은 Veeam Backup & Replication을 다운로드하는 데 사용된 이메일 주소로 이메일로 보내집니다. 이 파일을 수신하지 못한 경우, Veeam 담당자에게 문의하십시오.<br/><br/>라이센스 파일은 전체 Veeam Backup & Replication 기능을 활성화하는 데 사용됩니다. 이 파일이 프로그램 설치 동안 제공되지 않으면 모든 기능을 30일 평가판으로 되돌립니다.
 * 표 2의 스펙과 함께 IBM Cloud에 프로비저닝된 가상 서버 인스턴스(VSI)가 있어야 합니다. **참고:** 설치된 운영 체제는 64비트 버전이어야 합니다. 
 
@@ -326,7 +326,7 @@ VM 복원을 전체 복원하려면 다음 단계를 따르십시오.
 
 이 하이브리드 솔루션에 대한 자세한 정보는 다음을 참조하십시오.
 
-* [NetApp AltaVault 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}
+* [NetApp AltaVault 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}
 * [Veeam Backup & Replication 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}
 * [IBM Cloud Object Storage 웹 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.ibm.com/cloud/storage){: new_window}
 

@@ -26,7 +26,7 @@ keywords: QuantaStor
 
         C:\> net stop storagelink
 
-3. 下載並執行可從 [OSNexus ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.osnexus.com/trynow/){: new_window} 取得的 StorageLink 配接器。
+3. 下載並執行可從 [OSNexus ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.osnexus.com/trynow/){: new_window} 取得的 StorageLink 配接器。
 4. 在服務停止之後，您可以執行下列指令來安裝 QuantaStor StorageLink 配接器：
 
         osn_quantastor_csladapter.exe
@@ -43,7 +43,7 @@ keywords: QuantaStor
 ## 驗證是否已適當地載入 StorageLink
 {: #verifying-that-storagelink-loaded-properly}
 
-1. 登入 Citrix StorageLink Manager、選取左側的「管理」樹狀結構，然後在 [QuantaStor ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://svn.osnexus.com/mediawiki/images/thumb/c/c8/Storagelink_admin.png/640px-Storagelink_admin.png){: new_window} 清單中尋找 OS NEXUS QuantaStor。
+1. 登入 Citrix StorageLink Manager、選取左側的「管理」樹狀結構，然後在 [QuantaStor ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://svn.osnexus.com/mediawiki/images/thumb/c/c8/Storagelink_admin.png/640px-Storagelink_admin.png){: new_window} 清單中尋找 OS NEXUS QuantaStor。
 2. 新增儲存空間系統認證，讓 StorageLink 可以為 QuantaStor 儲存空間系統動態配置儲存空間磁區。
 
 ## 安裝 XenServer 多路徑配置設定

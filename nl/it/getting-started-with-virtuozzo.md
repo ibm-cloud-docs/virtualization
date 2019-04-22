@@ -64,7 +64,7 @@ Mentre il server scarica e memorizza in cache i template, puoi configurare l'int
 6. Immetti il nome host come un nome dominio completo, aggiungi il tuo server DNS e aggiungi un dominio di ricerca, se necessario.
 7. Controlla i parametri di risorsa.
 
-Fai attenzione a non inibire la capacità del contenitore di elaborare i dati, il suo spazio su disco o la memoria aggiungendo troppi parametri, cosa che potrebbe deprivare il server di risorse. Se deprivato di risorse, il tuo server potrebbe rallentare o arrestare i processi in modo imprevisto. Se non comprendi queste impostazioni, rivolgiti all'amministratore del tuo server oppure a una [società di gestione terza![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://developer.ibm.com/bluemix/){: new_window}.
+Fai attenzione a non inibire la capacità del contenitore di elaborare i dati, il suo spazio su disco o la memoria aggiungendo troppi parametri, cosa che potrebbe deprivare il server di risorse. Se deprivato di risorse, il tuo server potrebbe rallentare o arrestare i processi in modo imprevisto. Se non comprendi queste impostazioni, rivolgiti all'amministratore del tuo server oppure a una [società di gestione terza![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://cloud.ibm.com/docs){: new_window}.
 {:tip}
 
 8. Fai clic su **Validate** prima di fare clic su **Next**. La convalida assicura che le tue impostazioni non siano in conflitto tra loro.

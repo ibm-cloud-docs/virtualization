@@ -87,7 +87,7 @@ Windows 2003 및 2008 가상 머신은 {{site.data.keyword.BluSoftlayer_notm}}�
 ## 휴대용 IP 주소는 무엇입니까?
 {: #what-are-portable-ip-addresses-}
 
-휴대용 IP 주소에 대한 정보는 [서브넷 및 IP 시작하기](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)를 참조하십시오.
+휴대용 IP 주소에 대한 정보는 [서브넷 및 IP 시작하기](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)를 참조하십시오.
 
 ## Hyper-V를 주문하려면 어떻게 해야 합니까?
 {: #how-do-i-order-hyper-v-}

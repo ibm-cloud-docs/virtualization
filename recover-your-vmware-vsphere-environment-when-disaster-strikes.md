@@ -69,7 +69,7 @@ AltaVault requires the network interfaces to be on different networks within the
 1. Access the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} by using your unique credentials.
 2. Click **Account > Place an Order**.
 3. Select the **Network** section click **Subnets/IPs > Order**.
-4. From the drop-down menu, select **Portable Private**. Selecting Portable Private triggers an option to select the number of portable private IP addresses to display. **Note:** {{site.data.keyword.cloud_notm}} automatically reserves at least three IP addresses in the address block for each portable private network. The reserved addresses are for the network address, gateway address, and broadcast address. These addresses must be bound directly to the virtual LAN (VLAN). <!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> For more information about portable IP addresses, see [Getting started with Subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+4. From the drop-down menu, select **Portable Private**. Selecting Portable Private triggers an option to select the number of portable private IP addresses to display. **Note:** {{site.data.keyword.cloud_notm}} automatically reserves at least three IP addresses in the address block for each portable private network. The reserved addresses are for the network address, gateway address, and broadcast address. These addresses must be bound directly to the virtual LAN (VLAN). <!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> For more information about portable IP addresses, see [Getting started with Subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 5. Click **Continue** after you select the number of portable private IP addresses.
 6. Select the VLAN where the portable private IP addresses to be routed and click **Continue**.
 7. Complete the required contact information and click **Place Order**.
@@ -103,7 +103,7 @@ Follow these steps to deploy AltaVault as a disaster recovery solution with {{si
 
 Verify that the following prerequisites are met before you proceed:
 
-* Obtain a copy of AltaVault Virtual Appliance and make sure that it resides on the utility server. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance, or download a 90-day trial version from the [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}.
+* Obtain a copy of AltaVault Virtual Appliance and make sure that it resides on the utility server. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance, or download a 90-day trial version from the [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}.
 * Have an existing on-premises vSphere ESXi 5.5 environment with the minimum CPU, memory, and disk space requirements available for the AltaVault appliance. If you use the trial version, here are the resource requirements: four virtual CPUs (vCPUs), 24 GB of memory, and up to 8 TB of disk space.
 * Have two 10 Gbps network interface controllers (NICs) available within the vSphere environment. One NIC is used for data access, and the other is used for data replication to {{site.data.keyword.cos_full_notm}}.
 * Have two portable private networks that correspond to the two NICs that are defined within the vSphere environment. The replication network cannot be assigned to the same network as the data access network, which can create a routing loop.
@@ -226,7 +226,7 @@ A trial version of Veeam Backup & Replication Version 8 is used in the example.
 Before you proceed with deployment, make sure that the following prerequisites are satisfied:
 
 * Have an existing AltaVault appliance that is configured for use with IBM Cloud Object Storage and Veeam Backup & Replication.
-* Obtain a copy of Veeam Backup & Replication for VMware environments, which is a single executable file. Contact your Veeam Representative for a copy or download a [30-day trial version ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}.
+* Obtain a copy of Veeam Backup & Replication for VMware environments, which is a single executable file. Contact your Veeam Representative for a copy or download a [30-day trial version ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}.
 * Obtain a license file for use with Veeam Backup & Replication. In most cases, this file is emailed to the email address that was used to download Veeam Backup & Replication. If you did not receive this file, contact your Veeam Representative.<br/><br/>The license file is used to activate full Veeam Backup & Replication functionality. If this file is not supplied during program installation, all features and functionality revert to those of the 30-day trial version.
 * Have a virtual server instance (VSI) provisioned in IBM Cloud with the specifications in Table 2. **Note:** The installed operating system must be a 64-bit version.
 
@@ -326,7 +326,7 @@ Follow these steps to fully restore a VM restore.
 
 For more information about the components of this hybrid solution see:
 
-* [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}
+* [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}
 * [Veeam Backup & Replication website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}
 * [IBM Cloud Object Storage website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/storage){: new_window}
 

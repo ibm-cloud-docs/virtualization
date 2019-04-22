@@ -67,7 +67,7 @@ IP** > **VLAN** > **Solicitar IP**.
 6. Especifique el nombre de host como un nombre de dominio completo, añada el servidor DNS y añada un dominio de búsqueda si es necesario.
 7. Revise los parámetros de recursos.
 
-Tenga cuidado de no prohibir la capacidad del contenedor para procesar datos, su espacio de disco o la memoria añadiendo demasiados parámetros, lo que podría agotar los recursos del servidor. El agotamiento del servidor provoca que se ralenticen o detengan inesperadamente los procesos. Si no entiende estos valores, póngase en contacto con el administrador del sistema o una [empresa de gestión de terceros ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://developer.ibm.com/bluemix/){: new_window}.
+Tenga cuidado de no prohibir la capacidad del contenedor para procesar datos, su espacio de disco o la memoria añadiendo demasiados parámetros, lo que podría agotar los recursos del servidor. El agotamiento del servidor provoca que se ralenticen o detengan inesperadamente los procesos. Si no entiende estos valores, póngase en contacto con el administrador del sistema o una [empresa de gestión de terceros ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://cloud.ibm.com/docs){: new_window}.
 {:tip}
 
 8. Pulse **Validar** antes de pulsar **Siguiente**. La validación garantiza que los valores no entran en conflicto entre sí.

@@ -41,7 +41,7 @@ Xen 儲存空間儲存庫在本端連接時支援 IDE、SATA、SCSI 及 SAS 磁�
 
 4. 建立儲存空間儲存庫 (SR)：
 
-  > **附註：**[sr-create ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://support.citrix.com/article/CTX121313){: new_window} 指令用於新增硬碟機。建立新的硬碟機是分割及格式化磁碟機的破壞性處理程序，磁碟機上的任何資料都會遺失。如果您想要重新引進一顆具有現有資料的磁碟機，請使用 [sr-introduce ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://support.citrix.com/article/CTX121896){: new_window}。
+  > **附註：**[sr-create ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://support.citrix.com/article/CTX121313){: new_window} 指令用於新增硬碟機。建立新的硬碟機是分割及格式化磁碟機的破壞性處理程序，磁碟機上的任何資料都會遺失。如果您想要重新引進一顆具有現有資料的磁碟機，請使用 [sr-introduce ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://support.citrix.com/article/CTX121896){: new_window}。
 
   `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label="Local Storage 2" shared=false type=lvm`<br/>
   \- 或 -<br/>

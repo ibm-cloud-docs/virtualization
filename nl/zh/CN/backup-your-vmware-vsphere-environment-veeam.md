@@ -42,7 +42,7 @@ Veeam Backup & Replication 支持包含 NetApp AltaVault 云集成存储设备�
 
 验证是否满足以下先决条件：
 
-* AltaVault 虚拟设备的副本。这是一个具有 OVA 文件扩展名的文件。请联系 NetApp 代表以获取设备，或者从 [NetApp AltaVault Web 站点 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window} 下载 90 天试用版。
+* AltaVault 虚拟设备的副本。这是一个具有 OVA 文件扩展名的文件。请联系 NetApp 代表以获取设备，或者从 [NetApp AltaVault Web 站点 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window} 下载 90 天试用版。
 * 为 AltaVault 设备提供了满足最低 CPU、内存和磁盘空间需求的现有内部部署 vSphere ESXi 5.5 环境。如果使用试用版，那么这些需求为 4 个虚拟 CPU (vCPU)、24 GB 内存和最多 8 TB 磁盘空间。
 * vSphere 环境中有 2 个 10 Gbps 网络接口控制器 (NIC) 可用。一个 NIC 用于数据输入，另一个 NIC 用于将数据复制到 {{site.data.keyword.cos_full_notm}}。
 * 2 个网络，对应于 vSphere 环境中定义的 2 个 NIC (VLAN)。不能为复制网络分配与数据输入网络相同的网络，这样做会创建路由回路。
@@ -173,7 +173,7 @@ Veeam Backup & Replication 软件为 VM 及其数据提供了完整备份、复�
 继续部署之前，请验证是否满足以下先决条件：
 
 * 拥有配置用于 {{site.data.keyword.cos_full_notm}} 和 Veeam Backup & Replication 的现有 AltaVault 设备。
-* 获取 Veeam Backup & Replication for VMware 环境的副本，这是单个可执行文件。请联系 Veeam 代表以获取副本，或者下载 [30 天试用版 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}。
+* 获取 Veeam Backup & Replication for VMware 环境的副本，这是单个可执行文件。请联系 Veeam 代表以获取副本，或者下载 [30 天试用版 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}。
 * 获取要用于 Veeam Backup & Replication 的许可证文件。在大多数情况下，此文件会通过电子邮件发送到用于下载 Veeam Backup & Replication 的电子邮件地址。如果未收到此文件，请联系 Veeam 代表。<br/><br/>许可证文件用于激活所有 Veeam Backup & Replication 功能。如果在程序安装期间未提供此文件，那么所有功能部件和功能都会还原为 30 天试用版。
 * 拥有现有备份服务器（可以是现场或非现场备份服务器），其规范可以在表 2 中找到。安装的操作系统必须是 64 位版本。
 

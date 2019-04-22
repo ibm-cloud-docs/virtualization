@@ -19,7 +19,7 @@ subcollection: virtualization
 
 - 作为“VLAN 上的辅助子网”路由的可移植 IP 地址（公共和专用）的新范围。用于设置新 VM 的此示例解决方案需要您在专用网络上提供可用的 IP。可以通过 [{{site.data.keyword.slportal_full}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/network/subnets/order) 来订购子网。
 - 能够通过 VPN 连接到 {{site.data.keyword.cloud}} 专用网络。有关 VPN 访问的更多信息，请参阅[启用对 {{site.data.keyword.cloud_notm}} 基础架构专用网络的访问](/docs/customer-portal?topic=customer-portal-getting-started#enable-private-network)。
-- Citrix XenCenter 已安装到本地系统。<!-- . http://downloads.service.softlayer.com/citrix/xen/-->
+- Citrix XenCenter 已安装到本地系统。<!-- . https://downloads.service.softlayer.com/citrix/xen/-->
 
 **注：**服务器已使用各种模板进行预配置，以帮助您快速开始使用并运行 XenServer。
 
@@ -35,9 +35,9 @@ subcollection: virtualization
 5. 右键单击您的 {{site.data.keyword.cloud_notm}} 名称，并选择**新建 VM...**。<!--You can now create your first Virtual Machine. Create a CentOS virtual machine with a disk of 10 GB and have both Public and Private Networks functioning-->
 6. 选择要用于新虚拟机的操作系统，然后单击**下一步**。**注：**某些模板需要提供您自己的介质。<!--Because you are using CentOS, you can use {{site.data.keyword.BluSoftlayer_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
 7. 为新虚拟机输入适用的名称和描述。
-8. 输入访客操作系统安装介质的位置，然后单击**下一步**。<!-- In the example, {{site.data.keyword.BluSoftlayer_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: http://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
+8. 输入访客操作系统安装介质的位置，然后单击**下一步**。<!-- In the example, {{site.data.keyword.BluSoftlayer_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: https://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
   *A trailing ‘/’ at the end of the URL can sometimes break the installation.*
-  *This mirror is available only on the {{site.data.keyword.BluSoftlayer_notm}} Private Network. The full mirror's contents are  available here: http://mirrors.service.softlayer.com/.-->
+  *This mirror is available only on the {{site.data.keyword.BluSoftlayer_notm}} Private Network. The full mirror's contents are  available here: https://mirrors.service.softlayer.com/.-->
 9. 选择 CPU 数和内存分配量。（您要构建的是简化的系统，无需太多 RAM。因此，512 MB 绰绰有余。）单击**下一步**。
 10. 选择虚拟盘，以将磁盘空间分配给 VM。<!--Remember that this is like adding hard disks, it is not like partitioning your system. Partitioning is done during the installation of the OS.--> 对于此模板，缺省大小为 8 GB。对于要构建的服务器，此空间量绰绰有余。*可选：可以通过突出显示磁盘并单击**编辑...** 来增大磁盘以适应您的需求。*单击**下一步**。
 11. 针对虚拟机，添加或除去虚拟网络接口。缺省值是可接受的，除非您不希望系统能够在专用网络上进行通信。示例需要在系统中保留两个接口，但经验丰富的 Xen 管理员可以除去其中一个接口以用于自己的用途。对于这种情况，您可以根据需要突出显示并删除接口。单击**下一步**。
@@ -47,6 +47,6 @@ subcollection: virtualization
   <!--![14](images/14.png)-->
 15. <!--In the pre-requisite notes, we made sure that we already had a set of Portable IP Addresses routed as "Secondary on VLAN" ready for this installation.--> 确保您已有用于配置 TCP/IP 的信息。您需要手动配置具有 IPV4 支持的接口，并禁用 IPV6 支持。
   <!--[15](images/15.png)-->
-16. 确认您了解如何使用专用 IP 子网 (10.17.37.240/29)，然后单击**确定**<!-- to go to the CentOS installer-->。您和系统管理员可以根据自己的准则来安装访客操作系统。有关静态 IP 块和可移植 IP 块的更多信息，请参阅[子网和 IP 入门](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)。
+16. 确认您了解如何使用专用 IP 子网 (10.17.37.240/29)，然后单击**确定**<!-- to go to the CentOS installer-->。您和系统管理员可以根据自己的准则来安装访客操作系统。有关静态 IP 块和可移植 IP 块的更多信息，请参阅[子网和 IP 入门](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)。
 
 您已创建新的 VM。

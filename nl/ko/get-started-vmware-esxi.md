@@ -13,7 +13,7 @@ subcollection: virtualization
 
 ESX 서버 프로비저닝 후에 서버를 지정하는 첫 번째 단계는 {{site.data.keyword.cloud}} 사설 네트워크 VPN에 연결하는 것입니다. 기본적으로 모든 {{site.data.keyword.cloud_notm}} 배치 VMware 서버에는 IP 주소로 구성된 사설 네트워크 인터페이스나 결합만 있습니다. 이 배치는 새 ESX 서버가 공용 인터넷에 노출되는 것을 제한하기 위해 배치되는 추가 보안 수단입니다. 이 추가 보안의 결과로서, 서버는 {{site.data.keyword.cloud_notm}} VPN 또는 새 VMware 서버가 상주하는 동일한 사설 VLAN에 액세스할 수 있는 기존 {{site.data.keyword.cloud_notm}} 호스트 중 다른 하나 {{site.data.keyword.cloud_notm}} 사설 10.x.x.x IP 주소에서만 수신합니다.
 
-{{site.data.keyword.cloud_notm}} VPN에 대한 자세한 정보는 [VPN(Virtual Private Networking) 시작하기](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-)의 내용을 참조하십시오.
+{{site.data.keyword.cloud_notm}} VPN에 대한 자세한 정보는 [VPN(Virtual Private Networking) 시작하기](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking)의 내용을 참조하십시오.
 
 ## ESX 호스트 액세스
 {: #accessing-your-esx-host}
@@ -38,4 +38,4 @@ vSphere Client 다운로드 및 로컬 워크스테이션에 이를 설치한 �
   * ISO를 업로드하려면 위쪽 화살표가 있는 볼륨 아이콘을 클릭하고 **파일 업로드**를 선택하십시오.
 5. 데이터 저장소에 업로드할 ISO 파일을 로컬 파일 시스템에서 선택하고 **열기**를 클릭하십시오.
 6. 선택한 ISO는 이제 데이터 저장소에 있습니다.
-7. 이제 설치 매체가 VMWare 서버에 있으므로 [가상 머신 작성](/docs/infrastructure/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine)을 진행할 수 있습니다.
+7. 이제 설치 매체가 VMWare 서버에 있으므로 [가상 머신 작성](/docs/infrastructure/vmware?topic=VMware-create-esx-vm#create-esx-vm)을 진행할 수 있습니다.

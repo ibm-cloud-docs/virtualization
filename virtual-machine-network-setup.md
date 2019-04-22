@@ -39,7 +39,7 @@ Network configuration requires the following information for both your Public an
 ## Windows 2008 Server Core
 {: #windows-2008-server-core}
 
-Windows 2008 Server Core edition does not provide a graphical interface to configure the system network. The configuration needs to be done manually by using the command prompt. You need to run the following commands. The IP addresses that are used in this example need to be replaced with the IP addresses from your IP Blocks. These commands work with older versions of Windows Server that include the [netsh ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://support.microsoft.com/kb/242468){: new_window} command.
+Windows 2008 Server Core edition does not provide a graphical interface to configure the system network. The configuration needs to be done manually by using the command prompt. You need to run the following commands. The IP addresses that are used in this example need to be replaced with the IP addresses from your IP Blocks. These commands work with older versions of Windows Server that include the [netsh ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.microsoft.com/kb/242468){: new_window} command.
 
 **Example public IP block – 192.0.2.0/29**
 

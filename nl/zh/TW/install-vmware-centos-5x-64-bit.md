@@ -16,11 +16,11 @@ subcollection: virtualization
 ## 準備安裝 VMware
 {: #preparing-to-install-vmware}
 
-1. 下載 [VMware 安裝程式 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://vmware.com/download/server/){: new_window}。按一下下載鏈結、接受 EULA，然後下載 LinuxTarball（此範例中的 VMware-server-1.0.3-44356.tar.gz）：
+1. 下載 [VMware 安裝程式 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://vmware.com/download/server/){: new_window}。按一下下載鏈結、接受 EULA，然後下載 LinuxTarball（此範例中的 VMware-server-1.0.3-44356.tar.gz）：
 
-* `# wget -O vmware-server.tar.gz http://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
+* `# wget -O vmware-server.tar.gz https://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
 
-2. 在下載軟體之後，您將需要取得授權碼（在免費版的 VMWare Server 中，這是免費的）。若要登錄，請參閱 [VMware ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://register.vmware.com/content/registration.html){: new_window}。
+2. 在下載軟體之後，您將需要取得授權碼（在免費版的 VMWare Server 中，這是免費的）。若要登錄，請參閱 [VMware ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://register.vmware.com/content/registration.html){: new_window}。
 
 3. 解壓縮 .tar 檔：
 
@@ -111,7 +111,7 @@ subcollection: virtualization
 ## 提供 VMware 的序號
 {: #providing-the-serial-number-for-vmware}
 
-安裝的最終部分需要您插入 VMware 授權碼及序號。如果您還沒有授權碼，請參閱 [VMware 網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://register.vmware.com/content/registration.html){: new_window}。如果您具有此 VMware 伺服器的序號，請將它插入至提示，然後按 Enter 鍵。
+安裝的最終部分需要您插入 VMware 授權碼及序號。如果您還沒有授權碼，請參閱 [VMware 網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://register.vmware.com/content/registration.html){: new_window}。如果您具有此 VMware 伺服器的序號，請將它插入至提示，然後按 Enter 鍵。
 
 現在，您會看到如下聲明：
 
@@ -122,7 +122,7 @@ VMware 現在已設定在您的伺服器上。現在，您需要下載「VMware 
 ## 下載 VMware Server Console
 {: #downloading-vmware-server-console}
 
-「VMware Server 主控台」是 VMware Server 的用戶端應用程式。您可以使用這個主控台來管理 VMware Server，在其中您可以建立、配置及安裝虛擬機器。若要安裝此應用程式，請從 [VMware 下載 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://vmware.com/download/server/){: new_window} 下載 VMware Server Windows 用戶端套件。此套件是 .zip 檔。下載之後，請解壓縮此套件，並安裝 VMware-console-1.0.3-x 檔。安裝完成時，表示您已安裝「VMware Server 主控台」，且已準備好配置 VMware Server。
+「VMware Server 主控台」是 VMware Server 的用戶端應用程式。您可以使用這個主控台來管理 VMware Server，在其中您可以建立、配置及安裝虛擬機器。若要安裝此應用程式，請從 [VMware 下載 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://vmware.com/download/server/){: new_window} 下載 VMware Server Windows 用戶端套件。此套件是 .zip 檔。下載之後，請解壓縮此套件，並安裝 VMware-console-1.0.3-x 檔。安裝完成時，表示您已安裝「VMware Server 主控台」，且已準備好配置 VMware Server。
 
 ## 登入 VMware 主控台
 {: #logging-in-to-the-vmware-console}

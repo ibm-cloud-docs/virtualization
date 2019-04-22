@@ -126,7 +126,7 @@ You need to order the ESXi hosts and Brocade vRouter (Vyatta) gateway and firewa
 
 For each ESXi host that is ordered for the environment, VMware ESXi 5.5 is the operating system. If you want to use {{site.data.keyword.cloud_notm}} vSphere licenses, monthly charges are incurred that are based on usage.
 
-Another option is to install ESXi by using your own ISO. Instructions for this process can be found in [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media). If you want to install ESXi by using your own ISO, make sure to select **No Operating System** as the operating system for the management and capacity hosts during the ordering process.
+Another option is to install ESXi by using your own ISO. Instructions for this process can be found in [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi). If you want to install ESXi by using your own ISO, make sure to select **No Operating System** as the operating system for the management and capacity hosts during the ordering process.
 
 **Note:** This implementation requires Enterprise Plus licensing to use vSphere Distributed Virtual Switches. If your license is not valid for Enterprise Plus, you need to use the {{site.data.keyword.cloud_notm}} provided VMware Service Provider Program (VSPP) license.
 
@@ -142,7 +142,7 @@ Use the following steps to order the management host servers.
 5. Select the appropriate data center (where the VLANs were created) to provision the ESXi servers and specify the following specifications for each option:
   * Quantity: 2
   * RAM: 32 GB
-  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media))
+  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
   * Hard disks: Disks 1 & 2: 500 GB SATA in RAID 1
   * Public Bandwidth: Private Network Only-> 0 GB bandwidth
   * Uplink Port Speeds: 10 Gbps Redundant Private Network Uplinks
@@ -156,7 +156,7 @@ Use the following steps to order the management host servers.
 2. Select the appropriate data center (where the VLANs were created) to provision the ESXi servers and specify the following specifications for each option:
   * Quantity: 3
   * RAM: 128 GB
-  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media))
+  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
   * Hard disk: Disks 1 & 2: 500 GB SATA in RAID 1
   * Public Bandwidth: Private Network Only > 0 GB bandwidth
   * Uplink Port Speeds: 10 Gbps Redundant Private Network Uplinks
@@ -308,7 +308,7 @@ Update the **Notes** section of each Portable IP address with the name of the ho
 Now, the environment is ready to deploy the VMware vCenter Virtual Appliance and install a virtual machine for DNS, Active Directory, or BIND. However, before you deploy, you need to download the images. To do download the images, remote desktop to the virtual server previously provisioned and download the appropriate images on the virtual server for your environment:
 
 * Active Directory / Windows DNS: Windows Server 2008R2/Windows Server 2012 ISO Image (Your licensed Media)
-* Linux BIND: [CentOS Install Image ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [CentOS Install Image ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
 * [vCenter Virtual Appliance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (requires a valid VMware subscription)
 
 After you download the ISO, you need to upload the image to a management host data store so it can be attached to a virtual machine. Use the vSphere client to connect to a management host and create an ISO directory on the local data store.
@@ -332,7 +332,7 @@ Although it is beyond the scope of this document to detail the steps that are ne
 
 For more information, see the following links:
 * [Windows DNS and Active Directory ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: new_window}.
-<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
+<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
 
 ## Step 9 Deploying and configuring vCenter Virtual Appliance
 {: #step-9-deploying-and-configuring-vcenter-virtual-appliance}

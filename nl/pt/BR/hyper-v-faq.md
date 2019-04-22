@@ -87,7 +87,7 @@ Não. O IP secundário fornecido com o servidor é roteado especificamente para 
 ## O que são endereços IP móveis?
 {: #what-are-portable-ip-addresses-}
 
-Para obter informações sobre endereços IP móveis, consulte [Introdução às sub-redes e IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+Para obter informações sobre endereços IP móveis, consulte [Introdução às sub-redes e IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 ## Como pedir o Hyper-V?
 {: #how-do-i-order-hyper-v-}

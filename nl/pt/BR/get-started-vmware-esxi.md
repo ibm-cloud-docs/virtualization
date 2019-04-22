@@ -13,7 +13,7 @@ subcollection: virtualization
 
 Após o fornecimento do servidor ESX, a primeira etapa para acessar o servidor é se conectar à VPN de rede privada do {{site.data.keyword.cloud}}. Por padrão, todos os servidores VMware implementados pelo {{site.data.keyword.cloud_notm}} têm apenas a interface de rede privada ou a ligação configurada com um endereço IP. Essa implementação é uma medida de segurança adicional que é colocada em vigor para limitar a exposição do seu novo servidor ESX à Internet pública. Como resultado dessa segurança acrescida, o servidor atende somente em um endereço IP 10.x.x.x privado do {{site.data.keyword.cloud_notm}}, que é acessível apenas por meio da VPN do {{site.data.keyword.cloud_notm}} ou de outro de seus hosts {{site.data.keyword.cloud_notm}} existentes com acesso à mesma VLAN privada na qual seu novo VMware Server reside.
 
-Para obter mais informações sobre a VPN do {{site.data.keyword.cloud_notm}}, consulte [Introdução ao Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-).
+Para obter mais informações sobre a VPN do {{site.data.keyword.cloud_notm}}, consulte [Introdução ao Virtual Private Networking (VPN)](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking).
 
 ## Acessando seu host ESX
 {: #accessing-your-esx-host}
@@ -38,4 +38,4 @@ Conclua as etapas a seguir para fazer upload de um ISO para o armazenamento de d
   * Para fazer upload de um ISO, clique no ícone do volume (com a seta apontando para cima) e selecione **Fazer upload do arquivo**.
 5. Selecione o arquivo ISO em seu sistema de arquivos local do qual você deseja fazer upload para o armazenamento de dados e clique em **Abrir**.
 6. O ISO de sua escolha está agora no armazenamento de dados.
-7. Agora que sua mídia de instalação está no servidor VMWare, é possível continuar com a [criação de sua máquina virtual](/docs/infrastructure/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine).
+7. Agora que sua mídia de instalação está no servidor VMWare, é possível continuar com a [criação de sua máquina virtual](/docs/infrastructure/vmware?topic=VMware-create-esx-vm#create-esx-vm).

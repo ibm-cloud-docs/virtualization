@@ -41,7 +41,7 @@ Das Xen-Speicherrepository unterstützt bei lokaler Verbindung IDE-, SATA-, SCSI
 
 4. Erstellen Sie ein Speicherrepository (SR):
 
-  > **Hinweis:** Der Befehl [sr-create ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://support.citrix.com/article/CTX121313){: new_window} dient zum Hinzufügen eines neuen Festplattenlaufwerks. Die Erstellung eines neuen Festplattenlaufwerks ist ein destruktiver Prozess, bei dem das Laufwerk partitioniert und formatiert wird und alle Daten auf dem Laufwerk verloren gehen. Wenn Sie ein Laufwerk mit bereits vorhandenen Daten wiederverwenden wollen, dann verwenden Sie den Befehl [sr-introduce ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://support.citrix.com/article/CTX121896){: new_window}.
+  > **Hinweis:** Der Befehl [sr-create ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://support.citrix.com/article/CTX121313){: new_window} dient zum Hinzufügen eines neuen Festplattenlaufwerks. Die Erstellung eines neuen Festplattenlaufwerks ist ein destruktiver Prozess, bei dem das Laufwerk partitioniert und formatiert wird und alle Daten auf dem Laufwerk verloren gehen. Wenn Sie ein Laufwerk mit bereits vorhandenen Daten wiederverwenden wollen, dann verwenden Sie den Befehl [sr-introduce ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://support.citrix.com/article/CTX121896){: new_window}.
 
   `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
   \- Oder -<br/>

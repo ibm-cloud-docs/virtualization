@@ -64,7 +64,7 @@ Enquanto o servidor faz download e armazena os modelos em cache, é possível co
 6. Insira o nome do host como um nome de domínio completo, inclua o servidor DNS e, se necessário, inclua um domínio de procura.
 7. Revise os parâmetros de recurso.
 
-Tenha cuidado para não inserir parâmetros em excesso, pois isso impede a capacidade do contêiner para processar dados, o seu espaço em disco ou a memória, o que pode esgotar os recursos do servidor. Um servidor esgotado de recursos pode parar processos inesperadamente ou torná-los lentos. Se você não entender essas configurações, entre em contato com o administrador do servidor ou com uma [empresa de gerenciamento de terceiro ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://developer.ibm.com/bluemix/){: new_window}.
+Tenha cuidado para não inserir parâmetros em excesso, pois isso impede a capacidade do contêiner para processar dados, o seu espaço em disco ou a memória, o que pode esgotar os recursos do servidor. Um servidor esgotado de recursos pode parar processos inesperadamente ou torná-los lentos. Se você não entender essas configurações, entre em contato com o administrador do servidor ou com uma [empresa de gerenciamento de terceiro ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://cloud.ibm.com/docs){: new_window}.
 {:tip}
 
 8. Clique em **Validar** antes de clicar em **Avançar**. A validação assegura que suas configurações não entrem em conflito entre si.

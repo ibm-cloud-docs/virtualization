@@ -22,7 +22,7 @@ Citrix XenServer のフリー・ライセンスは、初回インストールま
 
 ご使用のシステムを登録するには、以下の手順を実行します。
 
-1. XenCenter クライアントをダウンロードしてインストールします。 このクライアントには、[Citrix XenCenter ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://community.citrix.com/display/xs/XenCenter){: new_window} のページからアクセスできます。
+1. XenCenter クライアントをダウンロードしてインストールします。 このクライアントには、[Citrix XenCenter ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://community.citrix.com/display/xs/XenCenter){: new_window} のページからアクセスできます。
 
 2. VPN を介してプライベート・ネットワークに接続します。
 

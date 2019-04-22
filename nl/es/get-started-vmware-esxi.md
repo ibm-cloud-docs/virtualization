@@ -18,7 +18,7 @@ Después de que se suministre el servidor ESX, el primer paso para acceder al se
 {{site.data.keyword.cloud_notm}} o de otro de los hosts existentes de {{site.data.keyword.cloud_notm}} con acceso a la misma VLAN privada en la que reside el nuevo servidor VMware.
 
 Para obtener más información sobre la VPN de {{site.data.keyword.cloud_notm}}, consulte
-[Iniciación a las redes privadas virtuales (VPN)](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-).
+[Iniciación a las redes privadas virtuales (VPN)](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking).
 
 ## Acceso al host ESX
 {: #accessing-your-esx-host}
@@ -45,4 +45,4 @@ Realice los pasos siguientes para cargar un ISO en el almacén de datos del serv
 5. Seleccione el archivo ISO del sistema de archivos local que desee cargar en el almacén de datos y pulse **Abrir**.
 6. El ISO que haya elegido está ahora en el almacén de datos.
 7. Ahora que el medio de instalación está en el servidor VMWare, puede continuar con la
-[creación de la máquina virtual](/docs/infrastructure/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine).
+[creación de la máquina virtual](/docs/infrastructure/vmware?topic=VMware-create-esx-vm#create-esx-vm).

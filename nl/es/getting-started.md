@@ -24,6 +24,6 @@ Puede utilizar la solución de virtualización para ejecutar varias máquinas vi
 [VMware](/docs/infrastructure/vmware?topic=VMware-getting-started). |
 | __ 2. [Configure un hipervisor](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-hypervisor). (la [configuración de la red de una máquina virtual](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network) es una parte importante de este proceso). |
 | __ 3. Dependiendo de qué soluciones de virtualización utilice, puede
-[Configurar Hyper-V](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-hyper-v), [Iniciarse en Virtuozzo](/docs/infrastructure/virtualization?topic=Virtualization-getting-started-with-virtuozzo), [Iniciarse en VMware vSphere 6](/docs/infrastructure/vmware?topic=VMware-getting-started-with-vmware-vsphere-6) o
+[Configurar Hyper-V](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-hyper-v), [Iniciarse en Virtuozzo](/docs/infrastructure/virtualization?topic=Virtualization-getting-started-with-virtuozzo), [Iniciarse en VMware vSphere 6](/docs/infrastructure/vmware?topic=VMware-vmware-getting-started#vmware-getting-started) o
 [Instalar las herramientas de XenServer](/docs/infrastructure/virtualization?topic=Virtualization-installing-xenserver-tools-when-using-linux). |
 {: caption="Tabla 1. Iniciación a la virtualización" caption-side="top"}

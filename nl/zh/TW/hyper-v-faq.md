@@ -87,7 +87,7 @@ Windows 2003 及 2008 虛擬機器是透過 {{site.data.keyword.BluSoftlayer_not
 ## 何謂可攜式 IP 位址？
 {: #what-are-portable-ip-addresses-}
 
-如需可攜式 IP 位址的相關資訊，請參閱[開始使用子網路及 IP](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)。
+如需可攜式 IP 位址的相關資訊，請參閱[開始使用子網路及 IP](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)。
 
 ## 如何訂購 Hyper-V？
 {: #how-do-i-order-hyper-v-}

@@ -16,11 +16,11 @@ Before you begin, log in to the server with the root user.
 ## Preparing to install VMware
 {: #preparing-to-install-vmware}
 
-1. Download the [VMware installer ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://vmware.com/download/server/){: new_window}. Click the download link, accept the EULA, and download the LinuxTarball (VMware-server-1.0.3-44356.tar.gz in this example):
+1. Download the [VMware installer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://vmware.com/download/server/){: new_window}. Click the download link, accept the EULA, and download the LinuxTarball (VMware-server-1.0.3-44356.tar.gz in this example):
 
-* `# wget –O vmware-server.tar.gz http://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
+* `# wget –O vmware-server.tar.gz https://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
 
-2. After you download the software, you will need to get a license key (which is free in the free version of VMWare Server). To register, see [VMware ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://register.vmware.com/content/registration.html){: new_window}.
+2. After you download the software, you will need to get a license key (which is free in the free version of VMWare Server). To register, see [VMware ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://register.vmware.com/content/registration.html){: new_window}.
 
 3. Extract the .tar file:
 
@@ -112,7 +112,7 @@ The next question that the installer asks is *“In which directory do you want 
 ## Providing the serial number for VMware
 {: #providing-the-serial-number-for-vmware}
 
-The final part of the installation requires you to insert a VMware license key and serial number. If you don't have a license key yet, see the [VMware site ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://register.vmware.com/content/registration.html){: new_window}. If you have the serial number for this VMware Server, insert it into the prompt and then press enter.
+The final part of the installation requires you to insert a VMware license key and serial number. If you don't have a license key yet, see the [VMware site ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://register.vmware.com/content/registration.html){: new_window}. If you have the serial number for this VMware Server, insert it into the prompt and then press enter.
 
 Now, you see something similar to the following statement:
 
@@ -123,7 +123,7 @@ VMware is now set up on your server. You now need to download the VMware Server 
 ## Downloading VMware Server Console
 {: #downloading-vmware-server-console}
 
-The VMware Server Console is the client application for VMware Server. You use the console to manage the VMware Server in which you can create, configure, and install virtual machines. To install this application, download the VMware Server Windows client package from [VMware downloads ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://vmware.com/download/server/){: new_window}. This package is the .zip file. After it downloads, extract the package and install the VMware-console-1.0.3-x file. When the installation completes, you are done installing the VMware Server Console and you are ready to configure your VMware Server.
+The VMware Server Console is the client application for VMware Server. You use the console to manage the VMware Server in which you can create, configure, and install virtual machines. To install this application, download the VMware Server Windows client package from [VMware downloads ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://vmware.com/download/server/){: new_window}. This package is the .zip file. After it downloads, extract the package and install the VMware-console-1.0.3-x file. When the installation completes, you are done installing the VMware Server Console and you are ready to configure your VMware Server.
 
 ## Logging in to the VMware Console
 {: #logging-in-to-the-vmware-console}

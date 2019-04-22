@@ -19,7 +19,7 @@ Bevor Sie beginnen, sollten Sie die folgenden Voraussetzungen prüfen:
 
 - Neue Bereiche portierbarer IP-Adressen (öffentlich und privat), die als 'Sekundär im VLAN' weitergeleitet werden. Diese Beispiellösung für die Konfiguration einer neuen VM setzt voraus, dass Sie über verwendbare IPs verfügen, die im privaten Netz verfügbar sind. Sie können Teilnetze im  [{{site.data.keyword.slportal_full}} ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://control.softlayer.com/network/subnets/order) bestellen.
 - Funktionalität zum Herstellen einer Verbindung zum privaten {{site.data.keyword.cloud}}-Netz über das VPN. Weitere Informationen zum VPN-Zugriff finden Sie im Abschnitt zum [Aktivieren des Zugriffs auf das private Netz der {{site.data.keyword.cloud_notm}}-Infrastruktur](/docs/customer-portal?topic=customer-portal-getting-started#enable-private-network).
-- Citrix XenCenter ist auf dem lokalen System installiert. <!-- . http://downloads.service.softlayer.com/citrix/xen/-->
+- Citrix XenCenter ist auf dem lokalen System installiert. <!-- . https://downloads.service.softlayer.com/citrix/xen/-->
 
 **Hinweis:** Ihr Server ist mit verschiedenen Vorlagen vorkonfiguriert, mit denen Sie sich schnell mit XenServer vertraut machen können.
 
@@ -35,9 +35,9 @@ Führen Sie die folgenden Schritte aus, um eine virtuelle Maschine mit XenCenter
 5. Klicken Sie mit der rechten Maustaste auf den {{site.data.keyword.cloud_notm}}-Namen und wählen Sie **Neue VM...** aus.<!--You can now create your first Virtual Machine. Create a CentOS virtual machine with a disk of 10 GB and have both Public and Private Networks functioning-->
 6. Wählen Sie das Betriebssystem aus, das Sie für die neue virtuelle Maschine verwenden möchten, und klicken Sie dann auf **Weiter**. **Hinweis:** Bestimmte Vorlagen erfordern die Bereitstellung eigener Datenträger.<!--Because you are using CentOS, you can use {{site.data.keyword.BluSoftlayer_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
 7. Geben Sie einen geeigneten Namen und eine Beschreibung für die neue virtuelle Maschine ein.
-8. Geben Sie die Position der Installationsmedien für das Gastbetriebssystem ein und klicken Sie auf **Weiter**. <!-- In the example, {{site.data.keyword.BluSoftlayer_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: http://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
+8. Geben Sie die Position der Installationsmedien für das Gastbetriebssystem ein und klicken Sie auf **Weiter**. <!-- In the example, {{site.data.keyword.BluSoftlayer_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: https://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
   *A trailing ‘/’ at the end of the URL can sometimes break the installation.*
-  *This mirror is available only on the {{site.data.keyword.BluSoftlayer_notm}} Private Network. The full mirror's contents are  available here: http://mirrors.service.softlayer.com/.-->
+  *This mirror is available only on the {{site.data.keyword.BluSoftlayer_notm}} Private Network. The full mirror's contents are  available here: https://mirrors.service.softlayer.com/.-->
 9. Wählen Sie die Anzahl der CPUs und die Menge des zuzuordnenden Hauptspeichers aus. (Sie erstellen ein schlankes System und benötigen deshalb wenig Arbeitsspeicher. 512 MB reichen völlig aus). Klicken Sie auf **Weiter**.
 10. Wählen Sie Ihre virtuellen Platten aus, um Plattenspeicherplatz für Ihre VM
 zuzuordnen.<!--Remember that this is like adding hard disks, it is not like partitioning your system. Partitioning is done during the installation of the OS.--> Die Standardgröße für diese Vorlage beträgt 8 GB. Dieser Betrag ist für den Server, den Sie erstellen, mehr als ausreichend. *Optional: Sie können die Platte entsprechend Ihren Anforderungen vergrößern, indem Sie die Platte hervorheben und auf **Bearbeiten...** klicken.* Klicken Sie auf **Weiter**.
@@ -48,6 +48,6 @@ zuzuordnen.<!--Remember that this is like adding hard disks, it is not like part
   <!--![14](images/14.png)-->
 15. <!--In the pre-requisite notes, we made sure that we already had a set of Portable IP Addresses routed as "Secondary on VLAN" ready for this installation.--> Halten Sie die Informationen zur Konfiguration von TCP/IP bereit. Sie müssen die Schnittstelle manuell mit IPv4-Unterstützung konfigurieren und die IPv6-Unterstützung inaktivieren.
   <!--[15](images/15.png)-->
-16. Bestätigen Sie, dass Sie wissen, wie Ihr privates IP-Teilnetz verwendet werden muss (10.17.37.240/29), und klicken Sie auf **OK**<!-- to go to the CentOS installer-->. Sie und Ihr Systemadministrator können das Gastbetriebssystem entsprechend Ihren Richtlinien installieren. Weitere Informationen zu statischen und portierbaren IP-Blöcken finden Sie im Abschnitt mit der [Einführung zu Teilnetzen und IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+16. Bestätigen Sie, dass Sie wissen, wie Ihr privates IP-Teilnetz verwendet werden muss (10.17.37.240/29), und klicken Sie auf **OK**<!-- to go to the CentOS installer-->. Sie und Ihr Systemadministrator können das Gastbetriebssystem entsprechend Ihren Richtlinien installieren. Weitere Informationen zu statischen und portierbaren IP-Blöcken finden Sie im Abschnitt mit der [Einführung zu Teilnetzen und IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 Sie haben eine neue VM erstellt.

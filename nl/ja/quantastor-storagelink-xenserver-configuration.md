@@ -26,7 +26,7 @@ StorageLink 機能を使用できるのは、Citrix から「Enterprise」また
 
         C:&#xa5;> net stop storagelink
 
-3. [OSNexus ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.osnexus.com/trynow/){: new_window} で提供されている StorageLink アダプターをダウンロードして実行します。
+3. [OSNexus ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.osnexus.com/trynow/){: new_window} で提供されている StorageLink アダプターをダウンロードして実行します。
 4. サービスが停止したら、次のコマンドを実行して QuantaStor StorageLink アダプターをインストールします。
 
         osn_quantastor_csladapter.exe
@@ -43,7 +43,7 @@ StorageLink 機能を使用できるのは、Citrix から「Enterprise」また
 ## StorageLink が正しくロードされたかどうかを検証する
 {: #verifying-that-storagelink-loaded-properly}
 
-1. Citrix StorageLink Manager にログインし、左側の「管理 (Administration)」ツリーを選択して、[QuantaStor ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://svn.osnexus.com/mediawiki/images/thumb/c/c8/Storagelink_admin.png/640px-Storagelink_admin.png){: new_window} リストから OS NEXUS QuantaStor を見つけ出します。
+1. Citrix StorageLink Manager にログインし、左側の「管理 (Administration)」ツリーを選択して、[QuantaStor ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://svn.osnexus.com/mediawiki/images/thumb/c/c8/Storagelink_admin.png/640px-Storagelink_admin.png){: new_window} リストから OS NEXUS QuantaStor を見つけ出します。
 2. ストレージ・システムの認証情報を追加します。これにより、StorageLink で QuantaStor ストレージ・システムのストレージ・ボリュームを動的に構成し、割り当てることができます。
 
 ## XenServer マルチパス構成設定のインストール

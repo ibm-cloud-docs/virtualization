@@ -69,7 +69,7 @@ AltaVault 需要在環境內位於不同網路上的網路介面。使用下列�
 1. 使用您的唯一認證來存取 [{{site.data.keyword.slportal_full}} ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://control.softlayer.com/){: new_window}。
 2. 按一下**帳戶 > 訂購**。
 3. 選取**網路**區段，然後按一下**子網路/IP > 訂單**。
-4. 從下拉功能表中，選取**可攜式專用**。選取「可攜式專用」會觸發選項來選取要顯示的可攜式專用 IP 位址數目。**附註：**{{site.data.keyword.cloud_notm}} 會在每個可攜式專用網路的位址區塊中自動保留至少三個 IP 位址。保留位址適用於網址、閘道位址及播送位址。這些位址必須直接連結至虛擬 LAN (VLAN)。<!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.-->如需可攜式 IP 位址的相關資訊，請參閱[開始使用子網路及 IP](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)。
+4. 從下拉功能表中，選取**可攜式專用**。選取「可攜式專用」會觸發選項來選取要顯示的可攜式專用 IP 位址數目。**附註：**{{site.data.keyword.cloud_notm}} 會在每個可攜式專用網路的位址區塊中自動保留至少三個 IP 位址。保留位址適用於網址、閘道位址及播送位址。這些位址必須直接連結至虛擬 LAN (VLAN)。<!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.-->如需可攜式 IP 位址的相關資訊，請參閱[開始使用子網路及 IP](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)。
 5. 選取可攜式專用 IP 位址數目之後，請按一下**繼續**。
 6. 選取其中要遞送可攜式專用 IP 位址的 VLAN，然後按一下**繼續**。
 7. 完成必要的聯絡資訊，然後按一下**下訂單**。
@@ -103,7 +103,7 @@ AltaVault 需要在環境內位於不同網路上的網路介面。使用下列�
 
 請先驗證已符合下列必要條件，再繼續進行：
 
-* 取得「AltaVault 虛擬應用裝置」的副本，並確定它位於公用程式伺服器上。它是一個具有 OVA 副檔名的單一檔案。請聯絡 NetApp 代表以取得應用裝置，或從 [NetApp AltaVault 網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window} 下載 90 天試用版。
+* 取得「AltaVault 虛擬應用裝置」的副本，並確定它位於公用程式伺服器上。它是一個具有 OVA 副檔名的單一檔案。請聯絡 NetApp 代表以取得應用裝置，或從 [NetApp AltaVault 網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window} 下載 90 天試用版。
 * 備妥 CPU、記憶體和磁碟空間都符合 AltaVault 應用裝置最低需求的現有內部部署 vSphere ESXi 5.5 環境。如果您使用試用版，則以下是資源需求：四個虛擬 CPU (vCPU)、24 GB 的記憶體及最多 8 TB 的磁碟空間。
 * 在 vSphere 環境內，可使用兩個 10 Gbps 網路介面控制器 (NIC)。一個 NIC 用於資料存取，另一個則用於資料抄寫至 {{site.data.keyword.cos_full_notm}}。
 * 有兩個可攜式專用網路對應至 vSphere 環境內定義的兩個 NIC。無法將抄寫網路指派給與資料存取網路相同的網路，若這樣做可能會產生遞送迴圈。
@@ -226,7 +226,7 @@ Veeam Backup & Replication 軟體為 VM 及其資料提供完整備份、抄寫�
 繼續進行部署之前，請確保滿足下列必要條件：
 
 * 具有已配置為要與 IBM Cloud Object Storage 及 Veeam Backup & Replication 搭配使用的現有 AltaVault 應用裝置。
-* 取得 VMware 環境的 Veeam Backup & Replication 副本，這是一個單一執行檔。請聯絡「Veeam 代表」以取得副本，或下載 [30 天試用版 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}。
+* 取得 VMware 環境的 Veeam Backup & Replication 副本，這是一個單一執行檔。請聯絡「Veeam 代表」以取得副本，或下載 [30 天試用版 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}。
 * 取得與 Veeam Backup & Replication 搭配使用的授權檔。在大部分情況下，會透過電子郵件將此檔案傳送至用來下載 Veeam Backup & Replication 的電子郵件位址。如果未收到此檔案，請與您的「Veeam 代表」聯絡。<br/><br/>授權檔用來啟動完整的 Veeam Backup & Replication 功能。如果在程式安裝期間未提供此檔案，則所有特性及功能都會回復為 30 天試用版的特性及功能。
 * 使用表 2 中的規格，在 IBM Cloud 中佈建虛擬伺服器實例 (VSI)。**附註：**已安裝的作業系統必須是 64 位元版本。
 
@@ -326,7 +326,7 @@ Veeam Backup & Replication 軟體為 VM 及其資料提供完整備份、抄寫�
 
 如需此混合式解決方案元件的相關資訊，請參閱：
 
-* [NetApp AltaVault 網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}
+* [NetApp AltaVault 網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}
 * [Veeam Backup & Replication 網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}
 * [IBM Cloud Object Storage 網站 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ibm.com/cloud/storage){: new_window}
 

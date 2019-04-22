@@ -13,19 +13,19 @@ subcollection: virtualization
 
 使用以下步骤来设置系统管理程序。
 
-1. 使用您的唯一凭证登录到 [{{site.data.keyword.slportal_full}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://control.softlayer.com/){: new_window}。
+1. 使用您的唯一凭证登录到 [{{site.data.keyword.slportal_full}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){: new_window}。
 2. 从**设备**菜单中，选择**设备列表**，然后找到系统管理程序。
-3. 通过[安全 VPN ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.softlayer.com/vpn-access){: new_window} 连接到专用网络，以访问系统管理程序。
+3. 通过[安全 VPN ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.softlayer.com/vpn-access){: new_window} 连接到专用网络，以访问系统管理程序。
 
 **注：**{{site.data.keyword.cloud}} 系统管理程序提供程序包含 XenServer、VMware 和 Hyper-V。每个提供程序都具有独特的管理控制台，可通过不同方式进行访问。有关在管理控制台中访问和工作的更多信息，请参阅以下链接：
 
    * [XenServer ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://support.citrix.com/en/products/xenserver){: new_window}
    * [VMware ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.vmware.com/support/vsphere-hypervisor.html){: new_window}
-   * [Hyper-V ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
+   * [Hyper-V ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
 
 4. 获取虚拟机的可移植 IP。
     * VM 需要可移植 IP 地址。公共和专用可移植 IP 块可以通过 {{site.data.keyword.slportal}} 进行订购。
-    * 有关分配 IP 地址的更多信息，请参阅[子网和 IP 入门](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)。
+    * 有关分配 IP 地址的更多信息，请参阅[子网和 IP 入门](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)。
 
 5. 在专用网络上为 VM 建立路由。VM 需要符合以下规范才能通过专用网络路由到其他 VM：
     * 可移植专用 IP

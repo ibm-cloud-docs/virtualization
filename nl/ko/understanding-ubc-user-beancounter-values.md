@@ -33,7 +33,7 @@ UBC를 이해하지 못하는 경우 SLM 모드를 사용하십시오. SLM이 �
 |`dgramrcvbuf`|*시스템*|UDP 및 기타 데이터그램 프로토콜 수신 버퍼|
 |`oomguardpages`|*시스템*|메모리가 초과 예약되었을 경우 보장된 메모리의 양(메모리 부족 시 보장이 강제 종료됨)|
 |`privvmpages`|*시스템*|메모리 할당 한계|
-|`lockedpages`|*시스템*|스왑 아웃이 허용되지 않은 프로세스 페이지([mlock(2) ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://linux.die.net/man/2/mlock)에 의해 잠긴 페이지)|
+|`lockedpages`|*시스템*|스왑 아웃이 허용되지 않은 프로세스 페이지([mlock(2) ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://linux.die.net/man/2/mlock)에 의해 잠긴 페이지)|
 |`shmpages`|*시스템*|페이지의 공유 메모리의 총 크기(프로세스 간 통신 또는 IPC, 공유 익명 맵핑 및 tmpfs 오브젝트)|
 |`physpages`|*시스템*|프로세스에 사용되는 총 RAM 페이지 수|
 |`numfile`|*시스템*|열린 파일 수|
@@ -51,4 +51,4 @@ UBC를 이해하지 못하는 경우 SLM 모드를 사용하십시오. SLM이 �
 **관리 > 지원 > 다운로드 > UBC 리소스 관리 관리자 안내서**로 이동하여
 서버의 PIM 내에서 VzLinuxUBCMgmt.pdf에 액세스하거나 HTML로 이를 볼 수 있습니다. 
 
-UBC에 대한 자세한 정보는 [OpenVZ Virtuozzo 컨테이너, 카테고리: UBC ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://wiki.openvz.org/Category:UBC)를 참조하십시오.**참고:** OpenVZ의 일부 항목은 Virtuozzo와 동일합니다.
+UBC에 대한 자세한 정보는 [OpenVZ Virtuozzo 컨테이너, 카테고리: UBC ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://wiki.openvz.org/Category:UBC)를 참조하십시오.**참고:** OpenVZ의 일부 항목은 Virtuozzo와 동일합니다.

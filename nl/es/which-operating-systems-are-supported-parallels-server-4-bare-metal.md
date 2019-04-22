@@ -131,4 +131,4 @@ subcollection: virtualization
 {{site.data.keyword.BluSoftlayer_full}}.
 
 A partir del 23/04/2009, [Archivo readme de Parallels Server 4 nativo
-![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://download.parallels.com/doc/psbm/en/Readme.pdf)
+![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://download.parallels.com/doc/psbm/en/Readme.pdf)

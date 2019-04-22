@@ -13,19 +13,19 @@ subcollection: virtualization
 
 다음 단계에 따라 하이퍼바이저를 설정하십시오. 
 
-1. 고유 인증 정보를 사용하여 [{{site.data.keyword.slportal_full}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://control.softlayer.com/){: new_window}에 로그인하십시오.
+1. 고유 인증 정보를 사용하여 [{{site.data.keyword.slportal_full}} ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://control.softlayer.com/){: new_window}에 로그인하십시오.
 2. **디바이스** 메뉴에서 **디바이스 목록**을 선택하고 하이퍼바이저를 찾으십시오. 
-3. 하이퍼바이저에 액세스하려면 [VPN 보안 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.softlayer.com/vpn-access){: new_window}을 통해 사설 네트워크에 연결하십시오.
+3. 하이퍼바이저에 액세스하려면 [VPN 보안 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.softlayer.com/vpn-access){: new_window}을 통해 사설 네트워크에 연결하십시오.
 
 **참고:** {{site.data.keyword.cloud}} 하이퍼바이저 제공자에는 XenServer, VMware 및 Hyper-V가 포함됩니다. 각 제공자는 따로 액세스할 수 있는 고유 관리 콘솔을 가집니다. 관리 콘솔에 대한 액세스 및 작업에 대한 자세한 정보는 다음 링크를 참조하십시오. 
 
    * [XenServer ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://support.citrix.com/en/products/xenserver){: new_window}
    * [VMware ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.vmware.com/support/vsphere-hypervisor.html){: new_window}
-   * [Hyper-V ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
+   * [Hyper-V ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
 
 4. 가상 머신에 대한 휴대용 IP를 확보하십시오.
     * VM에는 휴대용 IP 주소가 필요합니다. 공용 및 사설 휴대용 IP의 블록은 {{site.data.keyword.slportal}}을 통해 주문할 수 있습니다.
-    * IP 주소 할당에 대한 자세한 정보는 [서브넷 및 IP 시작하기](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)를 참조하십시오.
+    * IP 주소 할당에 대한 자세한 정보는 [서브넷 및 IP 시작하기](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)를 참조하십시오.
 
 5. 사설 네트워크에서 VM을 위한 라우팅을 설정하십시오. VM은 사설 네트워크를 통해 다른 VM으로 라우팅하기 위해 다음과 같은 스펙을 필요로 합니다.
     * 휴대용 사설 IP

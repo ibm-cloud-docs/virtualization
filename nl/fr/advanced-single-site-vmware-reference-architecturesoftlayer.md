@@ -127,7 +127,7 @@ Vous devez commander les hôtes ESXi et le dispositif de passerelle et de pare-f
 
 Pour chaque hôte ESXi commandé pour l'environnement, VMware ESXi 5.5 i est le système d'exploitation. Si vous souhaitez utiliser des licences {{site.data.keyword.cloud_notm}} vSphere, des frais mensuels vous sont facturés sur la base de l'utilisation. 
 
-Une autre option consiste à installer ESXi à l'aide de votre propre image ISO. Cette procédure est décrite dans la rubrique [Installation de VMware vSphere ESXi via une console distante et des supports virtuels](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media). Si vous souhaitez installer ESXi en utilisant votre propre image ISO, prenez soin de sélectionner **Sans système d'exploitation** pour les hôtes de gestion et de capacité durant le processus de commande. 
+Une autre option consiste à installer ESXi à l'aide de votre propre image ISO. Cette procédure est décrite dans la rubrique [Installation de VMware vSphere ESXi via une console distante et des supports virtuels](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi). Si vous souhaitez installer ESXi en utilisant votre propre image ISO, prenez soin de sélectionner **Sans système d'exploitation** pour les hôtes de gestion et de capacité durant le processus de commande. 
 
 **Remarque :** cette implémentation requiert une licence Enterprise Plus pour permettre l'utilisation de commutateurs virtuels distribués VSphere. Si votre licence n'est pas valide pour Enterprise Plus, vous devez utiliser la licence VSPP (VMware Service Provider Program) fournie par {{site.data.keyword.cloud_notm}}. 
 
@@ -143,7 +143,7 @@ Utilisez la procédure suivante pour commander les serveurs hôte de gestion :
 5. Sélectionnez le centre de données approprié (celui sur lequel les VLAN ont été créés) pour mettre à disposition les serveurs ESXi et indiquez les spécifications suivantes pour chaque option :
   * Quantité : 2
   * Mémoire RAM : 32 Go
-  * Système d'exploitation : VMware ESXi 5.5 ('Sans système d'exploitation' si vous utilisez la procédure [Installation de VMware vSphere ESXi via une console distante et des supports virtuels](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media))
+  * Système d'exploitation : VMware ESXi 5.5 ('Sans système d'exploitation' si vous utilisez la procédure [Installation de VMware vSphere ESXi via une console distante et des supports virtuels](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
   * Disques durs : 2 disques SATA 500 Go dans la configuration RAID-1
   * Bande passante publique : Réseau privé uniquement -> 0 Go de bande passante
   * Vitesses de port de liaison montante : Liaisons montantes de 10 Gbps sur réseau privé redondant
@@ -157,7 +157,7 @@ Utilisez la procédure suivante pour commander les serveurs hôte de gestion :
 2. Sélectionnez le centre de données approprié (celui sur lequel les VLAN ont été créés) pour mettre à disposition les serveurs ESXi et indiquez les spécifications suivantes pour chaque option :
   * Quantité : 3
   * Mémoire RAM : 128 Go
-  * Système d'exploitation : VMware ESXi 5.5 ('Sans système d'exploitation' si vous utilisez la procédure [Installation de VMware vSphere ESXi via une console distante et des supports virtuels](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media))
+  * Système d'exploitation : VMware ESXi 5.5 ('Sans système d'exploitation' si vous utilisez la procédure [Installation de VMware vSphere ESXi via une console distante et des supports virtuels](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
   * Disques durs : 2 disques SATA 500 Go dans la configuration RAID-1
   * Bande passante publique : Réseau privé uniquement > 0 Go de bande passante
   * Vitesses de port de liaison montante : Liaisons montantes de 10 Gbps sur réseau privé redondant
@@ -309,7 +309,7 @@ Mettez à jour la section **Remarques** de chaque adresse IP portable avec le no
 A présent, l'environnement est prêt pour déployer VMware vCenter Virtual Appliance et installer une machine virtuelle pour DNS, Active Directory ou BIND. Toutefois, avant de procéder au déploiement, vous devez recevoir par téléchargement les images. Pour cela, ouvrez une session via la fonction de bureau à distance sur le serveur virtuel précédemment mis à disposition et recevez par téléchargement les images appropriées sur le serveur virtuel pour votre environnement :
 
 * Active Directory / Windows DNS : Image ISO Windows Server 2008R2/Windows Server 2012 (votre support sous licence)
-* Linux BIND : Image d'installation [CentOS ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND : Image d'installation [CentOS ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
 * [vCenter Virtual Appliance ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (requiert un abonnement VMware valide)
 
 Après avoir reçu par téléchargement l'image ISO, vous devez l'envoyer par téléchargement à un magasin de données hôte de gestion afin de pouvoir la connecter à une machine virtuelle. Utilisez le client vSphere pour vous connecter à un hôte de gestion et créez un répertoire d'images ISO sur le magasin de données local. 
@@ -333,7 +333,7 @@ Bien que la description des étapes nécessaires à l'activation de DNS dépasse
 
 Pour plus d'informations, voir les liens suivants : 
 * [Windows DNS and Active Directory ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: new_window}.
-<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
+<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
 
 ## Etape 9 Déploiement et configuration de vCenter Virtual Appliance
 {: #step-9-deploying-and-configuring-vcenter-virtual-appliance}

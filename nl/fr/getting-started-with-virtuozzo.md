@@ -64,7 +64,7 @@ Pendant que le serveur télécharge et met en cache les modèles, vous pouvez co
 6. Entrez le nom d'hôte sous la forme d'un nom de domaine complet, ajoutez votre serveur DNS et ajoutez un domaine de recherche, si besoin. 
 7. Vérifiez les paramètres de ressource.
 
-Prenez soin de ne pas entraver la capacité (espace disque ou mémoire) du conteneur à traiter les données en ajoutant un trop grand nombre de paramètres, ce qui risquerait d'affamer votre serveur de ressources. Votre serveur pourrait ralentir ou arrêter des processus de manière inattendue. Si vous ne comprenez pas ces paramètres, contactez votre administrateur de serveur ou une [société de gestion tierce ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://developer.ibm.com/bluemix/){: new_window}.
+Prenez soin de ne pas entraver la capacité (espace disque ou mémoire) du conteneur à traiter les données en ajoutant un trop grand nombre de paramètres, ce qui risquerait d'affamer votre serveur de ressources. Votre serveur pourrait ralentir ou arrêter des processus de manière inattendue. Si vous ne comprenez pas ces paramètres, contactez votre administrateur de serveur ou une [société de gestion tierce ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://cloud.ibm.com/docs){: new_window}.
 {:tip}
 
 8. Cliquez sur **Validate** avant de cliquer sur **Next**. L'opération de validation permet de vérifier que vos paramètres ne sont pas incompatibles. 

@@ -82,7 +82,7 @@ Ora che i dispositivi di rete virtuale sono stati creati, devi ottenere il suppo
 * Ubuntu.
 **Nota:** se già disponi del supporto di installazione, vai a **Creazione di una macchina virtuale**.
 
-I supporti di installazione per [CentOS ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://centos.org){: new_window}, [Fedora ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://fedoraproject.org/){: new_window} e [Ubuntu ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://www.ubuntu.com/){: new_window} sono disponibili dai loro rispettivi siti web. Tutti e tre i sistemi operativi sono concessi in licenza gratuitamente e l'utente non deve eseguire altre operazioni.
+I supporti di installazione per [CentOS ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://centos.org){: new_window}, [Fedora ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://fedoraproject.org/){: new_window} e [Ubuntu ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://www.ubuntu.com/){: new_window} sono disponibili dai loro rispettivi siti web. Tutti e tre i sistemi operativi sono concessi in licenza gratuitamente e l'utente non deve eseguire altre operazioni.
 
 ## Creazione di una macchina virtuale
 {: #creating-a-virtual-machine}

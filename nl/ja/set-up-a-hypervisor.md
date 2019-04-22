@@ -13,19 +13,19 @@ subcollection: virtualization
 
 ハイパーバイザーをセットアップするには、以下の手順を使用します。
 
-1. ユーザー固有の資格情報を使用して、[{{site.data.keyword.slportal_full}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://control.softlayer.com/){: new_window} にログインします。
+1. ユーザー固有の資格情報を使用して、[{{site.data.keyword.slportal_full}} ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://control.softlayer.com/){: new_window} にログインします。
 2. **「デバイス」**メニューから**「デバイス・リスト」**を選択して、対象のハイパーバイザーを見つけます。
-3. [セキュア VPN ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.softlayer.com/vpn-access){: new_window} 経由でプライベート・ネットワークに接続してハイパーバイザーにアクセスします。
+3. [セキュア VPN ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.softlayer.com/vpn-access){: new_window} 経由でプライベート・ネットワークに接続してハイパーバイザーにアクセスします。
 
 **注:** {{site.data.keyword.cloud}} ハイパーバイザー・プロバイダーとしては、XenServer、VMware、Hyper-V があります。 プロバイダーごとに固有の管理コンソールがあり、アクセス方法はそれぞれ異なります。 管理コンソールにアクセスして操作する方法について詳しくは、以下のリンクを参照してください。
 
    * [XenServer ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://support.citrix.com/en/products/xenserver){: new_window}
    * [VMware ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.vmware.com/support/vsphere-hypervisor.html){: new_window}
-   * [Hyper-V ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
+   * [Hyper-V ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
 
 4. 仮想マシン用のポータブル IP を取得します。
     * VM にはポータブル IP アドレスが必要です。 パブリックおよびプライベートのポータブル IP のブロックを、{{site.data.keyword.slportal}}から注文できます。
-    * IP アドレスの割り振りについて詳しくは、[サブネットおよび IP の概説](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)を参照してください。
+    * IP アドレスの割り振りについて詳しくは、[サブネットおよび IP の概説](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)を参照してください。
 
 5. プライベート・ネットワークによる VM のルーティングを設定します。 プライベート・ネットワークを使用して他の VM にルーティングするために、VM には以下を指定する必要があります。
     * ポータブル・プライベート IP

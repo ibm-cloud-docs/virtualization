@@ -22,7 +22,7 @@ Citrix XenServer 免費授權可讓您從起始安裝或重新載入 Citrix XenS
 
 若要登錄您的系統，請完成下列步驟：
 
-1. 下載並安裝 XenCenter 用戶端。您可以從 [Citrix XenCenter ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://community.citrix.com/display/xs/XenCenter){: new_window} 頁面存取用戶端。
+1. 下載並安裝 XenCenter 用戶端。您可以從 [Citrix XenCenter ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://community.citrix.com/display/xs/XenCenter){: new_window} 頁面存取用戶端。
 
 2. 透過 VPN 連接至專用網路。
 

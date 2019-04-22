@@ -126,7 +126,7 @@ Debe solicitar los hosts ESXi, así como la pasarela Brocade vRouter (Vyatta) y 
 
 En cada host ESXi solicitado para el entorno, el sistema operativo es VMware ESXi 5.5. Si desea utilizar licencias de vSphere de {{site.data.keyword.cloud_notm}}, se efectúan cargos mensuales según el uso.
 
-Otra opción es instalar ESXi utilizando su propio ISO. Puede encontrar instrucciones para este proceso en [Instalación de VMware vSphere ESXi a través de la consola remota y el soporte virtual](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media). Si desea instalar ESXi utilizando su propio ISO, asegúrese de seleccionar **Sin sistema operativo** como sistema operativo de los hosts de gestión y capacidad durante el proceso de solicitud.
+Otra opción es instalar ESXi utilizando su propio ISO. Puede encontrar instrucciones para este proceso en [Instalación de VMware vSphere ESXi a través de la consola remota y el soporte virtual](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi). Si desea instalar ESXi utilizando su propio ISO, asegúrese de seleccionar **Sin sistema operativo** como sistema operativo de los hosts de gestión y capacidad durante el proceso de solicitud.
 
 **Nota:** esta implementación requiere una licencia de Enterprise Plus para utilizar conmutadores virtuales distribuidos de vSphere. Si la licencia no es válida para Enterprise Plus, deberá utilizar la licencia de programa de proveedor de servicios de VMware (VSPP) proporcionada por {{site.data.keyword.cloud_notm}}.
 
@@ -142,7 +142,7 @@ Utilice los pasos siguientes para solicitar los servidores de host de gestión.
 5. Seleccione el centro de datos adecuado (donde se hayan creado las VLAN) para suministrar los servidores ESXi y defina las especificaciones siguientes para cada opción:
   * Cantidad: 2
   * RAM: 32 GB
-  * Sistema operativo: VMware ESXi 5.5 ('Sin sistema operativo' si utiliza [Instalación de VMware vSphere ESXi a través de la consola remota y el soporte virtual](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media))
+  * Sistema operativo: VMware ESXi 5.5 ('Sin sistema operativo' si utiliza [Instalación de VMware vSphere ESXi a través de la consola remota y el soporte virtual](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
   * Discos duros: discos 1 y 2: 500 GB SATA en RAID 1
   * Ancho de banda público: solo red privada> 0 GB de ancho de banda
   * Velocidades de puerto de enlace ascendente: enlaces ascendentes a 10 Gbps de redes privadas redundantes
@@ -156,7 +156,7 @@ Utilice los pasos siguientes para solicitar los servidores de host de gestión.
 2. Seleccione el centro de datos adecuado (donde se hayan creado las VLAN) para suministrar los servidores ESXi y defina las especificaciones siguientes para cada opción:
   * Cantidad: 3
   * RAM: 128 GB
-  * Sistema operativo: VMware ESXi 5.5 ('Sin sistema operativo' si utiliza [Instalación de VMware vSphere ESXi a través de la consola remota y el soporte virtual](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media))
+  * Sistema operativo: VMware ESXi 5.5 ('Sin sistema operativo' si utiliza [Instalación de VMware vSphere ESXi a través de la consola remota y el soporte virtual](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
   * Disco duro: discos 1 y 2: 500 GB SATA en RAID 1
   * Ancho de banda público: solo red privada > 0 GB de ancho de banda
   * Velocidades de puerto de enlace ascendente: enlaces ascendentes a 10 Gbps de redes privadas redundantes
@@ -308,7 +308,7 @@ Actualice la sección **Notas** de cada dirección IP portátil con el nombre de
 Ahora, el entorno está preparado para desplegar el dispositivo virtual VMware vCenter e instalar una máquina virtual para DNS, Active Directory o BIND. No obstante, antes del despliegue, necesita descargar las imágenes. Para descargar las imágenes, realice una conexión de escritorio remota con el servidor virtual suministrado anteriormente y descargue las imágenes adecuadas en el servidor virtual del entorno:
 
 * Active Directory / Windows DNS: imagen ISO de Windows Server 2008R2/Windows Server 2012 (su soporte con licencia)
-* Linux BIND: [Imagen de instalación de CentOS ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [Imagen de instalación de CentOS ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
 * [Dispositivo virtual vCenter ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (requiere una suscripción válida a VMware)
 
 Tras descargar el ISO, debe cargar la imagen en el almacén de datos de un host de gestión para que se pueda adjuntar a una máquina virtual. Utilice el cliente vSphere para conectarse a un host de gestión y cree un directorio ISO en el almacén de datos local.
@@ -332,7 +332,7 @@ Aunque está más allá del ámbito de este documento detallar los pasos necesar
 
 Para obtener más información, consulte los enlaces siguientes:
 * [DNS de Windows y Active Directory ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: new_window}.
-<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
+<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
 
 ## Paso 9 Despliegue y configuración del dispositivo virtual vCenter
 {: #step-9-deploying-and-configuring-vcenter-virtual-appliance}

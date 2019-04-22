@@ -126,7 +126,7 @@ Windows 2012 R2 Standard の仮想サーバーは、ISO 用のユーティリテ
 
 この環境用に注文される各 ESXi ホストでは、VMware ESXi 5.5 がオペレーティング・システムです。 {{site.data.keyword.cloud_notm}} vSphere ライセンスの使用を希望する場合は、使用量に基づいて月額課金が発生します。
 
-もう 1 つの選択肢は、独自の ISO を使用して ESXi をインストールすることです。 このプロセスの手順については、[リモート・コンソールと仮想メディアを使用した VMware vSphere ESXi のインストール](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media)を参照してください。 独自の ISO を使用して ESXi をインストールすることを希望する場合は、注文プロセス時に管理ホストと容量ホストのオペレーティング・システムとして**「オペレーティング・システムなし」**を選択してください。
+もう 1 つの選択肢は、独自の ISO を使用して ESXi をインストールすることです。 このプロセスの手順については、[リモート・コンソールと仮想メディアを使用した VMware vSphere ESXi のインストール](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi)を参照してください。 独自の ISO を使用して ESXi をインストールすることを希望する場合は、注文プロセス時に管理ホストと容量ホストのオペレーティング・システムとして**「オペレーティング・システムなし」**を選択してください。
 
 **注:** この実装では、vSphere 分散仮想スイッチを使用するために Enterprise Plus のライセンスが必要です。 お持ちのライセンスが Enterprise Plus に対して有効でない場合は、{{site.data.keyword.cloud_notm}} によって提供される VMware Service Provider Program (VSPP) ライセンスを使用する必要があります。
 
@@ -142,7 +142,7 @@ Windows 2012 R2 Standard の仮想サーバーは、ISO 用のユーティリテ
 5. ESXi サーバーをプロビジョンするための適切なデータ・センター (VLAN が作成された場所) を選択して、各オプションを次のように指定します。
   * 数量: 2
   * RAM: 32 GB
-  * オペレーティング・システム: VMware ESXi 5.5 ([リモート・コンソールと仮想メディアを使用した VMware vSphere ESXi のインストール](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media)を使用している場合は「オペレーティング・システムなし」)
+  * オペレーティング・システム: VMware ESXi 5.5 ([リモート・コンソールと仮想メディアを使用した VMware vSphere ESXi のインストール](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi)を使用している場合は「オペレーティング・システムなし」)
   * ハード・ディスク: ディスク 1 & 2: RAID 1 の 500 GB SATA
   * パブリック帯域幅: 「プライベート・ネットワークのみ」->「0 GB 帯域幅」
   * アップリンク・ポート速度: 10 Gbps の冗長プライベート・ネットワーク・アップリンク
@@ -156,7 +156,7 @@ Windows 2012 R2 Standard の仮想サーバーは、ISO 用のユーティリテ
 2. ESXi サーバーをプロビジョンするための適切なデータ・センター (VLAN が作成された場所) を選択して、各オプションを次のように指定します。
   * 数量: 3
   * RAM: 128 GB
-  * オペレーティング・システム: VMware ESXi 5.5 ([リモート・コンソールと仮想メディアを使用した VMware vSphere ESXi のインストール](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media)を使用している場合は「オペレーティング・システムなし」)
+  * オペレーティング・システム: VMware ESXi 5.5 ([リモート・コンソールと仮想メディアを使用した VMware vSphere ESXi のインストール](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi)を使用している場合は「オペレーティング・システムなし」)
   * ハード・ディスク: ディスク 1 & 2: RAID 1 の 500 GB SATA
   * パブリック帯域幅: 「プライベート・ネットワークのみ」>「0 GB の帯域幅」
   * アップリンク・ポート速度: 10 Gbps の冗長プライベート・ネットワーク・アップリンク
@@ -308,7 +308,7 @@ VLAN をトランキングして NIC をアンバインドするには、次の�
 これで、この環境に VMware vCenter 仮想アプライアンスをデプロイして、DNS 用、Active Directory 用、または BIND 用の仮想マシンをインストールする準備ができました。 ただし、デプロイ前にイメージをダウンロードする必要があります。 イメージをダウンロードするには、既にプロビジョンされた仮想サーバーにリモート・デスクトップ接続して、この環境用にその仮想サーバー上の適切なイメージをダウンロードします。
 
 * Active Directory/Windows DNS: Windows Server 2008R2/Windows Server 2012 の ISO イメージ (ライセンス交付済みメディア)
-* Linux BIND: [CentOS Install Image ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [CentOS Install Image ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
 * [vCenter Virtual Appliance ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (有効な VMware サブスクリプションが必要)
 
 ISO をダウンロードした後に、そのイメージを管理ホストのデータ・ストアにアップロードする必要があります。これにより、そのイメージを仮想マシンに添付できるようになります。 vSphere クライアントを使用して管理ホストに接続して、ローカル・データ・ストア上に ISO ディレクトリーを作成します。
@@ -332,7 +332,7 @@ DNS を有効にするために必要な手順は本資料の範囲外ですが�
 
 詳しくは、以下のリンクを参照してください。
 * [Windows DNS and Active Directory ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: new_window}.
-<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
+<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
 
 ## ステップ 9: vCenter 仮想アプライアンスのデプロイと構成
 {: #step-9-deploying-and-configuring-vcenter-virtual-appliance}

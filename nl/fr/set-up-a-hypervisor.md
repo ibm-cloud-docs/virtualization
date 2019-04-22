@@ -13,19 +13,19 @@ subcollection: virtualization
 
 Utilisez la procédure décrite ci-après pour configurer un hyperviseur. 
 
-1. Connectez-vous au portail [{{site.data.keyword.slportal_full}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://control.softlayer.com/){: new_window} à l'aide de vos données d'identification uniques. 
+1. Connectez-vous au portail [{{site.data.keyword.slportal_full}} ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://control.softlayer.com/){: new_window} à l'aide de vos données d'identification uniques. 
 2. Dans le menu **Unités**, sélectionnez **Liste des unités** et recherchez votre hyperviseur. 
-3. Connectez-vous au réseau privé via le [VPN sécurisé![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.softlayer.com/vpn-access){: new_window} pour accéder à votre hyperviseur. 
+3. Connectez-vous au réseau privé via le [VPN sécurisé![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.softlayer.com/vpn-access){: new_window} pour accéder à votre hyperviseur. 
 
 **Remarque :** les fournisseurs d'hyperviseur {{site.data.keyword.cloud}} incluent notamment XenServer, VMware et Hyper-V. Chaque fournisseur dispose de consoles de gestion uniques accessibles de différentes façons. Pour plus d'informations sur l'accès à et l'utilisation d'une console de gestion, voir les liens suivants :
 
    * [XenServer ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://support.citrix.com/en/products/xenserver){: new_window}
    * [VMware ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.vmware.com/support/vsphere-hypervisor.html){: new_window}
-   * [Hyper-V ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
+   * [Hyper-V ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
 
 4. Procurez-vous des adresses IP portables pour vos machines virtuelles. 
     * Des adresses IP portables sont requises pour les machines virtuelles. Des blocs d'adresses IP portables publiques et privées peuvent être commandés via le portail {{site.data.keyword.slportal}}.
-    * Pour plus d'informations sur l'allocation d'adresses IP, voir [Initiation aux sous-réseaux et aux adresses IP](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+    * Pour plus d'informations sur l'allocation d'adresses IP, voir [Initiation aux sous-réseaux et aux adresses IP](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 5. Etablissez un routage pour les machines virtuelles sur le réseau privé. Les spécifications suivantes sont requises pour les machines virtuelles afin de permettre leur routage vers d'autres machines virtuelles sur le réseau privé : 
     * Adresses IP privées portables

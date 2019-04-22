@@ -13,7 +13,7 @@ subcollection: virtualization
 
 供应 ESX 服务器后，访问服务器的第一步是连接到 {{site.data.keyword.cloud}} 专用网络 VPN。缺省情况下，所有 {{site.data.keyword.cloud_notm}} 部署的 VMware 服务器都仅具有配置了 IP 地址的专用网络接口或绑定。此部署是一种额外的安全措施，用于限制新 ESX 服务器向公用因特网公开。由于添加了此安全性，因此服务器仅侦听 {{site.data.keyword.cloud_notm}} 专用 10.x.x.x IP 地址，该 IP 地址只能通过 {{site.data.keyword.cloud_notm}} VPN 或其他某个现有 {{site.data.keyword.cloud_notm}} 主机（有权访问新 VMware 服务器所在的同一专用 VLAN）进行访问。
 
-有关 {{site.data.keyword.cloud_notm}} VPN 的更多信息，请参阅[虚拟专用联网 (VPN) 入门](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-)。
+有关 {{site.data.keyword.cloud_notm}} VPN 的更多信息，请参阅[虚拟专用联网 (VPN) 入门](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking)。
 
 ## 访问 ESX 主机
 {: #accessing-your-esx-host}
@@ -38,4 +38,4 @@ subcollection: virtualization
   * 要上传 ISO，请单击“卷”图标（带有向上箭头），然后选择**上传文件**。
 5. 选择本地文件系统上要上传到数据存储的 ISO 文件，然后单击**打开**。
 6. 您选择的 ISO 现在已位于数据存储中。
-7. 既然安装介质已位于 VMware 服务器上，现在可以继续[创建虚拟机](/docs/infrastructure/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine)。
+7. 既然安装介质已位于 VMware 服务器上，现在可以继续[创建虚拟机](/docs/infrastructure/vmware?topic=VMware-create-esx-vm#create-esx-vm)。

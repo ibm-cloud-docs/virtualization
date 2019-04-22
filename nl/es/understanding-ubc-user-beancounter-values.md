@@ -34,7 +34,7 @@ Utilice la modalidad SLM si no se entiende UBC. SLM es más sencilla y proporcio
 |`oomguardpages`|*sistema*|Cantidad de memoria garantizada en caso de que la memoria se reserve en exceso (si se agota la memoria se anula la garantía)|
 |`privvmpages`|*sistema*|Límite de asignación de memoria|
 |`lockedpages`|*sistema*|Páginas de proceso que no se permite intercambiar (páginas bloqueadas por
-[mlock(2) ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://linux.die.net/man/2/mlock))|
+[mlock(2) ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://linux.die.net/man/2/mlock))|
 |`shmpages`|*sistema*|Tamaño total de memoria compartida (comunicación entre procesos o IPC, correlaciones anónimas compartidas y objetos tmpfs) en página|
 |`physpages`|*sistema*|Número total de páginas de RAM utilizadas por procesos|
 |`numfile`|*sistema*|Número de archivos abiertos|
@@ -52,5 +52,5 @@ Utilice la modalidad SLM si no se entiende UBC. SLM es más sencilla y proporcio
 Puede acceder a VzLinuxUBCMgmt.pdf o visualizarlo en HTML, dentro de PIM en el servidor accediendo a:
 **Gestión > Soporte > Descargas > Gestión de recursos UBC: Guía del administrador**
 
-Para obtener más información sobre UBC, consulte [Contenedores OpenVZ Virtuozzo, Categoría: UBC ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://wiki.openvz.org/Category:UBC).
+Para obtener más información sobre UBC, consulte [Contenedores OpenVZ Virtuozzo, Categoría: UBC ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://wiki.openvz.org/Category:UBC).
 **Nota:** no todo en OpenVZ es lo mismo que en Virtuozzo.

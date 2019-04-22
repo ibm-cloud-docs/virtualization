@@ -13,7 +13,7 @@ subcollection: virtualization
 
 ESX サーバーをプロビジョンしたら、そのサーバーにアクセスするための最初の手順は、{{site.data.keyword.cloud}} のプライベート・ネットワーク VPN に接続することです。 デフォルトでは、{{site.data.keyword.cloud_notm}} でデプロイされたすべての VMware サーバーは、IP アドレスが 1 つ構成されたプライベートのネットワーク・インターフェースまたはネットワーク・ボンドしか装備していません。 このようにデプロイされるのは、これが新規 ESX サーバーをパブリック・インターネットにさらさないようにするための追加のセキュリティー手段であるからです。 この追加のセキュリティーが適用された結果、サーバーは、{{site.data.keyword.cloud_notm}} プライベート 10.x.x.x IP アドレスでのみ listen します。このアドレスには、{{site.data.keyword.cloud_notm}} VPN 経由でアクセスするか、または、新規 VMware サーバーが存在するのと同じプライベート VLAN にアクセスできる既存の {{site.data.keyword.cloud_notm}} ホストからアクセスするしかありません。
 
-{{site.data.keyword.cloud_notm}} VPN について詳しくは、[仮想プライベート・ネットワーキング (VPN) の概説](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-)を参照してください。
+{{site.data.keyword.cloud_notm}} VPN について詳しくは、[仮想プライベート・ネットワーキング (VPN) の概説](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking)を参照してください。
 
 ## ESX ホストにアクセスする
 {: #accessing-your-esx-host}
@@ -38,4 +38,4 @@ vSphere Client をダウンロードしてローカル・ワークステーシ�
   * ISO をアップロードするには、ボリューム・アイコン (上向きの矢印付き) をクリックして、**「ファイルのアップロード」**を選択します。
 5. データ・ストアにアップロードするローカル・ファイル・システム上の ISO ファイルを選択して、**「開く」**をクリックします。
 6. 選択した ISO がデータ・ストア内に配置されました。
-7. これで、VMWare サーバー上にインストール・メディアが置かれたので、[仮想マシンの作成](/docs/infrastructure/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine)に進むことができます。
+7. これで、VMWare サーバー上にインストール・メディアが置かれたので、[仮想マシンの作成](/docs/infrastructure/vmware?topic=VMware-create-esx-vm#create-esx-vm)に進むことができます。

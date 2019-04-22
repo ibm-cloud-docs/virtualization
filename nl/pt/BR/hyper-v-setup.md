@@ -82,7 +82,7 @@ Agora que os dispositivos de rede virtual estão criados, é necessário obter a
 * Ubuntu.
 **Nota:** se você já tiver a mídia de instalação, acesse **Criando uma máquina virtual**.
 
-A mídia de instalação para o [CentOS ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://centos.org){: new_window}, [Fedora ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://fedoraproject.org/){: new_window} e [Ubuntu ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.ubuntu.com/){: new_window} estão disponíveis por meio de seus respectivos websites. Todos os três S.O. são licenciados gratuitamente e nenhuma ação adicional precisa ser executada pelo usuário.
+A mídia de instalação para o [CentOS ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://centos.org){: new_window}, [Fedora ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://fedoraproject.org/){: new_window} e [Ubuntu ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.ubuntu.com/){: new_window} estão disponíveis por meio de seus respectivos websites. Todos os três S.O. são licenciados gratuitamente e nenhuma ação adicional precisa ser executada pelo usuário.
 
 ## Criando uma máquina virtual
 {: #creating-a-virtual-machine}

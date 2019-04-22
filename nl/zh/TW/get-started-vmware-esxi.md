@@ -13,7 +13,7 @@ subcollection: virtualization
 
 在佈建 ESX 伺服器之後，存取伺服器的第一個步驟就是連接至「{{site.data.keyword.cloud}} 專用網路 VPN」。依預設，所有 {{site.data.keyword.cloud_notm}} 部署的 VMware 伺服器只有使用 IP 位址配置的專用網路介面或結合。此部署是一種額外的安全措施，可用來限制將新的 ESX 伺服器暴露於公用網際網路中。由於新增了這種安全保護，伺服器只會在 {{site.data.keyword.cloud_notm}} 專用 10.x.x.x IP 位址上進行接聽，這只能透過 {{site.data.keyword.cloud_notm}} VPN 或另一個現有 {{site.data.keyword.cloud_notm}} 主機存取，而這些主機可以存取新 VMware 伺服器所在的相同專用 VLAN。
 
-如需 {{site.data.keyword.cloud_notm}} VPN 的相關資訊，請參閱[開始使用虛擬專用網路 (VPN)](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-)。
+如需 {{site.data.keyword.cloud_notm}} VPN 的相關資訊，請參閱[開始使用虛擬專用網路 (VPN)](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking)。
 
 ## 存取 ESX 主機
 {: #accessing-your-esx-host}
@@ -38,4 +38,4 @@ subcollection: virtualization
   * 若要上傳 ISO，請按一下磁區圖示（具有向上箭頭），然後選取**上傳檔案**。
 5. 在本端檔案系統上選取您要上傳至資料儲存庫的 ISO 檔，然後按一下**開啟**。
 6. 您選擇的 ISO 現在位於資料儲存庫中。
-7. 既然您的安裝媒體在 VMWare 伺服器上，您就可以繼續[建立虛擬機器](/docs/infrastructure/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine)。
+7. 既然您的安裝媒體在 VMWare 伺服器上，您就可以繼續[建立虛擬機器](/docs/infrastructure/vmware?topic=VMware-create-esx-vm#create-esx-vm)。

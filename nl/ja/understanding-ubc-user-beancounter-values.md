@@ -33,7 +33,7 @@ UBC がわからない場合は SLM モードを使用してください。 SLM 
 |`dgramrcvbuf`|*システム*|UDP などのデータグラム・プロトコルの受信バッファー|
 |`oomguardpages`|*システム*|メモリーがオーバー・ブッキング状態になった場合に保証されるメモリー量 (メモリー不足のための強制終了の保証)|
 |`privvmpages`|*システム*|メモリー割り振り制限|
-|`lockedpages`|*システム*|プロセス・ページのスワップアウトを許可しない (ページは [mlock(2) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://linux.die.net/man/2/mlock) によってロックされる)|
+|`lockedpages`|*システム*|プロセス・ページのスワップアウトを許可しない (ページは [mlock(2) ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://linux.die.net/man/2/mlock) によってロックされる)|
 |`shmpages`|*システム*|ページ内の共有メモリー (プロセス間通信 (IPC)、共有匿名マッピング、tmpfs オブジェクト) の合計サイズ|
 |`physpages`|*システム*|プロセスによって使用される RAM ページの総数|
 |`numfile`|*システム*|開かれているファイルの数|
@@ -51,5 +51,5 @@ UBC がわからない場合は SLM モードを使用してください。 SLM 
 サーバー上の PIM 内で
 **「管理」>「サポート」>「ダウンロード」>「UBC リソースの管理 管理者ガイド (Management of UBC Resources Administrator's Guide)」**に移動して、VzLinuxUBCMgmt.pdf を利用したり HTML 形式で表示したりできます。
 
-UBC について詳しくは、[OpenVZ Virtuozzo Containers, Category: UBC ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://wiki.openvz.org/Category:UBC) を参照してください。
+UBC について詳しくは、[OpenVZ Virtuozzo Containers, Category: UBC ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://wiki.openvz.org/Category:UBC) を参照してください。
 **注:** OpenVZ のすべてが Virtuozzo と同じというわけではありません。

@@ -26,7 +26,7 @@ Citrix를 통해 "Enterprise" 또는 "Platinum" 라이센스에 가입한 고객
 
         C:\> net stop storagelink
 
-3. [OSNexus ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://www.osnexus.com/trynow/){: new_window}에서 사용할 수 있는 StorageLink 어댑터를 다운로드하여 클릭하십시오.
+3. [OSNexus ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://www.osnexus.com/trynow/){: new_window}에서 사용할 수 있는 StorageLink 어댑터를 다운로드하여 클릭하십시오.
 4. 서비스가 중지되면 다음 명령을 실행하여 QuantaStor StorageLink 어댑터를 설치할 수 있습니다.
 
         osn_quantastor_csladapter.exe
@@ -43,7 +43,7 @@ Citrix를 통해 "Enterprise" 또는 "Platinum" 라이센스에 가입한 고객
 ## StorageLink가 제대로 로드되었는지 확인
 {: #verifying-that-storagelink-loaded-properly}
 
-1. Citrix StorageLink Manager에 로그인하고, 왼쪽에 있는 "관리" 트리를 선택하고, OS NEXUS QuantaStor를 [QuantaStor ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://svn.osnexus.com/mediawiki/images/thumb/c/c8/Storagelink_admin.png/640px-Storagelink_admin.png){: new_window} 목록에서 찾아보십시오.
+1. Citrix StorageLink Manager에 로그인하고, 왼쪽에 있는 "관리" 트리를 선택하고, OS NEXUS QuantaStor를 [QuantaStor ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://svn.osnexus.com/mediawiki/images/thumb/c/c8/Storagelink_admin.png/640px-Storagelink_admin.png){: new_window} 목록에서 찾아보십시오.
 2. StorageLink가 QuantaStor 스토리지 시스템을 위한 스토리지 볼륨을 동적으로 구성 및 할당할 수 있도록 스토리지 시스템 인증 정보를 추가하십시오.
 
 ## XenServer 다중 경로 구성 설정 설치

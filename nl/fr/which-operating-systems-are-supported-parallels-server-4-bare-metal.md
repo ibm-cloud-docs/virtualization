@@ -129,4 +129,4 @@ subcollection: virtualization
 
 \* Les conteneurs Virtuozzo ne sont concédés sous ni pris en charge avec Parallels Server 4 Bare Metal lorsque vous utilisez {{site.data.keyword.BluSoftlayer_full}}.
 
-23 avril 2009 - [Fichier Readme Parallels Server 4 Bare Metal![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://download.parallels.com/doc/psbm/en/Readme.pdf)
+23 avril 2009 - [Fichier Readme Parallels Server 4 Bare Metal![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://download.parallels.com/doc/psbm/en/Readme.pdf)

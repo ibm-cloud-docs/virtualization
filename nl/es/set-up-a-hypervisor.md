@@ -13,20 +13,20 @@ subcollection: virtualization
 
 Utilice los pasos siguientes para configurar un hipervisor.
 
-1. Inicie sesión en el [{{site.data.keyword.slportal_full}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://control.softlayer.com/){: new_window} utilizando sus credenciales exclusivas.
+1. Inicie sesión en el [{{site.data.keyword.slportal_full}} ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://control.softlayer.com/){: new_window} utilizando sus credenciales exclusivas.
 2. En el menú **Dispositivos**, seleccione **Lista de dispositivos** y busque el hipervisor.
 3. Conéctese a la red privada a través de la [VPN segura
-![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://www.softlayer.com/vpn-access){: new_window} para acceder al hipervisor.
+![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.softlayer.com/vpn-access){: new_window} para acceder al hipervisor.
 
 **Nota:** los proveedores de hipervisores de {{site.data.keyword.cloud}} incluyen XenServer, VMware e Hyper-V. Cada proveedor tiene consolas de gestión exclusivas a las que se accede de manera diferente. Para obtener más información sobre cómo acceder y trabajar en una consola de gestión, consulte los enlaces siguientes:
 
    * [XenServer ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://support.citrix.com/en/products/xenserver){: new_window}
    * [VMware ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://www.vmware.com/support/vsphere-hypervisor.html){: new_window}
-   * [Hyper-V ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
+   * [Hyper-V ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
 
 4. Obtenga IP portátiles para sus máquinas virtuales.
     * Las máquinas virtuales requieren direcciones IP portátiles. Se pueden solicitar bloques de direcciones IP portátiles públicos y privados a través del {{site.data.keyword.slportal}}.
-    * Para obtener más información sobre cómo asignar direcciones IP, consulte [Iniciación a las subredes e IP](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+    * Para obtener más información sobre cómo asignar direcciones IP, consulte [Iniciación a las subredes e IP](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 5. Establezca el direccionamiento para las máquinas virtuales en la red privada. Las máquinas virtuales necesitan los parámetros siguientes para que se puedan direccionar a otras máquinas virtuales a través de la red privada:
     * IP privadas portátiles

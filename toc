@@ -1,7 +1,7 @@
 {:navgroup: .navgroup}
 {:topicgroup: .topicgroup}
 
-{: .toc subcollection="Virtualization" audience="compute" href="/docs/infrastructure/virtualization/virt_index.html" path="infrastructure/virtualization"}
+{: .toc subcollection="Virtualization" audience="compute" href="/docs/infrastructure/virtualization?topic=Virtualization-getting-started" path="infrastructure/virtualization"}
 Virtualization
 
     {: .navgroup id="learn"}

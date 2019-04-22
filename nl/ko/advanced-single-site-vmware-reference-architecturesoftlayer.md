@@ -126,7 +126,7 @@ Windows 2012 R2 Standard 가상 서버는 ISO용 유틸리티 서버로 사용�
 
 환경에 대해 주문된 각 ESXi 호스트의 경우 VMware ESXi 5.5는 운영 체제입니다. {{site.data.keyword.cloud_notm}} vSphere 라이센스를 사용하려는 경우, 사용량을 기반으로 월별 비용이 발생합니다.
 
-다른 옵션은 자체 ISO를 사용하여 ESXi를 설치하는 것입니다. 이 프로세스에 대한 지시사항은 [원격 콘솔 및 가상 매체를 통해 VMware vSphere ESXi 설치](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media)의 내용을 참조하십시오. 자체 ISO를 사용하여 ESXi를 설치하려는 경우, 주문 프로세스 동안 관리 및 용량 호스트에 대한 운영 체제로서 **운영 체제 없음**을 선택하도록 하십시오. 
+다른 옵션은 자체 ISO를 사용하여 ESXi를 설치하는 것입니다. 이 프로세스에 대한 지시사항은 [원격 콘솔 및 가상 매체를 통해 VMware vSphere ESXi 설치](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi)의 내용을 참조하십시오. 자체 ISO를 사용하여 ESXi를 설치하려는 경우, 주문 프로세스 동안 관리 및 용량 호스트에 대한 운영 체제로서 **운영 체제 없음**을 선택하도록 하십시오. 
 
 **참고:** 이 구현을 위해서는 Enterprise Plus 라이센싱이 vSphere 분산 가상 스위치를 사용해야 합니다. 라이센스가 Enterprise Plus에 대해 유효하지 않은 경우, {{site.data.keyword.cloud_notm}} 제공 VMware Service Provider Program(VSPP) 라이센스를 사용해야 합니다.
 
@@ -142,7 +142,7 @@ Windows 2012 R2 Standard 가상 서버는 ISO용 유틸리티 서버로 사용�
 5. ESXi 서버를 프로비저닝하고 각 옵션에 대해 다음 스펙을 지정하려면 VLAN이 작성된 적절한 데이터 센터를 선택하십시오.
   * 수량: 2
   * RAM: 32GB
-  * 운영 체제: VMware ESXi 5.5([원격 콘솔 및 가상 매체를 통해 VMware vSphere ESXi 설치](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media)를 사용 중인 경우 '운영 체제 없음')
+  * 운영 체제: VMware ESXi 5.5([원격 콘솔 및 가상 매체를 통해 VMware vSphere ESXi 설치](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi)를 사용 중인 경우 '운영 체제 없음')
   * 하드 디스크: 디스크 1 & 2: RAID 1에 500GB SATA 
   * 공용 대역폭: 사설 네트워크에만 해당 -> 0GB 대역폭
   * 업링크 포트 속도: 10Gbps 중복 사설 네트워크 업링크
@@ -156,7 +156,7 @@ Windows 2012 R2 Standard 가상 서버는 ISO용 유틸리티 서버로 사용�
 2. ESXi 서버를 프로비저닝하고 각 옵션에 대해 다음 스펙을 지정하려면 VLAN이 작성된 적절한 데이터 센터를 선택하십시오.
   * 수량: 3
   * RAM: 128GB
-  * 운영 체제: VMware ESXi 5.5([원격 콘솔 및 가상 매체를 통해 VMware vSphere ESXi 설치](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media)를 사용 중인 경우 '운영 체제 없음')
+  * 운영 체제: VMware ESXi 5.5([원격 콘솔 및 가상 매체를 통해 VMware vSphere ESXi 설치](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi)를 사용 중인 경우 '운영 체제 없음')
   * 하드 디스크: 디스크 1 & 2: RAID 1에 500GB SATA 
   * 공용 대역폭: 사설 네트워크에만 해당 > 0GB 대역폭
   * 업링크 포트 속도: 10Gbps 중복 사설 네트워크 업링크
@@ -308,7 +308,7 @@ NIC를 트렁킹하고 NIC를 결합 해제하려면 다음과 같은 단계를 
 이제 환경은 VMware vCenter Virtual Appliance를 배치하고 DNS, Active Directory 또는 BIND용 가상 머신을 설치할 준비가 되었습니다. 그러나 배치하기 전에 이미지를 다운로드해야 합니다. 이미지를 다운로드하려면 원격 데스크탑을 이전에 프로비저닝된 가상 서버로 다운로드하고 사용자 환경에 맞게 가상 서버에서 적절한 이미지를 다운로드하십시오.
 
 * Active Directory / Windows DNS: Windows Server 2008R2/Windows Server 2012 ISO 이미지(라이센스가 부여된 매체)
-* Linux BIND: [CentOS 설치 이미지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND: [CentOS 설치 이미지 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
 * [vCenter Virtual Appliance ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window}(유효한 VMware 가입 필요)
 
 ISO를 다운로드한 후에는 가상 머신에 연결할 수 있도록 이미지를 관리 호스트 데이터 저장소에 업로드해야 합니다. vSphere 클라이언트를 사용하여 관리 호스트에 연결하고 로컬 데이터 저장소에서 ISO 디렉토리를 작성하십시오. 
@@ -332,7 +332,7 @@ VM이 설치된 후에는 휴대용 사설 서브넷 그룹에서 IP 주소와 �
 
 자세한 정보는 다음 링크를 참조하십시오.
 * [Windows DNS 및 Active Directory ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: new_window}.
-<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
+<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
 
 ## 9단계: vCenter Virtual Appliance 배치 및 구성 
 {: #step-9-deploying-and-configuring-vcenter-virtual-appliance}

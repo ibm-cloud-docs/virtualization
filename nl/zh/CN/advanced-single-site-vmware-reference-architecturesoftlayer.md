@@ -126,7 +126,7 @@ keywords: vmware, ESXi
 
 对于为环境订购的每个 ESXi 主机，操作系统是 VMware ESXi 5.5。如果要使用 {{site.data.keyword.cloud_notm}} vSphere 许可证，那么将根据使用量产生每月费用。
 
-另一个选项是使用您自己的 ISO 来安装 ESXi。此过程的指示信息可以在[通过远程控制台和虚拟介质安装 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media) 中找到。如果要使用自己的 ISO 来安装 ESXi，请确保在订购过程中，对于管理和容量主机的操作系统，选择**无操作系统**。
+另一个选项是使用您自己的 ISO 来安装 ESXi。此过程的指示信息可以在[通过远程控制台和虚拟介质安装 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi) 中找到。如果要使用自己的 ISO 来安装 ESXi，请确保在订购过程中，对于管理和容量主机的操作系统，选择**无操作系统**。
 
 **注：**此实现需要 Enterprise Plus 许可才能使用 vSphere 分布式虚拟交换机。如果您的许可证对于 Enterprise Plus 无效，那么需要使用 {{site.data.keyword.cloud_notm}} 提供的 VMware 服务提供者计划 (VSPP) 许可证。
 
@@ -142,7 +142,7 @@ keywords: vmware, ESXi
 5. 选择相应的数据中心（在其中创建了 VLAN）以供应 ESXi 服务器，并为每个选项指定以下规范：
   * 数量：2
   * RAM：32 GB
-  * 操作系统：VMware ESXi 5.5（如果使用的是[通过远程控制台和虚拟介质安装 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media)，请选择“无操作系统”）
+  * 操作系统：VMware ESXi 5.5（如果使用的是[通过远程控制台和虚拟介质安装 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi)，请选择“无操作系统”）
   * 硬盘：磁盘 1 和 2：500 GB SATA（RAID 1 模式）
   * 公共带宽：仅限专用网络 -> 0 GB 带宽
   * 上行端口速度：10 Gbps 冗余专用网络上行链路
@@ -156,7 +156,7 @@ keywords: vmware, ESXi
 2. 选择相应的数据中心（在其中创建了 VLAN）以供应 ESXi 服务器，并为每个选项指定以下规范：
   * 数量：3
   * RAM：128 GB
-  * 操作系统：VMware ESXi 5.5（如果使用的是[通过远程控制台和虚拟介质安装 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media)，请选择“无操作系统”）
+  * 操作系统：VMware ESXi 5.5（如果使用的是[通过远程控制台和虚拟介质安装 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi)，请选择“无操作系统”）
   * 硬盘：磁盘 1 和 2：500 GB SATA（RAID 1 模式）
   * 公共带宽：仅限专用网络 > 0 GB 带宽
   * 上行端口速度：10 Gbps 冗余专用网络上行链路
@@ -308,7 +308,7 @@ keywords: vmware, ESXi
 现在，环境已准备好部署 VMware vCenter 虚拟设备，并为 DNS、Active Directory 或 BIND 安装虚拟机。但是，部署之前，需要下载映像。要下载映像，请通过远程桌面访问先前供应的虚拟服务器，并在该虚拟服务器上下载与您的环境相应的映像：
 
 * Active Directory/Windows DNS：Windows Server 2008R2/Windows Server 2012 ISO 映像（您的许可介质）
-* Linux BIND：[CentOS 安装映像 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND：[CentOS 安装映像 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
 * [vCenter 虚拟设备 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window}（需要有效的 VMware 预订）
 
 下载 ISO 后，需要将映像上传到管理主机数据存储，以便可以将其连接到虚拟机。使用 vSphere Client 连接到管理主机，并在本地数据存储上创建 ISO 目录。
@@ -332,7 +332,7 @@ keywords: vmware, ESXi
 
 有关更多信息，请参阅以下链接：
 * [Windows DNS 和 Active Directory ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: new_window}。
-<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
+<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
 
 ## 步骤 9：部署和配置 vCenter 虚拟设备
 {: #step-9-deploying-and-configuring-vcenter-virtual-appliance}

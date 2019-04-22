@@ -22,7 +22,7 @@ Se você não registrar seu sistema em 30 dias, não será possível ligar nenhu
 
 Para registrar seu sistema, conclua as etapas a seguir:
 
-1. Faça download e instale o cliente XenCenter. É possível acessar o cliente por meio da página [Citrix XenCenter ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://community.citrix.com/display/xs/XenCenter){: new_window}.
+1. Faça download e instale o cliente XenCenter. É possível acessar o cliente por meio da página [Citrix XenCenter ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://community.citrix.com/display/xs/XenCenter){: new_window}.
 
 2. Conecte-se à sua rede privada por meio da VPN.
 

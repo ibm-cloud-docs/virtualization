@@ -87,7 +87,7 @@ Windows 2003 と 2008 の仮想マシンのライセンスは、{{site.data.keyw
 ## ポータブル IP アドレスとは何ですか?
 {: #what-are-portable-ip-addresses-}
 
-ポータブル IP アドレスについては、[サブネットおよび IP の概説](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)を参照してください。
+ポータブル IP アドレスについては、[サブネットおよび IP の概説](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)を参照してください。
 
 ## Hyper-V を注文するにはどうすればよいですか?
 {: #how-do-i-order-hyper-v-}

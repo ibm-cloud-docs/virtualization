@@ -41,7 +41,7 @@ Xen 存储库在本地连接时支持 IDE、SATA、SCSI 和 SAS 驱动器，但�
 
 4. 创建存储库 (SR)：
 
-  > **注：**[sr-create ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://support.citrix.com/article/CTX121313){: new_window} 命令用于添加新的硬盘驱动器。创建新的硬盘驱动器是一种破坏性过程，会对驱动器进行分区和格式化，因此驱动器上的所有数据都会丢失。如果要重新声明具有现有数据的驱动器，请使用 [sr-introduce ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://support.citrix.com/article/CTX121896){: new_window}。
+  > **注：**[sr-create ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://support.citrix.com/article/CTX121313){: new_window} 命令用于添加新的硬盘驱动器。创建新的硬盘驱动器是一种破坏性过程，会对驱动器进行分区和格式化，因此驱动器上的所有数据都会丢失。如果要重新声明具有现有数据的驱动器，请使用 [sr-introduce ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://support.citrix.com/article/CTX121896){: new_window}。
 
   `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
   \- 或 -<br/>

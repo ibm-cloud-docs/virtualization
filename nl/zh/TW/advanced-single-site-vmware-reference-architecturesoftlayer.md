@@ -126,7 +126,7 @@ Windows 2012 R2 Standard 虛擬伺服器會佈建為公用程式伺服器以供 
 
 對於針對環境訂購的每一個 ESXi 主機，VMware ESXi 5.5 是作業系統。如果您想要使用 {{site.data.keyword.cloud_notm}} vSphere 授權，則根據使用情形產生每月費用。
 
-另一個選項是使用您自己的 ISO 來安裝 ESXi。此處理程序的指示可在[透過遠端主控台及虛擬媒體安裝 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media) 中找到。如果您想要使用自己的 ISO 來安裝 ESXi，請確定在訂購過程中選取**無作業系統**，作為管理及容量主機的作業系統。
+另一個選項是使用您自己的 ISO 來安裝 ESXi。此處理程序的指示可在[透過遠端主控台及虛擬媒體安裝 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi) 中找到。如果您想要使用自己的 ISO 來安裝 ESXi，請確定在訂購過程中選取**無作業系統**，作為管理及容量主機的作業系統。
 
 **附註：**這個實作需要 Enterprise Plus 授權，才能使用「vSphere 分散式虛擬交換器」。如果您的授權對 Enterprise Plus 無效，則您需要使用 {{site.data.keyword.cloud_notm}} 提供的 VMware Service Provider Program (VSPP) 授權。
 
@@ -142,7 +142,7 @@ Windows 2012 R2 Standard 虛擬伺服器會佈建為公用程式伺服器以供 
 5. 選取適當的資料中心（已在其中建立 VLAN）來佈建 ESXi 伺服器，並為每一個選項指定下列規格：
   * 數量：2
   * RAM：32 GB
-  * 作業系統：VMware ESXi 5.5（如果您是使用[透過遠端主控台及虛擬媒體安裝 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media)，則為「無作業系統」）
+  * 作業系統：VMware ESXi 5.5（如果您是使用[透過遠端主控台及虛擬媒體安裝 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi)，則為「無作業系統」）
   * 硬碟：磁碟 1 及 2：RAID 1 中有 500 GB SATA
   * 公用頻寬：僅限專用網路 -> 0 GB 頻寬
   * 上行鏈路埠速度：10 Gbps 備援專用網路上行鏈路
@@ -156,7 +156,7 @@ Windows 2012 R2 Standard 虛擬伺服器會佈建為公用程式伺服器以供 
 2. 選取適當的資料中心（已在其中建立 VLAN）來佈建 ESXi 伺服器，並為每一個選項指定下列規格：
   * 數量：3
   * RAM：128 GB
-  * 作業系統：VMware ESXi 5.5（如果您是使用[透過遠端主控台及虛擬媒體安裝 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vmware-vsphere-esxi-via-remote-console-and-virtual-media)，則為「無作業系統」）
+  * 作業系統：VMware ESXi 5.5（如果您是使用[透過遠端主控台及虛擬媒體安裝 VMware vSphere ESXi](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi)，則為「無作業系統」）
   * 硬碟：磁碟 1 及 2：RAID 1 中有 500 GB SATA
   * 公用頻寬：僅限專用網路 > 0 GB 頻寬
   * 上行鏈路埠速度：10 Gbps 備援專用網路上行鏈路
@@ -308,7 +308,7 @@ Windows 2012 R2 Standard 虛擬伺服器會佈建為公用程式伺服器以供 
 現在，環境已準備好部署「VMware vCenter 虛擬應用裝置」，並安裝 DNS、Active Directory 或 BIND 的虛擬機器。不過，在部署之前，您需要下載映像檔。若要下載映像檔，透過遠端桌面移至先前佈建的虛擬伺服器，然後在虛擬伺服器上針對您的環境下載適當的映像檔：
 
 * Active Directory / Windows DNS：Windows Server 2008R2/Windows Server 2012 ISO 映像檔（您的授權媒體）
-* Linux BIND：[CentOS 安裝映像檔 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
+* Linux BIND：[CentOS 安裝映像檔 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://isoredirect.centos.org/centos/6/isos/x86_64/){: new_window}
 * [vCenter 虛擬應用裝置 ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window}（需要有效的 VMware 訂閱）
 
 在下載 ISO 之後，您需要將映像檔上傳至管理主機資料儲存庫，以便它可以連接至虛擬機器。請使用 vSphere 用戶端來連接至管理主機，並在本端資料儲存庫上建立 ISO 目錄。
@@ -332,7 +332,7 @@ Windows 2012 R2 Standard 虛擬伺服器會佈建為公用程式伺服器以供 
 
 如需相關資訊，請參閱下列鏈結：
 * [Windows DNS 及 Active Directory ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: new_window}。
-<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
+<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
 
 ## 步驟 9 部署及配置 vCenter 虛擬應用裝置
 {: #step-9-deploying-and-configuring-vcenter-virtual-appliance}

@@ -89,7 +89,7 @@ No. La IP secundaria que se proporciona con el servidor está dirigida específi
 {: #what-are-portable-ip-addresses-}
 
 Para obtener información sobre las direcciones IP, consulte
-[Iniciación a las subredes e IP](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+[Iniciación a las subredes e IP](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 ## ¿Cómo solicito Hyper-V?
 {: #how-do-i-order-hyper-v-}

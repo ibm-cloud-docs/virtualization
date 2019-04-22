@@ -17,12 +17,12 @@ Antes de comenzar, inicie sesión en el servidor con el usuario root.
 {: #preparing-to-install-vmware}
 
 1. Descargue el [instalador de VMware
-![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://vmware.com/download/server/){: new_window}. Pulse el enlace de descarga, acepte el EULA y descargue el archivo LinuxTarball (VMware-server-1.0.3-44356.tar.gz en este ejemplo):
+![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://vmware.com/download/server/){: new_window}. Pulse el enlace de descarga, acepte el EULA y descargue el archivo LinuxTarball (VMware-server-1.0.3-44356.tar.gz en este ejemplo):
 
-* `# wget –O vmware-server.tar.gz http://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
+* `# wget –O vmware-server.tar.gz https://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
 
 2. Tras descargar el software, necesitará obtener una clave de licencia (que es gratuita en la versión gratuita de VMWare Server). Para registrarse, consulte
-[VMware ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://register.vmware.com/content/registration.html){: new_window}.
+[VMware ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://register.vmware.com/content/registration.html){: new_window}.
 
 3. Extraiga el archivo .tar:
 
@@ -113,7 +113,7 @@ La siguiente pregunta que el instalador realizará es *"¿En qué directorio des
 ## Suministro del número de serie para VMware
 {: #providing-the-serial-number-for-vmware}
 
-La parte final de la instalación requiere que inserte la clave de licencia de VMware y un número de serie. Si aún no tiene una clave de licencia, consulte el [Sitio de VMware ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://register.vmware.com/content/registration.html){: new_window}. Si tiene el número de serie para este servidor VMware, insértelo en el indicador y pulse Intro.
+La parte final de la instalación requiere que inserte la clave de licencia de VMware y un número de serie. Si aún no tiene una clave de licencia, consulte el [Sitio de VMware ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://register.vmware.com/content/registration.html){: new_window}. Si tiene el número de serie para este servidor VMware, insértelo en el indicador y pulse Intro.
 
 Ahora, verá algo parecido a la sentencia siguiente:
 
@@ -124,7 +124,7 @@ VMware está ahora configurado en el servidor. Ahora debe descargar la consola V
 ## Descarga de VMware Server Console
 {: #downloading-vmware-server-console}
 
-VMware Server Console es la aplicación cliente para VMware Server. Utilice la consola para gestionar el servidor VMware en el que puede crear, configurar e instalar máquinas virtuales. Para instalar esta aplicación, descargue el paquete de cliente de Windows de VMware Server desde [Descargas de VMware ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://vmware.com/download/server/){: new_window}. Este paquete es el archivo .zip. Después de la descarga, extraiga el paquete e instale el archivo VMware-console-1.0.3-x. Cuando finalice la instalación, habrá terminado de instalar VMware Server Console y estará listo para configurar VMware Server.
+VMware Server Console es la aplicación cliente para VMware Server. Utilice la consola para gestionar el servidor VMware en el que puede crear, configurar e instalar máquinas virtuales. Para instalar esta aplicación, descargue el paquete de cliente de Windows de VMware Server desde [Descargas de VMware ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://vmware.com/download/server/){: new_window}. Este paquete es el archivo .zip. Después de la descarga, extraiga el paquete e instale el archivo VMware-console-1.0.3-x. Cuando finalice la instalación, habrá terminado de instalar VMware Server Console y estará listo para configurar VMware Server.
 
 ## Inicio de sesión en VMware Console
 {: #logging-in-to-the-vmware-console}

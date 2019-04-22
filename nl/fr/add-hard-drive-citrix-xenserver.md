@@ -41,7 +41,7 @@ Votre référentiel de stockage prend en charge des unités IDE, SATA, SCSI et S
 
 4. Créez un référentiel de stockage :
 
-  > **Remarque :** la commande [sr-create ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://support.citrix.com/article/CTX121313){: new_window} permet d'ajouter une nouvelle unité de disque dur. La création d'une nouvelle unité de disque dur est un processus destructeur qui partitionne et formate l'unité, et les données sur le disque sont perdues. Si vous souhaitez réintroduire une unité contenant déjà des données, utilisez la commande [sr-introduce ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://support.citrix.com/article/CTX121896){: new_window}.
+  > **Remarque :** la commande [sr-create ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://support.citrix.com/article/CTX121313){: new_window} permet d'ajouter une nouvelle unité de disque dur. La création d'une nouvelle unité de disque dur est un processus destructeur qui partitionne et formate l'unité, et les données sur le disque sont perdues. Si vous souhaitez réintroduire une unité contenant déjà des données, utilisez la commande [sr-introduce ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://support.citrix.com/article/CTX121896){: new_window}.
 
   `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
   \- Ou -<br/>

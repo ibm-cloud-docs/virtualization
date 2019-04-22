@@ -41,7 +41,7 @@ Il repository di archiviazione Xen supporta le unità IDE, SATA, SCSI e SAS in c
 
 4. Crea un repository di archiviazione (SR, Storage Repository):
 
-  > **Nota:** il comando [sr-create ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://support.citrix.com/article/CTX121313){: new_window} serve ad aggiungere una nuova unità disco rigido. La creazione di una nuova unità disco rigido è un processo distruttivo che partiziona e formatta l'unità e tutti i dati sull'unità vanno perduti. Se desideri reintrodurre un'unità che ha dei dati esistenti, utilizza [sr-introduce ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](http://support.citrix.com/article/CTX121896){: new_window}.
+  > **Nota:** il comando [sr-create ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://support.citrix.com/article/CTX121313){: new_window} serve ad aggiungere una nuova unità disco rigido. La creazione di una nuova unità disco rigido è un processo distruttivo che partiziona e formatta l'unità e tutti i dati sull'unità vanno perduti. Se desideri reintrodurre un'unità che ha dei dati esistenti, utilizza [sr-introduce ![Icona link esterno](../../icons/launch-glyph.svg "Icona link esterno")](https://support.citrix.com/article/CTX121896){: new_window}.
 
   `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
   \- Oppure -<br/>

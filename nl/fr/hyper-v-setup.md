@@ -81,7 +81,7 @@ Maintenant que les périphériques de réseau virtuel sont créés, vous devez v
 * Ubuntu
 **Remarque :** si vous disposez déjà du support d'installation, accédez à la rubrique **Création d'une machine virtuelle**.
 
-Le support d'installation de [CentOS ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://centos.org){: new_window}, [Fedora ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://fedoraproject.org/){: new_window} et [Ubuntu ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](http://www.ubuntu.com/){: new_window} est disponible sur le site Web de chacun de ces systèmes d'exploitation. Ces trois systèmes d'exploitation sont concédés sous licence libre et aucune autre action n'est requise de la part de l'utilisateur. 
+Le support d'installation de [CentOS ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://centos.org){: new_window}, [Fedora ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://fedoraproject.org/){: new_window} et [Ubuntu ![Icône de lien externe](../../icons/launch-glyph.svg "Icône de lien externe")](https://www.ubuntu.com/){: new_window} est disponible sur le site Web de chacun de ces systèmes d'exploitation. Ces trois systèmes d'exploitation sont concédés sous licence libre et aucune autre action n'est requise de la part de l'utilisateur. 
 
 ## Création d'une machine virtuelle
 {: #creating-a-virtual-machine}

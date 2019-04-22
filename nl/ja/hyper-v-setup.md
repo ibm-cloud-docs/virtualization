@@ -82,7 +82,7 @@ Hyper-V マネージャーは、Windows の「コントロール パネル」の
 * Ubuntu。
 **注:** 既にインストール・メディアがある場合は、**仮想マシンの作成**に進みます。
 
-[CentOS ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://centos.org){: new_window}、[Fedora ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://fedoraproject.org/){: new_window}、および [Ubuntu ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://www.ubuntu.com/){: new_window} のインストール・メディアは、それぞれの Web サイトから入手できます。 この 3 つの OS はすべて無料でライセンスされるので、ユーザー側がさらにアクションを取る必要はありません。
+[CentOS ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://centos.org){: new_window}、[Fedora ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://fedoraproject.org/){: new_window}、および [Ubuntu ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://www.ubuntu.com/){: new_window} のインストール・メディアは、それぞれの Web サイトから入手できます。 この 3 つの OS はすべて無料でライセンスされるので、ユーザー側がさらにアクションを取る必要はありません。
 
 ## 仮想マシンの作成
 {: #creating-a-virtual-machine}

@@ -16,11 +16,11 @@ subcollection: virtualization
 ## VMware のインストールの準備
 {: #preparing-to-install-vmware}
 
-1. [VMware インストーラー ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://vmware.com/download/server/){: new_window} をダウンロードします。 ダウンロードのリンクをクリックし、EULA に同意し、以下のように LinuxTarball (この例では VMware-server-1.0.3-44356.tar.gz) をダウンロードします。
+1. [VMware インストーラー ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://vmware.com/download/server/){: new_window} をダウンロードします。 ダウンロードのリンクをクリックし、EULA に同意し、以下のように LinuxTarball (この例では VMware-server-1.0.3-44356.tar.gz) をダウンロードします。
 
-* `# wget –O vmware-server.tar.gz http://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
+* `# wget –O vmware-server.tar.gz https://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
 
-2. ソフトウェアをダウンロードしたら、ライセンス・キーを取得する必要があります (無償版の VMWare Server ではライセンス・キーは無料です)。 登録するには、[VMware ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://register.vmware.com/content/registration.html){: new_window} を参照してください。
+2. ソフトウェアをダウンロードしたら、ライセンス・キーを取得する必要があります (無償版の VMWare Server ではライセンス・キーは無料です)。 登録するには、[VMware ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://register.vmware.com/content/registration.html){: new_window} を参照してください。
 
 3. 以下のようにして、.tar ファイルを解凍します。
 
@@ -110,7 +110,7 @@ VMware サーバーのネットワーク・セットアップに関する質問�
 ## VMware のシリアル番号の提供
 {: #providing-the-serial-number-for-vmware}
 
-インストールの最後の部分では、VMware のライセンス・キーとシリアル番号を入力する必要があります。 まだライセンス・キーがない場合は、[VMware サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://register.vmware.com/content/registration.html){: new_window} を参照してください。 この VMware Server のシリアル番号がある場合は、その番号をプロンプトに入力して Enter キーを押します。
+インストールの最後の部分では、VMware のライセンス・キーとシリアル番号を入力する必要があります。 まだライセンス・キーがない場合は、[VMware サイト ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://register.vmware.com/content/registration.html){: new_window} を参照してください。 この VMware Server のシリアル番号がある場合は、その番号をプロンプトに入力して Enter キーを押します。
 
 この時点で、以下のような文が表示されます。
 
@@ -121,7 +121,7 @@ VMware サーバーのネットワーク・セットアップに関する質問�
 ## VMware Server Console のダウンロード
 {: #downloading-vmware-server-console}
 
-VMware Server Console は、VMware Server のクライアント・アプリケーションです。 このコンソールを使用して、仮想マシンの作成、構成、インストールを実行できる VMware Server を管理します。 このアプリケーションをインストールするには、VMware Server の Windows クライアント・パッケージを [VMware ダウンロード ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](http://vmware.com/download/server/){: new_window} からダウンロードします。 このパッケージは .zip ファイルです。 ダウンロードしたら、パッケージを解凍して VMware-console-1.0.3-x ファイルをインストールします。 このインストールが完了したら、VMware Server Console のインストールは終了です。VMware Server の構成を開始できます。
+VMware Server Console は、VMware Server のクライアント・アプリケーションです。 このコンソールを使用して、仮想マシンの作成、構成、インストールを実行できる VMware Server を管理します。 このアプリケーションをインストールするには、VMware Server の Windows クライアント・パッケージを [VMware ダウンロード ![外部リンク・アイコン](../../icons/launch-glyph.svg "外部リンク・アイコン")](https://vmware.com/download/server/){: new_window} からダウンロードします。 このパッケージは .zip ファイルです。 ダウンロードしたら、パッケージを解凍して VMware-console-1.0.3-x ファイルをインストールします。 このインストールが完了したら、VMware Server Console のインストールは終了です。VMware Server の構成を開始できます。
 
 ## VMware Console へのログイン
 {: #logging-in-to-the-vmware-console}

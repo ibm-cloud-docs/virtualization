@@ -16,11 +16,11 @@ Antes de iniciar, efetue login no servidor com o usuário raiz.
 ## Preparando para instalar o VMware
 {: #preparing-to-install-vmware}
 
-1. Faça download do [instalador do VMware ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://vmware.com/download/server/){: new_window}. Clique no link de download, aceite o EULA e faça download do LinuxTarball (VMware-server-1.0.3-44356.tar.gz, nesse exemplo):
+1. Faça download do [instalador do VMware ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://vmware.com/download/server/){: new_window}. Clique no link de download, aceite o EULA e faça download do LinuxTarball (VMware-server-1.0.3-44356.tar.gz, nesse exemplo):
 
-* `# wget –O vmware-server.tar.gz http://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
+* `# wget –O vmware-server.tar.gz https://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
 
-2. Depois de fazer download do software, será necessário obter uma chave de licença (que é grátis na versão grátis do VMWare Server). Para registrar, consulte [VMware ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://register.vmware.com/content/registration.html){: new_window}.
+2. Depois de fazer download do software, será necessário obter uma chave de licença (que é grátis na versão grátis do VMWare Server). Para registrar, consulte [VMware ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://register.vmware.com/content/registration.html){: new_window}.
 
 3. Extraia o arquivo .tar:
 
@@ -110,7 +110,7 @@ A próxima pergunta que o instalador faz é *"Em qual diretório você deseja ma
 ## Fornecendo o número de série para o VMware
 {: #providing-the-serial-number-for-vmware}
 
-A parte final da instalação requer que você insira uma chave de licença do VMware e um número de série. Se você ainda não tiver uma chave de licença, consulte o [site do VMware ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://register.vmware.com/content/registration.html){: new_window}. Se você tiver o número de série para esse VMware Server, insira-o no prompt e, em seguida, pressione Enter.
+A parte final da instalação requer que você insira uma chave de licença do VMware e um número de série. Se você ainda não tiver uma chave de licença, consulte o [site do VMware ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://register.vmware.com/content/registration.html){: new_window}. Se você tiver o número de série para esse VMware Server, insira-o no prompt e, em seguida, pressione Enter.
 
 Agora, algo semelhante à instrução a seguir é exibido:
 
@@ -121,7 +121,7 @@ Agora, o VMware agora está configurado em seu servidor. Agora é necessário fa
 ## Fazendo download do VMware Server Console
 {: #downloading-vmware-server-console}
 
-O VMware Server Console é o aplicativo cliente para o VMware Server. Use o console para gerenciar o VMware Server no qual é possível criar, configurar e instalar máquinas virtuais. Para instalar esse aplicativo, faça download do pacote do cliente VMware Server Windows por meio de [Downloads do VMware ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://vmware.com/download/server/){: new_window}. Esse pacote é o arquivo .zip. Depois de transferi-lo por download, extraia o pacote e instale o arquivo VMware-console-1.0.3-x. Quando a instalação for concluída, você terá terminado a instalação do VMware Server Console e estará pronto para configurar o VMware Server.
+O VMware Server Console é o aplicativo cliente para o VMware Server. Use o console para gerenciar o VMware Server no qual é possível criar, configurar e instalar máquinas virtuais. Para instalar esse aplicativo, faça download do pacote do cliente VMware Server Windows por meio de [Downloads do VMware ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://vmware.com/download/server/){: new_window}. Esse pacote é o arquivo .zip. Depois de transferi-lo por download, extraia o pacote e instale o arquivo VMware-console-1.0.3-x. Quando a instalação for concluída, você terá terminado a instalação do VMware Server Console e estará pronto para configurar o VMware Server.
 
 ## Efetuando login no VMware Console
 {: #logging-in-to-the-vmware-console}

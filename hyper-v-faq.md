@@ -87,7 +87,7 @@ No. The secondary IP that was provided with your server is routed specifically t
 ## What are portable IP addresses?
 {: #what-are-portable-ip-addresses-}
 
-For information about portable IP addresses, see [Getting started with Subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+For information about portable IP addresses, see [Getting started with Subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 ## How do I order Hyper-V?
 {: #how-do-i-order-hyper-v-}

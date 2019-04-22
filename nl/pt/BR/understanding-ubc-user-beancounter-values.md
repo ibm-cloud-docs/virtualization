@@ -33,7 +33,7 @@ Use o Modo SLM se o UBC não for entendido. O SLM é mais fácil e fornece o mes
 |`dgramrcvbuf`|*sistema*|Buffers de recebimento do UDP e outros protocolos de datagrama|
 |`oomguardpages`|*sistema*|A quantia garantida de memória para o caso em que a memória esteja superlotada (garantia de eliminação de falta da memória)|
 |`privvmpages`|*sistema*|Limite de alocação de memória|
-|`lockedpages`|*sistema*|Páginas de processo não permitidas para troca (páginas bloqueadas por [mlock(2)![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://linux.die.net/man/2/mlock))|
+|`lockedpages`|*sistema*|Páginas de processo não permitidas para troca (páginas bloqueadas por [mlock(2)![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://linux.die.net/man/2/mlock))|
 |`shmpages`|*sistema*|Tamanho total de memória compartilhada (comunicação interprocessual ou IPC, mapeamentos anônimos compartilhados e objetos tmpfs) em páginas|
 |`physpages`|*sistema*|Número total de páginas do RAM usadas por processos|
 |`numfile`|*sistema*|Número de arquivos abertos|
@@ -51,5 +51,5 @@ Use o Modo SLM se o UBC não for entendido. O SLM é mais fácil e fornece o mes
 É possível acessar VzLinuxUBCMgmt.pdf ou visualizá-lo em HTML, no PIM em seu servidor, acessando:
 **Gerenciamento > Suporte > Downloads > Gerenciamento do Guia do administrador de recursos do UBC**
 
-Para obter mais informações sobre o UBC, consulte [OpenVZ Virtuozzo Containers, Categoria: UBC ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://wiki.openvz.org/Category:UBC).
+Para obter mais informações sobre o UBC, consulte [OpenVZ Virtuozzo Containers, Categoria: UBC ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://wiki.openvz.org/Category:UBC).
 **Nota:** nem tudo no OpenVZ é o mesmo que no Virtuozzo.

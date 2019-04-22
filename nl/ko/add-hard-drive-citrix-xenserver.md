@@ -41,7 +41,7 @@ Xen 스토리지 저장소는 로컬로 연결된 경우 IDE, SATA, SCSI및 SAS 
 
 4. 스토리지 저장소(SR)를 작성하십시오. 
 
-  > **참고:** [sr-create ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://support.citrix.com/article/CTX121313){: new_window} 명령은 새 하드 디스크 드라이브 추가용입니다. 새 하드 디스크 드라이브 작성은 드라이브를 파티셔닝하고 포맷하는 파괴적인 프로세스이며 드라이브의 모든 데이터가 유실됩니다. 기존 데이터가 있는 드라이브를 다시 도입하려면 [sr-introduce ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://support.citrix.com/article/CTX121896){: new_window}를 사용하십시오.
+  > **참고:** [sr-create ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://support.citrix.com/article/CTX121313){: new_window} 명령은 새 하드 디스크 드라이브 추가용입니다. 새 하드 디스크 드라이브 작성은 드라이브를 파티셔닝하고 포맷하는 파괴적인 프로세스이며 드라이브의 모든 데이터가 유실됩니다. 기존 데이터가 있는 드라이브를 다시 도입하려면 [sr-introduce ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://support.citrix.com/article/CTX121896){: new_window}를 사용하십시오.
 
   `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
   \- 또는 -<br/>

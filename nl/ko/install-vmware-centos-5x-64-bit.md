@@ -16,11 +16,11 @@ subcollection: virtualization
 ## VMware 설치 준비 
 {: #preparing-to-install-vmware}
 
-1. [VMware 설치 프로그램 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://vmware.com/download/server/){: new_window}을 다운로드하십시오. 다운로드 링크를 클릭하고 EULA를 승인하고 LinuxTarball을 다운로드하십시오(이 예에서는 VMware-server-1.0.3-44356.tar.gz).
+1. [VMware 설치 프로그램 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://vmware.com/download/server/){: new_window}을 다운로드하십시오. 다운로드 링크를 클릭하고 EULA를 승인하고 LinuxTarball을 다운로드하십시오(이 예에서는 VMware-server-1.0.3-44356.tar.gz).
 
-* `# wget –O vmware-server.tar.gz http://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
+* `# wget –O vmware-server.tar.gz https://download3.vmware.com/software/vmserver/VMware-server-1.0.3-44356.tar.gz`
 
-2. 소프트웨어를 다운로드한 후에 라이센스 키를 얻어야 합니다(VMWare Server의 무료 버전에서는 무료). 등록하려면 [VMware ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://register.vmware.com/content/registration.html){: new_window}을 참조하십시오.
+2. 소프트웨어를 다운로드한 후에 라이센스 키를 얻어야 합니다(VMWare Server의 무료 버전에서는 무료). 등록하려면 [VMware ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://register.vmware.com/content/registration.html){: new_window}을 참조하십시오.
 
 3. .tar 파일을 추출하십시오. 
 
@@ -111,7 +111,7 @@ VMware 서버의 네트워크 설정에 대한 몇 가지 다른 질문이 있�
 ## VMware용 일련 번호 제공
 {: #providing-the-serial-number-for-vmware}
 
-설치의 마지막 부분에는 VMware 라이센스 키 및 일련 번호를 삽입해야 합니다. 라이센스 키가 아직 없는 경우 [VMware 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://register.vmware.com/content/registration.html){: new_window}을 참조하십시오. 이 VMware Server의 일련 번호가 있는 경우에는 프롬프트에 이를 삽입한 후 Enter를 누르십시오.
+설치의 마지막 부분에는 VMware 라이센스 키 및 일련 번호를 삽입해야 합니다. 라이센스 키가 아직 없는 경우 [VMware 사이트 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://register.vmware.com/content/registration.html){: new_window}을 참조하십시오. 이 VMware Server의 일련 번호가 있는 경우에는 프롬프트에 이를 삽입한 후 Enter를 누르십시오.
 
 이제 다음과 유사한 내용이 표시됩니다.
 
@@ -122,7 +122,7 @@ VMware는 이제 서버에서 설정됩니다. 이제 VMware Server용 GUI 클�
 ## VMware 서버 콘솔 다운로드
 {: #downloading-vmware-server-console}
 
-VMware Server Console은 VMware Server용 클라이언트 애플리케이션입니다. 콘솔을 사용하여 가상 머신을 작성, 구성 및 설치할 수 있는 VMware Server를 관리할 수 있습니다. 이 애플리케이션을 설치하려면 [VMware 다운로드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](http://vmware.com/download/server/){: new_window}에서 VMware Server Windows VMware Server Windows 클라이언트 패키지를 다운로드하십시오. 이 패키지는 .zip 파일입니다. 다운로드하고 나면 패키지를 추출하여 VMware-console-1.0.3-x 파일을 설치하십시오. 설치가 완료되면 VMware Server Console의 설치가 완료되며 VMware Server 구성 준비가 됩니다.
+VMware Server Console은 VMware Server용 클라이언트 애플리케이션입니다. 콘솔을 사용하여 가상 머신을 작성, 구성 및 설치할 수 있는 VMware Server를 관리할 수 있습니다. 이 애플리케이션을 설치하려면 [VMware 다운로드 ![외부 링크 아이콘](../../icons/launch-glyph.svg "외부 링크 아이콘")](https://vmware.com/download/server/){: new_window}에서 VMware Server Windows VMware Server Windows 클라이언트 패키지를 다운로드하십시오. 이 패키지는 .zip 파일입니다. 다운로드하고 나면 패키지를 추출하여 VMware-console-1.0.3-x 파일을 설치하십시오. 설치가 완료되면 VMware Server Console의 설치가 완료되며 VMware Server 구성 준비가 됩니다.
 
 ## VMware 콘솔에 로그인
 {: #logging-in-to-the-vmware-console}

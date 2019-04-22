@@ -69,7 +69,7 @@ AltaVault 要求网络接口位于环境中的不同网络中。使用以下步�
 1. 使用您的唯一凭证访问 [{{site.data.keyword.slportal_full}} ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://control.softlayer.com/){: new_window}。
 2. 单击**帐户 > 下订单**。
 3. 选择**网络**部分，然后单击**子网/IP > 订购**。
-4. 从下拉菜单中，选择**可移植专用**。选择“可移植专用”将触发一个选项，用于选择要显示的可移植专用 IP 地址数。**注：**在每个可移植专用网络的地址块中，{{site.data.keyword.cloud_notm}} 会自动保留至少三个 IP 地址。保留的地址用于网络地址、网关地址和广播地址。这些地址必须直接绑定到虚拟 LAN (VLAN)。<!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> 有关可移植 IP 地址的更多信息，请参阅[子网和 IP 入门](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips)。
+4. 从下拉菜单中，选择**可移植专用**。选择“可移植专用”将触发一个选项，用于选择要显示的可移植专用 IP 地址数。**注：**在每个可移植专用网络的地址块中，{{site.data.keyword.cloud_notm}} 会自动保留至少三个 IP 地址。保留的地址用于网络地址、网关地址和广播地址。这些地址必须直接绑定到虚拟 LAN (VLAN)。<!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> 有关可移植 IP 地址的更多信息，请参阅[子网和 IP 入门](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips)。
 5. 选择可移植专用 IP 地址数后，单击**继续**。
 6. 选择可移植专用 IP 地址要路由到的 VLAN，然后单击**继续**。
 7. 填写必需的联系人信息，然后单击**下订单**。
@@ -103,7 +103,7 @@ AltaVault 要求网络接口位于环境中的不同网络中。使用以下步�
 
 继续之前，请验证是否满足以下先决条件：
 
-* 获取 AltaVault 虚拟设备的副本，并确保该副本位于实用程序服务器上。这是一个具有 OVA 文件扩展名的文件。请联系 NetApp 代表以获取设备，或者从 [NetApp AltaVault Web 站点 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window} 下载 90 天试用版。
+* 获取 AltaVault 虚拟设备的副本，并确保该副本位于实用程序服务器上。这是一个具有 OVA 文件扩展名的文件。请联系 NetApp 代表以获取设备，或者从 [NetApp AltaVault Web 站点 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window} 下载 90 天试用版。
 * 为 AltaVault 设备提供了满足最低 CPU、内存和磁盘空间需求的现有内部部署 vSphere ESXi 5.5 环境。如果使用试用版，那么资源需求如下：4 个虚拟 CPU (vCPU)、24 GB 内存和最多 8 TB 磁盘空间。
 * vSphere 环境中有 2 个 10 Gbps 网络接口控制器 (NIC) 可用。一个 NIC 用于数据访问，另一个 NIC 用于将数据复制到 {{site.data.keyword.cos_full_notm}}。
 * 有 2 个可移植专用网络，对应于 vSphere 环境中定义的 2 个 NIC。不能为复制网络分配与数据访问网络相同的网络，这样做会创建路由回路。
@@ -226,7 +226,7 @@ Veeam Backup & Replication 软件为 VM 及其数据提供了完整备份、复�
 继续部署之前，请确保满足以下先决条件：
 
 * 拥有配置用于 IBM Cloud Object Storage 和 Veeam Backup & Replication 的现有 AltaVault 设备。
-* 获取 Veeam Backup & Replication for VMware 环境的副本，这是单个可执行文件。请联系 Veeam 代表以获取副本，或者下载 [30 天试用版 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}。
+* 获取 Veeam Backup & Replication for VMware 环境的副本，这是单个可执行文件。请联系 Veeam 代表以获取副本，或者下载 [30 天试用版 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}。
 * 获取要用于 Veeam Backup & Replication 的许可证文件。在大多数情况下，此文件会通过电子邮件发送到用于下载 Veeam Backup & Replication 的电子邮件地址。如果未收到此文件，请联系 Veeam 代表。<br/><br/>许可证文件用于激活 Veeam Backup & Replication 的完全功能。如果在程序安装期间未提供此文件，那么所有功能部件和功能都会还原为 30 天试用版的功能部件和功能。
 * 拥有在 IBM Cloud 中供应的虚拟服务器实例 (VSI)，规范如表 2 中所示。**注：**安装的操作系统必须是 64 位版本。
 
@@ -326,7 +326,7 @@ Veeam Backup & Replication 已配置，现在可以开始复原备份。
 
 有关此混合解决方案的组件的更多信息，请参阅：
 
-* [NetApp AltaVault Web 站点 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}
+* [NetApp AltaVault Web 站点 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}
 * [Veeam Backup & Replication Web 站点 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}
 * [IBM Cloud Object Storage Web 站点 ![外部链接图标](../../icons/launch-glyph.svg "外部链接图标")](https://www.ibm.com/cloud/storage){: new_window}
 

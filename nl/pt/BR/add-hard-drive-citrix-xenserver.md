@@ -41,7 +41,7 @@ O repositório de armazenamento Xen suporta unidades IDE, SATA, SCSI e SAS quand
 
 4. Crie um repositório de armazenamento (SR):
 
-  > **Nota:** o comando [sr-create ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://support.citrix.com/article/CTX121313){: new_window} é para incluir uma nova unidade de disco rígido. A criação de uma nova unidade de disco rígido é um processo destrutivo que particiona e formata a unidade, causando a perda de todos os dados na unidade. Se você desejar reintroduzir uma unidade que tenha dados existentes, use [sr-introduce ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://support.citrix.com/article/CTX121896){: new_window}.
+  > **Nota:** o comando [sr-create ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://support.citrix.com/article/CTX121313){: new_window} é para incluir uma nova unidade de disco rígido. A criação de uma nova unidade de disco rígido é um processo destrutivo que particiona e formata a unidade, causando a perda de todos os dados na unidade. Se você desejar reintroduzir uma unidade que tenha dados existentes, use [sr-introduce ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://support.citrix.com/article/CTX121896){: new_window}.
 
   `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
   \- Or -<br/>

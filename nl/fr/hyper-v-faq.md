@@ -87,7 +87,7 @@ Non. L'adresse IP secondaire qui a été fournie avec votre serveur est routée 
 ## Que sont des adresses IP portables ?
 {: #what-are-portable-ip-addresses-}
 
-Pour toute information sur les adresses IP portables, voir [Initiation aux sous-réseaux et aux adresses IP](/docs/infrastructure/subnets?topic=subnets-getting-started-with-subnets-and-ips).
+Pour toute information sur les adresses IP portables, voir [Initiation aux sous-réseaux et aux adresses IP](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 
 ## Comment commander Hyper-V? 
 {: #how-do-i-order-hyper-v-}

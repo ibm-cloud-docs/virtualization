@@ -82,7 +82,7 @@ subcollection: virtualization
 * Ubuntu。
 **附註：**如果您已有安裝媒體，請移至**建立虛擬機器**。
 
-[CentOS ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://centos.org){: new_window}、[Fedora ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://fedoraproject.org/){: new_window} 及 [Ubuntu ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](http://www.ubuntu.com/){: new_window} 的安裝媒體可從其各自網站取得。這三個作業系統全都是免費授權的，因此不需要對使用者的部分採取任何進一步的動作。
+[CentOS ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://centos.org){: new_window}、[Fedora ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://fedoraproject.org/){: new_window} 及 [Ubuntu ![外部鏈結圖示](../../icons/launch-glyph.svg "外部鏈結圖示")](https://www.ubuntu.com/){: new_window} 的安裝媒體可從其各自網站取得。這三個作業系統全都是免費授權的，因此不需要對使用者的部分採取任何進一步的動作。
 
 ## 建立虛擬機器
 {: #creating-a-virtual-machine}

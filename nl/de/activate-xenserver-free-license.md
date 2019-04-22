@@ -22,7 +22,7 @@ Wenn Sie Ihr System nicht innerhalb von 30 Tagen registrieren, dann können Sie 
 
 Führen Sie die folgenden Schritte aus, um Ihr System zu registrieren:
 
-1. Laden Sie den XenCenter-Client herunter und installieren Sie ihn. Sie können über die Seite von [Citrix XenCenter ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](http://community.citrix.com/display/xs/XenCenter){: new_window} auf den Client zugreifen.
+1. Laden Sie den XenCenter-Client herunter und installieren Sie ihn. Sie können über die Seite von [Citrix XenCenter ![Symbol für externen Link](../../icons/launch-glyph.svg "Symbol für externen Link")](https://community.citrix.com/display/xs/XenCenter){: new_window} auf den Client zugreifen.
 
 2. Stellen Sie über das VPN (Virtual Private Network; virtuelles privates Netz) eine Verbindung zu Ihrem privaten Netz her.
 

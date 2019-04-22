@@ -13,7 +13,7 @@ subcollection: virtualization
 
 Dopo che è stato eseguito il provisioning del tuo server ESX, il primo passo per accedere a esso consiste nello stabilire una connessione alla VPN della rete privata {{site.data.keyword.cloud}}. Per impostazione predefinita, tutti i server VMware distribuiti a {{site.data.keyword.cloud_notm}} hanno solo l'interfaccia di rete privata o l'associazione configurate con un indirizzo IP. Questa distribuzione è una misura di sicurezza supplementare implementata per limitare l'esposizione del tuo nuovo server ESX all'internet pubblico. Come risultato di questa sicurezza aggiunta, il server è in ascolto solo sull'indirizzo IP 10.x.x.x {{site.data.keyword.cloud_notm}} privato, che è accessibile solo tramite la VPN {{site.data.keyword.cloud_notm}} o un altro dei tuoi host {{site.data.keyword.cloud_notm}} esistenti con accesso alla stessa VLAN privata sui cui risiede il nuovo server VMware.
 
-Per ulteriori informazioni sulla VPN {{site.data.keyword.cloud_notm}}, vedi [Introduzione alla VPN (Virtual Private Networking)](/docs/infrastructure/iaas-vpn?topic=VPN-getting-started-with-virtual-private-networking-vpn-).
+Per ulteriori informazioni sulla VPN {{site.data.keyword.cloud_notm}}, vedi [Introduzione alla VPN (Virtual Private Networking)](/docs/infrastructure/iaas-vpn?topic=VPN-gettingstarted-with-virtual-private-networking#gettingstarted-with-virtual-private-networking).
 
 ## Accesso al tuo host ESX
 {: #accessing-your-esx-host}
@@ -38,4 +38,4 @@ Completa la seguente procedura per caricare una ISO sull'archivio dati del serve
   * Per caricare una ISO, fai clic sull'icona del volume (con la freccia che punta verso l'alto) e seleziona **Upload File**.
 5. Seleziona il file ISO sul tuo filesystem locale che desideri caricare nell'archivio dati e fai clic su **Open**.
 6. L'ISO di tua scelta si trova ora nell'archivio dati.
-7. Ora che il tuo supporto di installazione si trova sul server VMware, puoi procedere con la [creazione della tua macchina virtuale](/docs/infrastructure/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine).
+7. Ora che il tuo supporto di installazione si trova sul server VMware, puoi procedere con la [creazione della tua macchina virtuale](/docs/infrastructure/vmware?topic=VMware-create-esx-vm#create-esx-vm).

@@ -42,7 +42,7 @@ You can purchase AltaVault as either a physical or a virtual appliance. The depl
 
 Verify that the following prerequisites are met:
 
-* A copy of AltaVault Virtual Appliance. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance, or download a 90-day trial version from the [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com/us/products/protection-software/altavault/){: new_window}.
+* A copy of AltaVault Virtual Appliance. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance, or download a 90-day trial version from the [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}.
 * An existing on-premises vSphere ESXi 5.5 environment with the minimum CPU, memory, and disk space requirements available for the AltaVault appliance. If you use the trial version, these requirements are four virtual CPUs (vCPUs), 24 GB of memory, and up to 8 TB of disk space.
 * Two 10-Gbps network interface controllers (NICs) available within the vSphere environment. One NIC is used for data input and the other is used for data replication to {{site.data.keyword.cos_full_notm}}.
 * Two networks that correspond to the two NICs (VLANs) that are defined within the vSphere environment. The replication network cannot be assigned to the same network as the data input network, doing so can create a routing loop.
@@ -173,7 +173,7 @@ A trial version of Veeam Backup & Replication Version 8 is used in the example.
 Before you proceed with deployment, verify that the following prerequisites are satisfied:
 
 * Have an existing AltaVault appliance that is configured for use with {{site.data.keyword.cos_full_notm}} and Veeam Backup & Replication.
-* Obtain a copy of Veeam Backup & Replication for VMware environments, which is a single executable file. Contact your Veeam representative for a copy or download a [30-day trial version ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}.
+* Obtain a copy of Veeam Backup & Replication for VMware environments, which is a single executable file. Contact your Veeam representative for a copy or download a [30-day trial version ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}.
 * Obtain a license file to use with Veeam Backup & Replication. In most cases, this file is emailed to the email address that is used to download Veeam Backup & Replication. If you did not receive this file, contact your Veeam representative.<br/><br/>The license file is used to activate all of the Veeam Backup & Replication functions. If this file is not supplied during program installation, all features and functions revert to the 30-day trial version.
 * Have an existing backup server, which can either be onsite or off-site, with the specifications that are found in Table 2. The installed operating system must be a 64-bit version.
 

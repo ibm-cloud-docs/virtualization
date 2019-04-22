@@ -26,7 +26,7 @@ Somente clientes que assinam as licenças "Enterprise" ou "Platinum" por meio do
 
         C:\> net stop storagelink
 
-3. Faça download e execute o adaptador StorageLink disponível por meio do [OSNexus ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://www.osnexus.com/trynow/){: new_window}.
+3. Faça download e execute o adaptador StorageLink disponível por meio do [OSNexus ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://www.osnexus.com/trynow/){: new_window}.
 4. Depois que o serviço parar, será possível instalar o adaptador QuantaStor StorageLink executando o comando a seguir:
 
         osn_quantastor_csladapter.exe
@@ -43,7 +43,7 @@ Somente clientes que assinam as licenças "Enterprise" ou "Platinum" por meio do
 ## Verificando se o StorageLink foi carregado corretamente
 {: #verifying-that-storagelink-loaded-properly}
 
-1. Efetue login no Citrix StorageLink Manager, selecione a árvore "Administração" à esquerda e procure por OS NEXUS QuantaStor na lista [QuantaStor ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](http://svn.osnexus.com/mediawiki/images/thumb/c/c8/Storagelink_admin.png/640px-Storagelink_admin.png){: new_window}.
+1. Efetue login no Citrix StorageLink Manager, selecione a árvore "Administração" à esquerda e procure por OS NEXUS QuantaStor na lista [QuantaStor ![Ícone de link externo](../../icons/launch-glyph.svg "Ícone de link externo")](https://svn.osnexus.com/mediawiki/images/thumb/c/c8/Storagelink_admin.png/640px-Storagelink_admin.png){: new_window}.
 2. Inclua as credenciais do sistema de armazenamento para que o StorageLink possa configurar e alocar dinamicamente os volumes de armazenamento para o sistema de armazenamento do QuantaStor.
 
 ## Instalando as definições de configuração de caminhos múltiplos do XenServer

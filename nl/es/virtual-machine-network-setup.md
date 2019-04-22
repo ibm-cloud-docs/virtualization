@@ -45,7 +45,7 @@ La configuración de red requiere la información siguiente tanto para los bloqu
 ## Windows 2008 Server Core
 {: #windows-2008-server-core}
 
-La edición de Windows 2008 Server Core no proporciona una interfaz gráfica para configurar la red del sistema. Es necesario que la configuración se realice de manera manual utilizando el indicador de mandatos. Necesita ejecutar los mandatos siguientes. Las direcciones IP que se utilizan en este ejemplo deben sustituirse por las direcciones IP de sus bloques de IP. Estos mandatos funcionan con versiones anteriores de Windows Server que incluyan el mandato [netsh ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](http://support.microsoft.com/kb/242468){: new_window}.
+La edición de Windows 2008 Server Core no proporciona una interfaz gráfica para configurar la red del sistema. Es necesario que la configuración se realice de manera manual utilizando el indicador de mandatos. Necesita ejecutar los mandatos siguientes. Las direcciones IP que se utilizan en este ejemplo deben sustituirse por las direcciones IP de sus bloques de IP. Estos mandatos funcionan con versiones anteriores de Windows Server que incluyan el mandato [netsh ![Icono de enlace externo](../../icons/launch-glyph.svg "Icono de enlace externo")](https://support.microsoft.com/kb/242468){: new_window}.
 
 **Ejemplo de bloque de IP público – 192.0.2.0/29**
 

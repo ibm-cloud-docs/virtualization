@@ -5,7 +5,7 @@ lastupdated: "2018-08-15"
 
 subcollection: virtualization
 
-keywords: vmware, virtuozzo, hyper-V, ESX, ESXi
+keywords: virtualization, getting started, virtuozzo, hyper-V, ESX, ESXi
 ---
 
 {:shortdesc: .shortdesc}

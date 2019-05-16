@@ -25,7 +25,7 @@ subcollection: virtualization
 ## Accessing the Parallels Infrastructure Manager (PIM)
 {: #accessing-the-parallels-infrastructure-manager-pim-}
 
-1. Obtain information from the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} about your bare metal server.
+1. Obtain information from the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com.com/){: new_window} about your bare metal server.
     1. From the **Devices** menu select **Device list**.
     2. Click on your server.
     3. Locate the public IP address and password.
@@ -58,7 +58,7 @@ While the server downloads and caches templates, you can set up the network rang
 
 1. Click **Select** > **Network**.
 2. Select **New IP Range**.
-3. Add additional IP addresses for your containers. If you have not purchased additional IP addresses for your virtual servers, go the the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window}. Select **Network** > **IP Management** > **VLANs** > **Order IP**.
+3. Add additional IP addresses for your containers. If you have not purchased additional IP addresses for your virtual servers, go the the [{{site.data.keyword.slportal}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}. Select **Network** > **IP Management** > **VLANs** > **Order IP**.
 4. Go to the hardware node and click **Containers** > **New Container**.
 5. Complete the information as it fits your needs. For this example, use slm.512MB as the default.
 6. Enter the hostname as a fully qualified domain name, add your DNS server, and add a search domain if needed.

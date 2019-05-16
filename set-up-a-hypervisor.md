@@ -13,7 +13,7 @@ subcollection: virtualization
 
 Use the following steps to set up a hypervisor.
 
-1. Log in to the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} using your unique credentials.
+1. Log in to the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} using your unique credentials.
 2. From the **Devices** menu, select **Device List**, and find your hypervisor.
 3. Connect to the Private Network through the [secure VPN ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.softlayer.com/vpn-access){: new_window} to access your hypervisor.
 

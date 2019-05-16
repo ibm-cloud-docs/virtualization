@@ -66,7 +66,7 @@ Verify that the following prerequisites are met before you proceed: **Note:** Fo
 
 AltaVault requires the network interfaces to be on different networks within the environment. Use the following steps to order two portable private networks through the {{site.data.keyword.slportal_full}}.
 
-1. Access the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/){: new_window} by using your unique credentials.
+1. Access the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} by using your unique credentials.
 2. Click **Account > Place an Order**.
 3. Select the **Network** section click **Subnets/IPs > Order**.
 4. From the drop-down menu, select **Portable Private**. Selecting Portable Private triggers an option to select the number of portable private IP addresses to display. **Note:** {{site.data.keyword.cloud_notm}} automatically reserves at least three IP addresses in the address block for each portable private network. The reserved addresses are for the network address, gateway address, and broadcast address. These addresses must be bound directly to the virtual LAN (VLAN). <!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> For more information about portable IP addresses, see [Getting started with Subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).

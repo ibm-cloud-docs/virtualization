@@ -26,7 +26,8 @@ Only customers who subscribe to the "Enterprise" or "Platinum" licenses through 
 
         C:\> net stop storagelink
 
-3. Download and run the StorageLink adapter available from [OSNexus ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.osnexus.com/trynow/){: new_window}.
+3. Download and run the StorageLink adapter available from OSNexus.
+
 4. After the service stops, you can install the QuantaStor StorageLink adapter by running the following command:
 
         osn_quantastor_csladapter.exe

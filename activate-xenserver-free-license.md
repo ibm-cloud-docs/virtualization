@@ -22,7 +22,7 @@ If you don't register your system within 30 days, you can't power on any virtual
 
 To register your system, complete the following steps:
 
-1. Download and install the XenCenter client. You can access the client from the [Citrix XenCenter ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://community.citrix.com/display/xs/XenCenter){: new_window} page.
+1. Download and install the XenCenter client.
 
 2. Connect to your private network through VPN.
 

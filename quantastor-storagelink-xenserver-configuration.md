@@ -44,7 +44,7 @@ Only customers who subscribe to the "Enterprise" or "Platinum" licenses through 
 ## Verifying that StorageLink loaded properly
 {: #verifying-that-storagelink-loaded-properly}
 
-1. Log in to Citrix StorageLink Manager, select the "Administration" tree on the left, and look for OS NEXUS QuantaStor in the [QuantaStor ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://svn.osnexus.com/mediawiki/images/thumb/c/c8/Storagelink_admin.png/640px-Storagelink_admin.png){: new_window} list.
+1. Log in to Citrix StorageLink Manager, select the "Administration" tree on the left, and look for OS NEXUS QuantaStor in the QuantaStor list.
 2. Add your storage system credentials so StorageLink can dynamically configure and allocate storage volumes for your QuantaStor storage system.
 
 ## Installing the XenServer multipath configuration settings

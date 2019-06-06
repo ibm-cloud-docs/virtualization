@@ -481,6 +481,7 @@ After you create the first port group, create the remaining port groups with the
 ***Create dvpg-Primary-Public***
 
 |New Distributed Port Group Menu|Field|Value|
+|---|---|---|
 |Name and Location|Name|dvpg-Private-Storage|
 |Configure Settings|VLAN Type|VLAN
 |Configure Settings|VLAN ID|&lt;Primary Public VLAN&gt;|

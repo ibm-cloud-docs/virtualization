@@ -25,7 +25,7 @@ subcollection: virtualization
 ## Accessing the Parallels Infrastructure Manager (PIM)
 {: #accessing-the-parallels-infrastructure-manager-pim-}
 
-1. Obtain information from the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com.com/){: new_window} about your bare metal server.
+1. Obtain information from the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} about your bare metal server.
     1. From the **Devices** menu select **Device list**.
     2. Click on your server.
     3. Locate the public IP address and password.

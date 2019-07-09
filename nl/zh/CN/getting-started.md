@@ -19,7 +19,7 @@ keywords: vmware, virtuozzo, hyper-V, ESX, ESXi
 
 |入门|
 |:------------------|
-| __ 1. 有关虚拟化选项的更多信息，请参阅 [Citrix XenServer](/docs/infrastructure/virtualization?topic=Virtualization-what-is-citrix-xenserver-)、[Hyper-V](/docs/infrastructure/virtualization?topic=Virtualization-what-is-hyper-v-)、[Virtuozzo](/docs/infrastructure/virtualization?topic=Virtualization-what-is-virtuozzo-) 和 [VMware](/docs/infrastructure/vmware?topic=VMware-getting-started)。|
+| __ 1. 有关虚拟化选项的更多信息，请参阅 [Citrix XenServer](/docs/infrastructure/virtualization?topic=Virtualization-what-is-citrix-xenserver-)、[Hyper-V](/docs/infrastructure/virtualization?topic=Virtualization-what-is-hyper-v-)、[Virtuozzo](/docs/infrastructure/virtualization?topic=Virtualization-what-is-virtuozzo-) 和 [VMware](/docs/infrastructure/vmware?topic=VMware-vmware-getting-started#vmware-getting-started)。|
 | __ 2. [设置系统管理程序](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-hypervisor)。（[设置虚拟机网络](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network)是此过程中重要的一部分。）|
 | __ 3. 根据要使用的虚拟化解决方案，可以查看[设置 Hyper-V](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-hyper-v)、[Virtuozzo 入门](/docs/infrastructure/virtualization?topic=Virtualization-getting-started-with-virtuozzo)、[VMware vSphere 6 入门](/docs/infrastructure/vmware?topic=VMware-vmware-getting-started#vmware-getting-started)或[安装 XenServer 工具](/docs/infrastructure/virtualization?topic=Virtualization-installing-xenserver-tools-when-using-linux)。|
 {: caption="表 1. 虚拟化入门" caption-side="top"}

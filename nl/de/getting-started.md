@@ -20,7 +20,7 @@ Sie können die Virtualisierungslösung verwenden, um mehrere virtuelle Maschine
 | Einführung |
 |:------------------|
 | __ 1. Weitere Informationen zu den Virtualisierungsoptionen finden Sie unter dem Thema [Citrix XenServer](/docs/infrastructure/virtualization?topic=Virtualization-what-is-citrix-xenserver-), [Hyper-V](/docs/infrastructure/virtualization?topic=Virtualization-what-is-hyper-v-), [Virtuozzo](/docs/infrastructure/virtualization?topic=Virtualization-what-is-virtuozzo-) und
-[VMware](/docs/infrastructure/vmware?topic=VMware-getting-started). |
+[VMware](/docs/infrastructure/vmware?topic=VMware-vmware-getting-started#vmware-getting-started). |
 | __ 2. [Hypervisor einrichten](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-hypervisor). (Das [Einrichten eines Netzes für virtuelle Maschinen](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network) ist ein wichtiger Bestandteil dieses Prozesses.) |
 | __ 3. Abhängig davon, welche Virtualisierungslösungen Sie verwenden, können Sie die folgenden Aktionen ausführen: [Hyper-V einrichten](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-hyper-v), [Erste Schritte mit Virtuozzo](/docs/infrastructure/virtualization?topic=Virtualization-getting-started-with-virtuozzo), [Erste Schritte mit VMware vSphere 6](/docs/infrastructure/vmware?topic=VMware-vmware-getting-started#vmware-getting-started) oder [XenServer-Tools installieren](/docs/infrastructure/virtualization?topic=Virtualization-installing-xenserver-tools-when-using-linux). |
 {: caption="Tabelle 1. Erste Schritte mit der Virtualisierung" caption-side="top"}

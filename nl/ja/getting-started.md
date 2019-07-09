@@ -19,7 +19,7 @@ keywords: vmware, virtuozzo, hyper-V, ESX, ESXi
 
 | 準備       |
 |:------------------|
-| __ 1. 仮想化オプションの詳細を、[Citrix XenServer](/docs/infrastructure/virtualization?topic=Virtualization-what-is-citrix-xenserver-)、[Hyper-V](/docs/infrastructure/virtualization?topic=Virtualization-what-is-hyper-v-)、 [Virtuozzo](/docs/infrastructure/virtualization?topic=Virtualization-what-is-virtuozzo-)、および[VMware](/docs/infrastructure/vmware?topic=VMware-getting-started) で確認します。 |
+| __ 1. 仮想化オプションの詳細を、[Citrix XenServer](/docs/infrastructure/virtualization?topic=Virtualization-what-is-citrix-xenserver-)、[Hyper-V](/docs/infrastructure/virtualization?topic=Virtualization-what-is-hyper-v-)、 [Virtuozzo](/docs/infrastructure/virtualization?topic=Virtualization-what-is-virtuozzo-)、および[VMware](/docs/infrastructure/vmware?topic=VMware-vmware-getting-started#vmware-getting-started) で確認します。 |
 | __ 2. [ハイパーバイザーをセットアップ](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-hypervisor)します。 ([仮想マシンのネットワークのセットアップ](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network)は、このプロセスの重要な部分です。) |
 | __ 3. 使用する仮想化ソリューションに応じて、[Hyper-V のセットアップ](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-hyper-v)、[Virtuozzo の準備](/docs/infrastructure/virtualization?topic=Virtualization-getting-started-with-virtuozzo)、[VMware vSphere 6 の準備](/docs/infrastructure/vmware?topic=VMware-vmware-getting-started#vmware-getting-started)、または [XenServer Tools のインストール](/docs/infrastructure/virtualization?topic=Virtualization-installing-xenserver-tools-when-using-linux)を行います。 |
 {: caption="表 1. 仮想化の準備" caption-side="top"}

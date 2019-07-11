@@ -40,6 +40,12 @@ For shared storage, you can use OS Nexus QuantaStor, a single-tenant shared stor
 
 The storage environment is configured to support NFS volumes.
 
+### Before you begin
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/virtualization?topic=virtual-servers-navigating-devices).
+* Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
+
+For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
+
 ## Step 1 Ordering primary public and private VLANs
 {: #step-1-ordering-primary-public-and-private-vlans}
 
@@ -89,13 +95,12 @@ When you order an amount, make sure that you consider how many IP addresses are 
 
 Use the following steps to order a block of portable IP addresses for each VLAN for each subnet that you want to create:
 
-1. Open a browser window and log in to {{site.data.keyword.cloud_notm}}.
-2. Select **Account > Place an Order**.
-3. In the pop-up window, go to **Network > Subnets / IPs > Order**.
-4. From drop-down menu, select **Portable Private**.
-5. Select **XX Portable Private IP address** and click **Continue**. **Note:** _XX_ specifies the number of IP addresses.
-6. Select the VLAN to associate with IP address block and click **Continue**.
-7. Complete filling out the information on the screen and click **Continue**.
+1. Select **Account > Place an Order**.
+2. In the pop-up window, go to **Network > Subnets / IPs > Order**.
+3. From drop-down menu, select **Portable Private**.
+4. Select **XX Portable Private IP address** and click **Continue**. **Note:** _XX_ specifies the number of IP addresses.
+5. Select the VLAN to associate with IP address block and click **Continue**.
+6. Complete filling out the information on the screen and click **Continue**.
 
 Creating IP addresses is fairly quick and is displayed by selecting **Subnets** from **Network > IP Management**. You can record these IP addresses in the worksheet that is found in Appendix A: VLAN worksheet.
 

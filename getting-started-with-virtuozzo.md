@@ -22,19 +22,21 @@ subcollection: virtualization
 # Getting started with Virtuozzo
 {: #getting-started-with-virtuozzo}
 
+## Before you begin
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/virtualization?topic=virtual-servers-navigating-devices).
+* Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
+
+For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
+
 ## Accessing the Parallels Infrastructure Manager (PIM)
 {: #accessing-the-parallels-infrastructure-manager-pim-}
 
-1. Obtain information from the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window} about your bare metal server.
-    1. From the **Devices** menu select **Device list**.
-    2. Click on your server.
-    3. Locate the public IP address and password.
-5. Go to the public IP address of the server in your preferred browser by using HTTPS. Use Firefox, Opera, or Internet Explorer to manage Virtuozzo through the PIM.
-
+1. Click on your server.
+2. Locate the public IP address and password.
+3. Go to the public IP address of the server in your preferred browser by using HTTPS. Use Firefox, Opera, or Internet Explorer to manage Virtuozzo through the PIM.
 JavaScript is required. Without JavaScript, you can be redirected to a non-existent page and the PIM will not work.
 {:tip}
-
-6. Enter your username and password to log in to the PIM.
+4. Enter your username and password to log in to the PIM.
 
 The username is "root" and the password is the root password for the server, as listed in the {{site.data.keyword.slportal}}.
 {:tip}

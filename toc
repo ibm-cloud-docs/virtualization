@@ -72,7 +72,6 @@ Virtualization
 
     {: .topicgroup}
     VMware
-        install-vmware-centos-5x-64-bit.md
         advanced-single-site-vmware-reference-architecturesoftlayer.md
         enabling-public-access-vmware-esxi-55.md
         enabling-public-access-vmware.md

@@ -38,8 +38,7 @@ On the console tab of XenCenter for your virtual machine, you see a CD image of 
         mount: block device /dev/xvdd is write-protected, mounting read-only
         [root@ns0 mnt]# cd /mnt/xs-tools/Linux/
         [root@ns0 Linux]# bash install.sh
-        Detected `CentOS release 5.2 (Final)' (centos version 5).
-
+        
         The following changes are made to this virtual machine:
         * packages to be installed or upgraded:
         - kernel-xen-2.6.18-53.1.13.el5.xs4.1.0.24.x86_64.rpm

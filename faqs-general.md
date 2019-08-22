@@ -23,11 +23,11 @@ subcollection: virtualization
 # FAQS: General
 {: #faqs-general}
 
-## Why isn't my server listed in the Virtual Servers list in the Customer Portal?
+## Why isn't my server listed in the Virtual Servers list?
 {: #why-isn-t-my-server-listed-in-the-virtual-servers-list-in-the-customer-portal-}
 {: faq}
 
-If you have **XenServer**, **Hyper-V** or **Virtuozzo** on your server, but it is not listed in the [{{site.data.keyword.virtualmachinesshort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Virtual/live){: new_window} list, within the [Hardware ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Hardware/configuration){: new_window} section of the [Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/){: new_window}, then you need to open a [standard support ticket ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Support/addTicket){: new_window} with the Support Department so it can be added to your list.
+If you have **XenServer**, **Hyper-V** or **Virtuozzo** on your server, but it is not listed in the [{{site.data.keyword.virtualmachinesshort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/classic/devices){: new_window} list, then you need to open a [support case ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/unifiedsupport/cases/add){: new_window}.
 
 This request is filled during normal United States CST business hours.
 {:tip}

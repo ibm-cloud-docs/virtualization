@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-06-22"
+  years: 2014, 2019
+lastupdated: "2019-09-24"
 
 subcollection: virtualization
 
@@ -45,7 +45,7 @@ To access the data files that are backed up to {{site.data.keyword.cos_full_notm
 
 Follow this procedure to deploy a secondary AltaVault appliance within {{site.data.keyword.cloud_notm}} to recover a primary, on-premises AltaVault appliance that failed.
 
-The {{site.data.keyword.cloud_notm}} environment consists of a single ESXi host with local storage to house and run the secondary AltaVault appliance. The infrastructure is representative of the basic single-site architecture with a single ESXi host that is managed by a vCenter server within an {{site.data.keyword.cloud_notm}} Virtual Server Instance (VSI).
+The {{site.data.keyword.cloud_notm}} environment consists of a single ESXi host with local storage to house and run the secondary AltaVault appliance. The infrastructure is representative of the basic single-site architecture with a single ESXi host that is managed by a vCenter server within an {{site.data.keyword.cloud_notm}} virtual server instance.
 
 If you have a more substantial infrastructure that requires shared storage and or support for these features
 
@@ -58,7 +58,7 @@ If you have a more substantial infrastructure that requires shared storage and o
 
 Verify that the following prerequisites are met before you proceed: **Note:** For this example, a trial version of an AltaVault AVA-v8 appliance was used with AltaVault Cloud-Integrated Storage 4.1.
 
-* Make sure that the existing environment consists of a single ESXi host that is managed by a vCenter server within an {{site.data.keyword.cloud_notm}} VSI.
+* Make sure that the existing environment consists of a single ESXi host that is managed by a vCenter server within an {{site.data.keyword.cloud_notm}} virtual server instance.
 * Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources to include networking and storage.
 
 #### Before you begin

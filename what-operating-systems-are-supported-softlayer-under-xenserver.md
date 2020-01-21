@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2019-08-21"
+  years: 2014, 2020
+lastupdated: "2020-01-21"
 
 subcollection: virtualization
 ---
@@ -15,7 +15,7 @@ subcollection: virtualization
 # Operating systems supported by IBM Cloud under XenServer
 {: #operating-systems-supported-by-ibm-cloud-under-xenserver}
 
-The following operating systems can integrate with {{site.data.keyword.cloud_notm}} while XenServer runs:
+The following operating systems can integrate with {{site.data.keyword.slapi_full}} while XenServer runs:
 
 - CentOS 6.x, 7.x
 - CloudLinux 6.x
@@ -23,6 +23,6 @@ The following operating systems can integrate with {{site.data.keyword.cloud_not
 - RedHat Enterprise Linux 6.x, 7.x
 - Debian 7.x through 9.x
 - Ubuntu 14.04 LTS through 16.04 LTS
-- Microsoft Windows Server 2012, 2012 R2, 2016
+- Microsoft Windows Server 2012, 2012 R2, 2016, 2019
 
-XenServer supports various software beyond the preceding list that might not tie into the {{site.data.keyword.cloud_notm}} API. Any guest operating system that is installed by *“Other installation media”* options in XenCenter, is not supported by {{site.data.keyword.cloud_notm}} and might not work in the XenServer environment.
+XenServer supports various software beyond the preceding list that might not tie into the {{site.data.keyword.slapi_short}}. Any guest operating system that is installed by *“Other installation media”* options in XenCenter, is not supported by {{site.data.keyword.BluSoftlayer_notm}} and might not work in the XenServer environment.

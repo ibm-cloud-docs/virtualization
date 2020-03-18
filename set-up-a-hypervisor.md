@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-15"
+  years: 2014, 2020
+lastupdated: "2020-03-18"
 
 subcollection: virtualization
 ---
@@ -26,7 +26,7 @@ Use the following steps to set up a hypervisor.
    * [Hyper-V ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
 2. Obtain portable IPs for your virtual machines.
     * VMs require portable IP addresses. Blocks of public and private portable IPs can be ordered through the {{site.data.keyword.slportal}}.
-    * For more information about allocating IP addresses, see [Getting started with subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
+    * For more information about allocating IP addresses, see [Getting started with subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started).
 
 3. Establish routing for VMs on the Private Network. VMs need the following specifications in order to route to other VMs over the Private Network:
     * Portable private IPs

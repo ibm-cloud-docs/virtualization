@@ -47,6 +47,6 @@ Use the following steps to help you create a virtual machine with XenCenter.
   <!--![14](images/14.png)-->
 15. <!--In the pre-requisite notes, we made sure that we already had a set of Portable IP Addresses routed as "Secondary on VLAN" ready for this installation.--> Make sure that you have the information ready to configure TCP/IP. You need to manually configure the interface with IPV4 support and disable IPV6 support.
   <!--[15](images/15.png)-->
-16. Confirm that you are aware of how to use your Private IP Subnet (10.17.37.240/29) and click **OK**<!-- to go to the CentOS installer-->. You and your system administrator can install the guest operating system according to your company guidelines. For more informatin about static and portable IP blocks, see [Getting started with subnets and IPs](/doc/subnets?topic=subnets-getting-started).
+16. Confirm that you are aware of how to use your Private IP Subnet (10.17.37.240/29) and click **OK**<!-- to go to the CentOS installer-->. You and your system administrator can install the guest operating system according to your company guidelines. For more informatin about static and portable IP blocks, see [Getting started with subnets and IPs](/docs/subnets?topic=subnets-getting-started).
 
 You have created a new VM.

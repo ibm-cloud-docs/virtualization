@@ -38,4 +38,4 @@ Complete the following steps to upload an ISO to the server's datastore.
   * To upload an ISO, click the volume icon (with the upward pointing arrow) and select **Upload File**.
 5. Select the ISO file on your local filesystem that you want to upload to the datastore and click **Open**.
 6. The ISO of your choosing is now in the datastore.
-7. Now that your install medium is on the VMWare server, you can proceed with [creating your virtual machine](/docs/infrastructure/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine).
+7. Now that your install medium is on the VMWare server, you can proceed with [creating your virtual machine](/docs/vmware?topic=VMware-creating-a-vmware-esx-virtual-machine).

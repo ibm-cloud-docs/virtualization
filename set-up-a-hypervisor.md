@@ -12,7 +12,7 @@ subcollection: virtualization
 {: #setting-up-a-hypervisor}
 
 ## Before you begin
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/virtualization?topic=virtual-servers-navigating-devices).
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/virtualization?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
@@ -26,13 +26,13 @@ Use the following steps to set up a hypervisor.
    * [Hyper-V ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://technet.microsoft.com/en-us/windowsserver/dd448604){: new_window}
 2. Obtain portable IPs for your virtual machines.
     * VMs require portable IP addresses. Blocks of public and private portable IPs can be ordered through the {{site.data.keyword.slportal}}.
-    * For more information about allocating IP addresses, see [Getting started with subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started).
+    * For more information about allocating IP addresses, see [Getting started with subnets and IPs](/docs/subnets?topic=subnets-getting-started).
 
 3. Establish routing for VMs on the Private Network. VMs need the following specifications in order to route to other VMs over the Private Network:
     * Portable private IPs
     * Static route that relates to the 10.0.0.0/8 network range
 
-For more information about the VM routing process, see [Setting up a virtual machine network](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network). Machines that are on the same VLAN can communicate after you set up the VM network. [Enable VLAN spanning](/docs/infrastructure/vlans?topic=vlans-vlan-spanning) if machines that are on different VLANs must communicate.
+For more information about the VM routing process, see [Setting up a virtual machine network](/docs/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network). Machines that are on the same VLAN can communicate after you set up the VM network. [Enable VLAN spanning](/docs/vlans?topic=vlans-vlan-spanning) if machines that are on different VLANs must communicate.
 
 ## Access and securely store ISOs
 {: #access-and-securely-store-isos}

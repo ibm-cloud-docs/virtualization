@@ -3,7 +3,7 @@
 
 
 copyright:
-  years: 2014, 2018
+  years: 2014, 2020
 lastupdated: "2018-08-16"
 
 subcollection: virtualization
@@ -82,7 +82,7 @@ Now that the virtual network devices are created, you need to obtain the install
 * Ubuntu.
 **Note:** If you already have the installation media, go to **Creating a Virtual Machine**.
 
-The installation media for [CentOS ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://centos.org){: new_window}, [Fedora ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://fedoraproject.org/){: new_window}, and [Ubuntu ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ubuntu.com/){: new_window} are available from their respective websites. All three OSs are freely licensed and no further action needs to be taken on the part of the user.
+The installation media for [CentOS ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://centos.org){: new_window}, [Fedora ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://fedoraproject.org/){: new_window}, and [Ubuntu ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ubuntu.com/){: new_window} are available from their respective websites. All three OSs are freely licensed and no further action needs to be taken on the part of the user.
 
 ## Creating a virtual machine
 {: #creating-a-virtual-machine}
@@ -125,4 +125,4 @@ After the new legacy network is added, click **OK**.
 
 The virtual machine is now ready to be started. Right-click the virtual machine and select **Connect**. The virtual machine console opens. From the **Action** menu, select **Start**. The new virtual machine starts by using the installation media that you selected. Now, you run through the operating system installation. During the OS installation process, it is recommended that you configure the public network settings. The public network is the second network interface. When the OS installation is complete, you have a working virtual machine. If a public network is configured, you can access the virtual machine remotely.
 
-The final step in the installation process is configuring the private network. If the virtual machine is not connected to the private network, the installation process is complete. For more information about configuring the private network, see [Setting up a virtual machine network](/docs/infrastructure/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network).
+The final step in the installation process is configuring the private network. If the virtual machine is not connected to the private network, the installation process is complete. For more information about configuring the private network, see [Setting up a virtual machine network](/docs/virtualization?topic=Virtualization-setting-up-a-virtual-machine-network).

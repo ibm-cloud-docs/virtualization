@@ -1,6 +1,6 @@
 ---
 copyright:
-  years: 2014, 2019
+  years: 2014, 2020
 lastupdated: "2019-09-24"
 
 subcollection: virtualization
@@ -62,7 +62,7 @@ Verify that the following prerequisites are met before you proceed: **Note:** Fo
 * Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources to include networking and storage.
 
 #### Before you begin
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/virtualization?topic=virtual-servers-navigating-devices).
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/doc/virtualization?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
@@ -74,7 +74,7 @@ AltaVault requires the network interfaces to be on different networks within the
 
 1. Click **Account > Place an Order**.
 2. Select the **Network** section click **Subnets/IPs > Order**.
-3. From the drop-down menu, select **Portable Private**. Selecting Portable Private triggers an option to select the number of portable private IP addresses to display. **Note:** {{site.data.keyword.cloud_notm}} automatically reserves at least three IP addresses in the address block for each portable private network. The reserved addresses are for the network address, gateway address, and broadcast address. These addresses must be bound directly to the virtual LAN (VLAN). <!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> For more information about portable IP addresses, see [Getting started with Subnets and IPs](/docs/infrastructure/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
+3. From the drop-down menu, select **Portable Private**. Selecting Portable Private triggers an option to select the number of portable private IP addresses to display. **Note:** {{site.data.keyword.cloud_notm}} automatically reserves at least three IP addresses in the address block for each portable private network. The reserved addresses are for the network address, gateway address, and broadcast address. These addresses must be bound directly to the virtual LAN (VLAN). <!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** will yield only one usable IP address or zero if the pod supports HSRP.--> For more information about portable IP addresses, see [Getting started with Subnets and IPs](/docs/subnets?topic=subnets-getting-started-subnets-ips#getting-started-subnets-ips).
 4. Click **Continue** after you select the number of portable private IP addresses.
 5. Select the VLAN where the portable private IP addresses to be routed and click **Continue**.
 6. Complete the required contact information and click **Place Order**.

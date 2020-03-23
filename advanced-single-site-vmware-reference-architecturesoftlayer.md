@@ -1,6 +1,6 @@
 ---
 copyright:
-  years: 2014, 2019
+  years: 2014, 2020
 lastupdated: "2019-01-15"
 
 subcollection: virtualization
@@ -41,7 +41,7 @@ For shared storage, you can use OS Nexus QuantaStor, a single-tenant shared stor
 The storage environment is configured to support NFS volumes.
 
 ### Before you begin
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/infrastructure/virtualization?topic=virtual-servers-navigating-devices).
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/doc/virtualization?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
@@ -131,7 +131,7 @@ You need to order the ESXi hosts and Brocade vRouter (Vyatta) gateway and firewa
 
 For each ESXi host that is ordered for the environment, VMware ESXi 5.5 is the operating system. If you want to use {{site.data.keyword.cloud_notm}} vSphere licenses, monthly charges are incurred that are based on usage.
 
-Another option is to install ESXi by using your own ISO. Instructions for this process can be found in [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi). If you want to install ESXi by using your own ISO, make sure to select **No Operating System** as the operating system for the management and capacity hosts during the ordering process.
+Another option is to install ESXi by using your own ISO. Instructions for this process can be found in [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi). If you want to install ESXi by using your own ISO, make sure to select **No Operating System** as the operating system for the management and capacity hosts during the ordering process.
 
 **Note:** This implementation requires Enterprise Plus licensing to use vSphere Distributed Virtual Switches. If your license is not valid for Enterprise Plus, you need to use the {{site.data.keyword.cloud_notm}} provided VMware Service Provider Program (VSPP) license.
 
@@ -147,7 +147,7 @@ Use the following steps to order the management host servers.
 5. Select the appropriate data center (where the VLANs were created) to provision the ESXi servers and specify the following specifications for each option:
   * Quantity: 2
   * RAM: 32 GB
-  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
+  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
   * Hard disks: Disks 1 & 2: 500 GB SATA in RAID 1
   * Public Bandwidth: Private Network Only-> 0 GB bandwidth
   * Uplink Port Speeds: 10 Gbps Redundant Private Network Uplinks
@@ -161,7 +161,7 @@ Use the following steps to order the management host servers.
 2. Select the appropriate data center (where the VLANs were created) to provision the ESXi servers and specify the following specifications for each option:
   * Quantity: 3
   * RAM: 128 GB
-  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/infrastructure/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
+  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
   * Hard disk: Disks 1 & 2: 500 GB SATA in RAID 1
   * Public Bandwidth: Private Network Only > 0 GB bandwidth
   * Uplink Port Speeds: 10 Gbps Redundant Private Network Uplinks
@@ -584,7 +584,7 @@ Now that you created a host profile, you need to attach the host profile to the 
 ## Step 12 Order, configure, and attach shared storage
 {: #step-12-order-configure-and-attach-shared-storage}
 
-Before you continue, it is imperative that you order, configure, and attach shared storage for use with the management and capacity clusters and hosts within the environment. If you want to use the {{site.data.keyword.cloud_notm}} multi-tenant shared storage solution (File Storage), see [Architecture Guide for IBM File Storage for {{site.data.keyword.cloud_notm}} with VMware](/docs/infrastructure/FileStorage?topic=FileStorage-architectureguide).
+Before you continue, it is imperative that you order, configure, and attach shared storage for use with the management and capacity clusters and hosts within the environment. If you want to use the {{site.data.keyword.cloud_notm}} multi-tenant shared storage solution (File Storage), see [Architecture Guide for IBM File Storage for {{site.data.keyword.cloud_notm}} with VMware](/docs/FileStorage?topic=FileStorage-architectureguide).
 
 ## Step 13 Enabling HA/DRS and svMotion vCVA
 {: #step-13-enabling-ha-drs-and-svmotion-vcva}
@@ -613,7 +613,7 @@ The advanced single-site VMware environment is complete.
 
 You now have a VMware environment that is running in an IBM Cloud data center. Your VMware environment can run production workloads and supplementing an on-premises IBM Cloud deployment. The environment enacts VMware best practices and enables features such as VMware DRS, HA, Storage DRS, and networking redundancy. You can extend this reference architecture implementation with greater capacity or management hosts and more storage.
 
-For more information about VMware, see [Deploy VMware](/docs/infrastructure/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) and [VMware FAQ](/docs/infrastructure/vmware?topic=VMware-faqs-vmware)
+For more information about VMware, see [Deploy VMware](/docs/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) and [VMware FAQ](/docs/vmware?topic=VMware-vmware-faq)
 
 ## Appendix A: VLAN Worksheet
 {: #appendix-a-vlan-worksheet}

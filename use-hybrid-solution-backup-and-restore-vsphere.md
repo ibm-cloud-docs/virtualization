@@ -1,6 +1,6 @@
 ---
 copyright:
-  years: 2014, 2018
+  years: 2014, 2020
 lastupdated: "2018-01-05"
 
 subcollection: virtualization
@@ -22,5 +22,5 @@ You can back up and or restore your VMware vSphere environment by using a hybrid
 
 For more information about backing up or restoring your environment, see the following links:
 
-* [Backing up your VMware vSphere environment](/docs/infrastructure/virtualization?topic=Virtualization-backing-up-your-vmware-vsphere-environment-by-using-veeam)
-* [Recovering your VMware vSphere environment](/docs/infrastructure/virtualization?topic=Virtualization-recovering-your-vmware-vsphere-environment)
+* [Backing up your VMware vSphere environment](/docs/virtualization?topic=Virtualization-backing-up-your-vmware-vsphere-environment-by-using-veeam)
+* [Recovering your VMware vSphere environment](/docs/virtualization?topic=Virtualization-recovering-your-vmware-vsphere-environment)

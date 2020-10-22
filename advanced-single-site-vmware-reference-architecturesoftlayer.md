@@ -44,7 +44,7 @@ The storage environment is configured to support NFS volumes.
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/doc/virtualization?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
-For more information about permissions, see [Classic infrastructure permissions](/docs/iam?topic=iam-infrapermission#infrapermission) and [Managing device access](/docs/vsi?topic=virtual-servers-managing-device-access).
+For more information about permissions, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission#infrapermission) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
 
 ## Step 1 Ordering primary public and private VLANs
 {: #step-1-ordering-primary-public-and-private-vlans}
@@ -131,7 +131,7 @@ You need to order the ESXi hosts and Brocade vRouter (Vyatta) gateway and firewa
 
 For each ESXi host that is ordered for the environment, VMware ESXi 5.5 is the operating system. If you want to use {{site.data.keyword.cloud_notm}} vSphere licenses, monthly charges are incurred that are based on usage.
 
-Another option is to install ESXi by using your own ISO. Instructions for this process can be found in [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi). If you want to install ESXi by using your own ISO, make sure to select **No Operating System** as the operating system for the management and capacity hosts during the ordering process.
+Another option is to install ESXi by using your own ISO. Instructions for this process can be found in [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=vmware-installing-vsphere-esxi#installing-vsphere-esxi). If you want to install ESXi by using your own ISO, make sure to select **No Operating System** as the operating system for the management and capacity hosts during the ordering process.
 
 **Note:** This implementation requires Enterprise Plus licensing to use vSphere Distributed Virtual Switches. If your license is not valid for Enterprise Plus, you need to use the {{site.data.keyword.cloud_notm}} provided VMware Service Provider Program (VSPP) license.
 
@@ -613,7 +613,7 @@ The advanced single-site VMware environment is complete.
 
 You now have a VMware environment that is running in an IBM Cloud data center. Your VMware environment can run production workloads and supplementing an on-premises IBM Cloud deployment. The environment enacts VMware best practices and enables features such as VMware DRS, HA, Storage DRS, and networking redundancy. You can extend this reference architecture implementation with greater capacity or management hosts and more storage.
 
-For more information about VMware, see [Deploy VMware](/docs/vmware?topic=VMware-using-vmware-cookbooks#using-vmware-cookbooks) and [VMware FAQ](/docs/vmware?topic=VMware-vmware-faq)
+For more information about VMware, see [Deploy VMware](/docs/vmware?topic=vmware-using-vmware-cookbooks#using-vmware-cookbooks) and [VMware FAQ](/docs/vmware?topic=vmware-vmware-faq)
 
 ## Appendix A: VLAN Worksheet
 {: #appendix-a-vlan-worksheet}

@@ -18,7 +18,7 @@ subcollection: virtualization
 Before you begin, review the following prerequisites:
 
 - New ranges of portable IP addresses (public and private) that are routed as "Secondary on VLAN". This example solution to the setup of a new VM requires that you have usable IPs available on the Private Network. You can order subnets from [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://control.softlayer.com/network/subnets/order).
-- Ability to connect to the {{site.data.keyword.cloud}} Private Network through the VPN. For more information about VPN access, see [Enable access to the {{site.data.keyword.cloud_notm}} infrastructure private network](/docs/customer-portal?topic=customer-portal-getting-started#enable-private-network).
+- Ability to connect to the {{site.data.keyword.cloud}} Private Network through the VPN. For more information about VPN access, see [Getting started with {{site.data.keyword.cloud_notm}} Virtual Private Networking](/docs/iaas-vpn?topic=iaas-vpn-getting-started).
 - Citrix XenCenter is installed to your local system. <!-- . http://downloads.service.softlayer.com/citrix/xen/-->
 
 **Note:** Your server is pre-configured with various of templates to help you get off and running with XenServer quickly.

@@ -156,7 +156,7 @@ To add Veeam:
 ### Ordering Veeam on an existing server
 {: #ordering-veeam-on-an-existing-server}
 
-You can add Veeam to an existing server with the [OS reload](/docs/software?topic=software-reloading-the-os) procedure. The server must be running a Windows OS and it must be set up for monthly billing.
+You can add Veeam to an existing server with the [OS reload](/docs/bare-metal?topic=bare-metal-reloading-the-os) procedure. The server must be running a Windows OS and it must be set up for monthly billing.
 
 To add Veeam:
 1. In the System Addons section, under OS-Specific Addons, click the Veeam tab and select one of the Veeam options.

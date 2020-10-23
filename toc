@@ -34,7 +34,7 @@ Virtualization
     {: .navgroup-end}
 
     {: .navgroup id="howto"}
-    /vsi/virtual-servers-navigating-devices
+    /virtual-servers/virtual-servers-navigating-devices
     set-up-a-hypervisor.md
     tcp-window-recommendations-virtual-instances.md
     installing-windows-server-virtualization-windows-2008.md

@@ -41,6 +41,7 @@ For shared storage, you can use OS Nexus QuantaStor, a single-tenant shared stor
 The storage environment is configured to support NFS volumes.
 
 ### Before you begin
+{: #before-you-begin-ref-arch}
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/doc/virtualization?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 

@@ -62,6 +62,7 @@ Verify that the following prerequisites are met before you proceed: **Note:** Fo
 * Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources to include networking and storage.
 
 #### Before you begin
+{: #before-you-begin-prereq}
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/doc/virtualization?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 

@@ -109,7 +109,7 @@ Follow these steps to deploy AltaVault as a disaster recovery solution with {{si
 
 Verify that the following prerequisites are met before you proceed:
 
-* Obtain a copy of AltaVault Virtual Appliance and make sure that it resides on the utility server. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance, or download a 90-day trial version from the [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}.
+* Obtain a copy of AltaVault Virtual Appliance and make sure that it resides on the utility server. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance, or download a 90-day trial version from the [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mysupport.netapp.com/site/products/all/details/altavault/docsandkb-tab){: new_window}.
 * Have an existing on-premises vSphere ESXi 5.5 environment with the minimum CPU, memory, and disk space requirements available for the AltaVault appliance. If you use the trial version, here are the resource requirements: four virtual CPUs (vCPUs), 24 GB of memory, and up to 8 TB of disk space.
 * Have two 10 Gbps network interface controllers (NICs) available within the vSphere environment. One NIC is used for data access, and the other is used for data replication to {{site.data.keyword.cos_full_notm}}.
 * Have two portable private networks that correspond to the two NICs that are defined within the vSphere environment. The replication network cannot be assigned to the same network as the data access network, which can create a routing loop.
@@ -332,7 +332,7 @@ Follow these steps to fully restore a VM restore.
 
 For more information about the components of this hybrid solution see:
 
-* [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.netapp.com/us/products/protection-software/altavault/){: new_window}
+* [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mysupport.netapp.com/site/products/all/details/altavault/docsandkb-tab){: new_window}
 * [Veeam Backup & Replication website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}
 * [IBM Cloud Object Storage website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/storage){: new_window}
 

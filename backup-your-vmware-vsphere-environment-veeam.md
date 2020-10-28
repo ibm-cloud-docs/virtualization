@@ -42,7 +42,7 @@ You can purchase AltaVault as either a physical or a virtual appliance. The depl
 
 Verify that the following prerequisites are met:
 
-* A copy of AltaVault Virtual Appliance. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance.
+* A copy of AltaVault Virtual Appliance. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance, or download a 90-day trial version from the [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.netapp.com){: new_window}.
 * An existing on-premises vSphere ESXi 5.5 environment with the minimum CPU, memory, and disk space requirements available for the AltaVault appliance. If you use the trial version, these requirements are four virtual CPUs (vCPUs), 24 GB of memory, and up to 8 TB of disk space.
 * Two 10-Gbps network interface controllers (NICs) available within the vSphere environment. One NIC is used for data input and the other is used for data replication to {{site.data.keyword.cos_full_notm}}.
 * Two networks that correspond to the two NICs (VLANs) that are defined within the vSphere environment. The replication network cannot be assigned to the same network as the data input network, doing so can create a routing loop.

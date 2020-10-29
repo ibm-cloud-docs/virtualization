@@ -11,7 +11,7 @@ subcollection: virtualization
 # Removing a host node in PIM
 {: #removing-a-host-node-in-pim}
 
-Complete the following steps to remove a host node as a slave in PIM:
+Complete the following steps to remove a host node as a worker in PIM:
 
 1. Go to **Infrastructure > Hardware Nodes**.
 2. Select the node that you want to disassociate.

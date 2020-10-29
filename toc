@@ -50,8 +50,8 @@ Virtualization
         set-simple-caching-name-server-virtuozzo.md
         can-i-manage-multiple-virtuozzo-hardware-nodes-single-interface.md
         how-can-i-give-my-containers-access-private-network-pim.md
-        remove-host-node-being-slave-another-pim.md
-        how-do-i-add-host-node-slave-another-pim.md
+        remove-host-node-being-worker-another-pim.md
+        how-do-i-add-host-node-worker-another-pim.md
         migrate-container-different-hardware-node.md
 
     {: .topicgroup}

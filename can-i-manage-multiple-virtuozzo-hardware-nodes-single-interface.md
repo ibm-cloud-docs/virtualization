@@ -13,7 +13,7 @@ keywords: Virtuozzo
 # Managing multiple Virtuozzo hardware nodes through a single interface
 {: #managing-multiple-virtuozzo-hardware-nodes-through-a-single-interface}
 
-Managing multiple nodes is done through the PIM interface. You use PIM to have a master server with multiple slaves. A slave is managed by only a single master. It cannot be a part of alternative groups that are managed by a separate master.
+Managing multiple nodes is done through the PIM interface. You use PIM to have a controller server with multiple workers. A worker is managed by only a single controller. It cannot be a part of alternative groups that are managed by a separate controller.
 
 Follow these steps to manage multiple hardware nodes:
 
@@ -21,4 +21,4 @@ Follow these steps to manage multiple hardware nodes:
 2. In the second tab, click **Hardware Nodes > New Hardware Node**
 3. Click **Register**.
 
-You can now manage both the master and the slave through the same PIM interface.
+You can now manage both the controller and the worker through the same PIM interface.

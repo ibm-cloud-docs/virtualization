@@ -9,7 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # What is Virtuozzo?
-{: #what-is-virtuozzo-}
+{: #what-is-virtuozzo}
 
 Virtuozzo is a container-based virtualization solution that allows the sharing of hardware by using an abstraction layer.  Virtuozzo creates containers, also known as VEs or VPSs, that simulate a server. The container acts and responds mostly as if it were a stand-alone server. The container is separate from other containers that are on the same physical server in that they cannot access other containers files, IPC resources, or memory. The network can be configured to be shared between multiple containers or isolated.
 {:shortdesc}

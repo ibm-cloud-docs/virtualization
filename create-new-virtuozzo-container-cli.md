@@ -11,10 +11,10 @@ keywords: Virtuozzo
 {:new_window: target="_blank"}
 
 # Creating a new Virtuozzo container (CLI)
-{: #creating-a-new-virtuozzo-container-cli-}
+{: #creating-a-new-virtuozzo-container-cli}
 
 ## How to create a new Virtuozzo container (CLI)
-{: #how-to-create-a-new-virtuozzo-container-cli-}
+{: #how-to-create-a-new-virtuozzo-container-cli}
 
 Complete the following steps to create a new container on a Virtuozzo server.
 

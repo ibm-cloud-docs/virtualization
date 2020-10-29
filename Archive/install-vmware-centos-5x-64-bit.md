@@ -9,7 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Installing VMware on CentOS 5.x (64-bit)
-{: #installing-vmware-on-centos-5-x-64-bit-}
+{: #installing-vmware-on-centos-5-x-64-bit}
 
 Before you begin, log in to the server with the root user.
 
@@ -135,7 +135,7 @@ Open the VMware Server Console from the computer you installed it on. When it lo
 * **Password:** password (use the real root password of the system)
 
 ## Configuring the firewall rules (IPTables)
-{: #configuring-the-firewall-rules-iptables-}
+{: #configuring-the-firewall-rules-iptables}
 
 If you have trouble connecting to the VMware server and it is not an authentication issue (if you get a username and password error then you have a bad user or password), then your firewall might be blocking you from connecting to the VMware Server. As a resolution, try adding the following IPTable rule into your /etc/sysconfig/iptablesfile. **Note:** Make sure that the naming convention follows your server configuration:
 

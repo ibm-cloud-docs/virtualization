@@ -9,7 +9,7 @@ subcollection: virtualization
 {:new_window: target="_blank"}
 
 # Which operating systems are supported in Parallels Server 4 Bare Metal?
-{: #which-operating-systems-are-supported-in-parallels-server-4-bare-metal-}
+{: #which-operating-systems-are-supported-in-parallels-server-4-bare-metal}
 
 <table border="1" cellpadding="0" cellspacing="0" width="684">
 

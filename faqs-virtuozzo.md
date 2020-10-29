@@ -23,7 +23,7 @@ subcollection: virtualization
 {: #faqs-virtuozzo}
 
 ## Do I need static or portable IP addresses for Virtuozzo?
-{: #do-i-need-static-or-portable-ip-addresses-for-virtuozzo-}
+{: #do-i-need-static-or-portable-ip-addresses-for-virtuozzo}
 {: faq}
 
 * Static IP address: Use a static IP address if you have only one hardware node (per VLAN or in total)
@@ -35,7 +35,7 @@ Costs per IP can change depending on the routing type (Routed to VLAN or Seconda
 {:tip}
 
 ## Can I migrate a Virtuozzo 3 Container to a Virtuozzo Container 4 hardware node with no downtime?
-{: #can-i-migrate-a-virtuozzo-3-container-to-a-virtuozzo-container-4-hardware-node-with-no-downtime-}
+{: #can-i-migrate-a-virtuozzo-3-container-to-a-virtuozzo-container-4-hardware-node-with-no-downtime}
 {: faq}
 
 **Linux:**
@@ -58,7 +58,7 @@ Make sure that the same templates are installed on the new hardware node.
 {:tip}
 
 ## Are containers isolated from each other and the host?
-{: #are-containers-isolated-from-each-other-and-the-host-}
+{: #are-containers-isolated-from-each-other-and-the-host}
 {: faq}
 
 Your containers are restricted from loading LKMs, performing a `chroot(“../../../”)` out of their own environment and don't share IPC Resources (semaphore sets and shared memory segments).
@@ -66,7 +66,7 @@ Your containers are restricted from loading LKMs, performing a `chroot(“../../
 You have no security concerns with how Virtuozzo manages resources and isolates the processes. With a bridged network configuration, all containers in the same VLAN (on the same hardware node) can see each other's traffic. Using routed mode is highly suggested.
 
 ## Why can't I cache RedHat and SUSE OS templates in Virtuozzo?
-{: #why-can-t-i-cache-redhat-and-suse-os-templates-in-virtuozzo-}
+{: #why-can-t-i-cache-redhat-and-suse-os-templates-in-virtuozzo}
 {: faq}
 
 You can experience issues when you cache to RedHat and SUSE OS templates if you use Vitruozzo. These OS templates require extra licensing, which {{site.data.keyword.cloud_notm}} doesn't provide. If you receive any of the following errors, you need to have your own accounts with the respective vendors and configure the corresponding variables within /etc/vztt/url.map (/etc/vztt/vztt.conf in Virtuozzo 3.)
@@ -93,7 +93,7 @@ You can experience issues when you cache to RedHat and SUSE OS templates if you 
 |TIMESTAMP|Completing the process|**Failed**|
 
 ## Why can I ping my ServiceVE but cannot log in to via SSH (PIM/PMC)?
-{: #why-can-i-ping-my-serviceve-but-cannot-log-in-to-via-ssh-pim-pmc-}
+{: #why-can-i-ping-my-serviceve-but-cannot-log-in-to-via-ssh-pim-pmc}
 {: faq}
 
 Make sure that the host node doesn't have any IP addresses assigned other than the IP addresses that are listed in the Portal (1 public IP and 1 private IP [located in 10.0.0.0/8]).

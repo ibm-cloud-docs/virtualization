@@ -31,7 +31,7 @@ subcollection: virtualization
 For more information about permissions, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission#infrapermission) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
 
 ## Accessing the Parallels Infrastructure Manager (PIM)
-{: #accessing-the-parallels-infrastructure-manager-pim-}
+{: #accessing-the-parallels-infrastructure-manager-pim}
 
 1. Click on your server.
 2. Locate the public IP address and password.

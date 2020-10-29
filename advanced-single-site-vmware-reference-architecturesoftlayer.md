@@ -148,7 +148,7 @@ Use the following steps to order the management host servers.
 5. Select the appropriate data center (where the VLANs were created) to provision the ESXi servers and specify the following specifications for each option:
   * Quantity: 2
   * RAM: 32 GB
-  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=VMware-installing-vsphere-esxi#installing-vsphere-esxi))
+  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=vmware-installing-vsphere-esxi#installing-vsphere-esxi))
   * Hard disks: Disks 1 & 2: 500 GB SATA in RAID 1
   * Public Bandwidth: Private Network Only-> 0 GB bandwidth
   * Uplink Port Speeds: 10 Gbps Redundant Private Network Uplinks

@@ -27,7 +27,6 @@ Virtualization
 
     {: .topicgroup}
     Hyper-V
-        what-hyper-v.md
         what-are-requirements-run-hyper-v.md
 
     get-started-vmware-esxi.md

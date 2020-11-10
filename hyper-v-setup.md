@@ -4,7 +4,7 @@
 
 copyright:
   years: 2014, 2020
-lastupdated: "2018-08-16"
+lastupdated: "2020-11-10"
 
 subcollection: virtualization
 
@@ -29,7 +29,7 @@ The process of setting up Hyper-V includes the initial configuration of Hyper-V,
 
 The Hyper-V Manager is the management console that you use to operate Hyper-V. From the Hyper-V Manager you can create, start, stop, delete, and configure all of your virtual machines. The management console is also where you set the default location to store your virtual hard disks and the default location to store your virtual machine configuration files.
 
-You can find Hyper-V Manager under **Administrative Tools** in the Windows Control Panel. On a new installation of Windows 2008, you can find **Administrative Tools** under Programs in the Start Menu. After you open the Hyper-V Manager program, a new window appears on the screen. Take a moment to familiarize yourself with this screen. All configurations and use of your virtual machines are done here.
+You can find Hyper-V Manager under **Administrative Tools** in the Windows Control Panel. On a new installation of Windows, you can find **Administrative Tools** under Programs in the Start Menu. After you open the Hyper-V Manager program, a new window appears on the screen. Take a moment to familiarize yourself with this screen. All configurations and use of your virtual machines are done here.
 
 ## Configuring Hyper-V
 {: #configuring-hyper-v}
@@ -75,11 +75,13 @@ Your Private Network device is now installed. Repeat the preceding steps for the
 {: #obtaining-installation-media}
 
 Now that the virtual network devices are created, you need to obtain the installation media. The installation media that is used in this example is a CD/DVD image file. IBM Cloud supports the following Operating Systems for Hyper-V:
-* Windows 2008
-* Windows 2003
+* Windows 2019 with Hyper-V
+* Windows 2016 with Hyper-V
+* Windows 2012R2 with Hyper-V
+* Windows 2012 with Hyper-V
 * CentOS
 * Fedora
-* Ubuntu.
+* Ubuntu
 **Note:** If you already have the installation media, go to **Creating a Virtual Machine**.
 
 The installation media for [CentOS ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://centos.org){: new_window}, [Fedora ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://fedoraproject.org/){: new_window}, and [Ubuntu ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://www.ubuntu.com/){: new_window} are available from their respective websites. All three OSs are freely licensed and no further action needs to be taken on the part of the user.

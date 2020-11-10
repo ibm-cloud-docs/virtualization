@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-06-22"
+lastupdated: "2020-11-10"
 
 subcollection: virtualization
 ---
@@ -17,7 +17,7 @@ subcollection: virtualization
 
 Before you begin, review the following prerequisites.
 
-* A compatible server (Windows 2008 Server DC Edition w/Hyper-V).
+* A compatible server.
 * A method of connecting from Source server to Destination Server.
 * Source and destination server must reside on the same VLAN. If they do not reside on the same VLAN, reissuing an IP for the virtual machine is necessary (requires opening a support ticket).
 * Virtual machines with working network uplinks and installed working/supported software.

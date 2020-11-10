@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-23"
+lastupdated: "2020-11-10"
 
 subcollection: virtualization
 
@@ -10,7 +10,7 @@ keywords: Windows 2008
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 
-# Installing Windows Server virtualization on Windows 2008
+# Example of installing Windows Server virtualization on Windows 2008
 {: #installing-windows-server-virtualization-on-windows-2008}
 
 <!--Windows 2008 64-bit edition comes with the option to install Windows next generation virtualization application codenamed Veridian. By default the application will not be a selectable option when Adding and Removing Roles from Windows 2008.
@@ -20,7 +20,7 @@ Note: At this time, this is only available in full installation of 64-bit editio
 ## Before you begin
 {: #before-you-begin-win-2008}
 
-Before you begin, review the following prerequisites.
+Before you begin, review the following prerequisites. This tutorial walks you through installing Windows server virtualization on Windows 2008. Other versions may be different.
 
 ### Hardware
 {: #hardware}

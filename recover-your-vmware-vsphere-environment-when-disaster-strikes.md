@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2020
-lastupdated: "2019-09-24"
+lastupdated: "2020-11-10"
 
 subcollection: virtualization
 
@@ -238,7 +238,7 @@ Before you proceed with deployment, make sure that the following prerequisites a
 
 ||Minimum|Recommended|
 |---|---|---|
-|**OS**|<ul><li>Windows Server 2012 R2</li><li>Windows Server 2012</li><li>Windows Server 2008 R2 SP1</li><li>Windows Server 2008 SP2</li><li>Windows 8.x</li><li>Windows 7 SP1</li></ul>|<ul><li>Windows Servers 2012 R2</li><li>Windows Server 2012</li><li>Windows Server 2008 R2 SP1</li><li>WIndows 2008 SP2</li><li>Windows 8.x</li><li>Windows 7 SP1</li></ul>|
+|**OS**|A supported Windows server|
 |**# of cores or vCPUs**|2|4|
 |**Memory**|4 GB base RAM plus 500 MB for each concurrent backup and restore job.|16 GB base RAM plus 4 GB for each concurrent backup and restore job.|
 |**Disk space**|2 GB for product installation, 10 GB per 100 VMs for guest system catalog folder (persistent data).|2 GB for product installation, 10 GB per 100VMs for guest system catalog folder (persistent data).|

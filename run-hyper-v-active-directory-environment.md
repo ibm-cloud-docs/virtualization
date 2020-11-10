@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2018-01-10"
+lastupdated: "2020-11-10"
 
 subcollection: virtualization
 
@@ -17,15 +17,12 @@ keywords: hypervisor
 # Running Hyper-V in an active directory environment
 {: #running-hyper-v-in-an-active-directory-environment}
 
-<!--Running Hyper-V in an Active Directory environment is the best implementation of Hyper-V. Microsoft has truly shined with the ability to remotely manage a server.You can remotely manage the Hyper-V server allows for it to be installed on a Core installation of Windows freeing up those valuable resources from the system for use within the VM’s. When this is combined with an Active Directory Domain Controller
-You manage all your Hyper-V servers from a single Hyper-V Manager that runs on any 2008 or Vista computer that is connected to the Domain.--> <!--Vista?? MS doesn't support Vista.-->
-
 ## Before you begin
 {: #before-you-begin-running-hyper-v-in-an-active-directory-environment}
 
 Before you begin running Hyper-V in an active directory environment, you need the following:
 
-* 64-bit Windows 2008 Datacenter server that runs Hyper-V (Full or Core installation of the OS).
+* A supported 64-bit Windows server that runs Hyper-V (Full or Core installation of the OS).
 * A global group on the domain that is used to manage Hyper-V.
 * Domain Admin access to enable changes on the Hyper-V server from the computer that you are working from.
 

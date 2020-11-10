@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2020
-lastupdated: "2019-01-15"
+lastupdated: "2020-11-10"
 
 subcollection: virtualization
 
@@ -313,7 +313,7 @@ Update the **Notes** section of each Portable IP address with the name of the ho
 
 Now, the environment is ready to deploy the VMware vCenter Virtual Appliance and install a virtual machine for DNS, Active Directory, or BIND. However, before you deploy, you need to download the images. To do download the images, remote desktop to the virtual server previously provisioned and download the appropriate images on the virtual server for your environment:
 
-* Active Directory / Windows DNS: Windows Server 2008R2/Windows Server 2012 ISO Image (Your licensed Media)
+* Active Directory / Windows DNS: Windows Server ISO Image (Your licensed Media)
 * Linux BIND: [CentOS Install Image ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/download/){: new_window}
 * [vCenter Virtual Appliance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (requires a valid VMware subscription)
 

@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2020
-lastupdated: "2020-03-18"
+lastupdated: "2020-11-10"
 
 subcollection: virtualization
 ---
@@ -11,33 +11,15 @@ subcollection: virtualization
 # FAQs: Hyper-V
 {: #faqs-hyper-v}
 
-## What is Hyper-V?
-{: #what-is-hyper-v}
-
-Hyper-V is a virtualization system for the Windows 2008 Server Datacenter Edition that allows a single physical server to host multiple virtual machines all running their own operating system.
-
 ## What are the requirements to run Hyper-V?
 {: #what-are-the-requirements-to-run-hyper-v}
 
-Hyper-V must be installed on Windows 2008 Server 64-bit Datacenter Edition. All {{site.data.keyword.BluSoftlayer}} hardware meets the system requirements of Hyper-V. Microsoft recommends at least 2 GB of RAM for the server.
-
-## Is Hyper-V available on any other versions of 2008?
-{: #is-hyper-v-available-on-any-other-versions-of-2008}
-
-{{site.data.keyword.BluSoftlayer_notm}} offers Hyper-V only on Datacenter Edition.
-
-## Can Hyper-V run on Windows 2003?
-{: #can-hyper-v-run-on-windows-2003}
-
-Hyper-V was developed for Windows 2008 and cannot run on Windows 2003.
+See [Hyper-V: Hardware requirements](/docs/virtualization?topic=virtualization-hyper-v-hardware-requirements)
 
 ## What operating systems can be installed on a virtual machine?
 {: #what-operating-systems-can-be-installed-on-a-virtual-machine}
 
-{{site.data.keyword.BluSoftlayer_notm}} supports the following operating systems on Hyper-V:
-
-* All versions of Windows 2003 and 2008 Server
-* CentOS, Fedora, and Ubuntu Linux Distributions
+See [Obtaining installation media](/docs/virtualization?topic=virtualization-setting-up-hyper-v&locale=en#obtaining-installation-media)
 
 ## How many virtual machines can a server run?
 {: #how-many-virtual-machines-can-a-server-run}
@@ -67,7 +49,7 @@ Yes.
 ## Does each virtual operating system need to have a license?
 {: #does-each-virtual-operating-system-need-to-have-a-license}
 
-Windows 2003 and 2008 virtual machines are licensed through {{site.data.keyword.BluSoftlayer_notm}}. Linux virtual machines are freely licensed and require no action.
+Windows virtual machines are licensed through {{site.data.keyword.BluSoftlayer_notm}}. Linux virtual machines are freely licensed and require no action.
 
 ## Will the virtual machines have access to the private network?
 {: #will-the-virtual-machines-have-access-to-the-private-network}
@@ -92,12 +74,7 @@ For information about portable IP addresses, see [Getting started with Subnets a
 ## How do I order Hyper-V?
 {: #how-do-i-order-hyper-v}
 
-You can install Hyper-V on an existing server by issuing an OS Reload and changing the operating system to “Windows 2008 Server Datacenter Edition with Hyper-V." To provision a new server with Hyper-V, order a new server and select “Windows 2008 Server Datacenter Edition with Hyper-V” as the operating system.
-
-## Is Hyper-V preinstalled with Windows 2008 Server Datacenter Edition?
-{: #is-hyper-v-preinstalled-with-windows-2008-server-datacenter-edition}
-
-Hyper-V is not preinstalled on Windows 2008 servers. If you want to install Hyper-V on your Windows 2008 server, you need to issue an OS Reload and select “Windows 2008 Server Datacenter Edition with Hyper-V” as the operating system.
+You can install Hyper-V on an existing server by issuing an OS Reload and changing the operating system to a supported Windows Server Datacenter Edition with Hyper-V. To provision a new server with Hyper-V, order a new server and select a supported Windows Server Datacenter Edition with Hyper-V. See [Obtaining installation media](/docs/virtualization?topic=virtualization-setting-up-hyper-v&locale=en#obtaining-installation-media)
 
 ## The OS Reload for Hyper-V is done. What's next?
 {: #the-os-reload-for-hyper-v-is-done-what-s-next}

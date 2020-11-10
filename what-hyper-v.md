@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2018
-lastupdated: "2017-06-12"
+lastupdated: "2020-11-10"
 
 subcollection: virtualization
 ---
@@ -11,4 +11,4 @@ subcollection: virtualization
 # What is Hyper-V?
 {: #what-is-hyper-v}
 
-Hyper-V is a virtualization system for the Windows 2008 Server Datacenter Edition that allows a single physical server to host multiple virtual machines all running their own Operating System.
+Hyper-V is a virtualization system for the Windows that allows a single physical server to host multiple virtual machines all running their own Operating System.

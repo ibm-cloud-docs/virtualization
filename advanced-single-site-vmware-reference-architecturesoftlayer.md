@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-11-10"
+  years: 2014, 2021
+lastupdated: "2021-05-12"
 
 subcollection: virtualization
 
@@ -10,15 +10,17 @@ keywords: vmware, ESXi
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:table: .aria-labeledby="caption"}
+{:screen: .screen}
+{:external: target="_blank" .external}
+{:table: .aria-labeledby="caption"}
 
-# Advanced single-site VMware reference architecture
+# Creating an advanced single-site VMware reference architecture
 {: #advanced-single-site-vmware-reference-architecture}
 
-Use the following steps to create an advanced single-site vSphere environment. The following steps define a {{site.data.keyword.cloud}} reference architecture deployment by using VMware suggested best practices.
-
 The reference architecture is intended for provisioning an environment that uses shared storage, VMware High Availability (HA) and vSphere Distributed Resource Scheduler (DRS), and an {{site.data.keyword.cloud_notm}} gateway or firewall. Advanced single-site VMware reference architecture is suitable for most production deployments that can be scaled as workload dictates and can replace an on-premises implementation or extend into a hybrid IT scenario.
+{: shortdesc}
 
-## Environment overview
+## VMWare environment overview
 {: #environment-overview}
 
 The advanced representative VMware environment that is outlined, consists of one data center that manages two separate clusters: management and capacity. The configuration can be set up by using a single four node cluster that depending on requirements. The management cluster contains the following virtual machines (VMs) that are used for managing the infrastructure:
@@ -36,7 +38,7 @@ The capacity cluster contains the resources and infrastructure that are needed t
 |Primary Public | Public | Assigned to virtual machines or other devices that require access from the public network.|
 <caption>Table 1. Primary VLANs</caption>
 
-For shared storage, you can use OS Nexus QuantaStor, a single-tenant shared storage server, or {{site.data.keyword.cloud_notm}} Endurance or Performance storage services. In either case, the shared storage device is used to store the VMs on both the management and capacity clusters. For more information about storage options, see [{{site.data.keyword.cloud_notm}} Storage solutions ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/storage){: new_window}.
+For shared storage, you can use OS Nexus QuantaStor, a single-tenant shared storage server, or {{site.data.keyword.cloud_notm}} Endurance or Performance storage services. In either case, the shared storage device is used to store the VMs on both the management and capacity clusters. For more information about storage options, see [{{site.data.keyword.cloud_notm}} storage solutions](https://www.ibm.com/cloud/storage){: external}.
 
 The storage environment is configured to support NFS volumes.
 
@@ -46,6 +48,8 @@ The storage environment is configured to support NFS volumes.
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission#infrapermission) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
+
+Use the following steps to create an advanced single-site vSphere environment. The following steps define a {{site.data.keyword.cloud}} reference architecture deployment by using VMware suggested best practices.
 
 ## Step 1 Ordering primary public and private VLANs
 {: #step-1-ordering-primary-public-and-private-vlans}
@@ -314,8 +318,8 @@ Update the **Notes** section of each Portable IP address with the name of the ho
 Now, the environment is ready to deploy the VMware vCenter Virtual Appliance and install a virtual machine for DNS, Active Directory, or BIND. However, before you deploy, you need to download the images. To do download the images, remote desktop to the virtual server previously provisioned and download the appropriate images on the virtual server for your environment:
 
 * Active Directory / Windows DNS: Windows Server ISO Image (Your licensed Media)
-* Linux BIND: [CentOS Install Image ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/download/){: new_window}
-* [vCenter Virtual Appliance ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: new_window} (requires a valid VMware subscription)
+* Linux BIND: [CentOS install image](https://www.centos.org/download/){: external}
+* [vCenter Virtual Appliance]](https://my.vmware.com/web/vmware/info/slug/datacenter_cloud_infrastructure/vmware_vsphere/5_5){: external} (requires a valid VMware subscription)
 
 After you download the ISO, you need to upload the image to a management host data store so it can be attached to a virtual machine. Use the vSphere client to connect to a management host and create an ISO directory on the local data store.
 
@@ -331,13 +335,13 @@ Although it is beyond the scope of this document to detail the steps that are ne
 1. Set **DNS Forwarding** to the service.softlayer.com local DNS hosts:
   * `rs1.service.softlayer.com 10.0.80.11`
   * `rs2.service.softlayer.com 10.0.80.12`
-2. After you set up DNS, create a local DNS zone (dal06.mycompany.local) and a reverse lookup zone for all portable and primary subnets that are provisioned.
+2. After you set up DNS, create a local DNS zone (`dal06.mycompany.local`) and a reverse lookup zone for all portable and primary subnets that are provisioned.
 3. Add an A HOST records for each host’s Management IP address (vmk0 on vmkPG-management).
 4. Add an A HOST record from the portable private subnet that is bound to the management VLAN for your vCenter Virtual Appliance.
 5. Update the **Notes** section of the Portable IP Subnet that you assigned to vCenter.
 
 For more information, see the following links:
-* [Windows DNS and Active Directory ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: new_window}.
+* [Windows DNS and Active Directory ](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: external}.
 <!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
 
 ## Step 9 Deploying and configuring vCenter Virtual Appliance
@@ -630,4 +634,4 @@ For more information about VMware, see [Deploy VMware](/docs/vmware?topic=vmware
 |Portable Private||||Virtual Machines|
 |vMotion|||N/A||
 |Fault Tolerance|||N/A|||
-<caption>VLAN Worksheet</caption>
+<caption>Table 22. VLAN Worksheet</caption>

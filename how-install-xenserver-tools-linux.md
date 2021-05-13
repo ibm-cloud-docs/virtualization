@@ -10,7 +10,7 @@ subcollection: virtualization
 {:tip: .tip}
 {:new_window: target="_blank"}
 
-# Installing XenServer tools when using Linux
+# Installing XenServer tools with Linux
 {: #installing-xenserver-tools-when-using-linux}
 
 Follow these steps to install XenServer Tools on your virtual machines that use CentOS, Debian, and RedHat operating systems.

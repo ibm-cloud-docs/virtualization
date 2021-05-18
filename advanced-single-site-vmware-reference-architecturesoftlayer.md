@@ -3,10 +3,12 @@ copyright:
   years: 2014, 2021
 lastupdated: "2021-05-12"
 
+keywords: ESXi, VMware reference architecture
+
 subcollection: virtualization
 
-keywords: vmware, ESXi
 ---
+
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
 {:table: .aria-labeledby="caption"}

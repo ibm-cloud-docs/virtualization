@@ -1,34 +1,50 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-16"
+  years: 2014, 2021
+lastupdated: "2021-07-13"
 
 subcollection: virtualization
 ---
 {:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{:external: target="_blank" .external}
+{:pre: .pre}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
+{:shortdesc: .shortdesc}
+{:term: .term}
 
-# Setting up and mounting an iSCSI node in XenServer Shared Storage
-{: #setting-up-and-mounting-an-iscsi-node-in-xenserver-shared-storage}
+# Setting up and mounting Shared Storage
+{: #xenserver-shared-storage}
 
-Shared Storage is a storage repository (SR) that is any form of storage that can be used by XenServer. You can chose from two categories of SRs: shared and non-shared. A shared SR allows multiple nodes to share a storage location from the same pool. {{site.data.keyword.cloud}} supports two options of SRs, NFS, and LVMoiSCSI (LVM over iSCSI).
+Shared Storage is a storage repository (SR) that is any form of storage that can be used by XenServer. You can choose from two categories of SRs: shared and non-shared. A shared SR allows multiple nodes to share a storage location from the same pool. {{site.data.keyword.cloud}} supports two options of SRs, NFS, and LVMoiSCSI (LVM over iSCSI).
+{:shortdesc}
 
-You need to install an NFS server and manage it from another customer system or by using am {{site.data.keyword.cloud_notm}} QuantaStor server. Follow these steps to mount the NFS repository in XenCenter:
+## Setting up and mounting an NFS volume
+{: #setting-up-and-mounting-an-NFS-volume-xenserver}
+
+You need to install an NFS server and manage it from another customer system or by using an {{site.data.keyword.cloud_notm}} QuantaStor server. Use the following steps to mount the NFS repository in XenCenter:
 
 1. Open the XenCenter console.
 2. Click **New Storage**.
-* In the new dialog box, select **Virtual disk storage > NFS**.
+* In the new dialog box, select **Virtual disk storage** > **NFS**.
 * Give an appropriate name of the new SR.
 * Enter the server:/path under **Share Name**
 * Click **Scan**
 
 This process scans the NFS share for any previous SRs.
 
-You can use the {{site.data.keyword.blockstoragefull}} for LVMoiSCSI. The iSCSI can be from a customer managed storage server or an {{site.data.keyword.blockstoragefull}} offering. For Performance and Redundant Block Storage, retrieve the IQN from the {{site.data.keyword.slportal}} by going to **Storage > Block Storage > Select Lun Name**. To mount the iSCSI node via XenCenter, follow these steps:
+## Setting up and mounting iSCSI storage
+{: #setting-up-and-mounting-an-iscsi-volume-xenserver}
+
+The iSCSI LUN can be from a customer-managed storage server or an {{site.data.keyword.blockstoragefull}} volume. To mount the iSCSI node through XenCenter, complete the following steps.
+
+The IQN and target IP addresses of a {{site.data.keyword.blockstorageshort}} volume can be obtained from the [{{site.data.keyword.cloud_notm}} console](https://{DomainName}/){: external}. 
+{:tip}
 
 1. Open the XenCenter console.
 2. Go to **General > Properties** and set the IQN.
-3. Click **New Storage**
+3. Click **New Storage**.
 4. In the new dialog box, go to **Virtual disk storage > Software iSCSI**.
 5. Enter an appropriate name for the new SR.
 6. Enter the hostname or IP of the iSCSI Target and keep the port at the default 3260.
@@ -36,9 +52,11 @@ You can use the {{site.data.keyword.blockstoragefull}} for LVMoiSCSI. The iSCSI 
 8. Enter the username and password for the Lun.
 9. Click **Scan Target Host**.
 * Select a **Target IQNs** option.
-* Select a **Target  Luns** option.
+* Select a **Target LUNs** option.
 10. After the IQN and Lun fields populate, click **Finish**. The target is scanned to check for previous SRs. If an SR exists, the installer asks if you want to create a new SR or attach to the previous SR.
 
-If the servers are in a pool together, the iSCSI repository is automatically shared.
+If the servers are in a pool together, the iSCSI repository is automatically shared. 
 
-For information about configuring iSCSI for multipath, see [Configuring iSCSI Multipath ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.cisco.com/c/en/us/td/docs/switches/datacenter/nexus1000/sw/5_x/sys_mgmt_config/b_Cisco_N1KV_VMware_Sys_Mgmt_Config_5x/b_Cisco_N1KV_VMware_Sys_Mgmt_Config_5x_chapter_01110.html?dtid=osscdc000283){: new_window}
+It's imperative that your servers are properly configured for continuous service through all storage and networking events, planned or unplanned. Make sure that Multipath is set up correctly. For more information about configuring multipath, see
+[Multipathing Overview for XenServer 6.2, 6.5, and 7.0](https://support.citrix.com/article/CTX118791){: external} and [Storage Multipathing for XenServer 7.2](https://docs.citrix.com/en-us/xencenter/7-1/storage-pools-multipathing.html){: external}.
+{:important}

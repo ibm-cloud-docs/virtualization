@@ -32,7 +32,7 @@ subcollection: virtualization
     * Secondary on VLAN: This method works, but you don't need a secondary gateway. You lose 3 of the IP addresses due to host ID, gateway, and broadcast.
 
 Costs per IP can change depending on the routing type (Routed to VLAN or Secondary on VLAN). Prices are shown in the portal after you select the server that you are ordering the IP addresses for. Routing can be changed at any time by opening a support ticket.
-{:tip}
+{: tip}
 
 ## Can I migrate a Virtuozzo 3 Container to a Virtuozzo Container 4 hardware node with no downtime?
 {: #can-i-migrate-a-virtuozzo-3-container-to-a-virtuozzo-container-4-hardware-node-with-no-downtime}
@@ -55,7 +55,7 @@ Virtuozzo Containers 4 for Windows, by default, runs in compatibility mode.
 Restoring backups from 3.5.1 on a Virtuozzo Containers 4 hardware node can also be performed by copying the full backup to the destination node, running `vzbackupsync.exe` and restoring the backup as normal.
 
 Make sure that the same templates are installed on the new hardware node.
-{:tip}
+{: tip}
 
 ## Are containers isolated from each other and the host?
 {: #are-containers-isolated-from-each-other-and-the-host}

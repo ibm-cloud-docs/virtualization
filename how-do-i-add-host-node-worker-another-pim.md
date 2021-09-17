@@ -18,4 +18,4 @@ Complete the following steps to add a host node as a worker of another in PIM:
 2. Enter the IP address/username(root)/password of the remote hardware node and register.
 
 The new node resources are not immediately updated in the Controller PIM.
-{:tip}
+{: tip}

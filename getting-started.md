@@ -15,7 +15,7 @@ keywords: virtualization, getting started, virtuozzo, hyper-V, ESX, ESXi
 {: #getting-started}
 
 You can use the Virtualization solution to run multiple virtual machines in a single dedicated environment. Virtual machines that run on the {{site.data.keyword.BluSoftlayer_full}} Network can integrate with other physical and virtual devices on the network and can be managed through both the Customer Portal and API. Running virtual machines on the {{site.data.keyword.cloud_notm}} proprietary architecture and automated platform offers high levels of stability suitable for enterprise-level virtualization, and virtualization on a smaller scale.
-{:shortdesc}
+{: shortdesc}
 
 | Get Started       |
 |:------------------|

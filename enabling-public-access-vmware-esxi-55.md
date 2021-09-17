@@ -19,7 +19,7 @@ By default, the ESXi Host is installed with the service console only on the priv
 To get started, you need to connect to the server by using a VMware vSphere Client on the private interface for the server.
 
 You need to have the ‘Primary’ Public IP information of the server to complete the setup. Information regarding the Public IP of the server can be found in the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
-{:tip}
+{: tip}
 
 After you log in to the ESXi Host, follow these steps to enable the Public Interface:
 
@@ -41,4 +41,4 @@ Log in to vSphere and follow these steps:
 You can now access the server by using both the Public and Private IP addresses.
 
 Enabling Public IP access to ESXi contains inherent security risks. Make sure that you take the appropriate steps to restrict access to ESXi to only those users who need it.
-{:tip}
+{: tip}

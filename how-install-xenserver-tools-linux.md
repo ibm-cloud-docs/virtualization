@@ -16,7 +16,7 @@ subcollection: virtualization
 Follow these steps to install XenServer Tools on your virtual machines that use CentOS, Debian, and RedHat operating systems.
 
 These steps are specifically for customer-managed XenServers, not {{site.data.keyword.cloud}} provided virtual server instances.
-{:tip}
+{: tip}
 
 1. Open XenCenter and establish a connection to your XenServer. See the example of a new virtual machine that does not have XenServer Tools set up. You can see that for **"Virtualization State:"**, the software says, "Tools not installed".
 

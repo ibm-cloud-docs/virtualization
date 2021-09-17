@@ -17,7 +17,7 @@ keywords: Xenserver
 By default XenServer installed in {{site.data.keyword.cloud}} is configured to use the private network interface for all management connections. If you have connection issues on the private network, open a support ticket.
 
 Changing this configuration is a security risk and is not advised.
-{:tip}
+{: tip}
 
 If you want to reconfigure XenServer to use the public interface, run the following commands as root from the host (host cannot not be pooled!).
 

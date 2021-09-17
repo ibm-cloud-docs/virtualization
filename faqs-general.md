@@ -30,7 +30,7 @@ subcollection: virtualization
 If you have **XenServer**, **Hyper-V** or **Virtuozzo** on your server, but it is not listed in the [{{site.data.keyword.virtualmachinesshort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/classic/devices){: new_window} list, then you need to open a [support case ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/unifiedsupport/cases/add){: new_window}.
 
 This request is filled during normal United States CST business hours.
-{:tip}
+{: tip}
 
 ## If clients are a service provider, can they use their own VSPP licensing for hosts that they rent in IBM Cloud?
 {: #if-clients-are-a-service-provider-can-they-use-their-own-vspp-licensing-for-hosts-that-they-rent-in-ibm-cloud}

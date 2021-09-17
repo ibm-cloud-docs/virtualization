@@ -35,14 +35,14 @@ You can use AltaVault Cloud Storage Gateway to integrate your on-premises enviro
 Follow these steps to deploy AltaVault as an on-premises backup solution to {{site.data.keyword.cos_full_notm}}.
 
 You can purchase AltaVault as either a physical or a virtual appliance. The deployment of the trial-version VMware vSphere ESXi-based AltaVault virtual appliance is covered in this procedure.
-{:tip}
+{: tip}
 
 <a name="prerequisites"></a>
 #### Prerequisites
 
 Verify that the following prerequisites are met:
 
-* A copy of AltaVault Virtual Appliance. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance, or download a 90-day trial version from the [NetApp AltaVault website](http://www.netapp.com){:external}.
+* A copy of AltaVault Virtual Appliance. It is a single file with an OVA file extension. Contact your NetApp representative for the appliance, or download a 90-day trial version from the [NetApp AltaVault website](http://www.netapp.com){: external}.
 * An existing on-premises vSphere ESXi 5.5 environment with the minimum CPU, memory, and disk space requirements available for the AltaVault appliance. If you use the trial version, these requirements are four virtual CPUs (vCPUs), 24 GB of memory, and up to 8 TB of disk space.
 * Two 10-Gbps network interface controllers (NICs) available within the vSphere environment. One NIC is used for data input and the other is used for data replication to {{site.data.keyword.cos_full_notm}}.
 * Two networks that correspond to the two NICs (VLANs) that are defined within the vSphere environment. The replication network cannot be assigned to the same network as the data input network, doing so can create a routing loop.
@@ -52,7 +52,7 @@ Verify that the following prerequisites are met:
 ### Deploying AltaVault OVA
 {: #deploying-altavault-ova}
 
-You can deploy the AltaVault OVA to the vSphere environment after all of the prerequisites are met. Instructions for OVA deployment can be found in the [NetApp AltaVault Installation and Service Guide](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){:external}.
+You can deploy the AltaVault OVA to the vSphere environment after all of the prerequisites are met. Instructions for OVA deployment can be found in the [NetApp AltaVault Installation and Service Guide](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){: external}.
 
 1. Edit the AltaVault virtual machine (VM) after the deployment of the OVA is complete.
 2. Change the allocated memory to match the version of AltaVault that is in the edit window. If you are using the trial version, assign 24 GB of memory and add one disk that is less than or equal to 8 TB. **Note:** This secondary disk storage device is used to store deduplicated backup data.
@@ -67,7 +67,7 @@ The NICs are assigned the following interface functions:
 
 In this example configuration, the AltaVault appliance uses the **e0a** interface as the replicate-to-cloud interface and the **e0b** interface to export a CIFS/SMB mount point. **Note:** A CIFS/SMB share and an NFS share cannot both be used to access the same data. In other words, if data is placed in a CIFS/SMB share, it cannot be accessed via an NFS share and vice versa.
 
-For more information about the deploying the AltaVault appliance and configuration of the VM settings for the appliance, see [NetApp AltaVault Installation and Service Guide](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){:external}.
+For more information about the deploying the AltaVault appliance and configuration of the VM settings for the appliance, see [NetApp AltaVault Installation and Service Guide](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){: external}.
 
 ### Initial configuration of the AltaVault appliance <!--initial configuration?-->
 {: #initial-configuration-of-the-altavault-appliance-initial-configuration}
@@ -173,7 +173,7 @@ A trial version of Veeam Backup and Replication Version 8 is used in the example
 Before you proceed with deployment, verify that the following prerequisites are satisfied:
 
 * Have an existing AltaVault appliance that is configured for use with {{site.data.keyword.cos_full_notm}} and Veeam Backup and Replication.
-* Obtain a copy of Veeam Backup and Replication for VMware environments, which is a single executable file. Contact your Veeam representative for a copy or download a [30-day trial version](http://www.veeam.com/vm-backup-recovery-replication-software.html){:external}.
+* Obtain a copy of Veeam Backup and Replication for VMware environments, which is a single executable file. Contact your Veeam representative for a copy or download a [30-day trial version](http://www.veeam.com/vm-backup-recovery-replication-software.html){: external}.
 * Obtain a license file to use with Veeam Backup and Replication. In most cases, this file is emailed to the email address that is used to download Veeam Backup and Replication. If you did not receive this file, contact your Veeam representative.<br/><br/>The license file is used to activate all of the Veeam Backup and Replication functions. If this file is not supplied during program installation, all features and functions revert to the 30-day trial version.
 * Have an existing backup server, which can either be onsite or off-site, with the specifications that are found in Table 2. The installed operating system must be a 64-bit version.
 
@@ -257,4 +257,4 @@ Follow these steps to create a backup of a complete virtual environment.
 {: starting-a-manual-backup}
 To manually start a backup, right-click on the backup job and select **Start**. Alternatively, select **Active Full** if you want a new backup.
 
-**Note:** Veeam Backup and Replication can restore virtual environments from a backup. For more information about restoring virtual environments, see the [Veeam Backup and Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html){:external} website.
+**Note:** Veeam Backup and Replication can restore virtual environments from a backup. For more information about restoring virtual environments, see the [Veeam Backup and Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html){: external} website.

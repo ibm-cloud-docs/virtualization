@@ -15,10 +15,10 @@ keywords: Citrix XenServer
 {: #activating-xenserver}
 
 The Citrix XenServer free license is licensed for 30 days from the initial install or reload. During this time, you need to register with Citrix and request a fully functional 1-year license. To create this license, Citrix requires personal information that {{site.data.keyword.cloud}} doesn't have access to. The license is an agreement between you and Citrix to use XenServer.
-{:shortdesc}
+{: shortdesc}
 
 If you don't register your system within 30 days, you can't power on any virtual machines.
-{:tip}
+{: tip}
 
 To register your system, complete the following steps:
 

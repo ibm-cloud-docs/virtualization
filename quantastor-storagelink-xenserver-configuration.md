@@ -20,7 +20,7 @@ keywords: QuantaStor
 1. Make sure that your installation of XenServer is properly licensed for StorageLink.
 
 Only customers who subscribe to the "Enterprise" or "Platinum" licenses through Citrix can use the StorageLink feature. Customers who have the "Advanced" Citrix XenServer license can't access the StorageLink feature.
-{:tip}
+{: tip}
 
 2. Stop the StorageLink service by entering the following command at an administrator prompt. Or, you can stop the StorageLink service from the Services Panel in XenServer.
 

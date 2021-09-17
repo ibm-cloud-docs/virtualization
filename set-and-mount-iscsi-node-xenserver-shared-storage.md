@@ -18,7 +18,7 @@ subcollection: virtualization
 {: #xenserver-shared-storage}
 
 Shared Storage is a storage repository (SR) that is any form of storage that can be used by XenServer. You can choose from two categories of SRs: shared and non-shared. A shared SR allows multiple nodes to share a storage location from the same pool. {{site.data.keyword.cloud}} supports two options of SRs, NFS, and LVMoiSCSI (LVM over iSCSI).
-{:shortdesc}
+{: shortdesc}
 
 ## Setting up and mounting an NFS volume
 {: #setting-up-and-mounting-an-NFS-volume-xenserver}
@@ -40,7 +40,7 @@ This process scans the NFS share for any previous SRs.
 The iSCSI LUN can be from a customer-managed storage server or an {{site.data.keyword.blockstoragefull}} volume. To mount the iSCSI node through XenCenter, complete the following steps.
 
 The IQN and target IP addresses of a {{site.data.keyword.blockstorageshort}} volume can be obtained from the [{{site.data.keyword.cloud_notm}} console](https://{DomainName}/){: external}. 
-{:tip}
+{: tip}
 
 1. Open the XenCenter console.
 2. Go to **General > Properties** and set the IQN.
@@ -59,4 +59,4 @@ If the servers are in a pool together, the iSCSI repository is automatically sha
 
 It's imperative that your servers are properly configured for continuous service through all storage and networking events, planned or unplanned. Make sure that Multipath is set up correctly. For more information about configuring multipath, see
 [Multipathing Overview for XenServer 6.2, 6.5, and 7.0](https://support.citrix.com/article/CTX118791){: external} and [Storage Multipathing for XenServer 7.2](https://docs.citrix.com/en-us/xencenter/7-1/storage-pools-multipathing.html){: external}.
-{:important}
+{: important}

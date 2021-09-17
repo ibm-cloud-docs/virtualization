@@ -37,11 +37,11 @@ For more information about permissions, see [Classic infrastructure permissions]
 2. Locate the public IP address and password.
 3. Go to the public IP address of the server in your preferred browser by using HTTPS. Use Firefox, Opera, or Internet Explorer to manage Virtuozzo through the PIM.
 JavaScript is required. Without JavaScript, you can be redirected to a non-existent page and the PIM will not work.
-{:tip}
+{: tip}
 4. Enter your username and password to log in to the PIM.
 
 The username is "root" and the password is the root password for the server, as listed in the {{site.data.keyword.slportal}}.
-{:tip}
+{: tip}
 
 ## Installing and caching templates
 {: #installing-and-caching-templates}
@@ -69,7 +69,7 @@ While the server downloads and caches templates, you can set up the network rang
 7. Review the resource parameters.
 
 Be careful not to prohibit the container's ability to process data, its disk space, or memory by adding too many parameters, which could starve your server of resources. Starving your server causes it to slow or unexpectedly stop processes. If you do not understand these settings, then contact your server administrator or a [third-party management company ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs){: new_window}.
-{:tip}
+{: tip}
 
 8. Click **Validate** before you click **Next**. Validating ensures that your settings do not conflict with each other.
 9. Select the applications that you want to install and click **Next**.

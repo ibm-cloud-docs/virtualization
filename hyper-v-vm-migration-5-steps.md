@@ -33,7 +33,7 @@ In either event, the Hyper-V migration can be completed quickly if you have the 
 3. Now, using RDP on the source server, you can log in to the destination server with the C: drive mounted to bring the file over.
 
 You are transferring the file via a resource mount by using RDP. You can choose the transfer method that is most comfortable to you for this process (Windows Sharing, Resource mount via RDP, FTP, and other transfer methods).
-{:tip}
+{: tip}
 
 4. Make sure that the file you are exporting is in the default location for Hyper-V virtual hard disks (VHD). The default location is `C:\Users\Public\Documents\Hyper-V\Virtual hard disks`. If you changed this default location and are not sure of what it was, you can select **Hyper-V Settings > Import Virtual Machine** to view the location.
 5. After you locate the exported file and click **Import**, the virtual machine populates into your Hyper-V Manager with all configurations and files it had previously. The server is now online and working. If your server did not match the requirements and the destination server resides in a different VLAN, you need to Re-IP the virtual machine with a portable subnet that is routed as Secondary on VLAN.

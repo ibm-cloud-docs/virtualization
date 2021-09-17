@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-15"
+  years: 2014, 2021
+lastupdated: "2021-0917"
 
 subcollection: virtualization
 ---
@@ -152,7 +152,7 @@ To provide access to the entire private network which includes the DNS servers, 
 
 1. Go to **Start > Run** and enter “cmd” and click **OK**
 2. Run the following command: **Note:** Replace the gateway address (_10.0.0.1_) with your private IP block gateway.
-  * `route add 10.0.0.0 mask 255.0.0.0 10.0.0.1 –p`
+   * `route add 10.0.0.0 mask 255.0.0.0 10.0.0.1 –p`
 
 ## RedHat, Fedora, and CentOS
 {: #redhat-fedora-and-centos}

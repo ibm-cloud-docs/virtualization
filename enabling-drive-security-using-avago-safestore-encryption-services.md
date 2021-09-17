@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-14"
+  years: 2014, 2021
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 
@@ -49,8 +49,8 @@ Click the **Physical** tab. Then, click the drives that are available on the sys
 
 1. To enable Drive security, right-click the **Controller 0 :AVAGO MegaRAID SAS 9361-8i** from the **Physical** tab and select
 **Enable Drive Security**.
-  * You can now enter the **Security key identifier** and the **Security key**. If you have multiple security keys, a security key identifier can help you identify which security key to use. You must record the security key in a safe location. The security key is required when you reconfigure drives such as removing or reinserting a drive. Without the security key, it is not possible to retrieve any data that is stored in a volume that is created out of the SEDs. It is not possible to retrieve a forgotten security key. A start time password can also be set, which holds the system pause for a password set here to be entered. The start time password is optional and if it is set you must log in into IPMI and type the start password whenever the system is rebooted. Scroll down and check the box that says **I recorded the security settings for future reference** and click **Yes** to enable drive security.
-  * When drive security is enabled, a yellow key image appears for **Controller 0 AVAGO MegaRAID SAS 9361-8i**.
+   * You can now enter the **Security key identifier** and the **Security key**. If you have multiple security keys, a security key identifier can help you identify which security key to use. You must record the security key in a safe location. The security key is required when you reconfigure drives such as removing or reinserting a drive. Without the security key, it is not possible to retrieve any data that is stored in a volume that is created out of the SEDs. It is not possible to retrieve a forgotten security key. A start time password can also be set, which holds the system pause for a password set here to be entered. The start time password is optional and if it is set you must log in into IPMI and type the start password whenever the system is rebooted. Scroll down and check the box that says **I recorded the security settings for future reference** and click **Yes** to enable drive security.
+   * When drive security is enabled, a yellow key image appears for **Controller 0 AVAGO MegaRAID SAS 9361-8i**.
 2. Now create a secure volume by using the SEDs. You can right-click **Controller0** from the **Logical** tab and select  
 **Create Virtual Drive**.
 3. Choose the **Advanced** option. The screen needs to specify the **RAID level** and the **Drive security method** as

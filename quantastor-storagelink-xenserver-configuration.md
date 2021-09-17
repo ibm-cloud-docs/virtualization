@@ -10,6 +10,12 @@ keywords: QuantaStor
 {:shortdesc: .shortdesc}
 {:tip: .tip}
 {:new_window: target="_blank"}
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Installing QuantaStor StorageLink Xenserver
 {: #installing-quantastor-storagelink-xenserver}
@@ -19,18 +25,24 @@ keywords: QuantaStor
 
 1. Make sure that your installation of XenServer is properly licensed for StorageLink.
 
-Only customers who subscribe to the "Enterprise" or "Platinum" licenses through Citrix can use the StorageLink feature. Customers who have the "Advanced" Citrix XenServer license can't access the StorageLink feature.
-{: tip}
+   Only customers who subscribe to the "Enterprise" or "Platinum" licenses through Citrix can use the StorageLink feature. Customers who have the "Advanced" Citrix XenServer license can't access the StorageLink feature.
+   {: tip}
 
 2. Stop the StorageLink service by entering the following command at an administrator prompt. Or, you can stop the StorageLink service from the Services Panel in XenServer.
 
-        C:\> net stop storagelink
+   ```
+   C:\> net stop storagelink
+   ```
+   {: pre}
 
 3. Download and run the StorageLink adapter available from OSNexus.
 
 4. After the service stops, you can install the QuantaStor StorageLink adapter by running the following command:
 
-        osn_quantastor_csladapter.exe
+   ```
+   osn_quantastor_csladapter.exe
+   ```
+   {: pre}
 
 5. Add this block of XML to the end of the StorageLink configuration at:
    * `C:\Program Files\Citrix\StorageLink\Server\scsi_device_id_config.xml`
@@ -39,7 +51,10 @@ Only customers who subscribe to the "Enterprise" or "Platinum" licenses through 
    * At the beginning of this file you see a version number that that is similar to _2.0.0.4._ Increase the version number, for example: 2.0.0.5. The version number tells StorageLink that it needs to upgrade your XenServer systems with these new device identification rules.
 6. Restart the Citrix StorageLink service:
 
-        C:\> net start storagelink
+   ```
+   C:\> net start storagelink
+   ```
+   {: pre}
 
 ## Verifying that StorageLink loaded properly
 {: #verifying-that-storagelink-loaded-properly}
@@ -54,6 +69,7 @@ XenServer uses the Linux device-mapper multipath driver (`dmmp`) to enable suppo
 
 QuantaStor has some special rules that need to be added to the `multipath.conf` file. Edit the `/etc/multipath-enabled.conf` file that is on each of XenServer `dom0` nodes. In that file, add the following stanza after the last device { } section:
 
+```
     device {
           vendor                  "OSNEXUS"
           product                 "QUANTASTOR"
@@ -65,3 +81,5 @@ QuantaStor has some special rules that need to be added to the `multipath.conf` 
           rr_min_io               100
           path_checker            tur
     }
+```
+{: codeblock}

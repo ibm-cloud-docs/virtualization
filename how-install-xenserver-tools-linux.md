@@ -30,7 +30,7 @@ These steps are specifically for customer-managed XenServers, not {{site.data.ke
 
 3. Click **Install XenServer Tools** to continue.
 
-On the console tab of XenCenter for your virtual machine, you see a CD image of "xs-tools.iso" that is loaded into the DVD drive. It also provides you with the device name within the system.
+   On the console tab of XenCenter for your virtual machine, you see a CD image of "xs-tools.iso" that is loaded into the DVD drive. It also provides you with the device name within the system.
 
 4. You can do the following steps through either the console or through an SSH session to the system. By following this example, the installation uses SSH.
    The drive device name is provided by XenCenter.

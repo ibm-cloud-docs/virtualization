@@ -115,12 +115,12 @@ Verify that the following prerequisites are met before you proceed:
 * Have two portable private networks that correspond to the two NICs that are defined within the vSphere environment. The replication network cannot be assigned to the same network as the data access network, which can create a routing loop.
 * Have {{site.data.keyword.cos_full_notm}} credentials. These credentials include an {{site.data.keyword.cloud_notm}} username, {{site.data.keyword.cos_full_notm}} username, and the API key that is associated with the {{site.data.keyword.cloud_notm}} username.
 * Suspend data replication on the on-premises AltaVault appliance or disconnect it from the container/bucket that is used to access the backup archive in {{site.data.keyword.cloud_notm}} if the on-premises environment is still intact.
-  * Use one of the two following methods to suspend or stop replication:
-     * Turn off the on-premises AltaVault appliance.
-     * Go to the AltaVault appliance web management console and click **Storage > Cloud Settings > Replication**. Select **Suspend Replication**.
-     * Obtain a copy of the configuration file of the on-premises AltaVault appliance or have it accessible through a URL. The configuration file is a .tar file.
-  * Go to the AltaVault appliance web management console and click **Configure > Setup Wizard > Export Configuration > Export Configuration**. Save the configuration file (.tar file) and either transfer it to the utility server or make it accessible through a URL.
-     * Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources such as networking and storage.
+   * Use one of the two following methods to suspend or stop replication:
+      * Turn off the on-premises AltaVault appliance.
+      * Go to the AltaVault appliance web management console and click **Storage > Cloud Settings > Replication**. Select **Suspend Replication**.
+      * Obtain a copy of the configuration file of the on-premises AltaVault appliance or have it accessible through a URL. The configuration file is a .tar file.
+   * Go to the AltaVault appliance web management console and click **Configure > Setup Wizard > Export Configuration > Export Configuration**. Save the configuration file (.tar file) and either transfer it to the utility server or make it accessible through a URL.
+      * Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources such as networking and storage.
 
 ### Deploying AltaVault OVA
 {: #deploying-altavault-ova-disaster}

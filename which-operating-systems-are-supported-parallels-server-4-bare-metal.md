@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-06-25"
+  years: 2014, 2021
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 ---
@@ -13,7 +13,7 @@ subcollection: virtualization
 
 <table border="1" cellpadding="0" cellspacing="0" width="684">
 
-  <tbody>
+   <tbody>
     <tr>
       <th style="text-align: center;font-weight: bold;">Operating System</th>
       <th style="text-align: center;font-weight: bold;">Virtual Machine</th>
@@ -125,7 +125,7 @@ subcollection: virtualization
       </tr>
     </tbody>
     <CAPTION>Table 1. Supported operating systems</CAPTION>
-  </table>
+   </table>
 
 \* Virtuozzo Containers aren't licensed, nor supported, with Parallels Server 4 Bare Metal when you use {{site.data.keyword.cloud}}.
 

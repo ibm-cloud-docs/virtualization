@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-14"
+  years: 2014, 2021
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 
@@ -33,10 +33,10 @@ Only customers who subscribe to the "Enterprise" or "Platinum" licenses through 
         osn_quantastor_csladapter.exe
 
 5. Add this block of XML to the end of the StorageLink configuration at:
-  * `C:\Program Files\Citrix\StorageLink\Server\scsi_device_id_config.xml`
-  * `OSNEXUS`
-  * `QUANTASTOR1`
-  * At the beginning of this file you see a version number that that is similar to _2.0.0.4._ Increase the version number, for example: 2.0.0.5. The version number tells StorageLink that it needs to upgrade your XenServer systems with these new device identification rules.
+   * `C:\Program Files\Citrix\StorageLink\Server\scsi_device_id_config.xml`
+   * `OSNEXUS`
+   * `QUANTASTOR1`
+   * At the beginning of this file you see a version number that that is similar to _2.0.0.4._ Increase the version number, for example: 2.0.0.5. The version number tells StorageLink that it needs to upgrade your XenServer systems with these new device identification rules.
 6. Restart the Citrix StorageLink service:
 
         C:\> net start storagelink

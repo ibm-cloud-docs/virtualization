@@ -3,8 +3,8 @@
 
 
 copyright:
-  years: 2014, 2020
-lastupdated: "2018-01-09"
+  years: 2014, 2021
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 
@@ -68,8 +68,8 @@ While the server downloads and caches templates, you can set up the network rang
 6. Enter the hostname as a fully qualified domain name, add your DNS server, and add a search domain if needed.
 7. Review the resource parameters.
 
-Be careful not to prohibit the container's ability to process data, its disk space, or memory by adding too many parameters, which could starve your server of resources. Starving your server causes it to slow or unexpectedly stop processes. If you do not understand these settings, then contact your server administrator or a [third-party management company ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs){: new_window}.
-{: tip}
+   Be careful not to prohibit the container's ability to process data, its disk space, or memory by adding too many parameters, which could starve your server of resources. Starving your server causes it to slow or unexpectedly stop processes. If you do not understand these settings, then contact your server administrator or a [third-party management company ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/docs){: new_window}.
+   {: tip}
 
 8. Click **Validate** before you click **Next**. Validating ensures that your settings do not conflict with each other.
 9. Select the applications that you want to install and click **Next**.

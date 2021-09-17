@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2021
-lastupdated: "2021-07-13"
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 ---
@@ -51,8 +51,8 @@ The IQN and target IP addresses of a {{site.data.keyword.blockstorageshort}} vol
 7. Select **Use CHAP**.
 8. Enter the username and password for the Lun.
 9. Click **Scan Target Host**.
-* Select a **Target IQNs** option.
-* Select a **Target LUNs** option.
+   * Select a **Target IQNs** option.
+   * Select a **Target LUNs** option.
 10. After the IQN and Lun fields populate, click **Finish**. The target is scanned to check for previous SRs. If an SR exists, the installer asks if you want to create a new SR or attach to the previous SR.
 
 If the servers are in a pool together, the iSCSI repository is automatically shared. 

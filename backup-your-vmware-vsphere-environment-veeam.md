@@ -12,6 +12,12 @@ keywords: vsphere, Veeam
 {:tip: .tip}
 {:external: target="_blank" .external}
 {:table: .aria-labeledby="caption"}
+:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Backing up your VMware vSphere environment by using Veeam
 {: #backing-up-your-vmware-vsphere-environment-by-using-veeam}
@@ -245,7 +251,8 @@ Follow these steps to create a backup of a complete virtual environment.
 4. Select which VMs that you want to back up by clicking **Add Objects** and click through the tree structure to select the VMs. Click **Add** after you select the appropriate VMs.<br/>If only specific parts of the VMs are to be backed up (the start disk), click **Exclusions** and specify the parts. Otherwise, click **Next**.
 5. Select the backup repository that you created by using the **Backup repository** drop-down menu.
 
-**Note:**For optimal performance, make sure that you change the data deduplication and compression settings. Use the following steps to optimize performance.
+   For optimal performance, make sure that you change the data deduplication and compression settings. Use the following steps to optimize performance.
+   {: note}
 
 1. Click **Advanced**, select the **Storage** tab, and clear **Enable inline data duplication**. Performance is improved because the AltaVault appliance performs block-level deduplication of the Veeam Backup and Replication backups that pass through it.
 2. Select **None** under the **Compression level** drop-down menu and select **LAN target** under the **Storage optimization** drop-down menu.<br/>**Note:** If the network location of the CIFS/SMB share is congested, leaving **Enable inline data deduplication** checked might alleviate network performance issues, but at the cost of smaller data deduplication ratios experienced on the AltaVault appliance.
@@ -257,4 +264,5 @@ Follow these steps to create a backup of a complete virtual environment.
 {: starting-a-manual-backup}
 To manually start a backup, right-click on the backup job and select **Start**. Alternatively, select **Active Full** if you want a new backup.
 
-**Note:** Veeam Backup and Replication can restore virtual environments from a backup. For more information about restoring virtual environments, see the [Veeam Backup and Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html){: external} website.
+Veeam Backup and Replication can restore virtual environments from a backup. For more information about restoring virtual environments, see the [Veeam Backup and Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html){: external} website.
+{: note}

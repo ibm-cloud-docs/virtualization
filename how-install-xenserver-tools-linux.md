@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2019-09-24"
+  years: 2014, 2021
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 ---
@@ -9,6 +9,12 @@ subcollection: virtualization
 {:shortdesc: .shortdesc}
 {:tip: .tip}
 {:new_window: target="_blank"}
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Installing XenServer tools with Linux
 {: #installing-xenserver-tools-when-using-linux}
@@ -26,18 +32,21 @@ These steps are specifically for customer-managed XenServers, not {{site.data.ke
 
 On the console tab of XenCenter for your virtual machine, you see a CD image of "xs-tools.iso" that is loaded into the DVD drive. It also provides you with the device name within the system.
 
-4. You can do the following steps through either the console or through an SSH session to the system. By following this example, the installation uses SSH. **Note:** The drive device name is provided by XenCenter.
-
-        $ ssh 10.17.37.243
-        root@10.17.37.243's password:
-        Last login: Thu Sep 11 12:57:31 2008 from 10.0.80.84
-        [root@ns0 ~]# cd /mnt
-        [root@ns0 mnt]# ls
-        [root@ns0 mnt]# mkdir xs-tools
-        [root@ns0 mnt]# mount /dev/xvdd /mnt/xs-tools/
-        mount: block device /dev/xvdd is write-protected, mounting read-only
-        [root@ns0 mnt]# cd /mnt/xs-tools/Linux/
-        [root@ns0 Linux]# bash install.sh
+4. You can do the following steps through either the console or through an SSH session to the system. By following this example, the installation uses SSH.
+   The drive device name is provided by XenCenter.
+   {: note}
+   
+   ```
+   $ ssh 10.17.37.243
+   root@10.17.37.243's password:
+   Last login: Thu Sep 11 12:57:31 2008 from 10.0.80.84
+   [root@ns0 ~]# cd /mnt
+   [root@ns0 mnt]# ls
+   [root@ns0 mnt]# mkdir xs-tools
+   [root@ns0 mnt]# mount /dev/xvdd /mnt/xs-tools/
+   mount: block device /dev/xvdd is write-protected, mounting read-only
+   [root@ns0 mnt]# cd /mnt/xs-tools/Linux/
+   [root@ns0 Linux]# bash install.sh
 
         The following changes are made to this virtual machine:
         * packages to be installed or upgraded:
@@ -53,20 +62,28 @@ On the console tab of XenCenter for your virtual machine, you see a CD image of 
 
         Reboot this virtual machine.
         [root@ns0 Linux]#
+   ```
+   {: codeblock}
+   
+   If you would like to copy and paste into your shell, the following lines perform all of the steps, if you are assigned the same device name of /dev/xvdd.
+   
+   ```
+   mkdir /mnt/xs-tools
+   mount /dev/xvdd /mnt/xs-tools
+   cd /mnt/xs-tools/Linux/
+   bash install.sh
+   ```
+   {: pre}
 
-If you would like to copy and paste into your shell, the following lines perform all of the steps, if you are assigned the same device name of /dev/xvdd.
-
-        mkdir /mnt/xs-tools
-        mount /dev/xvdd /mnt/xs-tools
-        cd /mnt/xs-tools/Linux/
-        bash install.sh
-
-In some cases, the Xen Tools ISO is mounted to /dev/cdrom.
-
-        mkdir /mnt/xs-tools
-        mount /dev/cdrom /mnt/xs-tools
-        cd /mnt/xs-tools/Linux
-        ./install.sh
+   In some cases, the Xen Tools ISO is mounted to /dev/cdrom.
+   
+   ```
+   mkdir /mnt/xs-tools
+   mount /dev/cdrom /mnt/xs-tools
+   cd /mnt/xs-tools/Linux
+   ./install.sh
+   ```
+   {: pre}
 
 5. Restart your system from the command line and you can see that XenServer Tools are installed.
 

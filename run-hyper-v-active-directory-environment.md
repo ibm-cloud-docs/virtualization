@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2020-11-10"
+  years: 2014, 2021
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 
@@ -91,7 +91,10 @@ The authorization store for Hyper-V is the final component that gives domain gro
 
 3. Make sure that **XML** is selected. Now, you need to remotely access `InitalStore.xml` on the Hyper-V server. Use the following path:
 
-`\HOSTNAME\c$\ProgramData\Microsoft\Windows\Hyper-V\InitialStore.xml`
+   ```
+   \HOSTNAME\c$\ProgramData\Microsoft\Windows\Hyper-V\InitialStore.xml
+   ```
+   {: pre}
 
 4. Go to **Hyper-V services > Role Assignments > Administrator**.
 
@@ -106,7 +109,10 @@ Now that the Hyper-V group has complete permissions to manage Hyper-V remotely, 
 
 1. Open My Computer and go to the following address:
 
-`\HOSTNAME\c$\Users\Public\Documents`
+   ```
+   \HOSTNAME\c$\Users\Public\Documents
+   ```
+   {: pre}
 
 2. Go to **Hyper-V > Properties > Security**
 

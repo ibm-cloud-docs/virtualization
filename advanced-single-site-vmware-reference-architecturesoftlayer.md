@@ -367,7 +367,7 @@ Follow these steps to configure the appliance:
 4. Go to the IP address that you gave to the vCenter virtual appliance (VCVA) appended with port 5480<!-- (https://:5480)-->.
 5. Accept the EULA in the wizard, answer the **Customer Improvement Experience Program** question, and select **Configure Options, Set custom configuration**.
 6. Click **Next** and enter the following values:
-<table border="1" cellpadding="0" cellspacing="0"><caption>Table 11. VCVA Setup Wizard</caption><tbody><tr><th>Wizard Menu</th><th>Option</th><th>Value</th></tr><tr><td>Database Settings</td><td>Database Type</td><td>embedded</td></tr><tr><td>SSO Settings</td><td>SSO Deployment Type</td><td>embedded</td></tr><tr><td>SSO Settings</td><td>New administrator password *(for administrator@vsphere.local)*</td><td>&lt;Enter a password&gt;</td></tr><tr><td>SSO Settings</td><td>Retype the new password</td><td>&lt;Enter the same password that you use previously&gt;</td></tr><tr><td>Time synchronization</td><td>NTP synchronization</td><td>servertime.service.softlayer.com</td></tr></tbody></table>
+   <table border="1" cellpadding="0" cellspacing="0"><caption>Table 11. VCVA Setup Wizard</caption><tbody><tr><th>Wizard Menu</th><th>Option</th><th>Value</th></tr><tr><td>Database Settings</td><td>Database Type</td><td>embedded</td></tr><tr><td>SSO Settings</td><td>SSO Deployment Type</td><td>embedded</td></tr><tr><td>SSO Settings</td><td>New administrator password *(for administrator@vsphere.local)*</td><td>&lt;Enter a password&gt;</td></tr><tr><td>SSO Settings</td><td>Retype the new password</td><td>&lt;Enter the same password that you use previously&gt;</td></tr><tr><td>Time synchronization</td><td>NTP synchronization</td><td>servertime.service.softlayer.com</td></tr></tbody></table>
 7. Click **Start**. The VCVA is configured.
 8. Change the root password by using the options under **Admin**.
 9. Log out of the VCVA configuration web page.
@@ -513,7 +513,7 @@ Before you begin adding VMkernel adapters, assign the vmnics to the uplinks on t
 2. Select the appropriate distributed switch for the capacity hosts.
 3. Click **Add and manage hosts** on the **Getting Started** page.
 4. Use the following settings to add uplinks and migrate the existing VMkernel that are associated with management of the host.
-   - <table border="1" cellpadding="0" cellspacing="0"><caption>Table 18. DVS Add Hosts</caption><tbody><tr><th>Menu</th><th>Field</th><th>Value</th></tr><tr><td>Select Task</td><td>Select Tasks</td><td>Add Hosts</td></tr><tr><td>Select Hosts</td><td>Click **New Hosts**</td><td>Click the Capacity Host</td></tr><tr><td>Select network adapter tasks</td><td>Select network adapter tasks</td><td>Select Manage physical adapters and Manage VMkernel adapters</td></tr></tbody></table>
+   <table border="1" cellpadding="0" cellspacing="0"><caption>Table 18. DVS Add Hosts</caption><tbody><tr><th>Menu</th><th>Field</th><th>Value</th></tr><tr><td>Select Task</td><td>Select Tasks</td><td>Add Hosts</td></tr><tr><td>Select Hosts</td><td>Click **New Hosts**</td><td>Click the Capacity Host</td></tr><tr><td>Select network adapter tasks</td><td>Select network adapter tasks</td><td>Select Manage physical adapters and Manage VMkernel adapters</td></tr></tbody></table>
 5. Select one of the private vmnics and click **Manage physical network adapters > Assign uplink**.
 6. Select `uplink1` on the pop-up screen and click **OK**.
 7. Repeat these steps for the other private vmnic and assign it to `uplink2`.

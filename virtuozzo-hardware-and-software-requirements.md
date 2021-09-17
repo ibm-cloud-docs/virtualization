@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-14"
+  years: 2014, 2021
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 ---
@@ -12,7 +12,7 @@ subcollection: virtualization
 {: #virtuozzo-hardware-requirements}
 
 * You need at least 2 GB of RAM.
-  * 4 GB to 8 GB or more is recommended.
-  * Virtuozzo alone, with no Containers, can use 2 GB (or more) of RAM depending on what processes are running.
+   * 4 GB to 8 GB or more is recommended.
+   * Virtuozzo alone, with no Containers, can use 2 GB (or more) of RAM depending on what processes are running.
 * 4 GB of free disk space is recommended.
 * Network

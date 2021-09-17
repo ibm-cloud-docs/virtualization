@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-08-14"
+  years: 2014, 2021
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 
@@ -10,6 +10,12 @@ keywords: Citrix XenServer
 
 {:shortdesc: .shortdesc}
 {:new_window: target="_blank"}
+{:codeblock: .codeblock}
+{:pre: .pre}
+{:screen: .screen}
+{:tip: .tip}
+{:note: .note}
+{:important: .important}
 
 # Adding a hard disk drive to Citrix XenServer
 {: #adding-a-hard-disk-drive-to-citrix-xenserver}
@@ -25,29 +31,52 @@ Xen storage repository supports IDE, SATA, SCSI, and SAS drives when locally con
 
 2. Find the disk ID of the new device by using the following command:
 
-       # cat /proc/partitions
+   ```
+   # cat /proc/partitions
+   ```
+   {: pre}
 
-  The command lists of all the HDDs and partitions. Find your new local disk, which is probably “sdx” (most probably sdb) or '/cciss/c0d1p0'. Use the following command to list the disk IDs for all the partitions/HDDs present in the server.
+   The command lists of all the HDDs and partitions. Find your new local disk, which is probably “sdx” (most probably sdb) or '/cciss/c0d1p0'. Use the following command to list the disk IDs for all the partitions/HDDs present in the server.
 
-       # ll /dev/disk/by-id
+   ```
+   # ll /dev/disk/by-id
+   ```
+   {: pre}
 
-  Find the disk ID of the “sdx” or 'cciss/c0d1'disk. The “scsi-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” or “cciss-xxxxxxxxxxxxxxxxxxxxxxxxxx” format is what you need.
+   Find the disk ID of the “sdx” or 'cciss/c0d1'disk. The “scsi-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” or “cciss-xxxxxxxxxxxxxxxxxxxxxxxxxx” format is what you need.
 
 3. Find the 'host-uuid' in a XenServer by using the following command:
 
-        #xe host-list
+   ```
+   #xe host-list
+   ```
+   {: pre}
 
-  The uuid (RO) is the 'host-uuid' that you need.
+   The uuid (RO) is the 'host-uuid' that you need.
 
 4. Create a Storage Repository (SR):
 
-  > **Note:** The [sr-create ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX121313){: new_window} command is for adding a new hard disk drive. Creating a new hard disk drive is a destructive process that partitions and formats the drive, and any data on the drive is lost. If you want to reintroduce a drive that has existing data, use [sr-introduce ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX121896){: new_window}.
+   The [sr-create ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX121313){: new_window} command is for adding a new hard disk drive. Creating a new hard disk drive is a destructive process that partitions and formats the drive, and any data on the drive is lost. If you want to reintroduce a drive that has existing data, use [sr-introduce ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX121896){: new_window}.
+   {: note}
 
-  `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
-  \- Or -<br/>
-  `# xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`<br/>
-  \- Or -<br/>
-  `# xe sr-create content-type=user device-config:device=/dev/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm`
+   ```
+   # xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm
+   ```
+   {: pre}
+
+   \- Or
+   
+   ```
+   # xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm
+   ```
+   {: pre}
+   
+   \- Or 
+   
+   ```
+   # xe sr-create content-type=user device-config:device=/dev/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm
+   ```
+   {: pre}
 
 ## Verifying the Storage Repository in XenCenter
 {: #verifying-the-storage-repository-in-xencenter}

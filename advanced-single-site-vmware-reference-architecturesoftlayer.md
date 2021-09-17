@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2021
-lastupdated: "2021-05-12"
+lastupdated: "2021-09-17"
 
 keywords: ESXi, VMware reference architecture
 
@@ -120,11 +120,11 @@ A Windows 2012 R2 Standard virtual server is provisioned to use as a utility ser
 2. Select **Account > Place an Order**.
 3. Go to **Virtual Server > Hourly or Monthly**.
 4. Select the appropriate data center (where the VLANs were created) to provision the virtual server and specify the following specifications for each option:
-  * Computing instance - 1x2.0 GHz Cores
-  * RAM: 4 GB
-  * Operating System: Windows Server 2012 R2 Standard Edition (64-bit)
-  * First Disk: 100 GB (SAN)
-  * Uplink Port Speeds - 1 Gbps Public and Private Network Uplinks
+   * Computing instance - 1x2.0 GHz Cores
+   * RAM: 4 GB
+   * Operating System: Windows Server 2012 R2 Standard Edition (64-bit)
+   * First Disk: 100 GB (SAN)
+   * Uplink Port Speeds - 1 Gbps Public and Private Network Uplinks
 5. Click **Continue Your Order** and select the backend and fronted VLANs on the **Order Summary and Billing** screen. **Note:** The selection of VLANs is important so the utility can be placed in the correct pod within the data center. For the example environment, the backend VLAN is the management VLAN (1101) and the front-end VLAN is the public VLAN (2101)
 6. Enter a host name and domain name for the server and click **Place Order**.
 
@@ -152,12 +152,12 @@ Use the following steps to order the management host servers.
 3. Select **Bare Metal Servers > Monthly**.
 4. Choose an appropriate server that meets the requirements for the management cluster on the server list screen. **Note:** At a minimum, ESXi 5.5 requires a single dual-core processor, 4 GB of RAM, and 1 Gb Ethernet controller.
 5. Select the appropriate data center (where the VLANs were created) to provision the ESXi servers and specify the following specifications for each option:
-  * Quantity: 2
-  * RAM: 32 GB
-  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=vmware-installing-vsphere-esxi#installing-vsphere-esxi))
-  * Hard disks: Disks 1 & 2: 500 GB SATA in RAID 1
-  * Public Bandwidth: Private Network Only-> 0 GB bandwidth
-  * Uplink Port Speeds: 10 Gbps Redundant Private Network Uplinks
+   * Quantity: 2
+   * RAM: 32 GB
+   * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=vmware-installing-vsphere-esxi#installing-vsphere-esxi))
+   * Hard disks: Disks 1 & 2: 500 GB SATA in RAID 1
+   * Public Bandwidth: Private Network Only-> 0 GB bandwidth
+   * Uplink Port Speeds: 10 Gbps Redundant Private Network Uplinks
 6. Click **Continue Your Order**.
 7. Click **Add Server** to begin adding ESXi hosts for the capacity cluster to the order.
 
@@ -166,12 +166,12 @@ Use the following steps to order the management host servers.
 
 1. Choose an appropriate server that meets the requirements for the capacity cluster hosts on the server list screen. **Note:** At a minimum, ESXi 5.5 requires a single dual-core processor, 4 GB of RAM, and one 1 GB Ethernet controller.
 2. Select the appropriate data center (where the VLANs were created) to provision the ESXi servers and specify the following specifications for each option:
-  * Quantity: 3
-  * RAM: 128 GB
-  * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=vmware-installing-vsphere-esxi)
-  * Hard disk: Disks 1 & 2: 500 GB SATA in RAID 1
-  * Public Bandwidth: Private Network Only > 0 GB bandwidth
-  * Uplink Port Speeds: 10 Gbps Redundant Private Network Uplinks
+   * Quantity: 3
+   * RAM: 128 GB
+   * Operating System: VMware ESXi 5.5 ('No Operating System' if you are using [Installing VMware vSphere ESXi via Remote Console and Virtual Media](/docs/vmware?topic=vmware-installing-vsphere-esxi)
+   * Hard disk: Disks 1 & 2: 500 GB SATA in RAID 1
+   * Public Bandwidth: Private Network Only > 0 GB bandwidth
+   * Uplink Port Speeds: 10 Gbps Redundant Private Network Uplinks
 3. Click **Continue Your Order**.
 
 ### Completing configuration
@@ -201,9 +201,9 @@ To trunk the VLANs and unbond the NICs, you need to open a ticket by following t
 1. Open a browser window and log in to {{site.data.keyword.cloud_notm}}.
 2. Select **Support, Add Ticket**.
 3. Enter the following information:
-  * Subject: Private network question
-  * Title: Trunk VLANs and unbond NICs
-  * Details: Trunk VLANs `<Management VLAN>`, `<Storage VLAN>`, and `<VM VLAN>` on eth0 and eth2 NIC pair for the following hosts [list each ESXi host]. Also, unbond (remove LACP) the private NICs (eth0 and eth2) on the following servers: [list each ESXi host]
+   * Subject: Private network question
+   * Title: Trunk VLANs and unbond NICs
+   * Details: Trunk VLANs `<Management VLAN>`, `<Storage VLAN>`, and `<VM VLAN>` on eth0 and eth2 NIC pair for the following hosts [list each ESXi host]. Also, unbond (remove LACP) the private NICs (eth0 and eth2) on the following servers: [list each ESXi host]
 4. Click **Add Ticket**.
 
 Make sure to change the VLANs that are designated in the <> with your actual VLANs
@@ -335,8 +335,8 @@ After the VM is installed, assign an IP address and default gateway from the por
 Although it is beyond the scope of this document to detail the steps that are needed to enable DNS, the following guidance is provided:
 
 1. Set **DNS Forwarding** to the service.softlayer.com local DNS hosts:
-  * `rs1.service.softlayer.com 10.0.80.11`
-  * `rs2.service.softlayer.com 10.0.80.12`
+   * `rs1.service.softlayer.com 10.0.80.11`
+   * `rs2.service.softlayer.com 10.0.80.12`
 2. After you set up DNS, create a local DNS zone (`dal06.mycompany.local`) and a reverse lookup zone for all portable and primary subnets that are provisioned.
 3. Add an A HOST records for each host’s Management IP address (vmk0 on vmkPG-management).
 4. Add an A HOST record from the portable private subnet that is bound to the management VLAN for your vCenter Virtual Appliance.
@@ -513,7 +513,7 @@ Before you begin adding VMkernel adapters, assign the vmnics to the uplinks on t
 2. Select the appropriate distributed switch for the capacity hosts.
 3. Click **Add and manage hosts** on the **Getting Started** page.
 4. Use the following settings to add uplinks and migrate the existing VMkernel that are associated with management of the host.
-  - <table border="1" cellpadding="0" cellspacing="0"><caption>Table 18. DVS Add Hosts</caption><tbody><tr><th>Menu</th><th>Field</th><th>Value</th></tr><tr><td>Select Task</td><td>Select Tasks</td><td>Add Hosts</td></tr><tr><td>Select Hosts</td><td>Click **New Hosts**</td><td>Click the Capacity Host</td></tr><tr><td>Select network adapter tasks</td><td>Select network adapter tasks</td><td>Select Manage physical adapters and Manage VMkernel adapters</td></tr></tbody></table>
+   - <table border="1" cellpadding="0" cellspacing="0"><caption>Table 18. DVS Add Hosts</caption><tbody><tr><th>Menu</th><th>Field</th><th>Value</th></tr><tr><td>Select Task</td><td>Select Tasks</td><td>Add Hosts</td></tr><tr><td>Select Hosts</td><td>Click **New Hosts**</td><td>Click the Capacity Host</td></tr><tr><td>Select network adapter tasks</td><td>Select network adapter tasks</td><td>Select Manage physical adapters and Manage VMkernel adapters</td></tr></tbody></table>
 5. Select one of the private vmnics and click **Manage physical network adapters > Assign uplink**.
 6. Select `uplink1` on the pop-up screen and click **OK**.
 7. Repeat these steps for the other private vmnic and assign it to `uplink2`.

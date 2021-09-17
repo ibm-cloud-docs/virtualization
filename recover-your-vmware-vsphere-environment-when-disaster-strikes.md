@@ -253,10 +253,10 @@ Provision the virtual server instance within the same data center as the AltaVau
 Use the following steps to install Veeam Backup & Replication to the {{site.data.keyword.cloud_notm}} virtual server instance after all of the prerequisites are met.
 
 1. Double-click the program file and click **Veeam Backup & Replication – Install**. The setup wizard opens.
-* Click **Next** and select **I accept the terms in the license agreement** .
-* Click **Next** and specify the location of the license file that is obtained under Deploy Veeam Backup & Replication.
-* Click **Next** and select which Veeam Backup & Replication components that you want installed and their installation location on the **Program Features** screen. **Note:** **Veeam Backup & Replication** and **Veeam Backup Catalog** are required components.
-* Click **Next**.<br/>The setup wizard runs a series of checks to make sure that all required program frameworks and supporting components are installed. If any components are missing, the setup wizard offers to install them. <!--Click **Install** if so.-->
+   * Click **Next** and select **I accept the terms in the license agreement** .
+   * Click **Next** and specify the location of the license file that is obtained under Deploy Veeam Backup & Replication.
+   * Click **Next** and select which Veeam Backup & Replication components that you want installed and their installation location on the **Program Features** screen. **Note:** **Veeam Backup & Replication** and **Veeam Backup Catalog** are required components.
+   * Click **Next**.<br/>The setup wizard runs a series of checks to make sure that all required program frameworks and supporting components are installed. If any components are missing, the setup wizard offers to install them. <!--Click **Install** if so.-->
 2. Verify that all components **Passed** the systems check and click **Next**.
 3. Select the **Service (user) Account** that you want the Veeam Backup Service to run. The default service account is the **LOCAL SYSTEM account**. Click **Next**.
 4. Select the **SQL Server Instance** that you want to use to create and store Veeam Backup & Replication databases. For more information, contact your database administrator. Click **Next**.
@@ -299,7 +299,7 @@ Follow these steps to create a new backup repository to store restored backups o
 9. Specify the optional vPower NFS settings on the **vPower NFS** screen. If the **Enable vPower NFS server** checkbox is not selected, then Veeam Backup & Replication uses vPower for recovery and recovery verification. Click **Next**.
 10. Select **Import existing backups automatically**, unless you use manual selection of VM backups.
 11. Verify that all settings are correct, and click **Next**.
-   * Click **Finish** to exit the wizard.
+    * Click **Finish** to exit the wizard.
 12. Click **Yes** to continue.
 
 Veeam Backup & Replication is configured and you can begin restoring backups.

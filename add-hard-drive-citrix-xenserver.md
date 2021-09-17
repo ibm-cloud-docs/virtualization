@@ -64,14 +64,14 @@ Xen storage repository supports IDE, SATA, SCSI, and SAS drives when locally con
    ```
    {: pre}
 
-   \- Or
+    \- Or
    
    ```
    # xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm
    ```
    {: pre}
    
-   \- Or 
+    \- Or 
    
    ```
    # xe sr-create content-type=user device-config:device=/dev/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm

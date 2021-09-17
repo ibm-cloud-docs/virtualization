@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2021
-lastupdated: "2021-04-20"
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 
@@ -116,11 +116,11 @@ Verify that the following prerequisites are met before you proceed:
 * Have {{site.data.keyword.cos_full_notm}} credentials. These credentials include an {{site.data.keyword.cloud_notm}} username, {{site.data.keyword.cos_full_notm}} username, and the API key that is associated with the {{site.data.keyword.cloud_notm}} username.
 * Suspend data replication on the on-premises AltaVault appliance or disconnect it from the container/bucket that is used to access the backup archive in {{site.data.keyword.cloud_notm}} if the on-premises environment is still intact.
   * Use one of the two following methods to suspend or stop replication:
-    * Turn off the on-premises AltaVault appliance.
-    * Go to the AltaVault appliance web management console and click **Storage > Cloud Settings > Replication**. Select **Suspend Replication**.
-    * Obtain a copy of the configuration file of the on-premises AltaVault appliance or have it accessible through a URL. The configuration file is a .tar file.
+     * Turn off the on-premises AltaVault appliance.
+     * Go to the AltaVault appliance web management console and click **Storage > Cloud Settings > Replication**. Select **Suspend Replication**.
+     * Obtain a copy of the configuration file of the on-premises AltaVault appliance or have it accessible through a URL. The configuration file is a .tar file.
   * Go to the AltaVault appliance web management console and click **Configure > Setup Wizard > Export Configuration > Export Configuration**. Save the configuration file (.tar file) and either transfer it to the utility server or make it accessible through a URL.
-    * Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources such as networking and storage.
+     * Knowledge of VMware Sphere terminology and administering vSphere ESXi environments. This knowledge includes, but is not limited to, use of the vSphere web client, vSphere client, and assignment of hardware resources such as networking and storage.
 
 ### Deploying AltaVault OVA
 {: #deploying-altavault-ova-disaster}
@@ -189,7 +189,7 @@ You successfully imported the on-premises AltaVault appliance configuration to t
 Use the following steps to modify the cloud settings of the {{site.data.keywrod.cloud_notm}} AltaVault appliance to give it access to the {{site.data.keyword.cos_full_notm}} service through the private network.
 
 1. In AltaVault, go to **Storage > Cloud Settings > Cloud** and modify the hostname to reflect the private address of the {{site.data.keyword.cos_full_notm}} service.
-  * The private network name syntax is <location>.objectstorage.service.networklayer.com, where *<location>* designates the shortened data center name (example: mel01 for the Melbourne 01 data center).
+   * The private network name syntax is <location>.objectstorage.service.networklayer.com, where *<location>* designates the shortened data center name (example: mel01 for the Melbourne 01 data center).
 2. Click **Apply**. The AltaVault appliance attempts to connect to the {{site.data.keyword.cos_full_notm}} service. If this connection attempt fails, verify that the cloud provider settings are correct before you try to connect again.
 
 After you connect to {{site.data.keyword.cos_full_notm}}, the appliance needs to be placed in recovery mode to sync the metadata content of the original backup data from {{site.data.keyword.cos_full_notm}}.
@@ -211,7 +211,7 @@ After the internal connection to {{site.data.keyword.cos_full_notm}} is establis
 2. Expand the **e0b** interface and select **Enable Data Interface**, if necessary.
 3. Enter the IP address, subnet mask, and gateway that you want to use to mount the CIFS/SMB share. Make sure to use a different subnet than the one that is used for the primary interface.
 4. Leave the default **MTU** value of **1500 bytes**.
-  * Although the default maximum transmission unit (MTU) is 1,500, you can change it to 9,000 if you are using jumbo frames. Your ESXi host and physical infrastructure need to support jumbo frames. By default, {{site.data.keyword.cloud_notm}} supports an MTU size of 9,000 bytes with no configuration changes needed.
+   * Although the default maximum transmission unit (MTU) is 1,500, you can change it to 9,000 if you are using jumbo frames. Your ESXi host and physical infrastructure need to support jumbo frames. By default, {{site.data.keyword.cloud_notm}} supports an MTU size of 9,000 bytes with no configuration changes needed.
 5. Click **Apply**.
 
 The AltaVault appliance is now configured to allow communications between itself, {{site.data.keyword.cos_full_notm}}, and Veeam Backup & Replication.
@@ -275,7 +275,7 @@ After Veeam Backup & Replication installs, you are ready to connect with the Alt
 4. From the ribbon menu, click **Add Server** and double-click **VMware vSphere**.
 5. Enter the private IP address of the vSphere server and click **Next**.
 6. Enter the account credentials of a local account with administrator privileges on the vSphere server that is specified previously. **Note:** The account username must be in DOMAIN\USER format for domain accounts, or HOST\USER format for local accounts. To add an account, click **Add** and enter the appropriate username and password. Do not change the default VMware web services port unless your network administrator tells you to. <!-- otherwise during [Veeam Backup & Replication installation](#_Installing_Veeam_Backup).--> Click **Next**.
-  * Veeam Backup & Replication attempts to connect to the vSphere server. If the connection attempt fails, check that the account exists and has administrator privileges on the vSphere server before you try again.
+   * Veeam Backup & Replication attempts to connect to the vSphere server. If the connection attempt fails, check that the account exists and has administrator privileges on the vSphere server before you try again.
 7. Click **Finish**.
 8. Verify that the vSphere server is successfully added by clicking **Managed Servers > VMware vSphere**.
 
@@ -289,8 +289,8 @@ Follow these steps to create a new backup repository to store restored backups o
 3. Give the repository a unique **Name** and give an appropriate **Description**. Click **Next**.
 4. Select the share type that corresponds to the share type that is used in the on-premises AltaVault appliance. Example: if the share type that is used in the on-premises AltaVault appliance is CIFS/SMB, select **Shared folder**.
 5. Specify the location where you want the backups of the CIFS/SMB share to be restored on the AltaVault appliance. The share has the same name as the share through which backups were processed on the on-premises AltaVault appliance. For example, if the share named `cifs_test1` is used for backups in the on-premises AltaVault appliance, then specify the location of the `cifs_test1` share on the {{site.data.keyword.cloud_notm}} AltaVault appliance.
-  * Open a web browser and enter the IP address of the AltaVault appliance to determine the location.
-  * Go to **Storage > CIFS** and take note of the **Share Path** of the share. **Note:** This is NOT the same as the local path of the share. The share path format is `\\<AltaVault appliance hostname>\<share name>`. Replace the AltaVault appliance hostname in the Share Path needs with the IP address of the e0b network interface (the mount point of the share) of the AltaVault appliance.<br/>
+   * Open a web browser and enter the IP address of the AltaVault appliance to determine the location.
+   * Go to **Storage > CIFS** and take note of the **Share Path** of the share. **Note:** This is NOT the same as the local path of the share. The share path format is `\\<AltaVault appliance hostname>\<share name>`. Replace the AltaVault appliance hostname in the Share Path needs with the IP address of the e0b network interface (the mount point of the share) of the AltaVault appliance.<br/>
    * Click **Settings > Data Interfaces** in the AltaVault appliance management window to find the IP address of the **e0b** interface. For more information about configuring IFS/SMB mounts, see Configure CIFS/SMB Mount Point in AltaVault.
    * The share path that is specified in Veeam Backup & Replication is `\\10.120.108.133\cifs_test1`, not `\\restore-appliance\cifs_test1`.
 6. Return to Veeam Backup & Replication, input the share path of the mount point in the **Shared folder** field, and click **Next**. Veeam Backup & Replication attempts to establish a connection with the mount point. If the connection fails, go back and verify the network settings for the AltaVault appliance are correct before you try again.
@@ -299,7 +299,7 @@ Follow these steps to create a new backup repository to store restored backups o
 9. Specify the optional vPower NFS settings on the **vPower NFS** screen. If the **Enable vPower NFS server** checkbox is not selected, then Veeam Backup & Replication uses vPower for recovery and recovery verification. Click **Next**.
 10. Select **Import existing backups automatically**, unless you use manual selection of VM backups.
 11. Verify that all settings are correct, and click **Next**.
-* Click **Finish** to exit the wizard.
+   * Click **Finish** to exit the wizard.
 12. Click **Yes** to continue.
 
 Veeam Backup & Replication is configured and you can begin restoring backups.

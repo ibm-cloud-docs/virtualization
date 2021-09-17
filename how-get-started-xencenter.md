@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-03-23"
+  years: 2014, 2021
+lastupdated: "2021-09-17"
 
 subcollection: virtualization
 ---
@@ -36,17 +36,17 @@ Use the following steps to help you create a virtual machine with XenCenter.
 6. Select the operating system that you want to use for the new virtual machine and then click **Next**. **Note:** Some templates require that you provide your own media.<!--Because you are using CentOS, you can use {{site.data.keyword.BluSoftlayer_notm}} private mirrors for CentOS to get our installation going.Select a version of CentOS and then click **Next**.-->
 7. Enter an appropriate name and description for the new virtual machine.
 8. Enter the location of the guest operating system installation media and click **Next**. <!-- In the example, {{site.data.keyword.BluSoftlayer_notm}} a CentOS mirror is used as installation media. Provide the Install URL of: http://mirrors.service.softlayer.com/centos/5/os/x86_64 and click **Next**.
-  *A trailing ‘/’ at the end of the URL can sometimes break the installation.*
-  *This mirror is available only on the {{site.data.keyword.BluSoftlayer_notm}} Private Network. The full mirror's contents are  available here: http://mirrors.service.softlayer.com/.-->
+   * A trailing ‘/’ at the end of the URL can sometimes break the installation.*
+   * This mirror is available only on the {{site.data.keyword.BluSoftlayer_notm}} Private Network. The full mirror's contents are  available here: http://mirrors.service.softlayer.com/.-->
 9. Select the number of CPUs and amount of memory allocation. (You are building a streamlined system and you do not need too much RAM. So, 512 MB is more than enough.). Click **Next**.
 10. Select your virtual disks to allocate disk space to your VM.<!--Remember that this is like adding hard disks, it is not like partitioning your system. Partitioning is done during the installation of the OS.--> The default size is 8 GB for this template. This amount is more than enough for the server that you are building. *Optional: You can make the disk larger to suit your needs by highlighting the disk and clicking **Edit...**.* Click **Next**.
 11. Add or remove virtual network interfaces for the virtual machine. The defaults are acceptable, unless you do not want your system to be able to communicate on the Private Network. Click **Next**.
 12. The configuration is complete. Leave "Start VM automatically" selected and click **Finish**. The installation begins. You return to the main screen. You can see the new VM listed on the left.
 13. Select your new VM and click the **Console** tab. <!--You can now see that your system is booted into the CentOS installer awaiting your input.-->
 14. <!--All of the parameters of a CentOS installation are outside of the scope of this article and will need to be customized by your System Administrator, but this article will provide some specific pieces of information that you need to complete the installation. Select your language to get started. The CentOS installer will then ask you for assistance in configuring the Networking Devices in the system.--> Select **eth0 - xen Virtual Ethernet** and click **OK**.
-  <!--![14](images/14.png)-->
+   <!--![14](images/14.png)-->
 15. <!--In the pre-requisite notes, we made sure that we already had a set of Portable IP Addresses routed as "Secondary on VLAN" ready for this installation.--> Make sure that you have the information ready to configure TCP/IP. You need to manually configure the interface with IPV4 support and disable IPV6 support.
-  <!--[15](images/15.png)-->
+   <!--[15](images/15.png)-->
 16. Confirm that you are aware of how to use your Private IP Subnet (10.17.37.240/29) and click **OK**<!-- to go to the CentOS installer-->. You and your system administrator can install the guest operating system according to your company guidelines. For more informatin about static and portable IP blocks, see [Getting started with subnets and IPs](/docs/subnets?topic=subnets-getting-started).
 
 You have created a new VM.

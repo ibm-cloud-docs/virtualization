@@ -38,7 +38,7 @@ The capacity cluster contains the resources and infrastructure that are needed t
 |Primary Private| Storage| Assigned to manage and access the shared storage that is attached to each ESXi host.|
 |Primary Private| VM Access | Assigned to virtual machines that run on each ESXi host.|
 |Primary Public | Public | Assigned to virtual machines or other devices that require access from the public network.|
-<caption>Table 1. Primary VLANs</caption>
+{: caption="Table 1. Primary VLANs" caption-side="top"}
 
 For shared storage, you can use OS Nexus QuantaStor, a single-tenant shared storage server, or {{site.data.keyword.cloud_notm}} Endurance or Performance storage services. In either case, the shared storage device is used to store the VMs on both the management and capacity clusters. For more information about storage options, see [{{site.data.keyword.cloud_notm}} storage solutions](https://www.ibm.com/cloud/storage){: external}.
 
@@ -75,7 +75,7 @@ After you log in to {{site.data.keyword.cloud_notm}}, open a support ticket for 
 |How many IP addresses do I need?|8 - 16 for each VLAN|
 |What router do the VLANs need to be behind?|It doesn't matter that the VLANs are all in the same pod.|
 |Which pod do the VLANs need to be in?|They all go in the same pod in <DATA CENTER NAME>.|
-<caption>Table 2. Support ticket information</caption>
+{: caption="Table 2. Support ticket information" caption-side="top"}
 
 After the VLANs are provisioned, make note of the VLAN numbers, subnet range, and gateway, and assign them to logical vSphere networks. You can use the worksheet in Appendix A: VLAN worksheet to record the VLAN and the associated information. For example:
 
@@ -85,7 +85,7 @@ After the VLANs are provisioned, make note of the VLAN numbers, subnet range, an
 |Primary Private|1102|10.A.B.C/29|10.A.B.1|Storage|
 |Primary Private|1103|10.Q.R.S/29|10.Q.R.1|Virtual machines|
 |Primary Public|2101|75.S.T.U/29|75.S.T.1|Public access|
-<caption>Table 3. Primary VLAN sample</caption>
+{: caption="Table 3. Primary VLAN sample" caption-side="top"} 
 
 **Note:** Do not continue to the next step until the VLANs are provisioned.
 
@@ -181,9 +181,9 @@ Now, you have ESXi hosts in your shopping cart. For the devices to provision cor
 
 1. Assign the following VLANs and create host names for the devices:
 
-* ESXi hosts – Backend VLAN: (1101)
-* Backend VLAN: (1101)
-* Frontend VLAN: (2101)
+   * ESXi hosts – Backend VLAN: (1101)
+   * Backend VLAN: (1101)
+   * Frontend VLAN: (2101)
 
 2. Select your payment method, agree to the terms and conditions, and click **Finalize Your Order**. **Important:** Do not proceed to Step 5 until the servers are provisioned and are accessible via VPN or virtual server that was ordered in the previous step.
 
@@ -225,94 +225,73 @@ Complete these steps for each host in the management cluster.
 ### vSwitch0 properties
 {: #vswitch0-properties}
 
-<table border="1" cellpadding="0" cellspacing="0">
-<caption>Table 4. vSwitch0 Properties</caption>
-<tbody>
-<tr><th>Network Adapter</th><th>vmnicX and vmnicY</th></tr>
-<tr><td>Load Balancing</td><td>Router based on the originating virtual port ID</td></tr>
-<tr><td>Active Adapters</td><td>vmnicX and vmnicY</td></tr>
-</tbody>
-</table>
+| Network adapter | vmnicX and vmnicY |
+| ---- | ---- |
+| Load balancing | Router based on the originating virtual port ID |
+| Active Adapters | vmnicX and vmnicY |
+{: caption="Table 4. vSwitch0 properties" caption-side="top"}
 
 ### Edit existing virtual machine port group
 {: #edit-existing-virtual-machine-port-group}
 
-<table border="1" cellpadding="0" cellspacing="0">
-<caption>Table 5. vmPG-Management Port Group</caption>
-<tbody>
-<tr><th>Network Label</th><th>*vmPG-Management*</th></tr>
-</tbody>
-</table>
+| Network label | vmPG-Management |
+| ---- | ---- |
+{: caption="Table 5. vmPG-Management" caption-side="top"}
 
 ### Edit existing VM kernel port group
 {: #edit-existing-vm-kernel-port-group}
 
-<table border="1" cellpadding="0" cellspacing="0">
-<caption>Table 6. vmkPG-Management Port Group</caption>
-<tbody>
-<tr><th>Network Label</th><th>*vmkPG-Management*</th></tr>
-</tbody>
-</table>
+| Network label | vmPG-Management |
+| ---- | ---- |
+{: caption="Table 6. vmPG-Management port group" caption-side="top"}
 
 ### Add vMotion VM kernel port group
 {: #add-vmotion-vm-kernel-port-group}
 
-<table border="1" cellpadding="0" cellspacing="0">
-<caption>Table 7. vMotion Port Group</caption>
-<tbody>
-<tr><th>Connection Type</th><th>VMKernel</th></tr>
-<tr><td>Network Label</td><td>*vmkPG-vMotion*</td></tr>
-<tr><td>VLAN ID</td><td>*&lt;Storage VLAN&gt; (1102)*</td></tr>
-<tr><td>vMotion Traffic</td><td>Enabled</td></tr>
-<tr><td>IP Address</td><td>*172.16.10.X/24*<br/><br/>*User-defined address that can be a different subnet. Make sure the other vMotion addresses on each host is on the same subnet.*</td></tr>
-<tr><td>Subnet Mask</td><td>255.255.255.0</td></tr>
-</tbody>
-</table>
+| Connection type | VMKernel |
+|---|---|
+| Network label | vmkPG-vMotion |
+| VLAN ID | Storage VLAN |
+| vMotion rraffic | Enabled |
+| IP Address | 172.16.10.X/24 (User-defined address that can be a different subnet. Make sure the other vMotion addresses on each host is on the same subnet.)|
+| Subnet mask | 255.255.255.0 |
+{: caption="Table 7. vMotion port group" caption-side="top"}
 
 ### Add fault tolerance VM kernel port group
 {: #add-fault-tolerance-vm-kernel-port-group}
 
-<table border="1" cellpadding="0" cellspacing="0">
-<caption>Table 8. FT Port Group</caption>
-<tbody>
-<tr><th>Connection Type</th><th>VM Kernel</th></tr>
-<tr><td>Network Label</td><td>*vmkPG-FT*</td></tr>
-<tr><td>VLAN ID</td><td>*&lt;Storage VLAN&gt; (1102)*</td></tr>
-<tr><td>Fault Tolerance Logging</td><td>Enabled</td></tr>
-<tr><td>IP Address</td><td>*172.16.20.X/24*<br/><br/>*User-defined address that can be a different subnet if needed. Make sure that the other FT addresses on each host are on the same subnet.*</td></tr>
-<tr><td>Netmask</td><td>255.255.255.0</td></tr>
-</tbody>
-</table>
+| Connection type | VM kernel |
+|---|---|
+| Network label | vmkPG-FT |
+| VLAN ID | Storage VLAN (1102) |
+| Fault tolerance logging | Enabled |
+| IP address | 172.16.20.X/24 (User-defined address that can be a different subnet if needed. Make sure that the other FT addresses on each host are on the same subnet.) |
+| Netmask | 255.255.255.0 |
+{: caption="table 8. Fault tolerance port group" caption-side="top"}
 
 ### Add storage VM kernel port group
 {: #add-storage-vm-kernel-port-group}
 
 Update the **Notes** section of each Portable IP address with the name of the host and VM kernel port assigned. The **Notes** section can be located by going to the {{site.data.keyword.slportal_full}} and selecting **Network > IP Management > Subnets > [Subnet]**.
 
-<table border="1" cellpadding="0" cellspacing="0">
-<caption>Table 9. Storage Port Group</caption>
-<tbody>
-<tr><th>Connection Type</th><th>VM Kernel</th></tr>
-<tr><td>Network Label</td><td>*vmkPG-Storage*</td></tr>
-<tr><td>VLAN ID</td><td>*&lt;Storage VLAN&gt; (1102)*</td></tr>
-<tr><td>IP Address</td><td>*Portable Private Address*<br/><br/>*An IP address that is selected from the portable private addresses that are bound to the storage VLAN.*</td></tr>
-<tr><td>Netmask</td><td>*Subnet Mask Associated with the IP Range*</td></tr>
-</tbody>
-</table>
+| Connection type | VM kernel |
+|---|---|
+| Network label | vmkPG-storage |
+| VLAN ID | Storage VLAN (1102) |
+| IP address | Portable private address (An IP address that is selected from the portable private addresses that are bound to the storage VLAN.) |
+| Netmask | Subnet mask that's associated with the IP range. |
+{: caption="Table 9. Storage port group" caption-side="top"}
 
 ### Add public address port group
 {: #add-public-address-port-group}
 
 Update the **Notes** section of each Portable IP address with the name of the host and VM kernel port assigned. The **Notes** section is in the {{site.data.keyword.slportal}} and by selecting **Network > IP Management > Subnets > [Subnet]**.
 
-<table border="1" cellpadding="0" cellspacing="0">
-<caption>Table 10. Public Port Group</caption>
-<tbody>
-<tr><th>Connection Type</th><th>Virtual Machine</th></tr>
-<tr><td>Network Label</td><td>vmPG-Public</td></tr>
-<tr><td>VLAN ID</td><td>&lt;Primary Public VLAN&gt; (for example 2101)</td></tr>
-</tbody>
-</table>
+| Connection type | Virtual machine |
+|---|---|
+| Network label | vmPG-Public |
+| VLAN ID | Primary Public VLAN (for example 2101) |
+{: caption="Table 10. Public port group" caption-side="top"}
 
 ## Step 7 Download or upload ISO images and vCenter Virtual Appliance
 {: #step-7-download-or-upload-iso-images-and-vcenter-virtual-appliance}
@@ -344,7 +323,6 @@ Although it is beyond the scope of this document to detail the steps that are ne
 
 For more information, see the following links:
 * [Windows DNS and Active Directory ](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: external}.
-<!--* [CentOS BIND ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/docs/2/rhl-rg-en-7.2/s1-bind-configuration.html){: new_window}.-->
 
 ## Step 9 Deploying and configuring vCenter Virtual Appliance
 {: #step-9-deploying-and-configuring-vcenter-virtual-appliance}
@@ -354,8 +332,6 @@ Now that DNS is configured, you can deploy and configure the vCenter Server Appl
 1. Remote desktop to the virtual server and open the vSphere Client.
 2. Connect to a management host and select **File, Deploy OVF Template**.
 3. Follow the wizard to complete the deployment.
-
-<!--For more information about OVF Template deployment, see [VMware documentation ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://pubs.vmware.com/vsphere-55/index.jsp?topic=%2Fcom.vmware.vsphere.hostclient.doc%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html&resultof=%22thick%22%20%22thin%22%20){: new_window}.-->
 
 Because no Dynamic Host Configuration Protocol (DHCP) server is available to assign the vCenter virtual appliance an IP address upon power-on, you must use the root console to configure the appliance. **Note:** A `NO NETWORKING DETECTED` message is displayed on the vCenter Virtual Appliance Console.
 
@@ -367,11 +343,19 @@ Follow these steps to configure the appliance:
 4. Go to the IP address that you gave to the vCenter virtual appliance (VCVA) appended with port 5480<!-- (https://:5480)-->.
 5. Accept the EULA in the wizard, answer the **Customer Improvement Experience Program** question, and select **Configure Options, Set custom configuration**.
 6. Click **Next** and enter the following values:
-   <table border="1" cellpadding="0" cellspacing="0"><caption>Table 11. VCVA Setup Wizard</caption><tbody><tr><th>Wizard Menu</th><th>Option</th><th>Value</th></tr><tr><td>Database Settings</td><td>Database Type</td><td>embedded</td></tr><tr><td>SSO Settings</td><td>SSO Deployment Type</td><td>embedded</td></tr><tr><td>SSO Settings</td><td>New administrator password *(for administrator@vsphere.local)*</td><td>&lt;Enter a password&gt;</td></tr><tr><td>SSO Settings</td><td>Retype the new password</td><td>&lt;Enter the same password that you use previously&gt;</td></tr><tr><td>Time synchronization</td><td>NTP synchronization</td><td>servertime.service.softlayer.com</td></tr></tbody></table>
+   | Wizard Menu | Option | Value | 
+   |---|---|---|
+   | Database settings | Database type | Embedded |
+   | SSO settings | SSO deployment type | Embedded |
+   | SSO settings | New administrator password (for administrator@vsphere.local) | <enter password> |
+   | SSO settings | Retype the new password | <Enter the same password that you used previously> |
+   | Time synchronization | NTP synchronization | servertime.service.softlayer.com |
+   {: caption="Table 11. VCVA setup wizard
+      
 7. Click **Start**. The VCVA is configured.
 8. Change the root password by using the options under **Admin**.
 9. Log out of the VCVA configuration web page.
-10. Go to the vSphere Web Client by entering the IP address of the VCVA appended with `9443/vsphere-client`<!-- (https://:9443/vsphere-client)-->.
+10. Go to the vSphere Web Client by entering the IP address of the VCVA appended with `9443/vsphere-client`.
 11. Log in to the root and select **Administration, Licenses**.
 12. Enter your VMware vCenter license.
 
@@ -412,7 +396,7 @@ For NTP settings:
 * Enter `servertime.service.softlayer.com` as the NTP server.
 * Set the **NTP Service Startup Policy** to `Start and stop with host`.
 
-***Creating a distributed virtual switch for the capacity hosts***
+### Creating a distributed virtual switch for the capacity hosts
 
 1. Use the vSphere Web Client to go to **Networking** and right-click on the data center name.
 2. Select **New Distributed Switch**.
@@ -421,11 +405,11 @@ For NTP settings:
 5. On the **Edit Settings** screen, enter `2` as the number of uplinks and clear the **Create a default port group** selection.
 6. Click **Next > Finish** and create the distributed virtual switch.
 
-***Create port groups for distributed virtual switch***
+### Creating port groups for distributed virtual switch
 
 Now that the distributed virtual switch is present, you must create port groups for vMotion, fault tolerance, VMs, and storage.
 
-***Creating dvpg-Private-VM Management Port Group***
+### Creating dvpg-Private-VM management port group
 
 1. Go to the Networking section by using the vSphere web client.
 2. Right-click on the distributed virtual switch (DVS).
@@ -442,7 +426,7 @@ Now that the distributed virtual switch is present, you must create port groups 
 
 After you create the first port group, create the remaining port groups with the following configurations options (Table 15 to Table 19).
 
-***Create dvpg-Private-vMotion Port Group***
+### Creating dvpg-Private-vMotion port group
 
 |New Distributed Port Group Menu|Field|Value|
 |---|---|---|
@@ -454,7 +438,7 @@ After you create the first port group, create the remaining port groups with the
 |Configure Policies (Teaming and Failover)|Failover Order|Active Uplinks: Uplink 1 & Uplink 2|
 <caption>Table 13. DVS vMotion Port Group</caption>
 
-***Create dvpg-Private-Fault Tolerance Port Group***
+### Creating dvpg-Private-Fault tolerance port group
 
 |New Distributed Port Group Menu|Field|Value|
 |---|---|---|
@@ -466,7 +450,7 @@ After you create the first port group, create the remaining port groups with the
 |Configure Policies (Teaming and Failover)|Failover Order|Active Uplinks: Uplink 1 & Uplink 2|
 <caption>Table 14. DVS FT Port Group</caption>
 
-***Create dvpg-Private-VM Access Port Group***
+### Creating dvpg-Private-VM Access port group
 
 |New Distributed Port Group Menu|Field|Value|
 |---|---|---|
@@ -478,7 +462,7 @@ After you create the first port group, create the remaining port groups with the
 |Configure Policies (Teaming and Failover)|Failover Order|Active Uplinks: Uplink 1 & Uplink 2|
 <caption>Table 15. DVS VM Access Port Group</caption>
 
-***Create dvpg-Private-Storage***
+### Creating dvpg-Private-Storage
 
 |New Distributed Port Group Menu|Field|Value|
 |---|---|---|
@@ -488,9 +472,9 @@ After you create the first port group, create the remaining port groups with the
 |Configure Settings|Advanced|Check Customize default policies configuration|
 |Configure Policies (Teaming and Failover)|Load Balancing|Route that is based on physical NIC load|
 |Configure Policies (Teaming and Failover)|Failover Order|Active Uplinks: Uplink 1 & Uplink 2|
-<caption>Table 16. DVS Storage Port Group</caption>
+<caption>Table 16. DVS Storage port group</caption>
 
-***Create dvpg-Primary-Public***
+### Create dvpg-Primary-Public
 
 |New Distributed Port Group Menu|Field|Value|
 |---|---|---|

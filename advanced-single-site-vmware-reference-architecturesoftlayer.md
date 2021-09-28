@@ -352,7 +352,6 @@ Follow these steps to configure the appliance:
    | SSO settings | Retype the new password | <Enter the same password that you used previously> |
    | Time synchronization | NTP synchronization | servertime.service.softlayer.com |
    {: caption="Table 11. VCVA setup wizard" caption-side="top"}
-      
 7. Click **Start**. The VCVA is configured.
 8. Change the root password by using the options under **Admin**.
 9. Log out of the VCVA configuration web page.
@@ -362,7 +361,7 @@ Follow these steps to configure the appliance:
 
 ## Step 10 Create vCenter clusters and distributed virtual switch
 {: #step-10-create-vcenter-clusters-and-distributed-virtual-switch}
-
+ 
 Now that VCVA is configured and licensed, you can create the data center and cluster constructs and distributed virtual switches for the capacity cluster.
 
 ### Creating data center and clusters

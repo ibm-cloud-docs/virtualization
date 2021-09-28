@@ -32,7 +32,7 @@ The advanced representative VMware environment that is outlined, consists of one
 
 The capacity cluster contains the resources and infrastructure that are needed to create and run VMs. For networking, the environment consists of three private, internal VLANs, and a single, public VLAN that is used for external communication. Table 1 specifies the VLAN types and VLAN names are used throughout the environment.
 
-|VLAN Type|VLAN Name|Description|                                                                             |
+|VLAN Type|VLAN Name|Description|
 |---|---|---|
 |Primary Private| Management| Assigned to manage and access the physical ESXi hosts and virtual servers.|
 |Primary Private| Storage| Assigned to manage and access the shared storage that is attached to each ESXi host.|
@@ -68,7 +68,7 @@ After you log in to {{site.data.keyword.cloud_notm}}, open a support ticket for 
 |---|---|
 |Subject|Private Network Question|
 |Title|Order VLANs|
-|Details|Provision three primary private VLANSs and one primary public VLAN. Associate the following addressing scheme for each VLAN: <br/><ul><li>Associate 1x18 (16 addresses) for primary private VLAN</li><li>Associate 2x29 (eight addresses) for primary private VLAN</li><li>Associate 1x29 (eight addresses) primary public VLAN</li></ul>|
+|Details|Provision three primary private VLANSs and one primary public VLAN. Associate the following addressing scheme for each VLAN: Associate 1x18 (16 addresses) for primary private VLAN. Associate 2x29 (eight addresses) for primary private VLAN. Associate 1x29 (eight addresses) primary public VLAN|
 |Why do I need these additional VLANs?|To place hosts, storage, and VMs on a different network for a VMware environment.
 |Do I need public and or private VLANs?|Private and Public|
 |How many VLANs do I need?|Private = 3, Public = 1|
@@ -207,6 +207,7 @@ To trunk the VLANs and unbond the NICs, you need to open a ticket by following t
 4. Click **Add Ticket**.
 
 Make sure to change the VLANs that are designated in the <> with your actual VLANs
+{: note}
 
 ## Step 6 Configuring management host networking
 {: #step-6-configuring-management-host-networking}
@@ -350,7 +351,7 @@ Follow these steps to configure the appliance:
    | SSO settings | New administrator password (for administrator@vsphere.local) | <enter password> |
    | SSO settings | Retype the new password | <Enter the same password that you used previously> |
    | Time synchronization | NTP synchronization | servertime.service.softlayer.com |
-   {: caption="Table 11. VCVA setup wizard
+   {: caption="Table 11. VCVA setup wizard" caption-side="top"}
       
 7. Click **Start**. The VCVA is configured.
 8. Change the root password by using the options under **Admin**.
@@ -360,7 +361,7 @@ Follow these steps to configure the appliance:
 12. Enter your VMware vCenter license.
 
 ## Step 10 Create vCenter clusters and distributed virtual switch
-{ #step-10-create-vcenter-clusters-and-distributed-virtual-switch}
+{: #step-10-create-vcenter-clusters-and-distributed-virtual-switch}
 
 Now that VCVA is configured and licensed, you can create the data center and cluster constructs and distributed virtual switches for the capacity cluster.
 
@@ -422,7 +423,7 @@ Now that the distributed virtual switch is present, you must create port groups 
 | Configure Settings | Advanced | Check Customize default policies configuration |
 | Configure Policies (Teaming and Failover)| Load Balancing| Route that is based on physical NIC load |
 | Configure Policies (Teaming and Failover)| Failover Order| Active Uplinks: Uplink 1 & Uplink 2 |
-<caption>Table 12. DVS VM Management Port Group</caption>
+{: caption="Table 12. DVS VM Management port group" caption-side="top"}
 
 After you create the first port group, create the remaining port groups with the following configurations options (Table 15 to Table 19).
 
@@ -436,7 +437,7 @@ After you create the first port group, create the remaining port groups with the
 |Configure Settings|Advanced|Check Customize default policies configuration|
 |Configure Policies (Teaming and Failover)|Load Balancing|Route that is based on physical NIC load|
 |Configure Policies (Teaming and Failover)|Failover Order|Active Uplinks: Uplink 1 & Uplink 2|
-<caption>Table 13. DVS vMotion Port Group</caption>
+{: caption="Table 13. DVS vMotion port group" caption-side="top"}
 
 ### Creating dvpg-Private-Fault tolerance port group
 
@@ -448,7 +449,7 @@ After you create the first port group, create the remaining port groups with the
 |Configure Settings|Advanced|Check Customize default policies configuration|
 |Configure Policies (Teaming and Failover)|Load Balancing|Route that is based on physical NIC load|
 |Configure Policies (Teaming and Failover)|Failover Order|Active Uplinks: Uplink 1 & Uplink 2|
-<caption>Table 14. DVS FT Port Group</caption>
+{: caption="Table 14. DVS FT port group" caption-side="top"}
 
 ### Creating dvpg-Private-VM Access port group
 
@@ -460,7 +461,7 @@ After you create the first port group, create the remaining port groups with the
 |Configure Settings|Advanced|Check Customize default policies configuration|
 |Configure Policies (Teaming and Failover)|Load Balancing|Route that is based on physical NIC load|
 |Configure Policies (Teaming and Failover)|Failover Order|Active Uplinks: Uplink 1 & Uplink 2|
-<caption>Table 15. DVS VM Access Port Group</caption>
+{: caption="Table 15. DVS VM Access port group" caption-side="top"}
 
 ### Creating dvpg-Private-Storage
 
@@ -472,7 +473,7 @@ After you create the first port group, create the remaining port groups with the
 |Configure Settings|Advanced|Check Customize default policies configuration|
 |Configure Policies (Teaming and Failover)|Load Balancing|Route that is based on physical NIC load|
 |Configure Policies (Teaming and Failover)|Failover Order|Active Uplinks: Uplink 1 & Uplink 2|
-<caption>Table 16. DVS Storage port group</caption>
+{: caption="Table 16. DVS Storage port group" caption-side="top"}
 
 ### Create dvpg-Primary-Public
 
@@ -484,7 +485,7 @@ After you create the first port group, create the remaining port groups with the
 |Configure Settings|Advanced|Check Customize default policies configuration|
 |Configure Policies (Teaming and Failover)|Load Balancing|Route that is based on physical NIC load|
 |Configure Policies (Teaming and Failover)|Failover Order|Active Uplinks: Uplink 1 & Uplink 2|
-<caption>Table 17. DVS Storage Path B Port Group</caption>
+{: caption="Table 17. DVS storage path - B port group" caption-side="top"}
 
 ## Step 11 Migrating ESXi hosts in capacity cluster to distributed virtual switch
 {: #step-11-migrating-esxi-hosts-in-capacity-cluster-to-distributed-virtual-switch}
@@ -497,16 +498,18 @@ Before you begin adding VMkernel adapters, assign the vmnics to the uplinks on t
 2. Select the appropriate distributed switch for the capacity hosts.
 3. Click **Add and manage hosts** on the **Getting Started** page.
 4. Use the following settings to add uplinks and migrate the existing VMkernel that are associated with management of the host.
-   <table border="1" cellpadding="0" cellspacing="0"><caption>Table 18. DVS Add Hosts</caption><tbody><tr><th>Menu</th><th>Field</th><th>Value</th></tr><tr><td>Select Task</td><td>Select Tasks</td><td>Add Hosts</td></tr><tr><td>Select Hosts</td><td>Click **New Hosts**</td><td>Click the Capacity Host</td></tr><tr><td>Select network adapter tasks</td><td>Select network adapter tasks</td><td>Select Manage physical adapters and Manage VMkernel adapters</td></tr></tbody></table>
+   | Menu | Field | Value |  
+   |---|---|---|
+   | Select task | Select task | Add hosts |
+   | Select host | Click **New hosts** | Click the Capacity Host |
+   | Select network adapter tasks | Select network adapter tasks | Select **Manage physical adapters and Manage VMkernel adapters** |
+   {: caption="Table 18. DVS add hosts" caption-side="top"}
 5. Select one of the private vmnics and click **Manage physical network adapters > Assign uplink**.
 6. Select `uplink1` on the pop-up screen and click **OK**.
 7. Repeat these steps for the other private vmnic and assign it to `uplink2`.
 8. Click **Next**, highlight the vmk0 VMkernel adapter, and click **Assign port group**.
 9. Select **dvpg-Private-VM Management** on the pop-up window and click **OK**.
-10. Click **Next** twice and then click **Finish** to complete the migration to the distributed virtual switch. **Note:** You might briefly lose network connectivity to the host. The connection reestablishes quickly.
-
-After you migrate the vmk0 adapter to the distributed virtual switch, you can add VM kernels to each port group in the DVS.
-
+10. Click **Next** twice and then click **Finish** to complete the migration to the distributed virtual switch. **Note:** You might briefly lose network connectivity to the host. The connection reestablishes quickly. After you migrate the vmk0 adapter to the distributed virtual switch, you can add VM kernels to each port group in the DVS.
 11. Click **Manage > Networking** on the host within vCenter.
 12. Go to **VM Kernel adapters > Add host networking** and add the VM kernel adapters that are in Tables 19 and 21. To add these adapters, you migrate to the “VM Kernel adapters” menu that is in the **Manage > Networking** tab on the host within vCenter. Then, click the “Add host networking” icon and add the following VM Kernel adapters.
 
@@ -518,9 +521,9 @@ After you migrate the vmk0 adapter to the distributed virtual switch, you can ad
 |Select target device|Select an existing distributed port group|dvpg-Private-vMotion|
 |Select network adapter tasks|Select network adapter tasks|Select **Manage physical adapters** and **Manage VM kernel adapters**|
 |Port Properties|Enable Services|Check vMotion traffic|
-|IPv4 Settings|IPv4 Address|*172.16.10.X/24*<br/><br/>*This is a user-defined address and can be a different subnet if needed. Make sure the other vMotion addresses that are on each host are on the same subnet.*|
+|IPv4 Settings|IPv4 Address|*172.16.10.X/24. This is a user-defined address and can be a different subnet if needed. Make sure that the other vMotion addresses that are on each host are on the same subnet.|
 |IPv4 Settings|Subnet Mask|255.255.255.0|
-<caption>Table 19. Host Networking vMotion</caption>
+{: caption="Table 19. Host networking vMotion" caption-side="top"}
 
 ***Add vmk2 for fault tolerance***
 
@@ -530,9 +533,9 @@ After you migrate the vmk0 adapter to the distributed virtual switch, you can ad
 |Select target device|Select an existing distributed port group|dvpg-Private-Fault Tolerance|
 |Select network adapter tasks|Select network adapter tasks|Select **Manage physical adapters** and **Manage VMKernel adapters**|
 |Port Properties|Enable Services|Check Fault Tolerance Logging|
-|IPv4 Settings|IPv4 Address|*172.16.20.X/24*<br/><br/>*This is a user-defined address and can be a different subnet if needed. Make sure that the other FT addresses that are on each host are on the same subnet.*|
+|IPv4 Settings|IPv4 Address|*172.16.20.X/24. This is a user-defined address and can be a different subnet if needed. Make sure that the other FT addresses that are on each host are on the same subnet.|
 |IPv4 Settings|Subnet Mask|255.255.255.0|
-<caption>Table 20. Host Networking Fault Tolerance</caption>
+{: caption="Table 20. Host networking fault tolerance" caption-side="top"}
 
 ***Add vmk3 for storage***
 
@@ -541,9 +544,9 @@ After you migrate the vmk0 adapter to the distributed virtual switch, you can ad
 |Select connection type|Select connection type|VMkernel Network Adapter|
 |Select target device|Select an existing distributed port group|dvpg-Private-Storage|
 |Select network adapter tasks|Select network adapter tasks|Select Manage physical adapters and Manage VMkernel adapters|
-|IPv4 Settings|IPv4 Address|*Portable Private Address*<br/><br/>*This IP address is selected from the portable private addresses that are bound to the storage VLAN. This address needs to be on a different subnet than Storage Path B.*|
+|IPv4 Settings|IPv4 Address| Portable Private Address. This IP address is selected from the portable private addresses that are bound to the storage VLAN. This address needs to be on a different subnet than Storage Path B.|
 |IPv4 Settings|Subnet Mask|Subnet Mask Associated with the IP Range|
-<caption>Table 21. Host Networking Storage</caption>
+{: caption="Table 21. Host networking storage" caption-side="top"}
 
 ***Creating a host profile***
 
@@ -613,11 +616,11 @@ For more information about VMware, see [Deploy VMware](/docs/vmware?topic=vmware
 |---|---|---|---|---|
 |Primary Private||||Management|
 |Primary Private||||Storage|
-|Primary Private||||Virtual Machines|
-|Primary Public||||Public Access|
+|Primary Private||||Virtual machines|
+|Primary Public||||Public access|
 |Portable Private||||Management VMs|
 |Portable Private||||Storage|
-|Portable Private||||Virtual Machines|
+|Portable Private||||Virtual machines|
 |vMotion|||N/A||
 |Fault Tolerance|||N/A|||
-<caption>Table 22. VLAN Worksheet</caption>
+{: caption="Table 22. VLAN worksheet" caption-side="top"}

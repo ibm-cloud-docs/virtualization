@@ -341,7 +341,7 @@ Follow these steps to configure the appliance:
 1. Log in to the console with a **User name** of 'root' and a **Password** of 'vmware'.
 2. Run `/opt/vmware/share/vami/vami_config_net` and follow the text wizard to configure the IP, subnet, and DNS properties. Remember to use the IP address of the DNS or BIND server that was created in **Step 8: Deploy DNS**.
 3. Save the network settings, exit the console, and open a browser on the virtual server.
-4. Go to the IP address that you gave to the vCenter virtual appliance (VCVA) appended with port 5480<!-- (https://:5480)-->.
+4. Go to the IP address that you gave to the vCenter virtual appliance (VCVA) appended with port 5480.
 5. Accept the EULA in the wizard, answer the **Customer Improvement Experience Program** question, and select **Configure Options, Set custom configuration**.
 6. Click **Next** and enter the following values:
    | Wizard Menu | Option | Value | 
@@ -587,9 +587,9 @@ Before you continue, it is imperative that you order, configure, and attach shar
 Now that shared storage is set up, you need to enable HA and DRS to provide extra protection and load-balancing capabilities to the VMs on the management cluster.
 
 1. Go to the vSphere web client.
-* Select Manage, Settings for the management cluster.
-* Select vSphere DRS and click Edit. Ensure that the following settings are selected: **Turn on vSphere DRS**, Automation Level - **Fully Automated**, Migration threshold slider setting - midway, virtual machine automation - **Enable individual virtual machine automation levels.**, Power Management - **Off**.  
-* On the vSphere HA Settings screen, ensure that the following settings are selected: **Turn on vSphere HA**, **Host Monitoring**, VM restart priority - **Medium**, Host isolation response - **Leave powered on**.  
+2. Select Manage, Settings for the management cluster.
+3. Select vSphere DRS and click Edit. Ensure that the following settings are selected: **Turn on vSphere DRS**, Automation Level - **Fully Automated**, Migration threshold slider setting - midway, virtual machine automation - **Enable individual virtual machine automation levels.**, Power Management - **Off**.  
+4. On the vSphere HA Settings screen, ensure that the following settings are selected: **Turn on vSphere HA**, **Host Monitoring**, VM restart priority - **Medium**, Host isolation response - **Leave powered on**.  
 ***Storage vMotion for the vCenter Virtual Appliance***
 
 Now that storage is set up on the management cluster and HA and DRS are enabled, you need to set the vCenter Virtual Appliance to shared storage.

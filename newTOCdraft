@@ -23,6 +23,7 @@ toc:
          - what-virtuozzo.md
          - virtuozzo-hardware-and-software-requirements.md
          - parallels-virtuozzo-containers-40-quick-reference-guide.md
+         - which-operating-systems-are-supported-parallels-server-4-bare-metal.md
          - overview-parallels-server-4-bare-metal.md
          - understanding-ubc-user-beancounter-values.md
       - topicgroup:
@@ -32,6 +33,7 @@ toc:
          - how-get-started-xencenter.md
          - what-difference-between-versions-xenserver.md
          - what-operating-systems-are-supported-softlayer-under-xenserver.md
+         - what-xenserver-pooling.md
          - what-has-changed-citrix-xenserver-62-and-greater.md
       - topicgroup:
          label: Hyper-V

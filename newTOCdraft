@@ -1,0 +1,104 @@
+---
+toc:
+  properties:
+    subcollection: virtualization
+    version: 2
+    category: compute_classic
+    audience: service
+    href: /docs/virtualization
+    console-page: "/classic"
+    product-page: "https://www.ibm.com/cloud/virtualization"
+    path: virtualization
+    label: Virtualization
+
+  entries: 
+
+  - navgroup: 
+      id: learn
+      topics:
+      - getting-started.md
+      - topicgroup:
+         label: Virtuozzo
+         topics: 
+         - what-virtuozzo.md
+         - virtuozzo-hardware-and-software-requirements.md
+         - parallels-virtuozzo-containers-40-quick-reference-guide.md
+         - overview-parallels-server-4-bare-metal.md
+         - understanding-ubc-user-beancounter-values.md
+      - topicgroup:
+         label: Citrix XenServer
+         topics:
+         - what-citrix-xenserver.md
+         - how-get-started-xencenter.md
+         - what-difference-between-versions-xenserver.md
+         - what-operating-systems-are-supported-softlayer-under-xenserver.md
+         - what-has-changed-citrix-xenserver-62-and-greater.md
+      - topicgroup:
+         label: Hyper-V
+         topics:
+         - what-hyper-v.md
+         - what-are-requirements-run-hyper-v.md
+      - get-started-vmware-esxi.md  
+  - navgroup: 
+      id: howto
+      topics:
+      - /virtual-servers/virtual-servers-navigating-devices
+      - set-up-a-hypervisor.md
+      - tcp-window-recommendations-virtual-instances.md
+      - installing-windows-server-virtualization-windows-2008.md
+      - virtual-machine-network-setup.md
+      - topicgroup: 
+          label: Virtuozzo
+          topics: 
+          - getting-started-with-virtuozzo.md
+          - back-virtuozzo-container-command-line.md
+          - create-new-virtuozzo-container-cli.md
+          - back-virtuozzo-container.md
+          - organize-hardware-nodes-virtuozzo.md
+          - set-simple-caching-name-server-virtuozzo.md
+          - can-i-manage-multiple-virtuozzo-hardware-nodes-single-interface.md
+          - how-can-i-give-my-containers-access-private-network-pim.md
+          - remove-host-node-being-worker-another-pim.md
+          - how-do-i-add-host-node-worker-another-pim.md
+          - migrate-container-different-hardware-node.md
+      - topicgroup:
+         label: Citrix XenServer
+         topics: 
+         - how-install-xenserver-tools-linux.md
+         - activate-xenserver-free-license.md
+         - connect-xenserver-over-public-interface.md
+         - set-and-mount-iscsi-node-xenserver-shared-storage.md
+         - quantastor-storagelink-xenserver-configuration.md
+         - add-hard-drive-citrix-xenserver.md
+      - topicgroup:
+         label: Hyper-V
+         topics:
+         - hyper-v-setup.md
+         - how-do-i-order-hyper-v.md
+         - hyper-v-vm-migration-5-steps.md
+         - run-hyper-v-active-directory-environment.md
+      - topicgroup:
+         label: VMware
+         topics:
+         - advanced-single-site-vmware-reference-architecturesoftlayer.md
+         - enabling-public-access-vmware-esxi-55.md
+         - enabling-public-access-vmware.md
+      - topicgroup:
+         label: vSphere
+         topics:
+         - use-hybrid-solution-backup-and-restore-vsphere.md
+         - backup-your-vmware-vsphere-environment-veeam.md
+         - recover-your-vmware-vsphere-environment-when-disaster-strikes.md
+         - updating-veeam-backup-and-replication-application.md
+  - navgroup:
+      id: help
+      topics:
+      - topicgroup:
+         label: FAQs
+         topics:
+         - faqs-general.md
+         - faqs-virtuozzo.md
+         - hyper-v-faq.md
+         - veeam-faq.md
+      - vmware-reference.md
+

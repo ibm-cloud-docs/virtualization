@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2020
-lastupdated: "2018-08-15"
+  years: 2014, 2022
+lastupdated: "2022-02-14"
 
 subcollection: virtualization
 
@@ -14,7 +14,7 @@ keywords: virtualization, getting started, virtuozzo, hyper-V, ESX, ESXi
 # Getting started with virtualization
 {: #getting-started}
 
-You can use the Virtualization solution to run multiple virtual machines in a single dedicated environment. Virtual machines that run on the {{site.data.keyword.BluSoftlayer_full}} Network can integrate with other physical and virtual devices on the network and can be managed through both the Customer Portal and API. Running virtual machines on the {{site.data.keyword.cloud_notm}} proprietary architecture and automated platform offers high levels of stability suitable for enterprise-level virtualization, and virtualization on a smaller scale.
+You can use the Virtualization solution to run multiple virtual machines in a single dedicated environment within {{site.data.keyword.cloud}} Classic Infrastructure. Virtual machines that run on the {{site.data.keyword.cloud_notm}} Network can integrate with other physical and virtual devices on the network and can be managed through both the Customer Portal and API. Running virtual machines on the {{site.data.keyword.cloud_notm}} proprietary architecture and automated platform offers high levels of stability suitable for enterprise-level virtualization, and virtualization on a smaller scale.
 {: shortdesc}
 
 | Get Started       |

@@ -8,8 +8,7 @@ subcollection: virtualization
 keywords: virtualization, getting started, virtuozzo, hyper-V, ESX, ESXi
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+{{site.data.keyword.attribute-definition-list}}
 
 # Getting started with virtualization
 {: #getting-started}
@@ -20,6 +19,6 @@ You can use the virtualization solution to run multiple virtual machines in a si
 | Get started |
 |------------------|
 | __ 1. For more information about virtualization options, see [Citrix XenServer](/docs/virtualization?topic=virtualization-what-is-citrix-xenserver-), [Hyper-V](/docs/virtualization?topic=virtualization-what-is-hyper-v-), [Virtuozzo](/docs/virtualization?topic=virtualization-what-is-virtuozzo-), and [VMware](/docs/vmware?topic=vmware-vmware-getting-started). |
-| __ 2. [Set up a hypervisor](/docs/virtualization?topic=virtualization-setting-up-a-hypervisor). [Setting up a virtual machine Network](/docs/virtualization?topic=virtualization-setting-up-a-virtual-machine-network) is an important part of this process.) |
+| __ 2. [Set up a hypervisor](/docs/virtualization?topic=virtualization-setting-up-a-hypervisor). [Setting up a virtual machine Network](/docs/virtualization?topic=virtualization-setting-up-a-virtual-machine-network) is an important part of this process. |
 | __ 3. Depending on which virtualization solutions that you are using, you can [set up Hyper-V](/docs/virtualization?topic=virtualization-setting-up-hyper-v), [Get started with Virtuozzo](/docs/virtualization?topic=virtualization-getting-started-with-virtuozzo), [Get started with VMware vSphere 6](/docs/vmware?topic=vmware-vmware-getting-started), or [Install XenServer tools](/docs/virtualization?topic=virtualization-installing-xenserver-tools-when-using-linux). |
 {: caption="Table 1. Getting started with Virtualization" caption-side="top"}

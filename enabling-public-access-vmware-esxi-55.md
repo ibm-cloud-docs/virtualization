@@ -1,15 +1,15 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-15"
+  years: 2014, 2023
+lastupdated: "2023-04-08"
 
 subcollection: virtualization
 
 keywords: ESXi, VMware
+
 ---
-{:shortdesc: .shortdesc}
-{:tip: .tip}
-{:new_window: target="_blank"}
+
+{{site.data.keyword.attribute-definition-list}}
 
 # Enabling public access to VMware ESXi
 {: #enabling-public-access-to-vmware-esxi}
@@ -18,27 +18,26 @@ By default, the ESXi Host is installed with the service console only on the priv
 
 To get started, you need to connect to the server by using a VMware vSphere Client on the private interface for the server.
 
-You need to have the ‘Primary’ Public IP information of the server to complete the setup. Information regarding the Public IP of the server can be found in the [{{site.data.keyword.slportal_full}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://cloud.ibm.com/){: new_window}.
+You need to have the ‘Primary’ public IP information of the server to complete the setup.
 {: tip}
 
-After you log in to the ESXi Host, follow these steps to enable the Public Interface:
+After you log in to the ESXi Host, use the following steps to enable the public interface.
 
 1. You might need to log in to the server over SSH by using the Private IP to correct the routing.
-* Run `esxcfg-route -l` to determine the current routes
-* Run `esxcfg-route -a 10.0.0.0/8 [your servers private gateway ip]`
-* Run `esxcfg-route [your servers public gateway]` to ensure that the public gateway is the default
 
-Log in to vSphere and follow these steps:
+   * Run `esxcfg-route -l` to determine the current routes
+   * Run `esxcfg-route -a 10.0.0.0/8 [your servers private gateway ip]`
+   * Run `esxcfg-route [your servers public gateway]` to make sure that the public gateway is the default
 
+1. Log in to vSphere.
 1. Click the Configuration tab and click **Networking**.
-2. For vSwitch1, click **Properties > Add**
-3. Choose **VM Kernel** and click **Next**
-* The settings can be left as they are. You can relabel the network to "VMKernelPublic" for identification purposes.
-4. Enter the server Public IP information.
-5. For the VM Kernel default gateway, click **Edit**, enter the public gateway IP, and click **OK**.
-* Click **OK**. **Note:** A disconnection is normal and expected.*
+1. For vSwitch1, click **Properties > Add**
+1. Choose **VM Kernel** and click **Next**
+   * The settings can be left as they are. You can relabel the network to "VMKernelPublic" for identification purposes.
+1. Enter the server Public IP information.
+1. For the VM Kernel default gateway, click **Edit**, enter the public gateway IP, and click **OK**. A disconnection is normal and expected.
 
 You can now access the server by using both the Public and Private IP addresses.
 
 Enabling Public IP access to ESXi contains inherent security risks. Make sure that you take the appropriate steps to restrict access to ESXi to only those users who need it.
-{: tip}
+{: important}

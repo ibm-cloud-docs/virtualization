@@ -1,21 +1,15 @@
 ---
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-09-17"
+  years: 2014, 2023
+lastupdated: "2023-04-08"
 
 subcollection: virtualization
 
 keywords: Citrix XenServer
+
 ---
 
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:codeblock: .codeblock}
-{:pre: .pre}
-{:screen: .screen}
-{:tip: .tip}
-{:note: .note}
-{:important: .important}
+{{site.data.keyword.attribute-definition-list}}
 
 # Adding a hard disk drive to Citrix XenServer
 {: #adding-a-hard-disk-drive-to-citrix-xenserver}
@@ -27,8 +21,9 @@ Xen storage repository supports IDE, SATA, SCSI, and SAS drives when locally con
 ## Creating a storage repository in a XenServer
 {: #creating-a-storage-repository-in-a-xenserver}
 
-1. SSH to the XenServer as root.
+Use the following steps to create a storage repository in a XenServer.
 
+1. SSH to the XenServer as root.
 2. Find the disk ID of the new device by using the following command:
 
    ```
@@ -36,7 +31,7 @@ Xen storage repository supports IDE, SATA, SCSI, and SAS drives when locally con
    ```
    {: pre}
 
-   The command lists of all the HDDs and partitions. Find your new local disk, which is probably “sdx” (most probably sdb) or '/cciss/c0d1p0'. Use the following command to list the disk IDs for all the partitions/HDDs present in the server.
+   The command lists of all the HDDs and partitions. Find your new local disk, which is probably “sdx” (most probably sdb) or '/cciss/c0d1p0'. Use the following command to list the disk IDs for all the partitions and or HDDs that are in the server.
 
    ```
    # ll /dev/disk/by-id
@@ -45,44 +40,42 @@ Xen storage repository supports IDE, SATA, SCSI, and SAS drives when locally con
 
    Find the disk ID of the “sdx” or 'cciss/c0d1'disk. The “scsi-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx” or “cciss-xxxxxxxxxxxxxxxxxxxxxxxxxx” format is what you need.
 
-3. Find the 'host-uuid' in a XenServer by using the following command:
+3. Find the `host-uuid` in a XenServer by using the following command:
 
-   ```
+   ```text
    #xe host-list
    ```
    {: pre}
 
    The uuid (RO) is the 'host-uuid' that you need.
-
 4. Create a Storage Repository (SR):
 
-   The [sr-create ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX121313){: new_window} command is for adding a new hard disk drive. Creating a new hard disk drive is a destructive process that partitions and formats the drive, and any data on the drive is lost. If you want to reintroduce a drive that has existing data, use [sr-introduce ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/article/CTX121896){: new_window}.
+   The [sr-create](http://support.citrix.com/article/CTX121313){: external} command is for adding a new hard disk drive. Creating a hard disk drive is a destructive process that partitions and formats the drive, and any data on the drive is lost. If you want to reintroduce a drive that has existing data, use [sr-introduce](http://support.citrix.com/article/CTX121896){: external}.
    {: note}
 
-   ```
+   ```text
    # xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm
    ```
    {: pre}
 
-    \- Or
-   
-   ```
+   \- Or
+
+   ```text
    # xe sr-create content-type=user device-config:device=/dev/disk/by-id/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm
    ```
    {: pre}
-   
-    \- Or 
-   
-   ```
+
+   \- Or
+
+   ```text
    # xe sr-create content-type=user device-config:device=/dev/ host-uuid= name-label=”Local Storage 2” shared=false type=lvm
    ```
    {: pre}
 
-## Verifying the Storage Repository in XenCenter
+## Verifying the storage repository in XenCenter
 {: #verifying-the-storage-repository-in-xencenter}
 
-You can verify the Storage Repository from XenCenter by following these steps:
+You can verify the storage repository from XenCenter by usig the following steps.
 
 1. Connect to XenCenter.
-
 2. Go to **Storage** to find the details of all storage repositories. You can see the storage 'Local Storage2' in the list that shows that the disk is added. Now you can start creating VDIs on it.

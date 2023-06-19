@@ -2,7 +2,7 @@
 
 copyright:
 years: 2014, 2023
-lastupdated: "2023-05-09"
+lastupdated: "2023-06-19"
 
 subcollection: virtualization
 
@@ -106,7 +106,7 @@ Use the following steps to configure the appliance to connect to {{site.data.key
 3. Select **System Settings** and verify that the information is correct on the next screen and adjust the time zone to reflect the time zone of your environment.
 4. Click **Next > Save and Apply > Exit**. You are returned to the Wizard Dashboard.
 5. Select **Cloud Settings** and click **Provider**. Choose **IBM Cloud Object Storage**.
-6. Select an appropriate **Object Storage Region**. **Note:** Not all regions are displayed (such as Melbourne). However, the hostname of the {{site.data.keyword.cos_short}} service is modified by using the **hostname** field. For example, if you want to use Melbourne as the region, you can select **San Jose 1** from the **Region** drop-down menu and modify the **hostname** field to **mel01.objectstorage.softlayer.net**.
+6. Select an appropriate **Object Storage Region**. **Note:** Not all regions are displayed. However, the hostname of the {{site.data.keyword.cos_short}} service is modified by using the **hostname** field. For example, if you want to use a specificregion, you can select **Example region 1** from the **Region** drop-down menu and modify the **hostname** field.
 7. Enter your {{site.data.keyword.cos_full_notm}} credentials in the **username** field. The format of the username must be `object_storage_username:IBM_Cloud_username`. For example, **ABC-DE123456-7:user**. You can find your Object Storage username under **Storage > Object Storage**.
 8. Enter a **Bucket Name** to store the data. The bucket name is the container name where you want to store the data in {{site.data.keyword.cos_full_notm}}.
    * Don't modify the default port unless otherwise directed to by your network administrator. The **Enable Archiving** field defaults to **No** and click **Next**.

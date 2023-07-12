@@ -1,0 +1,6 @@
+includes:
+  - https://github.ibm.com/cloud-docs/virtual-servers
+
+translation:
+  exclude:
+    byFilePath:

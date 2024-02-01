@@ -44,7 +44,6 @@ toc:
   - navgroup: 
       id: howto
       topics:
-      - /virtual-servers/virtual-servers-navigating-devices
       - set-up-a-hypervisor.md
       - tcp-window-recommendations-virtual-instances.md
       - installing-windows-server-virtualization-windows-2008.md

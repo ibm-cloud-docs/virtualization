@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-09-17"
+  years: 2014, 2024
+lastupdated: "2024-04-19"
 
 subcollection: virtualization
 ---
@@ -57,6 +57,5 @@ The IQN and target IP addresses of a {{site.data.keyword.blockstorageshort}} vol
 
 If the servers are in a pool together, the iSCSI repository is automatically shared. 
 
-It's imperative that your servers are properly configured for continuous service through all storage and networking events, planned or unplanned. Make sure that Multipath is set up correctly. For more information about configuring multipath, see
-[Multipathing Overview for XenServer 6.2, 6.5, and 7.0](https://support.citrix.com/article/CTX118791){: external} and [Storage Multipathing for XenServer 7.2](https://docs.citrix.com/en-us/xencenter/7-1/storage-pools-multipathing.html){: external}.
+It's imperative that your servers are properly configured for continuous service through all storage and networking events, planned or unplanned. Make sure that Multipath is set up correctly. For more information about configuring multipath, see [XenServer documentation](https://docs.xenserver.com/en-us/xencenter/current-release)){: external}.
 {: important}

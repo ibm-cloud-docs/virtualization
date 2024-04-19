@@ -322,9 +322,6 @@ Although it is beyond the scope of this document to detail the steps that are ne
 4. Add an A HOST record from the portable private subnet that is bound to the management VLAN for your vCenter Virtual Appliance.
 5. Update the **Notes** section of the Portable IP Subnet that you assigned to vCenter.
 
-For more information, see the following links:
-* [Windows DNS and Active Directory ](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: external}.
-
 ## Step 9 Deploying and configuring vCenter Virtual Appliance
 {: #step-9-deploying-and-configuring-vcenter-virtual-appliance}
 

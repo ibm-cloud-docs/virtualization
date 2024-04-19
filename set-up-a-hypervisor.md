@@ -1,7 +1,7 @@
 ---
 copyright:
   years: 2014, 2020
-lastupdated: "2020-03-18"
+lastupdated: "2024-04-19"
 
 subcollection: virtualization
 ---
@@ -13,14 +13,14 @@ subcollection: virtualization
 
 ## Before you begin
 {: #before-you-begin-hyperv}
-* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/virtualization?topic=virtual-servers-navigating-devices).
+* Navigate to your console's device menu. For more information, see [Navigating to devices](/docs/virtual-servers?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
 For more information about permissions, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission#infrapermission) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
 
 Use the following steps to set up a hypervisor.
 
-1. Connect to the Private Network through the [secure VPN ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.softlayer.com/vpn-access){: new_window} to access your hypervisor.
+1. Connect to the Private Network through the [secure VPN ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/products/vpn-access){: new_window} to access your hypervisor.
 **Note:** The {{site.data.keyword.cloud}} hypervisor providers include XenServer, VMware, and Hyper-V. Each provider has unique management consoles that are accessed differently. For more information about accessing and working in a management console, see the following links:
    * [XenServer ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://support.citrix.com/en/products/xenserver){: new_window}
    * [VMware ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.vmware.com/support/vsphere-hypervisor.html){: new_window}

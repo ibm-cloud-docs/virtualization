@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2021
-lastupdated: "2021-09-17"
+  years: 2014, 2024
+lastupdated: "2024-04-19"
 
 keywords: ESXi, VMware reference architecture
 
@@ -49,7 +49,7 @@ The storage environment is configured to support NFS volumes.
 * Navigate to your console's device menu. For more information, see [Navigating to devices](/doc/virtualization?topic=virtual-servers-navigating-devices).
 * Ensure you have any necessary account permissions and device access. Only the account owner, or a user with the **Manage Users** classic infrastructure permission, can adjust the permissions.
 
-For more information about permissions, see [Classic infrastructure permissions](/docs/account?topic=account-infrapermission#infrapermission) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
+For more information about permissions, see [Managing classic infrastructure access](/docs/account?topic=account-mngclassicinfra) and [Managing device access](/docs/virtual-servers?topic=virtual-servers-managing-device-access).
 
 Use the following steps to create an advanced single-site vSphere environment. The following steps define a {{site.data.keyword.cloud}} reference architecture deployment by using VMware suggested best practices.
 
@@ -321,9 +321,6 @@ Although it is beyond the scope of this document to detail the steps that are ne
 3. Add an A HOST records for each host’s Management IP address (vmk0 on vmkPG-management).
 4. Add an A HOST record from the portable private subnet that is bound to the management VLAN for your vCenter Virtual Appliance.
 5. Update the **Notes** section of the Portable IP Subnet that you assigned to vCenter.
-
-For more information, see the following links:
-* [Windows DNS and Active Directory ](https://social.technet.microsoft.com/wiki/contents/articles/12370.step-by-step-guide-for-setting-up-a-windows-server-2012-domain-controller.aspx){: external}.
 
 ## Step 9 Deploying and configuring vCenter Virtual Appliance
 {: #step-9-deploying-and-configuring-vcenter-virtual-appliance}

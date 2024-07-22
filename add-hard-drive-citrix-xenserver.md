@@ -1,7 +1,8 @@
 ---
 copyright:
-  years: 2014, 2023
-lastupdated: "2023-04-08"
+  years: 2014, 2024
+lastupdated: "2024-07-22"
+
 
 subcollection: virtualization
 
@@ -50,7 +51,7 @@ Use the following steps to create a storage repository in a XenServer.
    The uuid (RO) is the 'host-uuid' that you need.
 4. Create a Storage Repository (SR):
 
-   The [sr-create](http://support.citrix.com/article/CTX121313){: external} command is for adding a new hard disk drive. Creating a hard disk drive is a destructive process that partitions and formats the drive, and any data on the drive is lost. If you want to reintroduce a drive that has existing data, use [sr-introduce](http://support.citrix.com/article/CTX121896){: external}.
+   The [sr-create](https://support.citrix.com/s/article/CTX121313-how-to-create-a-local-storage-repository){: external} command is for adding a new hard disk drive. Creating a hard disk drive is a destructive process that partitions and formats the drive, and any data on the drive is lost. If you want to reintroduce a drive that has existing data, use [sr-introduce](https://support.citrix.com/s/article/CTX121896-how-to-introduce-a-local-storage-repository-in-xenserver){: external}.
    {: note}
 
    ```text

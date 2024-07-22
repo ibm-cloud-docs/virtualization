@@ -1,12 +1,12 @@
 ---
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-15"
+  years: 2014, 2024
+lastupdated: "2024-07-22"
 
 subcollection: virtualization
 ---
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+
+{{site.data.keyword.attribute-definition-list}}
 
 # VMware reference
 {: #vmware-reference}

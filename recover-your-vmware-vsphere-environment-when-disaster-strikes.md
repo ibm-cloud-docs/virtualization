@@ -75,7 +75,7 @@ AltaVault requires the network interfaces to be on different networks within the
 
 1. Click **Account > Place an Order**.
 2. Select the **Network** section click **Subnets/IPs > Order**.
-3. From the drop-down menu, select **Portable Private**. Selecting Portable Private triggers an option to select the number of portable private IP addresses to display. **Note:** {{site.data.keyword.cloud_notm}} automatically reserves at least three IP addresses in the address block for each portable private network. The reserved addresses are for the network address, gateway address, and broadcast address. These addresses must be bound directly to the virtual LAN (VLAN). <!--If your IBM Cloud pod supports Hot Standby Ready Protocol (HSRP), then the number of usable IP addresses is reduced. For instance, if you select **4 Portable Private IP Addresses** yields only one usable IP address or zero if the pod supports HSRP.--> For more information about portable IP addresses, see [About subnets and IPs](/docs/subnets?topic=subnets-about-subnets-and-ips).
+3. From the drop-down menu, select **Portable Private**. Selecting Portable Private triggers an option to select the number of portable private IP addresses to display. **Note:** {{site.data.keyword.cloud_notm}} automatically reserves at least three IP addresses in the address block for each portable private network. The reserved addresses are for the network address, gateway address, and broadcast address. These addresses must be bound directly to the virtual LAN (VLAN).  For more information about portable IP addresses, see [About subnets and IPs](/docs/subnets?topic=subnets-about-subnets-and-ips).
 4. Click **Continue** after you select the number of portable private IP addresses.
 5. Select the VLAN where the portable private IP addresses to be routed and click **Continue**.
 6. Complete the required contact information and click **Place Order**.
@@ -94,10 +94,9 @@ Virtual machine port group is labeled **Share Network**. One portable IP block i
 ## AltaVault Cloud Storage Gateway
 {: #altavault-cloud-storage-gateway}
 
-You can use AltaVault to integrate your on-premises environment with the cloud without the need to write scripts or applications by using REST APIs for {{site.data.keyword.cos_full_notm}}. AltaVault exposes a CIFS/SMB or Network File System (NFS) mount point on the front end and securely connects to the {{site.data.keyword.cos_full_notm}} interface on the back end. You can then mount or point to the mount points and copy data into and or recovering/restoring environments from the cloud securely.<!-- , as shown in Figure 1.-->
+You can use AltaVault to integrate your on-premises environment with the cloud without the need to write scripts or applications by using REST APIs for {{site.data.keyword.cos_full_notm}}. AltaVault exposes a CIFS/SMB or Network File System (NFS) mount point on the front end and securely connects to the {{site.data.keyword.cos_full_notm}} interface on the back end. You can then mount or point to the mount points and copy data into and or recovering/restoring environments from the cloud securely.
 
-<!-- ![Figure 1](images/veeam_restore_fig2.png)
-<br/>`Figure 1: AltaVault end-to-end flow with Veeam and IBM Cloud`-->
+
 
 ### Deploying AltaVault in a Disaster Recovery Configuration
 {: #deploying-altavault-in-a-disaster-recovery-configuration}
@@ -140,8 +139,7 @@ The NICs are assigned the following interface functions:
 
 In the example configuration in this procedure, the AltaVault appliance uses the **Primary** interface as the replicate-to-cloud interface and the **e0b** interface to export a CIFS/SMB mount point. **Note:** You cannot use both A CIFS/SMB share and an NFS share to access the same data. The protocol that is used must be the same as the protocol that is used with the on-premises AltaVault appliance to replicate data to the cloud.
 
-<!-- ![Figure 2](images/veeam_restore_fig3.png)
-<br/>`Figure 2: IBM Cloud setup with VMware`-->
+
 
 For more information on the deployment of the AltaVault appliance and configuration of the VM settings, see [NetApp AltaVault Installation and Service Guide ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){: new_window}.
 
@@ -182,7 +180,7 @@ The AltaVault appliance must be connected to the {{site.data.keyword.cos_full_no
 7. Enter the passphrase for the encryption key that is specified during the creation of the on-premises AltaVault appliance, if one was set, in the **Key Passphrase** text box.
 8. Click **Import Configuration > Exit**.
 
-<!--The AltaVault appliance web console displays a message that indicates a successful import. If the import was not successful, verify that the configuration file is in the correct format and that the passphrase is correct before you try again.-->
+
 
 You successfully imported the on-premises AltaVault appliance configuration to the {{site.data.keyword.cloud_notm}} AltaVault appliance.
 
@@ -256,7 +254,7 @@ Use the following steps to install Veeam Backup & Replication to the {{site.data
    * Click **Next** and select **I accept the terms in the license agreement** .
    * Click **Next** and specify the location of the license file that is obtained under Deploy Veeam Backup & Replication.
    * Click **Next** and select which Veeam Backup & Replication components that you want installed and their installation location on the **Program Features** screen. **Note:** **Veeam Backup & Replication** and **Veeam Backup Catalog** are required components.
-   * Click **Next**.<br/>The setup wizard runs a series of checks to make sure that all required program frameworks and supporting components are installed. If any components are missing, the setup wizard offers to install them. <!--Click **Install** if so.-->
+   * Click **Next**.<br/>The setup wizard runs a series of checks to make sure that all required program frameworks and supporting components are installed. If any components are missing, the setup wizard offers to install them. 
 2. Verify that all components **Passed** the systems check and click **Next**.
 3. Select the **Service (user) Account** that you want the Veeam Backup Service to run. The default service account is the **LOCAL SYSTEM account**. Click **Next**.
 4. Select the **SQL Server Instance** that you want to use to create and store Veeam Backup & Replication databases. For more information, contact your database administrator. Click **Next**.
@@ -274,7 +272,7 @@ After Veeam Backup & Replication installs, you are ready to connect with the Alt
 3. In the **Backup Infrastructure** window, click **Managed Servers > Managed servers**.
 4. From the ribbon menu, click **Add Server** and double-click **VMware vSphere**.
 5. Enter the private IP address of the vSphere server and click **Next**.
-6. Enter the account credentials of a local account with administrator privileges on the vSphere server that is specified previously. **Note:** The account username must be in DOMAIN\USER format for domain accounts, or HOST\USER format for local accounts. To add an account, click **Add** and enter the appropriate username and password. Do not change the default VMware web services port unless your network administrator tells you to. <!-- otherwise during [Veeam Backup & Replication installation](#_Installing_Veeam_Backup).--> Click **Next**.
+6. Enter the account credentials of a local account with administrator privileges on the vSphere server that is specified previously. **Note:** The account username must be in DOMAIN\USER format for domain accounts, or HOST\USER format for local accounts. To add an account, click **Add** and enter the appropriate username and password. Do not change the default VMware web services port unless your network administrator tells you to.  Click **Next**.
    * Veeam Backup & Replication attempts to connect to the vSphere server. If the connection attempt fails, check that the account exists and has administrator privileges on the vSphere server before you try again.
 7. Click **Finish**.
 8. Verify that the vSphere server is successfully added by clicking **Managed Servers > VMware vSphere**.
@@ -313,7 +311,7 @@ Follow these steps to fully restore a VM restore.
 2. From the ribbon menu, click **Restore**.
 3. Select **Entire VM (including registration)**. **Note:** Don't make any selection under **Restore from replica**. Click **Next**.
 4. Click **Add VM > From Backup**. You see the VMs that were previously replicated to {{site.data.keyword.cos_full_notm}} through the on-premises AltaVault appliance and the selected CIFS/SMB share. Click **Add > Next**.
-5. Restore the VMs to a new location <!--[because the original location of the VM(s) failed]--> by selecting **Restore to a new location, or with different settings**. Click **Next**.
+5. Restore the VMs to a new location  by selecting **Restore to a new location, or with different settings**. Click **Next**.
 6. From the **Host** screen, select a target host for each VM that you are restoring. Select a VM and then click **Host**.
 7. Select the target host from the **Select Host** and click **OK**.<br/>Veeam Backup & Replication attempts to contact the target hosts to make sure that they are online and ready to receive data. If this attempt fails, verify that all network settings are correct before you try again. After the check completes, click **Next**.
 8. Select an optional **Resource Pool** for each VM. Click **Next**.
@@ -326,9 +324,9 @@ Follow these steps to fully restore a VM restore.
 ## Next steps
 {: #next-steps-recovering-your-vmware-vsphere-environment}
 
-<!--The recent rise in Object Storage can be heavily attributed to enterprises' desire to reduce or even eliminate the operational and capital expenditures that are associated with comparatively expensive on-premises storage. While Object Storage is a highly cost-effective solution, it introduces a new problem of how to access stored files. If you use stored data backups, the issue is how to use them to recover an environment that fails for whatever reason.-->
 
-<!--This problem is handily resolved by Veeam Backup & Replication, along with a NetApp AltaVault Cloud Gateway appliance, and {{site.data.keyword.cos_full_notm}}. When used together, they create a seamless backup and recovery experience that can be tailored to fit a wide variety of environmental requirements and constraints. By following the steps outlined in this procedure, enterprises can quickly realize the benefits of cloud-based storage, while reducing the complexities involved in shifting from on-premises storage to Object Storage using the three aforementioned technologies.-->
+
+
 
 For more information about the components of this hybrid solution, see the following iformation:
 

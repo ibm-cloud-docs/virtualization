@@ -14,7 +14,7 @@ keywords: Avago SafeStore, encryption
 # Enabling drive security by using Avago SafeStore Encryption Services
 {: #enabling-drive-security-by-using-avago-safestore-encryption-services}
 
-Setting up drive security helps prevent access to stored data on removed disks without a security key. The drive data can't be recovered without this key. {{site.data.keyword.cloud}} provides Self-Encrypting Drives (SED) at select data centers for the drives that can be bought on a Bare metal server. 10 TB SATA drives are available in our US data centers.
+Setting up drive security helps prevent access to stored data on removed disks without a security key. The drive data can't be recovered without this key. {{site.data.keyword.BluSoftlayer_full}} provides Self-Encrypting Drives (SED) at select data centers for the drives that can be bought on a Bare metal server. 10 TB SATA drives are available in our US data centers.
 
 ## Prerequisites
 {: #prerequisites-enabling-drive-security-by-using-avago-safestore-encryption-services}
@@ -37,12 +37,12 @@ You can open MegaRAID Storage Manager by using the system credentials. In the ex
 
 When you start MSM, you must enter **User name** and **Password** which is the privileged user (Administrator) and password.
 
-<!--![Figure 1](images/1_adapter_login.jpg)-->
+
 
 Click the **Physical** tab. Then, click the drives that are available on the system. The **Properties** pane has the
 **Drive Security Properties** section that includes **Full Disk Encryption capable** field, which shows **Yes**. In the example used, 2 non-SED disks and 4 SED disks are used.
 
-<!--![Figure 2](images/1_fde_capable_drives.jpg)-->
+
 
 ### Enabling drive security on the controller
 {: #enabling-drive-security-at-the-controller}
@@ -58,20 +58,20 @@ Click the **Physical** tab. Then, click the drives that are available on the sys
 4. Review the virtual drive settings and make any necessary changes. The suggested setting for the **Read Policy** is **Always Read Ahead**. The suggested setting for the **Write policy** is **Write Back**. Click **Create Virtual Drive**. Accept the Write Back policy impact due to BBU by clicking **Yes**. Click **Next** and review the summary screen. Click **Finish**.
 5. To confirm that the virtual disk is secured, click the **Logical** tab and the virtual drive that was created. You see in the **Drive Security Properties** that the **Secured** field is marked **Yes**.
 
-<!--![Figure 3](images/2_enable_drive_security.jpg)-->
-<!--![Figure 4](images/3_security_key_details_page.jpg)-->
-<!--![Figure 5](images/4_security_key_set_0.jpg)-->
-<!--![Figure 6](images/9_create_vd_with_fde_drives.jpg)-->
-<!--![Figure 7](images/10_create_vd_advanced_select_raid_drive_encryption_0.jpg)-->
-<!--![Figure 8](images/create_vd_settings.jpg)-->
-<!--![Figure 9](images/6_vd_secured_confirmation_0.jpg)-->
+
+
+
+
+
+
+
 
 If the server came with RAID volumes that are already created by using SED drives, you can make the volume secure by following these steps.
 
 In the **Logical** tab, right-click **Drive Group** and select **Secure Using FDE**. If you have mixed FDE and Non-FDE
 drives for a volume, then this option is not visible.
 
-<!--![Figure 10](images/5_secure_existing_vd_with_fde_drives_0.jpg)-->
+
 
 To remove drive security, you must first delete secured virtual disks and right-click on Controller 0 to **Disable Drive Security**. This function securely erases the data in it and removes drive security.
 

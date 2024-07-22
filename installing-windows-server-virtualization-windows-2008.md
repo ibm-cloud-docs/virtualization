@@ -13,9 +13,7 @@ keywords: Windows 2008
 # Example of installing Windows Server virtualization on Windows 2008
 {: #installing-windows-server-virtualization-on-windows-2008}
 
-<!--Windows 2008 64-bit edition comes with the option to install Windows next generation virtualization application codenamed Veridian. By default the application will not be a selectable option when Adding and Removing Roles from Windows 2008.
 
-Note: At this time, this is only available in full installation of 64-bit editions of Windows 2008. 32-bit versions and Server-core installations do not support this.-->
 
 ## Before you begin
 {: #before-you-begin-win-2008}

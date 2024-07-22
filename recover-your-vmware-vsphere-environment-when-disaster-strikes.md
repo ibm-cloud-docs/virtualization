@@ -1,15 +1,15 @@
 ---
+
 copyright:
   years: 2014, 2024
-lastupdated: "2024-04-19"
+lastupdated: "2024-07-22"
 
 subcollection: virtualization
 
 keywords: disaster recovery
 ---
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
-{:table: .aria-labeledby="caption"}
+
+{{site.data.keyword.attribute-definition-list}}
 
 # Recovering your VMware vSphere environment
 {: #recovering-your-vmware-vsphere-environment}
@@ -230,7 +230,7 @@ A trial version of Veeam Backup & Replication Version 8 is used in the example.
 Before you proceed with deployment, make sure that the following prerequisites are satisfied:
 
 * Have an existing AltaVault appliance that is configured for use with IBM Cloud Object Storage and Veeam Backup & Replication.
-* Obtain a copy of Veeam Backup & Replication for VMware environments, which is a single executable file. Contact your Veeam Representative for a copy or download a [30-day trial version ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}.
+* Obtain a copy of Veeam Backup & Replication for VMware environments, which is a single executable file. Contact your Veeam Representative for a copy or download a [30-day trial version ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.veeam.com/products/veeam-data-platform/backup-recovery.html){: new_window}.
 * Obtain a license file for use with Veeam Backup & Replication. In most cases, this file is emailed to the email address that was used to download Veeam Backup & Replication. If you did not receive this file, contact your Veeam Representative.<br/><br/>The license file is used to activate full Veeam Backup & Replication functionality. If this file is not supplied during program installation, all features and functionality revert to the 30-day trial version.
 * Have a virtual server instance that is provisioned in {{site.data.keyword.cloud}} with the specifications in Table 2. **Note:** The installed operating system must be a 64-bit version.
 
@@ -331,7 +331,7 @@ Follow these steps to fully restore a VM restore.
 For more information about the components of this hybrid solution, see the following iformation:
 
 * [NetApp AltaVault website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://mysupport.netapp.com/site/products/all/details/altavault/docsandkb-tab){: new_window}
-* [Veeam Backup & Replication website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.veeam.com/vm-backup-recovery-replication-software.html){: new_window}
+* [Veeam Backup & Replication website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.veeam.com/products/veeam-data-platform/backup-recovery.html){: new_window}
 * [IBM Cloud Object Storage website ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.ibm.com/cloud/storage){: new_window}
 
 *Utility server* refers to a server that contains the VMware vSphere Client that is used to access a private environment and through which the AltaVault appliance that is used for data recovery operations are deployed.

@@ -1,8 +1,9 @@
 ---
 
 copyright:
-years: 2014, 2023
-lastupdated: "2023-06-19"
+  years: 2014, 2024
+lastupdated: "2024-07-22"
+
 
 subcollection: virtualization
 
@@ -181,7 +182,7 @@ A trial version of Veeam Backup and Replication Version 8 is used in the example
 Before you proceed with deployment, verify that the following prerequisites are satisfied:
 
 * Have an existing AltaVault appliance that is configured for use with {{site.data.keyword.cos_full_notm}} and Veeam Backup and Replication.
-* Obtain a copy of Veeam Backup and Replication for VMware environments, which is a single executable file. Contact your Veeam representative for a copy or download a [30-day trial version](http://www.veeam.com/vm-backup-recovery-replication-software.html){: external}.
+* Obtain a copy of Veeam Backup and Replication for VMware environments, which is a single executable file. Contact your Veeam representative for a copy or download a [30-day trial version](ttps://www.veeam.com/products/veeam-data-platform/backup-recovery.html){: external}.
 * Obtain a license file to use with Veeam Backup and Replication. In most cases, this file is emailed to the email address that is used to download Veeam Backup and Replication. If you did not receive this file, contact your Veeam representative.  \n The license file is used to activate all of the Veeam Backup and Replication functions. If this file is not supplied during program installation, all features and functions revert to the 30-day trial version.
 * Have an existing backup server, which can either be onsite or off-site, with the specifications that are found in Table 2. The installed operating system must be a 64-bit version.
 
@@ -275,4 +276,4 @@ Use the following steps to optimize the backup performance.
 {: starting-a-manual-backup}
 To manually start a backup, right-click on the backup job and select **Start**. Alternatively, select **Active Full** if you want a new backup.
 
-Veeam Backup and Replication can restore virtual environments from a backup. For more information about restoring virtual environments, see the [Veeam Backup and Replication](https://www.veeam.com/vm-backup-recovery-replication-software.html){: external} website.
+Veeam Backup and Replication can restore virtual environments from a backup. For more information about restoring virtual environments, see the [Veeam Backup and Replication](https://www.veeam.com/products/veeam-data-platform/backup-recovery.html){: external} website.

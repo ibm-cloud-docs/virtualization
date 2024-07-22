@@ -74,7 +74,7 @@ In this example configuration, the AltaVault appliance uses the **e0a** interfac
 
 For more information about the deploying the AltaVault appliance and configuration of the VM settings for the appliance, see [NetApp AltaVault Installation and Service Guide](https://library.netapp.com/ecm/ecm_download_file/ECMLP2317733){: external}.
 
-### Initial configuration of the AltaVault appliance <!--initial configuration?-->
+### Initial configuration of the AltaVault appliance 
 {: #initial-configuration-of-the-altavault-appliance-initial-configuration}
 
 You can power on the AltaVault VM after it is configured with the appropriate hardware. It takes some time for the AltaVault VM to initially start as the AltaVault appliance is formatting the secondary metadata cache disk.

@@ -68,7 +68,6 @@ keywords: QuantaStor
 XenServer uses the Linux device-mapper multipath driver (`dmmp`) to enable support for hardware multi-pathing. The `dmmp` driver uses a configuration file that is called `multipath.conf` that contains the multipath mode and failover rules for each vendor.
 
 QuantaStor has some special rules that need to be added to the `multipath.conf` file. Edit the `/etc/multipath-enabled.conf` file that is on each of XenServer `dom0` nodes. In that file, add the following stanza after the last device { } section:
-
 ```
     device {
           vendor                  "OSNEXUS"

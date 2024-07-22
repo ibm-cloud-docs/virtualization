@@ -1,26 +1,29 @@
 ---
+
 copyright:
-  years: 2014, 2018
-lastupdated: "2019-09-24"
+  years: 2014, 2023
+lastupdated: "2023-07-14"
 
 subcollection: virtualization
 
 keywords: TCP window size
+
 ---
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
+
+{{site.data.keyword.attribute-definition-list}}
 
 # Optimizing TCP window size for virtual instances
 {: #optimizing-tcp-window-size-for-virtual-instances}
 
 Use the following guidelines to tune the TCP window size on a virtual server instance for optimal performance on an {{site.data.keyword.cloud}} hypervisor. {{site.data.keyword.cloud_notm}} virtual hosts have a default TCP buffer size with the range 3 - 6 MB.
+{: short}
 
-To get the best performance out of your virtual server instance, you need to set the TCP window size under the 3 - 6 MB range. The kernel sets the actual memory limit to twice the requested value, effectively doubling the maximum settings. Keep the maximum TCP window size at or under 2 MB. With auto-tuning enabled, the receiver buffer size (and TCP window size) dynamically updates for each connection. The per connection memory space defaults are set with the following element arrays:
+To get the best performance out of your virtual server instance, you need to set the TCP window size under the 3 - 6 MB range. The kernel sets the actual memory limit to twice the requested value, effectively doubling the maximum settings. Keep the maximum TCP window size at or under 2 MB. With auto-tuning enabled, the receiver buffer size (and TCP window size) dynamically updates for each connection. The per connection memory space defaults are set with the following element arrays.
 
-* net.ipv4.tcp_rmem - This is the memory that is reserved for TCP receive buffers
-* net.ipv4.tcp_wmem - This is the memory that is reserved for TCP send buffers
+* `net.ipv4.tcp_rmem` is the memory that is reserved for TCP receive buffers
+* `net.ipv4.tcp_wmem` is the memory that is reserved for TCP send buffers
 
-The values in these arrays are the minimum, initial, and maximum buffer sizes that you use to set the limits on auto-tuning and balance memory usage. To view your current memory window settings, run the command: `sysctl -a | grep mem`
+The values in these arrays are the minimum, initial, and maximum buffer sizes that you use to set the limits on auto-tuning and balance memory usage. To view your current memory window settings, run the command `sysctl -a | grep mem`
 
     # sysctl -a | grep mem
     vm.overcommit_memory = 0
@@ -51,12 +54,10 @@ Verify that the standard advanced TCP features are enabled:
     net.ipv4.tcp_sack = 1
     net.ipv4.tcp_window_scaling = 1
 
-To verify whether auto-tuning is enabled, check to that the following setting has a value of "1":
+To verify whether auto-tuning is enabled, check to that the following setting has a value of "1".
 
     net.ipv4.tcp_moderate_rcvbuf = 1
 
-To change your TCP window settings, add the settings to your /etc/sysctl.conf file.
-
-<!--**Note:** The preceding general recommendations are used to tune the TCP window sizes of a VSI in the public cloud. You have many ways to optimize your network for different workloads.-->
+To change your TCP window settings, add the settings to your `/etc/sysctl.conf` file.
 
 To preserve the changes across restarts, make sure to add the tuning commands in your `rc.local` file.

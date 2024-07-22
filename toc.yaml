@@ -10,48 +10,23 @@ toc:
     product-page: "https://www.ibm.com/cloud/virtualization"
     path: virtualization
     label: Virtualization for Classic
-
-  entries: 
-
-  - navgroup: 
+  entries:
+  - navgroup:
       id: learn
       topics:
       - getting-started.md
-      - topicgroup:
-         label: Virtuozzo
-         topics: 
-         - what-virtuozzo.md
-         - virtuozzo-hardware-and-software-requirements.md
-         - parallels-virtuozzo-containers-40-quick-reference-guide.md
-         - which-operating-systems-are-supported-parallels-server-4-bare-metal.md
-         - overview-parallels-server-4-bare-metal.md
-         - understanding-ubc-user-beancounter-values.md
-      - topicgroup:
-         label: Citrix XenServer
-         topics:
-         - what-citrix-xenserver.md
-         - how-get-started-xencenter.md
-         - what-difference-between-versions-xenserver.md
-         - what-operating-systems-are-supported-softlayer-under-xenserver.md
-         - what-xenserver-pooling.md
-         - what-has-changed-citrix-xenserver-62-and-greater.md
-      - topicgroup:
-         label: Hyper-V
-         topics:
-         - what-hyper-v.md
-         - what-are-requirements-run-hyper-v.md
-      - get-started-vmware-esxi.md  
-  - navgroup: 
+      - getting-started-with-virtuozzo.md
+      - what-citrix-xenserver.md
+      - what-hyper-v.md
+  - navgroup:
       id: howto
       topics:
       - set-up-a-hypervisor.md
       - tcp-window-recommendations-virtual-instances.md
-      - installing-windows-server-virtualization-windows-2008.md
       - virtual-machine-network-setup.md
-      - topicgroup: 
-          label: Virtuozzo
-          topics: 
-          - getting-started-with-virtuozzo.md
+      - topicgroup:
+          label: Managing Virtuozzo
+          topics:
           - back-virtuozzo-container-command-line.md
           - create-new-virtuozzo-container-cli.md
           - back-virtuozzo-container.md
@@ -64,13 +39,14 @@ toc:
           - migrate-container-different-hardware-node.md
       - topicgroup:
          label: Citrix XenServer
-         topics: 
+         topics:
          - how-install-xenserver-tools-linux.md
          - activate-xenserver-free-license.md
          - connect-xenserver-over-public-interface.md
          - set-and-mount-iscsi-node-xenserver-shared-storage.md
          - quantastor-storagelink-xenserver-configuration.md
          - add-hard-drive-citrix-xenserver.md
+         - xencenter-create-virtual-machine.md
       - topicgroup:
          label: Hyper-V
          topics:
@@ -102,4 +78,3 @@ toc:
          - hyper-v-faq.md
          - veeam-faq.md
       - vmware-reference.md
-

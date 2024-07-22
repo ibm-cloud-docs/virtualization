@@ -7,7 +7,7 @@ toc:
     audience: service
     href: /docs/virtualization
     console-page: "/classic"
-    product-page: "https://www.ibm.com/cloud/virtualization"
+    product-page: "https://www.ibm.com/products/bare-metal-servers/classic"
     path: virtualization
     label: Virtualization for Classic
   entries:

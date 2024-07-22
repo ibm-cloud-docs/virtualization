@@ -67,7 +67,7 @@ Use the following steps to create a Viruozzo container by using the CLI.
 
 4. Start the container.
 
-   ```
+   ```text
    [root@vztrain01 ~]# vzctl start 122
 
    Starting Container ...
@@ -87,10 +87,14 @@ Use the following steps to create a Viruozzo container by using the CLI.
         Configure meminfo: 65536
 
         Container start in progress...
+   ```
+   {: codeblock}
 
    Moments later the container runs. You can check the status again with the `vzctl` status 122 command.
+
 5. Add parameters that are necessary to manage the container.
 
+   ```text
         [root@vztrain01 ~]# vzctl set 122 --ipadd 12.34.234.142 --hostname vz122.domain.com --userpasswd root:password123 --save
 
         Hostname for Container set: vz122.domain.com
@@ -112,5 +116,7 @@ Use the following steps to create a Viruozzo container by using the CLI.
         passwd: all authentication tokens updated successfully.
 
         Saved parameters for Container 122
+   ```
+   {: codeblock}
 
 The basic setup of a new Virtuozzo container by using the CLI is complete.

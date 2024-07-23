@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2024
-lastupdated: "2024-07-22"
+lastupdated: "2024-07-23"
 
 subcollection: virtualization
 
@@ -32,7 +32,7 @@ Use the following steps to set up a hypervisor.
 1. Connect to the private network through the [secure VPN](https://www.ibm.com/products/vpn-access){: external} to access your hypervisor. The {{site.data.keyword.cloud}} hypervisor providers include XenServer, VMware, and Hyper-V. Each provider has management consoles that are accessed differently. For more information about accessing and working in a management console, see the following links:
 
    * [XenServer](https://support.citrix.com/s/){: external}
-   * [VMware](https://www.vmware.com/support/services.html){: external}
+   * [VMware](https://www.broadcom.com/support/vmware-services){: external}
    * [Hyper-V](https://learn.microsoft.com/en-us/windows/deployment/){: external}
 
 2. Obtain portable IPs for your virtual machines.

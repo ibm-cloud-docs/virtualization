@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2024
-lastupdated: "2024-07-22"
+lastupdated: "2024-10-10"
 
 subcollection: virtualization
 
@@ -164,7 +164,7 @@ For more information on the deployment of the AltaVault appliance and configurat
 |Step 6: Default gateway?|Enter the default gateway (e.g., 10.120.108.129).|
 |Step 7: Primary DNS server?|Enter the primary Domain Name System (DNS) server in your environment.|
 |Step 8: Domain name?|Enter the domain name of your environment (for example, testenv.org).|
-{: caption="Table 1. AltaVault initial configuration values" caption-side="top"}
+{: caption="AltaVault initial configuration values" caption-side="top"}
 
 ### Configuring AltaVault for IBM Cloud Object Storage
 {: #configuring-altavault-for-ibm-cloud-object-storage}
@@ -241,7 +241,7 @@ Before you proceed with deployment, make sure that the following prerequisites a
 |**Memory**|4 GB base RAM plus 500 MB for each concurrent backup and restore job.|16 GB base RAM plus 4 GB for each concurrent backup and restore job.|
 |**Disk space**|2 GB for product installation, 10 GB per 100 VMs for guest system catalog folder (persistent data).|2 GB for product installation, 10 GB per 100VMs for guest system catalog folder (persistent data).|
 |**Network**|1 Gbps LAN for onsite backup and replication, 1 Mbps WAN for off-site backup and replication.|1 Gbps LAN for onsite backup and replication, 1 Mbps WAN for offsite backup and replication.|
-{: caption="Table 2. System requirements for {{site.data.keyword.cloud_notm}} virtual server instance" caption-side="top"}
+{: caption="System requirements for {{site.data.keyword.cloud_notm}} virtual server instance" caption-side="top"}
 
 Provision the virtual server instance within the same data center as the AltaVault appliance and vSphere environment. The virtual server instance must have access to the AltaVault appliance and vCenter.
 

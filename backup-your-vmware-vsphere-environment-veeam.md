@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2024
-lastupdated: "2024-07-22"
+lastupdated: "2024-10-10"
 
 
 subcollection: virtualization
@@ -69,7 +69,7 @@ The NICs are assigned the following interface functions:
 | e0a | An interface that is used to replicate data from the AltaVault appliance to the cloud. |
 | e0b | An interface that is used to export the mount point for the SMB/CIFS or NFS share. |
 | e0c | An optional interface that is used to export the mount point for the SMB/CIFS or NFS share. |
-{: caption="Table 1. Assigned interface functions" caption-side="bottom"}
+{: caption="Assigned interface functions" caption-side="bottom"}
 
 In this example configuration, the AltaVault appliance uses the **e0a** interface as the replicate-to-cloud interface and the **e0b** interface to export a CIFS/SMB mount point. Keep in mind that a CIFS/SMB share and an NFS share can't both be used to access the same data. In other words, if data is placed in a CIFS/SMB share, it cannot be accessed through an NFS share and vice versa.
 
@@ -95,7 +95,7 @@ Use the information in Table 1 after the wizard opens.
 |Step 6: Default gateway?|Enter the default gateway (192.168.50.1)|
 |Step 7: Primary DNS server?|Enter the primary Domain Name System (DNS) server in your environment|
 |Step 8: Domain name?|Enter the domain name of your environment (testenv.org)|
-{: caption="Table 2. AltaVault initial configuration values" caption-side="bottom"}
+{: caption="AltaVault initial configuration values" caption-side="bottom"}
 
 ### Configuring AltaVault for Object Storage
 {: #configuring-altavault-for-object-storage}
@@ -193,7 +193,7 @@ Before you proceed with deployment, verify that the following prerequisites are 
 |**Memory**|4 GB-base RAM plus 500 MB for each concurrent backup job.|16 GB-base RAM plus 4 GB for each concurrent backup job.|
 |**Disk space**|2 GB for product installation and 10 GB per 100 VMs for guest file system catalog data (persistant data).|2 GB for product installation and 10 GB for 100 VMs for guest file system catalog (persistant data).|
 |**Network**|1-Gbps LAN for onsite backup and replication and 1-Mbps WAN for off-site backup and replication.|1-Gbps LAN for onsite backup and replicationand 1-Mbps WAN for off-site backups and replication.|
-{: caption="Table 3. System requirements for Veeam Backup and Replication backup server" caption-side="bottom"}
+{: caption="System requirements for Veeam Backup and Replication backup server" caption-side="bottom"}
 
 #### Installing Veeam Backup and Replication
 {: #installing-veeam-backup-replication}

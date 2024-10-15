@@ -1,0 +1,53 @@
+{
+  "version": 2,
+  "title": "Virtualization for Classic",
+  "introduction": "You can use the virtualization solution to run multiple virtual machines in a single dedicated environment within IBM Cloud® Classic Infrastructure.",
+  "product_page": "https://www.ibm.com/products/bare-metal-servers/classic",
+  "console_page": "/classic",
+  "section_topics": {
+    "links": [
+      {
+        "title": "Getting started with virtualization?",
+        "href": "/docs/virtualization?topic=virtualization-getting-started"
+      },
+      {
+        "title": "What is Citrix XenServer?",
+        "href": "/docs/virtualization?topic=virtualization-what-is-citrix-xenserver"
+      },
+      {
+        "title": "What is Hyper-V?",
+        "href": "/docs/virtualization?topic=virtualization-what-is-hyper-v"
+      },
+      {
+        "title": "Setting up a hypervisor",
+        "href": "/docs/virtualization?topic=virtualization-setting-up-a-hypervisor"
+      },
+      {
+        "title": "Setting up a virtual machine network",
+        "href": "/docs/virtualization?topic=virtualization-setting-up-a-virtual-machine-network"
+      },
+      {
+        "title": "FAQS",
+        "href": "/docs/virtualization?topic=virtualization-faqs-general"
+      },
+      {
+        "title": "VMware reference",
+        "href": "/docs/virtualization?topic=virtualization-vmware-reference"
+      }
+    ]
+  },
+  "section_highlights": [
+    {
+      "title": "IBM Cloud Bare Metal Servers on Classic Infrastructure",
+      "description": "Customize an IBM Cloud Bare Metal Server on classic infrastructure and get 20 TB of bandwidth at no charge. Create an IBM Cloud account to get a USD 200 credit. (110 kB)",
+      "href": "https://www.ibm.com/products/bare-metal-servers/classic",
+      "type": "blog"
+    }
+  ],
+  "section_devtools": {
+    "api": "https://sldn.softlayer.com/reference/softlayerapi/",
+    "cli": "/docs/cli?topic=cli-sl-manage-bare-metal",
+    "terraform": "https://registry.terraform.io/providers/IBM-Cloud/ibm/latest/docs/resources/compute_bare_metal"
+  }
+}
+

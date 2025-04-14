@@ -3,23 +3,17 @@
 
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-15"
+  years: 2014, 2025
+lastupdated: "2025-04-14"
 
 subcollection: virtualization
 
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:pre: .pre}
-{:tip: .tip}
-{:table: .aria-labeledby="caption"}
+{{site.data.keyword.attribute-definition-list}}
 
-# FAQs: Veeam backup and replication
+# FAQ: Veeam backup and replication
 {: #faqs-veeam-backup-and-replication}
 
 ## Can I add extra license packs to my Veeam server?

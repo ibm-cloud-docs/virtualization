@@ -3,29 +3,23 @@
 
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-01-04"
+  years: 2014, 2025
+lastupdated: "2025-04-14"
 
 subcollection: virtualization
 
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:pre: .pre}
-{:tip: .tip}
-{:table: .aria-labeledby="caption"}
+{{site.data.keyword.attribute-definition-list}}
 
-# FAQS: General
+# FAQ: General
 {: #faqs-general}
 
 ## Why isn't my server listed in the Virtual Servers list in the Customer Portal?
 {: #why-isn-t-my-server-listed-in-the-virtual-servers-list-in-the-customer-portal}
 
-If you have **XenServer**, **Hyper-V** or **Virtuozzo** on your server, but it is not listed in the [{{site.data.keyword.virtualmachinesshort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Virtual/live){: new_window} list, within the [Hardware ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Hardware/configuration){: new_window} section of the [Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/){: new_window}, then you need to open a [standard support ticket ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Support/addTicket){: new_window} with the Support Department so it can be added to your list.
+If you have **XenServer**, **Hyper-V** or **Virtuozzo** on your server, but it is not listed in the [{{site.data.keyword.virtualmachinesshort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Virtual/live){: external} list, within the [Hardware ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Hardware/configuration){: new_window} section of the [Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/){: external}, then you need to open a [standard support ticket ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Support/addTicket){: external} with the Support Department so it can be added to your list.
 
 This request is filled during normal United States CST business hours.
 {: tip}

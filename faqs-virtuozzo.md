@@ -3,22 +3,17 @@
 
 
 copyright:
-  years: 2014, 2018
-lastupdated: "2018-11-14"
+  years: 2025
+lastupdated: "2025-04-14"
+
 
 subcollection: virtualization
 
 ---
 
-{:shortdesc: .shortdesc}
-{:codeblock: .codeblock}
-{:screen: .screen}
-{:new_window: target="_blank"}
-{:pre: .pre}
-{:tip: .tip}
-{:table: .aria-labeledby="caption"}
+{{site.data.keyword.attribute-definition-list}}
 
-# FAQs: Virtuozzo
+# FAQ: Virtuozzo
 {: #faqs-virtuozzo}
 
 ## Do I need static or portable IP addresses for Virtuozzo?
@@ -26,8 +21,8 @@ subcollection: virtualization
 
 * Static IP address: Use a static IP address if you have only one hardware node (per VLAN or in total)
 * Portable IP address:
-    * Routed to VLAN: Use this method if you have multiple host nodes within the same VLAN. You also use this method to migrate a container to a different hardware node within the same VLAN without changing the IP of the container.
-    * Secondary on VLAN: This method works, but you don't need a secondary gateway. You lose 3 of the IP addresses due to host ID, gateway, and broadcast.
+   * Routed to VLAN: Use this method if you have multiple host nodes within the same VLAN. You also use this method to migrate a container to a different hardware node within the same VLAN without changing the IP of the container.
+* Secondary on VLAN: This method works, but you don't need a secondary gateway. You lose 3 of the IP addresses due to host ID, gateway, and broadcast.
 
 Costs per IP can change depending on the routing type (Routed to VLAN or Secondary on VLAN). Prices are shown in the portal after you select the server that you are ordering the IP addresses for. Routing can be changed at any time by opening a support ticket.
 {: tip}
@@ -73,21 +68,21 @@ You can experience issues when you cache to RedHat and SUSE OS templates if you 
 |TIMESTAMP|Operation update with the Env(s) "virtuozzo00.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $RH_SERVER/download/mirrors/redhat-as4 contents undefined variable You can define this variable in /etc/vztt/url.map. .|**Failed**|
 |TIMESTAMP|Click here to open/close the operation details.Update OS Template Cache|**Failed**|
 |TIMESTAMP|Operation update with the Env(s) "virtuozzo00.softlayer.local" and package(s) .redhat-el5-x86_64 is started||
-|TIMESTAMP|Operation update with the Env(s) "virtuozzo00.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $RH_SERVER/download/mirrors/redhat-el5 contents undefined variable You can define this variable in /etc/vztt/url.map. See Virtuozzo Installation Guide for more details. .|**Failed**|
+|TIMESTAMP|Operation update with the Env(s) "virtuozzo00.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $RH_SERVER/download/mirrors/redhat-el5 contents undefined variable You can define this variable in /etc/vztt/url.map. See the Virtuozzo Installation Guide for more details. .|**Failed**|
 |TIMESTAMP|Click here to open/close the operation details.Update OS Template Cache|**Failed**|
 |TIMESTAMP|Operation update with the Env(s) "virtuozzo00.softlayer.local" and package(s) .sles-10-x86_64 is started||
-|TIMESTAMP|Operation update with the Env(s) "virtuozzo00.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $SLES_SERVER/download/mirrors/suse-es10 contents undefined variable You can define this variable in /etc/vztt/url.map. See Virtuozzo Installation Guide for more details. .|**Failed**|
-|TIMESTAMP|Click here to open/close the operation details.Update OS Template Cache|**Failed**|
+|TIMESTAMP|Operation update with the Env(s) "virtuozzo00.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $SLES_SERVER/download/mirrors/suse-es10 contents undefined variable You can define this variable in /etc/vztt/url.map. See the Virtuozzo Installation Guide for more details.|**Failed**|
+|TIMESTAMP|Click here to open/close the operation details. Update OS Template Cache|**Failed**|
 |TIMESTAMP|Operation update with the Env(s) "virtuozzo01.softlayer.local" and package(s) .redhat-as4-x86_64 is started||
-|TIMESTAMP|Operation update with the Env(s) "virtuozzo01.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $RH_SERVER/download/mirrors/redhat-as4 contents undefined variable You can define this variable in /etc/vztt/url.map. See Virtuozzo Installation Guide for more details. .|**Failed**|
-|TIMESTAMP|Click here to open/close the operation details.Update OS Template Cache|**Failed**|
+|TIMESTAMP|Operation update with the Env(s) "virtuozzo01.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $RH_SERVER/download/mirrors/redhat-as4 contents undefined variable You can define this variable in /etc/vztt/url.map. See the Virtuozzo Installation Guide for more details.|**Failed**|
+|TIMESTAMP|Click here to open/close the operation details. Update OS Template Cache|**Failed**|
 |TIMESTAMP|Operation update with the Env(s) "virtuozzo01.softlayer.local" and package(s) .redhat-el5-x86_64 is started||
-|TIMESTAMP|Operation update with the Env(s) "virtuozzo01.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $RH_SERVER/download/mirrors/redhat-el5 contents undefined variable You can define this variable in /etc/vztt/url.map. .|**Failed**|
-|TIMESTAMP|Click here to open/close the operation details.Update OS Template Cache          Failed<br/><br/>Oct 29, 2008 01:16:56 PM     Operation update with the Env(s) "virtuozzo01.softlayer.local" and package(s) .sles-10-x86_64 is started||
-|TIMESTAMP|Operation update with the Env(s) "virtuozzo01.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $SLES_SERVER/download/mirrors/suse-es10 contents undefined variable .|**Failed**|
+|TIMESTAMP|Operation update with the Env(s) "virtuozzo01.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $RH_SERVER/download/mirrors/redhat-el5 contents undefined variable You can define this variable in /etc/vztt/url.map.|**Failed**|
+|TIMESTAMP|Click here to open/close the operation details. Update OS Template Cache          Failed<br/><br/>Oct 29, 2008 01:16:56 PM     Operation update with the Env(s) "virtuozzo01.softlayer.local" and package(s) .sles-10-x86_64 is started||
+|TIMESTAMP|Operation update with the Env(s) "virtuozzo01.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $SLES_SERVER/download/mirrors/suse-es10 contents undefined variable.|**Failed**|
 |TIMESTAMP|Completing the process|**Failed**|
 
-## Why can I ping my ServiceVE but cannot log in to via SSH (PIM/PMC)?
+## Why can I ping my ServiceVE but can't log in to with SSH (PIM/PMC)?
 {: #why-can-i-ping-my-serviceve-but-cannot-log-in-to-via-ssh-pim-pmc}
 
 Make sure that the host node doesn't have any IP addresses assigned other than the IP addresses that are listed in the Portal (1 public IP and 1 private IP [located in 10.0.0.0/8]).

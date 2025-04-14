@@ -1,14 +1,15 @@
 ---
 copyright:
-  years: 2014, 2020
-lastupdated: "2020-11-10"
+  years: 2014, 2025
+lastupdated: "2025-04-14"
+
 
 subcollection: virtualization
 ---
-{:shortdesc: .shortdesc}
-{:new_window: target="_blank"}
 
-# FAQs: Hyper-V
+{{site.data.keyword.attribute-definition-list}}
+
+# FAQ: Hyper-V
 {: #faqs-hyper-v}
 
 ## What are the requirements to run Hyper-V?
@@ -51,7 +52,7 @@ Yes.
 
 Windows virtual machines are licensed through {{site.data.keyword.BluSoftlayer_notm}}. Linux virtual machines are freely licensed and require no action.
 
-## Will the virtual machines have access to the private network?
+## Do the virtual machines have access to the private network?
 {: #will-the-virtual-machines-have-access-to-the-private-network}
 
 Yes. Virtual machines can connect to both a public and private network.
@@ -64,7 +65,7 @@ Providing private network access to virtual machines allows virtual machines to 
 ## Can virtual machines use the secondary IP block that came with the server?
 {: #can-virtual-machines-use-the-secondary-ip-block-that-came-with-the-server}
 
-No. The secondary IP that was provided with your server is routed specifically to work on the physical server and not a virtual machine. You need portable IP blocks to connect your virtual machine to the network.
+No. The secondary IP that was is provided with your server is routed specifically to work on the physical server and not a virtual machine. You need portable IP blocks to connect your virtual machine to the network.
 
 ## What are portable IP addresses?
 {: #what-are-portable-ip-addresses}

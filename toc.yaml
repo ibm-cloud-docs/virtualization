@@ -25,6 +25,7 @@ toc:
       - tcp-window-recommendations-virtual-instances.md
       - virtual-machine-network-setup.md
       - topicgroup:
+          id: managing-virtuozzo
           label: Managing Virtuozzo
           topics:
           - back-virtuozzo-container-command-line.md
@@ -38,6 +39,7 @@ toc:
           - how-do-i-add-host-node-worker-another-pim.md
           - migrate-container-different-hardware-node.md
       - topicgroup:
+         id: citrix-xenserver
          label: Citrix XenServer
          topics:
          - how-install-xenserver-tools-linux.md
@@ -48,6 +50,7 @@ toc:
          - add-hard-drive-citrix-xenserver.md
          - xencenter-create-virtual-machine.md
       - topicgroup:
+         id: hyper-v
          label: Hyper-V
          topics:
          - hyper-v-setup.md
@@ -55,12 +58,14 @@ toc:
          - hyper-v-vm-migration-5-steps.md
          - run-hyper-v-active-directory-environment.md
       - topicgroup:
+         id: vmware
          label: VMware
          topics:
          - advanced-single-site-vmware-reference-architecturesoftlayer.md
          - enabling-public-access-vmware-esxi-55.md
          - enabling-public-access-vmware.md
       - topicgroup:
+         id: vsphere
          label: vSphere
          topics:
          - use-hybrid-solution-backup-and-restore-vsphere.md
@@ -71,7 +76,8 @@ toc:
       id: help
       topics:
       - topicgroup:
-         label: FAQs
+         id: faq
+         label: FAQ
          topics:
          - faqs-general.md
          - faqs-virtuozzo.md

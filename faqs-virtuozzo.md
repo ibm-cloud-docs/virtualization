@@ -4,7 +4,7 @@
 
 copyright:
   years: 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-08-15"
 
 
 subcollection: virtualization
@@ -61,7 +61,7 @@ You have no security concerns with how Virtuozzo manages resources and isolates 
 
 You can experience issues when you cache to RedHat and SUSE OS templates if you use Vitruozzo. These OS templates require extra licensing, which {{site.data.keyword.cloud_notm}} doesn't provide. If you receive any of the following errors, you need to have your own accounts with the respective vendors and configure the corresponding variables within /etc/vztt/url.map (/etc/vztt/vztt.conf in Virtuozzo 3.)
 
-||||
+| Timestamp | Error description | Status |
 |---|---|---|
 |TIMESTAMP|Click here to open/close the operation details.Update OS Template Cache|**Failed**|
 |TIMESTAMP|Operation update with the Env(s) "virtuozzo00.softlayer.local" and package(s) .redhat-as4-x86_64 is started||
@@ -81,6 +81,7 @@ You can experience issues when you cache to RedHat and SUSE OS templates if you 
 |TIMESTAMP|Click here to open/close the operation details. Update OS Template Cache          Failed<br/><br/>Oct 29, 2008 01:16:56 PM     Operation update with the Env(s) "virtuozzo01.softlayer.local" and package(s) .sles-10-x86_64 is started||
 |TIMESTAMP|Operation update with the Env(s) "virtuozzo01.softlayer.local" is finished with errors: Can not update packages: exec failed: Error: URL $SLES_SERVER/download/mirrors/suse-es10 contents undefined variable.|**Failed**|
 |TIMESTAMP|Completing the process|**Failed**|
+{: caption="OS template cache error messages" caption-side="bottom"}
 
 ## Why can I ping my ServiceVE but can't log in to with SSH (PIM/PMC)?
 {: #why-can-i-ping-my-serviceve-but-cannot-log-in-to-via-ssh-pim-pmc}

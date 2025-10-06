@@ -1,4 +1,3 @@
----
 toc:
   properties:
     subcollection: virtualization
@@ -6,8 +5,8 @@ toc:
     category: compute_classic
     audience: service
     href: /docs/virtualization
-    console-page: "/classic"
-    product-page: "https://www.ibm.com/products/bare-metal-servers/classic"
+    console-page: /classic
+    product-page: https://www.ibm.com/products/bare-metal-servers/classic
     path: virtualization
     label: Virtualization for Classic
   entries:
@@ -39,48 +38,48 @@ toc:
           - how-do-i-add-host-node-worker-another-pim.md
           - migrate-container-different-hardware-node.md
       - topicgroup:
-         id: citrix-xenserver
-         label: Citrix XenServer
-         topics:
-         - how-install-xenserver-tools-linux.md
-         - activate-xenserver-free-license.md
-         - connect-xenserver-over-public-interface.md
-         - set-and-mount-iscsi-node-xenserver-shared-storage.md
-         - quantastor-storagelink-xenserver-configuration.md
-         - add-hard-drive-citrix-xenserver.md
-         - xencenter-create-virtual-machine.md
+          id: citrix-xenserver
+          label: Citrix XenServer
+          topics:
+          - how-install-xenserver-tools-linux.md
+          - activate-xenserver-free-license.md
+          - connect-xenserver-over-public-interface.md
+          - set-and-mount-iscsi-node-xenserver-shared-storage.md
+          - quantastor-storagelink-xenserver-configuration.md
+          - add-hard-drive-citrix-xenserver.md
+          - xencenter-create-virtual-machine.md
       - topicgroup:
-         id: hyper-v
-         label: Hyper-V
-         topics:
-         - hyper-v-setup.md
-         - how-do-i-order-hyper-v.md
-         - hyper-v-vm-migration-5-steps.md
-         - run-hyper-v-active-directory-environment.md
+          id: hyper-v
+          label: Hyper-V
+          topics:
+          - hyper-v-setup.md
+          - how-do-i-order-hyper-v.md
+          - hyper-v-vm-migration-5-steps.md
+          - run-hyper-v-active-directory-environment.md
       - topicgroup:
-         id: vmware
-         label: VMware
-         topics:
-         - advanced-single-site-vmware-reference-architecturesoftlayer.md
-         - enabling-public-access-vmware-esxi-55.md
-         - enabling-public-access-vmware.md
+          id: vmware
+          label: VMware
+          topics:
+          - advanced-single-site-vmware-reference-architecturesoftlayer.md
+          - enabling-public-access-vmware-esxi-55.md
+          - enabling-public-access-vmware.md
       - topicgroup:
-         id: vsphere
-         label: vSphere
-         topics:
-         - use-hybrid-solution-backup-and-restore-vsphere.md
-         - backup-your-vmware-vsphere-environment-veeam.md
-         - recover-your-vmware-vsphere-environment-when-disaster-strikes.md
-         - updating-veeam-backup-and-replication-application.md
+          id: vsphere
+          label: vSphere
+          topics:
+          - use-hybrid-solution-backup-and-restore-vsphere.md
+          - backup-your-vmware-vsphere-environment-veeam.md
+          - recover-your-vmware-vsphere-environment-when-disaster-strikes.md
+          - updating-veeam-backup-and-replication-application.md
   - navgroup:
       id: help
       topics:
       - topicgroup:
-         id: faq
-         label: FAQ
-         topics:
-         - faqs-general.md
-         - faqs-virtuozzo.md
-         - hyper-v-faq.md
-         - veeam-faq.md
+          id: faq
+          label: FAQ
+          topics:
+          - faqs-general.md
+          - faqs-virtuozzo.md
+          - hyper-v-faq.md
+          - veeam-faq.md
       - vmware-reference.md

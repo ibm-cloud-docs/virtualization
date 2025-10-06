@@ -4,7 +4,7 @@
 
 copyright:
   years: 2014, 2025
-lastupdated: "2025-04-14"
+lastupdated: "2025-10-06"
 
 subcollection: virtualization
 
@@ -16,7 +16,7 @@ subcollection: virtualization
 # FAQ: General
 {: #faqs-general}
 
-## Why isn't my server listed in the Virtual Servers list in the Customer Portal?
+## Why isn't my server listed in my virtual servers list in the Customer Portal?
 {: #why-isn-t-my-server-listed-in-the-virtual-servers-list-in-the-customer-portal}
 
 If you have **XenServer**, **Hyper-V** or **Virtuozzo** on your server, but it is not listed in the [{{site.data.keyword.virtualmachinesshort}} ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Virtual/live){: external} list, within the [Hardware ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Hardware/configuration){: new_window} section of the [Portal ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/){: external}, then you need to open a [standard support ticket ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://manage.softlayer.com/Support/addTicket){: external} with the Support Department so it can be added to your list.

@@ -1,8 +1,8 @@
 ---
 
 copyright:
-  years: 2014, 2024
-lastupdated: "2024-07-22"
+  years: 2014, 2026
+lastupdated: "2026-03-03"
 
 
 subcollection: virtualization
@@ -17,6 +17,21 @@ subcollection: virtualization
 
 The process of setting up Hyper-V includes the initial configuration of Hyper-V, the creation of a virtual machine, and the network configuration on the new virtual machine. The following guidelines explain these processes.
 
+## Hyper-V support responsibilities
+{: #hyper-v-support-responsibilities}
+
+The following information describes support responsibilities for Hyper-V.
+
+{{site.data.keyword.cloud}} is responsible for enabling Hyper-V on virtual servers.
+
+{{site.data.keyword.cloud_notm}} does not offer support for the following actions. For more information, see [Hyper V documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/){: external}.
+
+   -	Configuration that is required to use Hyper-V.
+   -	The installation, setup, and management of Hyper-V.
+   -	The installation, configuration, and troubleshooting of guest virtual servers that are inside a Hyper-V-enabled IaaS virtual machine.
+
+The Hyper-V user is responsible for all setup, configuration, operation, and ongoing management of Hyper-V and its guest virtual servers.
+
 ## Using Hyper-V Manager
 {: #using-hyper-v-manager}
 
@@ -29,11 +44,11 @@ You can find Hyper-V Manager under **Administrative Tools** in the Windows Contr
 
 The first configuration to check is the storage location for your virtual hard disks. From the Hyper-V Manager window, on the left side you see **Hyper-V Manager** and the server name. Click your server name and you see the information that is available to the Hyper-V service on your server. Now, the middle of the screen is empty since shows that no virtual machines are installed. On the right side of the screen, you see a link for **Hyper-V Settings**. Clicking the link brings up the basic settings for Hyper-V.
 
-The primary setting that you need to look at is **Virtual Hard Disks**. On the right side, you see the default location where your virtual hard disks are stored. The default location is:
+The primary setting that you need to look at is **Virtual hard disk drives**. On the right side, you see the default location where your virtual hard disks are stored. The default location is:
 
 `C:\Users\Public\Documents\Hyper-V\Virtual Hard Disks`
 
-When you create a virtual machine, you can specify a specific place if you do not want to store that specific virtual hard disk in the default location. For example, if you want to store your virtual hard disks on a second, larger drive (Drive D in this example) and you want those virtual drives to be stored in the **VirtualMachine** folder, enter `D:\VirtualMachine` into the field.
+When you create a virtual machine, you can specify a specific place if you do not want to store that specific virtual hard disk in the default location. For example, if you want to store your virtual hard disks on a second, larger drive (Drive D in this example) and you want to store those virtual drives in the **\:VirtualMachine** folder, enter `D:\VirtualMachine` into the field.
 
 ****
 
@@ -42,7 +57,7 @@ You can also manually browse through folders to select the location you want to 
 ## Configuring network devices
 {: #configuring-network-devices}
 
-Before you configure virtual network devices, determine which network adapters are connected to the private and public networks. From the start menu, click **Network Connections**. You see two network devices here. Make sure that you note that your devices are named **PrivateNetwork** and **PublicNetwork**. Right-click **PrivateNetwork** and select **Properties**. You see **Connect using:**, which shows the device name for the private network adapter. Write down this name as you need it when you create your virtual private network device.
+Before you configure virtual network devices, determine which network adapters are connected to the private and public networks. From the start menu, click **Network Connections**. You see two network devices here. Make sure that you note that your devices are named **PrivateNetwork** and **PublicNetwork**. Right-click **PrivateNetwork** and select **Properties**. You see **Connect by using:**, which shows the device name for the private network adapter. Write down this name as you need it when you create your virtual private network device.
 
 ### Configuring a private network device
 {: #configuring-a-private-network-device}
@@ -56,7 +71,8 @@ The first time that you open this window, you see Virtual Networks on the left w
 Make sure that **External** is selected and click **Add**.
 
 Continue entering information into the remaining fields:
-* **Name** The name that is associated with this network device. For this example, for the example, use _Private_ to indicate that this device is connected to the IBM Cloud private network.
+
+* **Name** The name that is associated with this network device. For this example, for the example, use _Private_ to indicate that this device is connected to the {{site.data.keyword.cloud_notm}} private network.
 * **Connection type** Select the device that corresponds to your private network. This name is the device name that you found earlier in the **Network Connections** window. After you select the correct device, click **OK**. You are presented with a warning that your network connection might be lost, click **Yes** to continue.
 
 ### Configuring a public network device
@@ -68,6 +84,7 @@ Your Private Network device is now installed. Repeat the preceding steps for the
 {: #obtaining-installation-media}
 
 Now that the virtual network devices are created, you need to obtain the installation media. The installation media that is used in this example is a CD/DVD image file. IBM Cloud supports the following Operating Systems for Hyper-V:
+
 * Windows 2019 with Hyper-V
 * Windows 2016 with Hyper-V
 * Windows 2012R2 with Hyper-V
@@ -75,14 +92,16 @@ Now that the virtual network devices are created, you need to obtain the install
 * CentOS
 * Fedora
 * Ubuntu
-**Note:** If you already have the installation media, go to **Creating a Virtual Machine**.
+
+If you have the installation media, go to **Creating a virtual machine**.
+{: tip}
 
 The installation media for [CentOS ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://www.centos.org/){: new_window}, [Fedora ![External link icon](../../icons/launch-glyph.svg "External link icon")](http://fedoraproject.org/){: new_window}, and [Ubuntu ![External link icon](../../icons/launch-glyph.svg "External link icon")](https://ubuntu.com/){: new_window} are available from their respective websites. All three OSs are freely licensed and no further action needs to be taken on the part of the user.
 
 ## Creating a virtual machine
 {: #creating-a-virtual-machine}
 
-Now that you have the installation media, you can create a virtual machine from the Hyper-V Manager. Click **New > Virtual Machine** to start the **New Virtual Machine Wizard**.
+Now that you have the installation media, you can create a virtual machine from the Hyper-V Manager. Click **New > Virtual machine** to start the **New Virtual Machine Wizard**.
 
 On the first screen, click **Next** and enter a name for the new virtual machine. This name can be changed at a future date. You can change the location of the virtual hard disk. The default value that you previously set is used unless you specify a different location. After you enter the information, click **Next**.
 
@@ -90,9 +109,9 @@ Now, you need to allocate memory to the server. Generally, you provide at least 
 
 Next, set the first network adapter. If a Linux Operating System is being installed on the virtual machine, select **Not Connected**. If Windows is being installed, select **Private**, then click **Next**.
 
-You can change the following settings for the virtual disk: file name, the storage location, and size. Make any applicable changed and click **Next**.
+You can change the following settings for the virtual disk: file name, the storage location, and size. Make any applicable changes and click **Next**.
 
-The installation media needs to be set. Select **Install an operating system from a boot CD/DVD-ROM > Image file (.iso)** to set the location of the CD/DVD image file for your installation media. Click **Next**, view the summary and click **Finish** to close the window.
+You need to set the installation media. Select **Install an operating system from a boot CD/DVD-ROM > Image file (.iso)** to set the location of the CD/DVD image file for your installation media. Click **Next**, view the summary and click **Finish** to close the window.
 
 Lastly, you need to create the virtual network adapters. The new virtual machine is now listed under the **Virtual Machines** section of the Hyper-v Manager. Right-click the new virtual machine click **Settings**.
 

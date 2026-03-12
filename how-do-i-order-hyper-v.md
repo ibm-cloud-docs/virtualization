@@ -11,6 +11,6 @@ subcollection: virtualization
 # Ordering Hyper-V
 {: #ordering-hyper-v}
 
-If you have an existing server, you can install Hyper-V on a server by initiating an OS reload and by changing the operating system to `Windows Server Datacenter Edition with Hyper-V`.
+If you have an existing server, you can install Hyper-V on a server by initiating an OS reload and by changing the operating system to `Windows Server Datacenter Edition`.
 
-If you want to provision a server by using Hyper-V, place an order for the new server and select `Windows Server Datacenter Edition with Hyper-V” as the operating system`.
+If you want to provision a server by using Hyper-V, place an order for the new server and select `Windows Server Datacenter Edition” as the operating system`.

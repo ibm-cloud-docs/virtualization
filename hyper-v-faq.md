@@ -1,7 +1,7 @@
 ---
 copyright:
-  years: 2014, 2025
-lastupdated: "2025-04-14"
+  years: 2014, 2026
+lastupdated: "2026-03-12"
 
 
 subcollection: virtualization
@@ -75,7 +75,7 @@ For information about portable IP addresses, see [Getting started with Subnets a
 ## How do I order Hyper-V?
 {: #how-do-i-order-hyper-v}
 
-You can install Hyper-V on an existing server by issuing an OS Reload and changing the operating system to a supported Windows Server Datacenter Edition with Hyper-V. To provision a new server with Hyper-V, order a new server and select a supported Windows Server Datacenter Edition with Hyper-V. See [Obtaining installation media](/docs/virtualization?topic=virtualization-setting-up-hyper-v&locale=en#obtaining-installation-media)
+You can install Hyper-V on an existing server by issuing an OS Reload and changing the operating system to a supported Windows Server Datacenter Edition. To provision a new server with Hyper-V, order a new server and select a supported Windows Server Datacenter Edition. See [Obtaining installation media](/docs/virtualization?topic=virtualization-setting-up-hyper-v&locale=en#obtaining-installation-media)
 
 ## The OS Reload for Hyper-V is done. What's next?
 {: #the-os-reload-for-hyper-v-is-done-what-s-next}

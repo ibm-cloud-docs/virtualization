@@ -2,7 +2,7 @@
 
 copyright:
   years: 2014, 2026
-lastupdated: "2026-03-03"
+lastupdated: "2026-03-12"
 
 
 subcollection: virtualization
@@ -22,7 +22,7 @@ The process of setting up Hyper-V includes the initial configuration of Hyper-V,
 
 The following information describes support responsibilities for Hyper-V.
 
-{{site.data.keyword.cloud}} is responsible for enabling Hyper-V on virtual servers.
+{{site.data.keyword.cloud}} is responsible for enabling Hyper-V on bare metal servers.
 
 {{site.data.keyword.cloud_notm}} does not offer support for the following actions. For more information, see [Hyper V documentation](https://learn.microsoft.com/en-us/windows-server/virtualization/hyper-v/){: external}.
 
